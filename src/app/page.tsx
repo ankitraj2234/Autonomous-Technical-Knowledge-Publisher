@@ -68,6 +68,12 @@ export default function DashboardPage() {
     const [generating, setGenerating] = useState(false);
     const [generatingTopic, setGeneratingTopic] = useState<string | null>(null);
     const [planningDay, setPlanningDay] = useState(false);
+
+    // Streaming modal state
+    const [streamModalOpen, setStreamModalOpen] = useState(false);
+    const [streamContent, setStreamContent] = useState('');
+    const [streamTitle, setStreamTitle] = useState('');
+
     const router = useRouter();
 
     const fetchData = useCallback(async () => {
@@ -91,25 +97,57 @@ export default function DashboardPage() {
 
     useEffect(() => {
         fetchData();
-        const interval = setInterval(fetchData, 30000);
-        return () => clearInterval(interval);
+        // Removed aggressive 30s polling to save GitHub rate limit!
+        // We will now only fetchData on mount and after actions.
     }, [fetchData]);
+
+    const handleStreamReading = async (res: Response, title: string, isTopicSpecific: boolean) => {
+        if (!res.ok) {
+            const text = await res.text();
+            toast.error(text || 'Generation failed');
+            isTopicSpecific ? setGeneratingTopic(null) : setGenerating(false);
+            return;
+        }
+
+        setStreamTitle(`Generating: ${title}`);
+        setStreamContent('');
+        setStreamModalOpen(true);
+        toast.success('AI generation started...');
+
+        const reader = res.body?.getReader();
+        const decoder = new TextDecoder();
+        let fullText = '';
+
+        if (reader) {
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                const chunk = decoder.decode(value, { stream: true });
+                fullText += chunk;
+                setStreamContent(fullText);
+            }
+        }
+
+        if (fullText.includes('[ATKP_SUCCESS:')) {
+            toast.success(`Published and committed successfully!`);
+        } else if (fullText.includes('[ATKP_ERROR:')) {
+            toast.error('AI Generation finished, but GitHub commit failed.');
+        } else {
+            toast.success('Generation finished');
+        }
+
+        isTopicSpecific ? setGeneratingTopic(null) : setGenerating(false);
+        fetchData();
+    };
 
     // Generate Now: picks next topic from schedule
     const handleGenerate = async () => {
         setGenerating(true);
         try {
             const res = await fetch('/api/generate', { method: 'POST' });
-            const data = await res.json();
-            if (res.ok) {
-                toast.success(`Published: ${data.topic}`);
-                fetchData();
-            } else {
-                toast.error(data.error || 'Generation failed');
-            }
+            await handleStreamReading(res, 'Next Auto-Topic', false);
         } catch {
             toast.error('Network error — check Vercel function logs');
-        } finally {
             setGenerating(false);
         }
     };
@@ -123,16 +161,9 @@ export default function DashboardPage() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ entryId, topic, category }),
             });
-            const data = await res.json();
-            if (res.ok) {
-                toast.success(`Published: ${topic}`);
-                fetchData();
-            } else {
-                toast.error(data.error || 'Generation failed');
-            }
+            await handleStreamReading(res, topic, true);
         } catch {
             toast.error('Network error');
-        } finally {
             setGeneratingTopic(null);
         }
     };
@@ -450,6 +481,58 @@ export default function DashboardPage() {
                     </div>
                 </div>
             </div>
+            {/* Streaming Modal Overlay */}
+            {streamModalOpen && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    backgroundColor: 'var(--bg-card)',
+                    zIndex: 9999,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    padding: '40px',
+                    overflowY: 'auto'
+                }}>
+                    <div style={{ maxWidth: '800px', width: '100%', margin: '0 auto' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+                            <h2 style={{ fontSize: '24px', fontWeight: 600 }}>{streamTitle}</h2>
+                            <button
+                                onClick={() => setStreamModalOpen(false)}
+                                style={{
+                                    padding: '8px 16px',
+                                    backgroundColor: 'var(--surface-hover)',
+                                    border: '1px solid var(--border-color)',
+                                    borderRadius: '6px',
+                                    color: 'var(--text-primary)',
+                                    cursor: 'pointer'
+                                }}
+                            >
+                                Close
+                            </button>
+                        </div>
+
+                        <div style={{
+                            backgroundColor: '#000000',
+                            padding: '24px',
+                            borderRadius: '8px',
+                            border: '1px solid var(--border-color)',
+                            minHeight: '60vh',
+                            fontFamily: 'monospace',
+                            fontSize: '14px',
+                            lineHeight: 1.6,
+                            color: '#a8d2ff',
+                            whiteSpace: 'pre-wrap',
+                            overflowX: 'hidden'
+                        }}>
+                            {streamContent || 'Connecting to Kimi K2.5 Engine... \nWait for it...'}
+
+                            {(generating || generatingTopic) && (
+                                <span style={{ animation: 'pulse 1s infinite' }}> █</span>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

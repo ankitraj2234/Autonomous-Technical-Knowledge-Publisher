@@ -1,10 +1,8 @@
-import { NextResponse } from 'next/server';
-import { generateArticle } from '@/lib/ai';
+import { generateArticleStream } from '@/lib/ai';
 import { commitArticle } from '@/lib/github';
 import { getSchedule, saveSchedule } from '@/lib/schedule-store';
 
-export const dynamic = 'force-dynamic';
-export const maxDuration = 60;
+export const runtime = 'edge';
 
 export async function POST() {
     try {
@@ -12,60 +10,52 @@ export async function POST() {
         const { schedule, sha } = await getSchedule();
 
         if (!schedule) {
-            return NextResponse.json(
-                { error: 'No schedule for today. Click Plan Day first.' },
-                { status: 400 }
-            );
+            return new Response(JSON.stringify({ error: 'No schedule for today. Click Plan Day first.' }), { status: 400 });
         }
 
         // Find next uncompleted topic
-        const entry = schedule.entries.find(e => !e.completed && !e.error);
+        const entry = schedule.entries.find((e: any) => !e.completed && !e.error);
         if (!entry) {
-            return NextResponse.json(
-                { error: 'All topics for today are done! 🎉' },
-                { status: 400 }
-            );
+            return new Response(JSON.stringify({ error: 'All topics for today are done! 🎉' }), { status: 400 });
         }
 
         const topic = entry.topicTitle;
         const category = entry.category;
 
-        // Generate article via Kimi K2.5
-        const markdownContent = await generateArticle(topic, category);
+        const stream = await generateArticleStream(topic, category, async (fullMarkdownContent) => {
+            try {
+                // Background commit after generating Markdown
+                const slug = topic.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').substring(0, 80);
+                const commitSha = await commitArticle(category, slug, fullMarkdownContent, topic);
 
-        // Build slug
-        const slug = topic
-            .toLowerCase()
-            .replace(/[^a-z0-9\s-]/g, '')
-            .replace(/\s+/g, '-')
-            .substring(0, 80);
-
-        // Commit to GitHub
-        const commitSha = await commitArticle(category, slug, markdownContent, topic);
-
-        // Mark entry as completed in the schedule
-        entry.completed = true;
-        entry.completedAt = new Date().toISOString();
-        entry.commitSha = commitSha;
-
-        // Save updated schedule back to GitHub
-        // Re-read to get fresh SHA (our commitArticle changed the repo)
-        const { sha: freshSha } = await getSchedule();
-        await saveSchedule(schedule, freshSha);
-
-        return NextResponse.json({
-            success: true,
-            topic,
-            category,
-            slug,
-            commitSha,
-            remaining: schedule.entries.filter(e => !e.completed && !e.error).length,
+                const { schedule: currentSchedule, sha: currentSha } = await getSchedule();
+                if (currentSchedule) {
+                    const currentEntry = currentSchedule.entries.find((e: any) => e.id === entry.id);
+                    if (currentEntry) {
+                        currentEntry.completed = true;
+                        currentEntry.completedAt = new Date().toISOString();
+                        currentEntry.commitSha = commitSha;
+                        const { sha: freshSha } = await getSchedule();
+                        await saveSchedule(currentSchedule, freshSha);
+                    }
+                }
+                return { commitSha };
+            } catch (error: any) {
+                console.error('Commit/Schedule update failed:', error);
+                return { error: error.message || 'Commit failed' };
+            }
         });
-    } catch (error) {
+
+        return new Response(stream, {
+            headers: {
+                'Content-Type': 'text/event-stream',
+                'Cache-Control': 'no-cache, no-transform',
+                'Connection': 'keep-alive',
+            },
+        });
+
+    } catch (error: any) {
         console.error('Generate failed:', error);
-        return NextResponse.json(
-            { error: error instanceof Error ? error.message : 'Generation failed' },
-            { status: 500 }
-        );
+        return new Response(JSON.stringify({ error: error.message || 'Generation failed' }), { status: 500 });
     }
 }
