@@ -1,15 +1,11 @@
 import { NextResponse } from 'next/server';
-import {
-    saveDailySchedule,
-    DailySchedule,
-    ScheduleEntry,
-} from '@/lib/store';
 import { selectTopics } from '@/lib/topics';
+import { getSchedule, saveSchedule, DailySchedule, ScheduleEntry } from '@/lib/schedule-store';
 
 export const dynamic = 'force-dynamic';
 
-// This just CREATES the plan — instant, no AI calls.
-// Articles are generated one-by-one via "Generate Now" or the daily cron.
+// Plan Day: instantly selects topics and saves schedule to GitHub.
+// No AI calls — just planning.
 export async function GET() {
     try {
         const totalCommits = Math.floor(Math.random() * 10) + 1;
@@ -21,7 +17,6 @@ export async function GET() {
             id: topic.id,
             topicTitle: topic.title,
             category: topic.category,
-            scheduledTime: now.toISOString(),
             completed: false,
         }));
 
@@ -32,7 +27,11 @@ export async function GET() {
             createdAt: now.toISOString(),
         };
 
-        saveDailySchedule(schedule);
+        // Get existing SHA if schedule file exists
+        const { sha: existingSha } = await getSchedule();
+
+        // Save to GitHub (persists across serverless instances)
+        await saveSchedule(schedule, existingSha);
 
         return NextResponse.json({
             success: true,

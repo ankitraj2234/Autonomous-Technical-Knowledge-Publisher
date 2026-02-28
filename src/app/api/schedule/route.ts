@@ -1,15 +1,16 @@
 import { NextResponse } from 'next/server';
-import { getTodaySchedule } from '@/lib/store';
+import { getSchedule } from '@/lib/schedule-store';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
     try {
-        const schedule = getTodaySchedule();
+        const { schedule } = await getSchedule();
+
         if (!schedule) {
             return NextResponse.json({
                 hasSchedule: false,
-                message: 'No schedule for today. Trigger /api/cron/daily-plan to create one.',
+                message: 'No schedule for today. Click Plan Day to create one.',
             });
         }
 

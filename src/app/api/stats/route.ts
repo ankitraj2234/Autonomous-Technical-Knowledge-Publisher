@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Octokit } from '@octokit/rest';
 import { getAllCategories } from '@/lib/topics';
+import { getTodaySchedule } from '@/lib/schedule-store';
 
 export const dynamic = 'force-dynamic';
 
@@ -112,21 +113,26 @@ export async function GET() {
         const octokit = getOctokit();
         const { owner, repo } = getRepoInfo();
 
-        const [articleData, streak, recentTopics] = await Promise.all([
+        const [articleData, streak, recentTopics, schedule] = await Promise.all([
             countArticles(octokit, owner, repo),
             calculateStreak(octokit, owner, repo),
             getRecentActivity(octokit, owner, repo),
+            getTodaySchedule(),
         ]);
 
         const allCategories = getAllCategories();
         const topicPoolSize = 195 - articleData.total;
 
+        const todayPlanned = schedule ? schedule.totalPlanned : 0;
+        const todayCompleted = schedule ? schedule.entries.filter(e => e.completed).length : 0;
+        const todayPending = schedule ? schedule.entries.filter(e => !e.completed && !e.error).length : 0;
+
         return NextResponse.json({
             totalArticles: articleData.total,
             categoryBreakdown: articleData.categories,
-            todayPlanned: 0,
-            todayCompleted: 0,
-            todayPending: 0,
+            todayPlanned,
+            todayCompleted,
+            todayPending,
             streak,
             recentTopics,
             topicPoolSize: topicPoolSize > 0 ? topicPoolSize : 0,

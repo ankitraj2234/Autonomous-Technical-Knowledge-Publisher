@@ -1,68 +1,57 @@
 import { NextResponse } from 'next/server';
 import { generateArticle } from '@/lib/ai';
 import { commitArticle } from '@/lib/github';
-import { addPublishedTopic, isTopicPublished } from '@/lib/store';
-import { selectTopics } from '@/lib/topics';
+import { getSchedule, saveSchedule } from '@/lib/schedule-store';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
-export async function POST(request: Request) {
+export async function POST() {
     try {
-        const body = await request.json().catch(() => ({}));
-        let { topic, category } = body as { topic?: string; category?: string };
+        // Read today's schedule from GitHub
+        const { schedule, sha } = await getSchedule();
 
-        // If no topic provided, auto-select one
-        if (!topic) {
-            const selected = selectTopics(1);
-            if (selected.length === 0) {
-                return NextResponse.json(
-                    { error: 'No new topics available' },
-                    { status: 400 }
-                );
-            }
-            topic = selected[0].title;
-            category = selected[0].category;
-        }
-
-        if (!category) category = 'General';
-
-        // Check dedup
-        if (isTopicPublished(topic)) {
+        if (!schedule) {
             return NextResponse.json(
-                { error: 'Topic already published' },
-                { status: 409 }
+                { error: 'No schedule for today. Click Plan Day first.' },
+                { status: 400 }
             );
         }
 
-        // Generate article
+        // Find next uncompleted topic
+        const entry = schedule.entries.find(e => !e.completed && !e.error);
+        if (!entry) {
+            return NextResponse.json(
+                { error: 'All topics for today are done! 🎉' },
+                { status: 400 }
+            );
+        }
+
+        const topic = entry.topicTitle;
+        const category = entry.category;
+
+        // Generate article via Kimi K2.5
         const markdownContent = await generateArticle(topic, category);
 
-        // Commit to GitHub
+        // Build slug
         const slug = topic
             .toLowerCase()
             .replace(/[^a-z0-9\s-]/g, '')
             .replace(/\s+/g, '-')
             .substring(0, 80);
 
-        const commitSha = await commitArticle(
-            category,
-            slug,
-            markdownContent,
-            topic
-        );
+        // Commit to GitHub
+        const commitSha = await commitArticle(category, slug, markdownContent, topic);
 
-        // Store record
-        const id = `${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
-        addPublishedTopic({
-            id,
-            title: topic,
-            slug,
-            category,
-            filename: `${slug}.md`,
-            publishedAt: new Date().toISOString(),
-            commitSha,
-        });
+        // Mark entry as completed in the schedule
+        entry.completed = true;
+        entry.completedAt = new Date().toISOString();
+        entry.commitSha = commitSha;
+
+        // Save updated schedule back to GitHub
+        // Re-read to get fresh SHA (our commitArticle changed the repo)
+        const { sha: freshSha } = await getSchedule();
+        await saveSchedule(schedule, freshSha);
 
         return NextResponse.json({
             success: true,
@@ -70,13 +59,12 @@ export async function POST(request: Request) {
             category,
             slug,
             commitSha,
+            remaining: schedule.entries.filter(e => !e.completed && !e.error).length,
         });
     } catch (error) {
         console.error('Generate failed:', error);
         return NextResponse.json(
-            {
-                error: error instanceof Error ? error.message : 'Generation failed',
-            },
+            { error: error instanceof Error ? error.message : 'Generation failed' },
             { status: 500 }
         );
     }
