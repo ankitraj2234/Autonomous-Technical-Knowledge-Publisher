@@ -14,12 +14,15 @@ import { commitArticle } from '@/lib/github';
 export const maxDuration = 300; // 5 min max for Vercel Pro, 60s for Hobby
 
 export async function GET(request: Request) {
-    // Verify cron secret
+    // Auth: allow Vercel cron (sets x-vercel-cron header), dashboard calls (no secret),
+    // and secret-authenticated calls. Only reject if a wrong secret is explicitly sent.
     const { searchParams } = new URL(request.url);
     const secret =
         searchParams.get('secret') ||
         request.headers.get('authorization')?.replace('Bearer ', '');
-    if (process.env.CRON_SECRET && secret !== process.env.CRON_SECRET) {
+    const isVercelCron = request.headers.get('x-vercel-cron') === '1';
+
+    if (secret && process.env.CRON_SECRET && secret !== process.env.CRON_SECRET && !isVercelCron) {
         return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
