@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import toast from 'react-hot-toast';
 import {
     HiOutlineDocumentText,
@@ -20,7 +21,17 @@ interface NoteFile {
     sha: string;
 }
 
-export default function NotesPage() {
+// Wrapper to provide Suspense boundary for useSearchParams
+export default function NotesPageWrapper() {
+    return (
+        <Suspense fallback={<div className="empty-state"><div className="spinner" style={{ width: 40, height: 40 }} /></div>}>
+            <NotesPage />
+        </Suspense>
+    );
+}
+
+function NotesPage() {
+    const searchParams = useSearchParams();
     const [notes, setNotes] = useState<NoteFile[]>([]);
     const [selectedNote, setSelectedNote] = useState<string | null>(null);
     const [content, setContent] = useState('');
@@ -51,6 +62,17 @@ export default function NotesPage() {
     useEffect(() => {
         fetchNotes();
     }, [fetchNotes]);
+
+    // Auto-fill AI Ask from URL param ?ask=topic
+    useEffect(() => {
+        const askParam = searchParams.get('ask');
+        if (askParam) {
+            setAskMode(true);
+            setAskPrompt(askParam);
+            setCreating(false);
+            setSelectedNote(null);
+        }
+    }, [searchParams]);
 
     const loadNote = async (filename: string) => {
         try {

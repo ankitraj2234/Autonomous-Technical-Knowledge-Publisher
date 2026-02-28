@@ -1,17 +1,17 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import {
     HiOutlineBolt,
-    HiOutlineDocumentPlus,
-    HiOutlineFire,
-    HiOutlineCircleStack,
     HiOutlineCalendarDays,
-    HiOutlineCheckCircle,
     HiOutlineClock,
+    HiOutlineCheckCircle,
     HiOutlineXCircle,
     HiOutlineArrowPath,
+    HiOutlineSparkles,
+    HiOutlineArrowTopRightOnSquare,
 } from 'react-icons/hi2';
 
 interface Stats {
@@ -31,42 +31,44 @@ interface Stats {
     categories: string[];
 }
 
+interface ScheduleEntry {
+    id: string;
+    topicTitle: string;
+    category: string;
+    completed: boolean;
+    completedAt?: string;
+    commitSha?: string;
+    error?: string;
+}
+
 interface ScheduleData {
     hasSchedule: boolean;
-    date?: string;
+    entries?: ScheduleEntry[];
     totalPlanned?: number;
     completed?: number;
     pending?: number;
-    failed?: number;
-    entries?: Array<{
-        id: string;
-        topicTitle: string;
-        category: string;
-        scheduledTime: string;
-        completed: boolean;
-        completedAt?: string;
-        error?: string;
-    }>;
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
     'Cybersecurity': '#ef4444',
     'Cloud Architecture': '#3b82f6',
-    'DevOps': '#10b981',
-    'Networking': '#f59e0b',
+    'DevOps': '#f59e0b',
+    'Networking': '#10b981',
     'System Design': '#8b5cf6',
     'Authentication & Authorization': '#ec4899',
     'Observability': '#06b6d4',
     'Containerization': '#6366f1',
-    'Infrastructure as Code': '#14b8a6',
+    'Infrastructure as Code': '#84cc16',
 };
 
-export default function Dashboard() {
+export default function DashboardPage() {
     const [stats, setStats] = useState<Stats | null>(null);
     const [schedule, setSchedule] = useState<ScheduleData | null>(null);
-    const [generating, setGenerating] = useState(false);
-    const [planningDay, setPlanningDay] = useState(false);
     const [loading, setLoading] = useState(true);
+    const [generating, setGenerating] = useState(false);
+    const [generatingTopic, setGeneratingTopic] = useState<string | null>(null);
+    const [planningDay, setPlanningDay] = useState(false);
+    const router = useRouter();
 
     const fetchData = useCallback(async () => {
         try {
@@ -74,12 +76,14 @@ export default function Dashboard() {
                 fetch('/api/stats'),
                 fetch('/api/schedule'),
             ]);
-            const statsData = await statsRes.json();
-            const scheduleData = await scheduleRes.json();
+            const [statsData, scheduleData] = await Promise.all([
+                statsRes.json(),
+                scheduleRes.json(),
+            ]);
             setStats(statsData);
             setSchedule(scheduleData);
-        } catch (err) {
-            console.error('Failed to fetch data:', err);
+        } catch {
+            console.error('Failed to fetch data');
         } finally {
             setLoading(false);
         }
@@ -91,6 +95,7 @@ export default function Dashboard() {
         return () => clearInterval(interval);
     }, [fetchData]);
 
+    // Generate Now: picks next topic from schedule
     const handleGenerate = async () => {
         setGenerating(true);
         try {
@@ -103,10 +108,38 @@ export default function Dashboard() {
                 toast.error(data.error || 'Generation failed');
             }
         } catch {
-            toast.error('Network error');
+            toast.error('Network error — check Vercel function logs');
         } finally {
             setGenerating(false);
         }
+    };
+
+    // Generate a specific topic from the schedule
+    const handleGenerateTopic = async (entryId: string, topic: string, category: string) => {
+        setGeneratingTopic(entryId);
+        try {
+            const res = await fetch('/api/generate-topic', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ entryId, topic, category }),
+            });
+            const data = await res.json();
+            if (res.ok) {
+                toast.success(`Published: ${topic}`);
+                fetchData();
+            } else {
+                toast.error(data.error || 'Generation failed');
+            }
+        } catch {
+            toast.error('Network error');
+        } finally {
+            setGeneratingTopic(null);
+        }
+    };
+
+    // Send topic to AI Ask on Notes page
+    const handleAskAI = (topic: string) => {
+        router.push(`/notes?ask=${encodeURIComponent(topic)}`);
     };
 
     const handlePlanDay = async () => {
@@ -125,16 +158,6 @@ export default function Dashboard() {
         } finally {
             setPlanningDay(false);
         }
-    };
-
-    const formatTime = (isoString: string) => {
-        const date = new Date(isoString);
-        return date.toLocaleTimeString('en-IN', {
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: true,
-            timeZone: 'Asia/Kolkata',
-        });
     };
 
     const formatDate = (isoString: string) => {
@@ -186,7 +209,7 @@ export default function Dashboard() {
                         {planningDay ? 'Planning...' : 'Plan Day'}
                     </button>
                     <button
-                        className="btn btn-primary btn-lg"
+                        className="btn btn-primary"
                         onClick={handleGenerate}
                         disabled={generating}
                     >
@@ -202,43 +225,58 @@ export default function Dashboard() {
 
             {/* Stats Grid */}
             <div className="stats-grid">
-                <div className="stat-card cyan">
-                    <div className="stat-label">Total Articles</div>
+                <div className="stat-card">
+                    <div className="stat-card-accent" style={{ background: 'var(--accent-primary)' }} />
+                    <div className="stat-label">TOTAL ARTICLES</div>
                     <div className="stat-value">{stats?.totalArticles || 0}</div>
-                    <div className="stat-sub">Published to GitHub</div>
+                    <div className="stat-desc">Published to GitHub</div>
                 </div>
-                <div className="stat-card purple">
-                    <div className="stat-label">Today&apos;s Plan</div>
-                    <div className="stat-value purple">
+                <div className="stat-card">
+                    <div className="stat-card-accent" style={{ background: 'var(--accent-secondary)' }} />
+                    <div className="stat-label">TODAY'S PLAN</div>
+                    <div className="stat-value">
                         {stats?.todayCompleted || 0}/{stats?.todayPlanned || 0}
                     </div>
-                    <div style={{ marginTop: '8px' }}>
-                        <div className="progress-bar">
-                            <div
-                                className="progress-fill"
-                                style={{ width: `${progress}%` }}
-                            />
-                        </div>
+                    <div style={{
+                        height: '4px',
+                        background: 'rgba(255,255,255,0.08)',
+                        borderRadius: '2px',
+                        marginTop: '8px',
+                        overflow: 'hidden',
+                    }}>
+                        <div style={{
+                            width: `${progress}%`,
+                            height: '100%',
+                            background: 'var(--accent-secondary)',
+                            borderRadius: '2px',
+                            transition: 'width 0.5s ease',
+                        }} />
                     </div>
                 </div>
-                <div className="stat-card green">
-                    <div className="stat-label">Streak</div>
-                    <div className="stat-value green">{stats?.streak || 0}</div>
-                    <div className="stat-sub">Consecutive days</div>
+                <div className="stat-card">
+                    <div className="stat-card-accent" style={{ background: 'var(--status-success)' }} />
+                    <div className="stat-label">STREAK</div>
+                    <div className="stat-value" style={{ color: 'var(--status-success)' }}>
+                        {stats?.streak || 0}
+                    </div>
+                    <div className="stat-desc">Consecutive days</div>
                 </div>
-                <div className="stat-card warm">
-                    <div className="stat-label">Topic Pool</div>
-                    <div className="stat-value warm">{stats?.topicPoolSize || 0}</div>
-                    <div className="stat-sub">Available topics</div>
+                <div className="stat-card">
+                    <div className="stat-card-accent" style={{ background: 'var(--status-error)' }} />
+                    <div className="stat-label">TOPIC POOL</div>
+                    <div className="stat-value" style={{ color: '#f59e0b' }}>
+                        {stats?.topicPoolSize ?? 195}
+                    </div>
+                    <div className="stat-desc">Available topics</div>
                 </div>
             </div>
 
-            {/* Main content grid */}
+            {/* Main Content Grid */}
             <div className="content-grid">
                 {/* Today's Schedule */}
                 <div className="card">
                     <div className="card-header">
-                        <h3 className="card-title">Today's Schedule</h3>
+                        <h3 className="card-title">Today&apos;s Schedule</h3>
                         <button
                             className="btn btn-secondary btn-sm"
                             onClick={fetchData}
@@ -250,25 +288,18 @@ export default function Dashboard() {
                     {schedule?.hasSchedule && schedule.entries ? (
                         <div className="timeline">
                             {schedule.entries.map(entry => {
-                                let dotClass = 'upcoming';
-                                let StatusIcon = HiOutlineClock;
-                                if (entry.completed) {
-                                    dotClass = 'completed';
-                                    StatusIcon = HiOutlineCheckCircle;
-                                } else if (entry.error) {
-                                    dotClass = 'failed';
-                                    StatusIcon = HiOutlineXCircle;
-                                } else if (new Date(entry.scheduledTime) <= new Date()) {
-                                    dotClass = 'pending';
-                                }
+                                const isGenerating = generatingTopic === entry.id;
                                 return (
-                                    <div className="timeline-item" key={entry.id}>
-                                        <span className="timeline-time">
-                                            {formatTime(entry.scheduledTime)}
-                                        </span>
-                                        <span className={`timeline-dot ${dotClass}`} />
-                                        <div className="timeline-content">
-                                            <div className="timeline-title">{entry.topicTitle}</div>
+                                    <div className="timeline-item" key={entry.id} style={{
+                                        opacity: entry.completed ? 0.65 : 1,
+                                    }}>
+                                        <span className={`timeline-dot ${entry.completed ? 'completed' : entry.error ? 'failed' : 'upcoming'}`} />
+                                        <div className="timeline-content" style={{ flex: 1, minWidth: 0 }}>
+                                            <div className="timeline-title" style={{
+                                                textDecoration: entry.completed ? 'line-through' : 'none',
+                                            }}>
+                                                {entry.topicTitle}
+                                            </div>
                                             <div className="timeline-category">
                                                 <span
                                                     className="category-badge"
@@ -282,17 +313,37 @@ export default function Dashboard() {
                                                 </span>
                                             </div>
                                         </div>
-                                        <StatusIcon
-                                            style={{
-                                                fontSize: '18px',
-                                                color:
-                                                    dotClass === 'completed'
-                                                        ? 'var(--status-success)'
-                                                        : dotClass === 'failed'
-                                                            ? 'var(--status-error)'
-                                                            : 'var(--text-muted)',
-                                            }}
-                                        />
+                                        <div style={{ display: 'flex', gap: '4px', alignItems: 'center', flexShrink: 0 }}>
+                                            {entry.completed ? (
+                                                <HiOutlineCheckCircle style={{ fontSize: '20px', color: 'var(--status-success)' }} />
+                                            ) : entry.error ? (
+                                                <HiOutlineXCircle style={{ fontSize: '20px', color: 'var(--status-error)' }} />
+                                            ) : (
+                                                <>
+                                                    <button
+                                                        className="btn btn-secondary btn-sm"
+                                                        onClick={() => handleAskAI(entry.topicTitle)}
+                                                        title="Ask AI about this topic"
+                                                        style={{ padding: '4px 6px', fontSize: '14px' }}
+                                                    >
+                                                        <HiOutlineSparkles />
+                                                    </button>
+                                                    <button
+                                                        className="btn btn-primary btn-sm"
+                                                        onClick={() => handleGenerateTopic(entry.id, entry.topicTitle, entry.category)}
+                                                        disabled={isGenerating}
+                                                        title="Generate & commit this topic"
+                                                        style={{ padding: '4px 6px', fontSize: '14px' }}
+                                                    >
+                                                        {isGenerating ? (
+                                                            <span className="spinner" style={{ width: 14, height: 14 }} />
+                                                        ) : (
+                                                            <HiOutlineArrowTopRightOnSquare />
+                                                        )}
+                                                    </button>
+                                                </>
+                                            )}
+                                        </div>
                                     </div>
                                 );
                             })}
@@ -329,30 +380,28 @@ export default function Dashboard() {
                                             style={{
                                                 display: 'flex',
                                                 justifyContent: 'space-between',
+                                                fontSize: '13px',
                                                 marginBottom: '4px',
                                             }}
                                         >
-                                            <span style={{ fontSize: '13px', color: 'var(--text-secondary)' }}>
-                                                {cat}
-                                            </span>
-                                            <span
-                                                style={{
-                                                    fontSize: '13px',
-                                                    fontWeight: 600,
-                                                    fontFamily: "'JetBrains Mono', monospace",
-                                                    color: CATEGORY_COLORS[cat] || 'var(--text-primary)',
-                                                }}
-                                            >
-                                                {count}
-                                            </span>
+                                            <span>{cat}</span>
+                                            <span style={{ color: 'var(--text-muted)' }}>{count}</span>
                                         </div>
-                                        <div className="progress-bar" style={{ height: '4px' }}>
+                                        <div
+                                            style={{
+                                                height: '6px',
+                                                background: 'rgba(255,255,255,0.06)',
+                                                borderRadius: '3px',
+                                                overflow: 'hidden',
+                                            }}
+                                        >
                                             <div
                                                 style={{
                                                     height: '100%',
-                                                    width: `${pct}%`,
-                                                    borderRadius: '2px',
-                                                    background: CATEGORY_COLORS[cat] || 'var(--accent-primary)',
+                                                    width: `${count > 0 ? pct : 0}%`,
+                                                    background:
+                                                        CATEGORY_COLORS[cat] || 'var(--accent-primary)',
+                                                    borderRadius: '3px',
                                                     transition: 'width 0.5s ease',
                                                 }}
                                             />
@@ -369,35 +418,32 @@ export default function Dashboard() {
                             <h3 className="card-title">Recent Activity</h3>
                         </div>
                         {stats?.recentTopics && stats.recentTopics.length > 0 ? (
-                            <div>
-                                {stats.recentTopics.slice(0, 5).map(topic => (
-                                    <div className="activity-item" key={topic.id}>
-                                        <div className="activity-icon commit">
-                                            <HiOutlineDocumentPlus />
-                                        </div>
-                                        <div className="activity-content">
-                                            <div className="activity-title">{topic.title}</div>
-                                            <div className="activity-time">
-                                                <span
-                                                    style={{
-                                                        color: CATEGORY_COLORS[topic.category],
-                                                    }}
-                                                >
-                                                    {topic.category}
-                                                </span>
-                                                {' · '}
-                                                {formatDate(topic.publishedAt)}
-                                            </div>
-                                        </div>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                {stats.recentTopics.map(topic => (
+                                    <div
+                                        key={topic.id}
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            fontSize: '13px',
+                                        }}
+                                    >
+                                        <span style={{ fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flex: 1, marginRight: '12px' }}>
+                                            {topic.title}
+                                        </span>
+                                        <span style={{ color: 'var(--text-muted)', flexShrink: 0, fontSize: '12px' }}>
+                                            {topic.publishedAt
+                                                ? formatDate(topic.publishedAt)
+                                                : ''}
+                                        </span>
                                     </div>
                                 ))}
                             </div>
                         ) : (
-                            <div className="empty-state" style={{ padding: '30px 20px' }}>
-                                <div className="empty-state-icon">📄</div>
-                                <div className="empty-state-title">No articles yet</div>
+                            <div className="empty-state" style={{ padding: '30px' }}>
                                 <div className="empty-state-desc">
-                                    Generate your first article to get started
+                                    No articles yet — click Generate Now
                                 </div>
                             </div>
                         )}
