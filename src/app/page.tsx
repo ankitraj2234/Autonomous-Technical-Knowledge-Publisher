@@ -112,7 +112,7 @@ export default function Dashboard() {
     const handlePlanDay = async () => {
         setPlanningDay(true);
         try {
-            const res = await fetch('/api/cron/daily-plan');
+            const res = await fetch('/api/cron/daily-publish');
             const data = await res.json();
             if (res.ok) {
                 toast.success(`Day planned: ${data.totalPlanned} articles scheduled`);
