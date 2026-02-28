@@ -115,7 +115,7 @@ export default function Dashboard() {
             const res = await fetch('/api/cron/daily-publish');
             const data = await res.json();
             if (res.ok) {
-                toast.success(`Day planned: ${data.totalPlanned} articles scheduled`);
+                toast.success(`Day planned: ${data.totalPlanned} topics selected`);
                 fetchData();
             } else {
                 toast.error(data.error || 'Planning failed');
