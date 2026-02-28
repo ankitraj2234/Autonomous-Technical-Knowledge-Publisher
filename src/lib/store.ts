@@ -1,7 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+// On Vercel, the project directory is read-only.
+// Use /tmp/ for writable storage in serverless environments.
+// Locally, use the project's data/ directory.
+const IS_VERCEL = !!process.env.VERCEL;
+const DATA_DIR = IS_VERCEL
+    ? path.join('/tmp', 'atkp-data')
+    : path.join(process.cwd(), 'data');
 
 function ensureDataDir() {
     if (!fs.existsSync(DATA_DIR)) {
@@ -159,6 +165,7 @@ export function saveConfig(config: AppConfig): void {
 export function getStats() {
     const topics = getPublishedTopics();
     const schedule = getTodaySchedule();
+    const config = getConfig();
 
     const categoryBreakdown: Record<string, number> = {};
     for (const topic of topics) {
@@ -196,5 +203,7 @@ export function getStats() {
         todayPending,
         streak,
         recentTopics: topics.slice(-10).reverse(),
+        topicPoolSize: 195 - topics.length,
+        categories: config.categories,
     };
 }

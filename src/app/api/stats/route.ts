@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { getStats } from '@/lib/store';
 import { getTopicPoolSize, getAllCategories } from '@/lib/topics';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
     try {
         const stats = getStats();

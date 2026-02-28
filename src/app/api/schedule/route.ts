@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { getTodaySchedule } from '@/lib/store';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
     try {
         const schedule = getTodaySchedule();
