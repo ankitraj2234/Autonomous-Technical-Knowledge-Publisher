@@ -1,29 +1,26 @@
-import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
-export const dynamic = 'force-dynamic';
-export const maxDuration = 60;
+// Use Edge runtime for streaming
+export const runtime = 'edge';
 
 const NVIDIA_BASE_URL = 'https://integrate.api.nvidia.com/v1';
 
-function getClient(): OpenAI {
-    const apiKey = process.env.NVIDIA_API_KEY;
-    if (!apiKey) throw new Error('NVIDIA_API_KEY not set — add it to Vercel env vars');
-    return new OpenAI({ apiKey, baseURL: NVIDIA_BASE_URL });
-}
-
-export async function POST(request: Request) {
+export async function POST(req: Request) {
     try {
-        const { prompt } = (await request.json()) as { prompt: string };
+        const { prompt } = await req.json();
 
-        if (!prompt || !prompt.trim()) {
-            return NextResponse.json({ error: 'prompt is required' }, { status: 400 });
+        if (!prompt) {
+            return new Response('Prompt is required', { status: 400 });
         }
 
-        console.log('AI Ask: sending prompt to Kimi K2.5:', prompt.substring(0, 100));
+        const apiKey = process.env.NVIDIA_API_KEY;
+        if (!apiKey) {
+            return new Response('NVIDIA_API_KEY not set in Vercel', { status: 500 });
+        }
 
-        const client = getClient();
+        const client = new OpenAI({ apiKey, baseURL: NVIDIA_BASE_URL });
 
+        // Enable streaming from OpenAI SDK
         const response = await client.chat.completions.create({
             model: 'moonshotai/kimi-k2.5',
             messages: [
@@ -36,18 +33,39 @@ export async function POST(request: Request) {
             temperature: 1.0,
             top_p: 1.0,
             max_tokens: 16384,
-            stream: false,
+            stream: true, // STREAMING ENABLED
         });
 
-        const content = response.choices[0]?.message?.content;
-        if (!content) throw new Error('No response from AI model');
+        // Create a ReadableStream to stream the chunks back to the client
+        const stream = new ReadableStream({
+            async start(controller) {
+                try {
+                    for await (const chunk of response) {
+                        const content = chunk.choices[0]?.delta?.content || '';
+                        if (content) {
+                            controller.enqueue(new TextEncoder().encode(content));
+                        }
+                    }
+                } catch (err) {
+                    console.error('Streaming error:', err);
+                    controller.enqueue(new TextEncoder().encode('\n\n[Error: Stream disconnected or failed]'));
+                } finally {
+                    controller.close();
+                }
+            },
+        });
 
-        console.log('AI Ask: got response, length:', content.length);
-
-        return NextResponse.json({ response: content });
+        return new Response(stream, {
+            headers: {
+                'Content-Type': 'text/event-stream',
+                'Cache-Control': 'no-cache, no-transform',
+                Connection: 'keep-alive',
+            },
+        });
     } catch (error) {
         console.error('AI ask failed:', error);
-        const message = error instanceof Error ? error.message : 'AI request failed';
-        return NextResponse.json({ error: message }, { status: 500 });
+        return new Response(error instanceof Error ? error.message : 'AI request failed', {
+            status: 500,
+        });
     }
 }

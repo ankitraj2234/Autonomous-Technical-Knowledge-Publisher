@@ -178,26 +178,45 @@ function NotesPage() {
         if (!askPrompt.trim()) return;
         setAskLoading(true);
         setAskResponse('');
+
         try {
             const res = await fetch('/api/ask', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ prompt: askPrompt }),
             });
-            const data = await res.json();
-            if (res.ok) {
-                setAskResponse(data.response);
-                setContent(`# ${askPrompt}\n\n---\n*AI-generated via Kimi K2.5*\n\n${data.response}`);
-                // Auto-generate filename from prompt
-                const slug = askPrompt.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').substring(0, 50);
-                setCommitFilename(`${slug}.txt`);
-                toast.success('AI response received!');
-            } else {
-                toast.error(data.error || 'AI request failed');
+
+            if (!res.ok) {
+                const text = await res.text();
+                toast.error(text || 'AI request failed');
+                setAskLoading(false);
+                return;
             }
+
+            setAskLoading(false); // Done waiting for TTFB, start streaming!
+            toast.success('AI is typing...');
+
+            const reader = res.body?.getReader();
+            const decoder = new TextDecoder();
+            let fullResponse = '';
+
+            if (reader) {
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    const chunk = decoder.decode(value, { stream: true });
+                    fullResponse += chunk;
+                    setAskResponse(fullResponse);
+                }
+            }
+
+            setContent(`# ${askPrompt}\n\n---\n*AI-generated via Kimi K2.5*\n\n${fullResponse}`);
+            const slug = askPrompt.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').substring(0, 50);
+            setCommitFilename(`${slug}.txt`);
+            toast.success('Done!');
+
         } catch {
             toast.error('Network error — AI may be taking too long');
-        } finally {
             setAskLoading(false);
         }
     };
