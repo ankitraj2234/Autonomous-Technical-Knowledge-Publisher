@@ -1,250 +1,215 @@
 'use client';
 
-import { useState } from 'react';
-import toast from 'react-hot-toast';
+import { useState, useEffect } from 'react';
 import {
-    HiOutlineCog6Tooth,
     HiOutlineKey,
     HiOutlineServerStack,
-    HiOutlineInformationCircle,
+    HiOutlineCpuChip,
+    HiOutlineCheckCircle,
+    HiOutlineXCircle,
+    HiOutlineArrowPath,
 } from 'react-icons/hi2';
 
-export default function SettingsPage() {
-    const [nvidiaKey, setNvidiaKey] = useState('');
-    const [githubToken, setGithubToken] = useState('');
-    const [githubOwner, setGithubOwner] = useState('ankitraj2234');
-    const [githubRepo, setGithubRepo] = useState(
-        'Autonomous-Technical-Knowledge-Publisher'
-    );
-    const [cronSecret, setCronSecret] = useState('');
+interface ConfigStatus {
+    nvidia: boolean;
+    github: boolean;
+    owner: string;
+    repo: string;
+    cron: boolean;
+    vercel: boolean;
+}
 
-    const handleSave = () => {
-        toast.success(
-            'Settings are managed via .env.local file. Update the file and restart the server.',
-            { duration: 5000 }
+export default function SettingsPage() {
+    const [config, setConfig] = useState<ConfigStatus | null>(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetch('/api/config-status')
+            .then(res => res.json())
+            .then(data => setConfig(data))
+            .catch(() => { })
+            .finally(() => setLoading(false));
+    }, []);
+
+    const StatusIcon = ({ ok }: { ok: boolean }) =>
+        ok ? (
+            <HiOutlineCheckCircle style={{ color: 'var(--status-success)', fontSize: '20px' }} />
+        ) : (
+            <HiOutlineXCircle style={{ color: 'var(--status-error)', fontSize: '20px' }} />
         );
-    };
+
+    const envRows = config
+        ? [
+            { label: 'NVIDIA API Key', key: 'NVIDIA_API_KEY', ok: config.nvidia, hint: 'Kimi K2.5 inference via NVIDIA NIM' },
+            { label: 'GitHub Token', key: 'GITHUB_TOKEN', ok: config.github, hint: 'PAT with repo scope' },
+            { label: 'GitHub Owner', key: 'GITHUB_OWNER', ok: !!config.owner, hint: config.owner || 'Not set' },
+            { label: 'GitHub Repo', key: 'GITHUB_REPO', ok: !!config.repo, hint: config.repo || 'Not set' },
+            { label: 'Cron Secret', key: 'CRON_SECRET', ok: config.cron, hint: 'Protects cron endpoints' },
+        ]
+        : [];
 
     return (
         <div className="fade-in">
             <div className="page-header">
                 <h1 className="page-title">Settings</h1>
                 <p className="page-subtitle">
-                    Configure API keys, repository, and scheduler preferences
+                    Environment variables are managed via Vercel dashboard — this page shows their status
                 </p>
             </div>
 
-            <div className="content-grid">
-                {/* API Keys */}
-                <div className="card">
-                    <div className="card-header">
-                        <h3 className="card-title">
-                            <HiOutlineKey style={{ marginRight: '8px' }} />
-                            API Keys
-                        </h3>
-                    </div>
-
-                    <div className="form-group">
-                        <label className="form-label">NVIDIA NIM API Key</label>
-                        <input
-                            className="input"
-                            type="password"
-                            placeholder="nvapi-..."
-                            value={nvidiaKey}
-                            onChange={e => setNvidiaKey(e.target.value)}
-                        />
-                        <p className="form-help">
-                            Used for Kimi K2.5 model inference. Get it from{' '}
-                            <a
-                                href="https://build.nvidia.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ color: 'var(--accent-primary)' }}
-                            >
-                                build.nvidia.com
-                            </a>
-                        </p>
-                    </div>
-
-                    <div className="form-group">
-                        <label className="form-label">GitHub Token</label>
-                        <input
-                            className="input"
-                            type="password"
-                            placeholder="ghp_..."
-                            value={githubToken}
-                            onChange={e => setGithubToken(e.target.value)}
-                        />
-                        <p className="form-help">
-                            Personal Access Token with <code>repo</code> scope
-                        </p>
-                    </div>
-
-                    <div className="form-group">
-                        <label className="form-label">CRON Secret</label>
-                        <input
-                            className="input"
-                            type="password"
-                            placeholder="Your secret key..."
-                            value={cronSecret}
-                            onChange={e => setCronSecret(e.target.value)}
-                        />
-                        <p className="form-help">
-                            Protects cron endpoints from unauthorized access
-                        </p>
-                    </div>
+            {/* Config Status */}
+            <div className="card" style={{ marginBottom: '24px' }}>
+                <div className="card-header">
+                    <h3 className="card-title">
+                        <HiOutlineKey style={{ marginRight: '8px' }} />
+                        Environment Variables
+                    </h3>
+                    {config?.vercel && (
+                        <span
+                            style={{
+                                fontSize: '12px',
+                                padding: '4px 12px',
+                                borderRadius: 'var(--radius-full)',
+                                background: 'rgba(16, 185, 129, 0.1)',
+                                color: 'var(--status-success)',
+                                border: '1px solid rgba(16, 185, 129, 0.2)',
+                                fontWeight: 600,
+                            }}
+                        >
+                            Running on Vercel
+                        </span>
+                    )}
                 </div>
 
-                {/* Repository Settings */}
+                {loading ? (
+                    <div className="empty-state" style={{ padding: '40px' }}>
+                        <div className="spinner" />
+                    </div>
+                ) : (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                        {envRows.map(row => (
+                            <div
+                                key={row.key}
+                                style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '12px',
+                                    padding: '14px 16px',
+                                    borderRadius: 'var(--radius-sm)',
+                                    background: row.ok
+                                        ? 'rgba(16, 185, 129, 0.03)'
+                                        : 'rgba(239, 68, 68, 0.03)',
+                                }}
+                            >
+                                <StatusIcon ok={row.ok} />
+                                <div style={{ flex: 1, minWidth: 0 }}>
+                                    <div style={{ fontSize: '14px', fontWeight: 600 }}>
+                                        {row.label}
+                                    </div>
+                                    <div
+                                        style={{
+                                            fontSize: '12px',
+                                            color: 'var(--text-muted)',
+                                            fontFamily: "'JetBrains Mono', monospace",
+                                        }}
+                                    >
+                                        {row.ok ? row.hint : `⚠ ${row.key} not set`}
+                                    </div>
+                                </div>
+                                <span
+                                    style={{
+                                        fontSize: '11px',
+                                        fontWeight: 600,
+                                        padding: '2px 8px',
+                                        borderRadius: 'var(--radius-full)',
+                                        background: row.ok
+                                            ? 'rgba(16, 185, 129, 0.1)'
+                                            : 'rgba(239, 68, 68, 0.1)',
+                                        color: row.ok
+                                            ? 'var(--status-success)'
+                                            : 'var(--status-error)',
+                                    }}
+                                >
+                                    {row.ok ? 'CONFIGURED' : 'MISSING'}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
+
+            {/* System Architecture */}
+            <div className="content-grid">
                 <div className="card">
                     <div className="card-header">
                         <h3 className="card-title">
-                            <HiOutlineServerStack style={{ marginRight: '8px' }} />
-                            Repository
+                            <HiOutlineCpuChip style={{ marginRight: '8px' }} />
+                            AI Engine
                         </h3>
                     </div>
-
-                    <div className="form-group">
-                        <label className="form-label">GitHub Owner</label>
-                        <input
-                            className="input"
-                            placeholder="username"
-                            value={githubOwner}
-                            onChange={e => setGithubOwner(e.target.value)}
-                        />
-                    </div>
-
-                    <div className="form-group">
-                        <label className="form-label">Repository Name</label>
-                        <input
-                            className="input"
-                            placeholder="repo-name"
-                            value={githubRepo}
-                            onChange={e => setGithubRepo(e.target.value)}
-                        />
-                    </div>
-
-                    <div
-                        style={{
-                            padding: '16px',
-                            background: 'var(--bg-glass)',
-                            borderRadius: 'var(--radius-md)',
-                            border: '1px solid var(--border-subtle)',
-                            display: 'flex',
-                            gap: '12px',
-                            alignItems: 'flex-start',
-                        }}
-                    >
-                        <HiOutlineInformationCircle
-                            style={{
-                                color: 'var(--accent-primary)',
-                                fontSize: '20px',
-                                flexShrink: 0,
-                                marginTop: '2px',
-                            }}
-                        />
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                         <div>
-                            <div
-                                style={{
-                                    fontSize: '13px',
-                                    fontWeight: 600,
-                                    marginBottom: '4px',
-                                }}
-                            >
-                                Environment Variables
+                            <div className="form-label">Model</div>
+                            <div style={{ fontSize: '14px', fontFamily: "'JetBrains Mono', monospace" }}>
+                                moonshotai/kimi-k2.5
                             </div>
-                            <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-                                These settings are controlled via the{' '}
-                                <code
-                                    style={{
-                                        background: 'var(--bg-input)',
-                                        padding: '2px 6px',
-                                        borderRadius: '4px',
-                                        fontFamily: "'JetBrains Mono', monospace",
-                                    }}
-                                >
-                                    .env.local
-                                </code>{' '}
-                                file. Update the file and restart the dev server for changes to
-                                take effect. On Vercel, set these in the Environment Variables
-                                section of your project settings.
+                        </div>
+                        <div>
+                            <div className="form-label">Endpoint</div>
+                            <div style={{ fontSize: '13px', fontFamily: "'JetBrains Mono', monospace", color: 'var(--text-secondary)' }}>
+                                integrate.api.nvidia.com/v1
                             </div>
+                        </div>
+                        <div>
+                            <div className="form-label">Max Tokens</div>
+                            <div style={{ fontSize: '14px' }}>16,384</div>
+                        </div>
+                        <div>
+                            <div className="form-label">Output Format</div>
+                            <div style={{ fontSize: '14px' }}>Structured JSON → Markdown</div>
                         </div>
                     </div>
                 </div>
 
-                {/* Architecture Info */}
-                <div className="card full-width">
+                <div className="card">
                     <div className="card-header">
                         <h3 className="card-title">
-                            <HiOutlineCog6Tooth style={{ marginRight: '8px' }} />
-                            System Architecture
+                            <HiOutlineServerStack style={{ marginRight: '8px' }} />
+                            Publishing Pipeline
                         </h3>
                     </div>
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-                            gap: '16px',
-                        }}
-                    >
-                        {[
-                            {
-                                title: 'AI Model',
-                                desc: 'Kimi K2.5 via NVIDIA NIM',
-                                detail: 'OpenAI-compatible API, JSON mode, 8K output tokens',
-                            },
-                            {
-                                title: 'Scheduler',
-                                desc: 'Vercel Cron Jobs',
-                                detail: 'Daily plan at midnight IST, executor every 30 min',
-                            },
-                            {
-                                title: 'Publisher',
-                                desc: 'GitHub Contents API',
-                                detail: 'Octokit REST, atomic commits, branch-safe',
-                            },
-                            {
-                                title: 'Data Store',
-                                desc: 'JSON File Store',
-                                detail: 'topics.json, schedule.json, config.json — no database',
-                            },
-                        ].map(item => (
-                            <div
-                                key={item.title}
-                                style={{
-                                    padding: '16px',
-                                    background: 'var(--bg-glass)',
-                                    borderRadius: 'var(--radius-md)',
-                                    border: '1px solid var(--border-subtle)',
-                                }}
-                            >
-                                <div
-                                    style={{
-                                        fontSize: '14px',
-                                        fontWeight: 600,
-                                        marginBottom: '4px',
-                                    }}
-                                >
-                                    {item.title}
-                                </div>
-                                <div
-                                    style={{
-                                        fontSize: '13px',
-                                        color: 'var(--accent-primary)',
-                                        marginBottom: '4px',
-                                    }}
-                                >
-                                    {item.desc}
-                                </div>
-                                <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-                                    {item.detail}
-                                </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                        <div>
+                            <div className="form-label">Repository</div>
+                            <div style={{ fontSize: '13px', fontFamily: "'JetBrains Mono', monospace" }}>
+                                {config?.owner && config?.repo
+                                    ? `${config.owner}/${config.repo}`
+                                    : 'Not configured'}
                             </div>
-                        ))}
-                    </div>
-                </div>
+                        </div>
+                        <div>
+                            <div className="form-label">Articles Path</div>
+                            <div style={{ fontSize: '14px', fontFamily: "'JetBrains Mono', monospace", color: 'var(--text-secondary)' }}>
+                                knowledge-base/{'<category>'}/*.md
+              </div>
             </div>
+            <div>
+              <div className="form-label">Notes Path</div>
+              <div style={{ fontSize: '14px', fontFamily: "'JetBrains Mono', monospace", color: 'var(--text-secondary)' }}>
+                notes/*.txt
+              </div>
+            </div>
+            <div>
+              <div className="form-label">Cron Schedule</div>
+              <div style={{ fontSize: '14px' }}>Daily at midnight IST</div>
+            </div>
+            <div>
+              <div className="form-label">Daily Commits</div>
+              <div style={{ fontSize: '14px' }}>1–10 articles (randomized)</div>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
