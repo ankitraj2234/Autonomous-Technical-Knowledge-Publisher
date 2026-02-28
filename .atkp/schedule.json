@@ -12,7 +12,9 @@
       "id": "1772311391278-pvdldv4",
       "topicTitle": "Step-Up Authentication Pattern Implementation",
       "category": "Authentication & Authorization",
-      "completed": false
+      "completed": true,
+      "completedAt": "2026-02-28T22:17:50.135Z",
+      "commitSha": "320498d38854d7ad01ca84cd62df5e5e8b39420e"
     }
   ],
   "createdAt": "2026-02-28T20:43:11.278Z"
