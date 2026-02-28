@@ -1,0 +1,341 @@
+# Pipeline as Code: Declarative vs Scripted Pipelines
+
+---
+*AI-generated via Kimi K2.5*
+
+ # Pipeline as Code: Declarative vs Scripted Pipelines
+
+## Executive Summary
+
+Jenkins Pipeline implements "Pipeline as Code" (PaC) through two distinct syntax flavors: **Declarative** (opinionated, structured) and **Scripted** (imperative, flexible). The choice impacts maintainability, security boundaries, visualization capabilities, and Groovy complexity exposure.
+
+---
+
+## 1. Declarative Pipeline
+
+### Syntax Structure
+```groovy
+pipeline {
+    agent any
+    
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '5'))
+        timestamps()
+    }
+    
+    environment {
+        GLOBAL_VAR = 'production'
+    }
+    
+    stages {
+        stage('Build') {
+            steps {
+                sh 'make build'
+            }
+        }
+        stage('Test') {
+            parallel {
+                stage('Unit') {
+                    steps {
+                        sh 'make test-unit'
+                    }
+                }
+                stage('Integration') {
+                    steps {
+                        sh 'make test-integration'
+                    }
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            junit '**/target/*.xml'
+        }
+        failure {
+            mail to: 'team@company.com', subject: "Failed: ${currentBuild.fullDisplayName}"
+        }
+    }
+}
+```
+
+### Core Characteristics
+
+| Attribute | Specification |
+|-----------|-------------|
+| **Entry Point** | `pipeline {}` block |
+| **Execution Context** | Pre-defined DSL with strict schema validation |
+| **Groovy Exposure** | Limited; encapsulated in `script {}` blocks when needed |
+| **Visualization** | Native Blue Ocean/Stage View support with rich metadata |
+| **Validation** | Syntax validated before execution starts |
+| **Restartability** | Stage-level restart supported (Declarative 1.2+) |
+
+### Advantages
+- **Schema Enforcement**: Prevents structural errors via declarative model
+- **Blue Ocean Optimization**: Native visualization of stages, parallels, and post-actions
+- **Simplified Permissions**: Runs in Groovy Sandbox by default; reduced security approval surface
+- **Resume Capability**: Survives Jenkins master restarts with state preservation
+
+### Constraints
+- **Control Flow Limitations**: No native `if/else`, `try/catch`, or loops outside `script` blocks
+- **Variable Scoping**: Strict separation between `environment` and runtime variables
+- **Plugin Dependency**: Requires `pipeline-model-definition` plugin
+
+---
+
+## 2. Scripted Pipeline
+
+### Syntax Structure
+```groovy
+node('docker && linux') {
+    try {
+        def commitId = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
+        
+        stage('Checkout') {
+            checkout scm
+        }
+        
+        if (env.BRANCH_NAME == 'main') {
+            stage('Deploy') {
+                timeout(time: 10, unit: 'MINUTES') {
+                    sh "./deploy.sh ${commitId}"
+                }
+            }
+        } else {
+            stage('PR Validation') {
+                sh 'make verify'
+            }
+        }
+        
+    } catch (Exception e) {
+        currentBuild.result = 'FAILURE'
+        throw e
+    } finally {
+        junit '**/build/test-results/**/*.xml'
+        cleanWs()
+    }
+}
+```
+
+### Core Characteristics
+
+| Attribute | Specification |
+|-----------|-------------|
+| **Entry Point** | `node {}` block (or `node('label')`) |
+| **Execution Context** | Full Groovy execution environment |
+| **Groovy Exposure** | Unrestricted; complete language features available |
+| **Visualization** | Basic stage view; complex flows render linearly |
+| **Validation** | Runtime validation only (failures during execution) |
+| **Error Handling** | Manual `try/catch/finally` implementation required |
+
+### Advantages
+- **Turing Completeness**: Dynamic generation of stages, conditional logic, complex data structures
+- **Resource Control**: Fine-grained `node` allocation with custom workspace management
+- **Legacy Compatibility**: Supports pre-2.0 Jenkins patterns and custom step implementations
+- **Exception Handling**: Native Groovy exception propagation and recovery patterns
+
+### Risks
+- **Security Surface**: Requires Method/Constructor approvals in Script Security plugin
+- **CPS Serialization**: Complex Groovy objects may trigger `NotSerializableException` in pipeline resumes
+- **Maintainability**: "Spaghetti code" risk with deep nesting and custom control flow
+
+---
+
+## 3. Comparative Analysis
+
+### Decision Matrix
+
+| Criteria | Declarative | Scripted |
+|----------|-------------|----------|
+| **Team Groovy Expertise** | Low-Moderate | High |
+| **Build Complexity** | Linear, parallel, matrix | Dynamic, recursive, conditional |
+| **Visualization Priority** | High (rich UI) | Low (console-focused) |
+| **Audit Compliance** | Strong (structured logs) | Moderate (custom logging) |
+| **Shared Library Integration** | Wrapper library pattern | Core implementation |
+| **Multi-Branch Pipeline** | Optimized support | Manual branch detection |
+
+### Technical Differentiators
+
+#### Checkpoint/Restart Behavior
+- **Declarative**: Supports `options { preserveStashes(buildCount: 5) }` and stage-specific restarts
+- **Scripted**: Requires manual `checkpoint` step (CloudBees Jenkins Enterprise) or custom serialization logic
+
+#### Parallel Execution
+**Declarative** (Structured):
+```groovy
+parallel {
+    stage('Linux') { agent { label 'linux' }; steps { sh 'make' } }
+    stage('Windows') { agent { label 'windows' }; steps { bat 'make' } }
+}
+```
+
+**Scripted** (Dynamic):
+```groovy
+def branches = [:]
+['linux', 'windows', 'macos'].each { platform ->
+    branches[platform] = {
+        node(platform) { sh 'make' }
+    }
+}
+parallel branches
+```
+
+#### Error Recovery
+**Declarative**:
+```groovy
+post {
+    unsuccessful {
+        script {
+            // Escaping to scripted for complex logic
+            if (env.RETRY_COUNT?.toInteger() < 3) {
+                build(job: env.JOB_NAME, parameters: [string(name: 'RETRY_COUNT', value: "${env.RETRY_COUNT.toInteger() + 1}")])
+            }
+        }
+    }
+}
+```
+
+**Scripted**:
+```groovy
+retry(3) {
+    // Custom backoff logic
+    sleep(currentBuild.number * 10)
+    sh 'flaky-operation'
+}
+catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+    sh 'optional-step'
+}
+```
+
+---
+
+## 4. Hybrid Patterns
+
+### The `script` Step Escape Hatch
+Declarative pipelines accommodate complex logic via the `script` step:
+
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Dynamic Matrix') {
+            steps {
+                script {
+                    def tests = [:]
+                    readJSON(file: 'test-suites.json').each { suite ->
+                        tests[suite.name] = {
+                            sh "./run-test ${suite.path}"
+                        }
+                    }
+                    parallel tests
+                }
+            }
+        }
+    }
+}
+```
+
+### Scripted Wrapper with Declarative Template
+For library-based implementations:
+
+**vars/standardPipeline.groovy** (Scripted):
+```groovy
+def call(body) {
+    def config = [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
+    body()
+    
+    node(config.agent) {
+        pipeline {  // Nested declarative block
+            stages {
+                stage(config.stageName) {
+                    steps {
+                        sh config.command
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+---
+
+## 5. Migration Strategies
+
+### Scripted → Declarative Conversion Path
+
+1. **Audit Groovy Usage**: Identify `node` blocks, custom loops, and exception handling
+2. **Extract Static Structure**: Move invariant stages to `stages` blocks
+3. **Encapsulate Logic**: Migrate dynamic content to `script` steps or Shared Libraries
+4. **Replace `currentBuild` manipulation** with `post` conditions:
+   - `currentBuild.result = 'UNSTABLE'` → `unstable { }` block
+   - Manual `try/catch` → `post { failure { } }`
+
+### Anti-Patterns to Avoid
+
+**Declarative Anti-Pattern**:
+```groovy
+stage('Bad') {
+    steps {
+        script {  // Excessive scripted wrapping
+            if (env.BRANCH == 'main') {
+                sh 'deploy'
+            }
+        }
+    }
+}
+```
+*Fix*: Use `when { branch 'main' }` directive.
+
+**Scripted Anti-Pattern**:
+```groovy
+node {
+    stage('Bad') {
+        checkout scm
+        sh 'build'
+        sh 'test'
+        sh 'deploy'  // No error boundaries
+    }
+}
+```
+*Fix*: Separate stages, add `try/catch`, or migrate to Declarative.
+
+---
+
+## 6. Operational Considerations
+
+### Performance
+- **Startup**: Declarative incurs ~200-500ms additional parsing overhead for schema validation
+- **Serialization**: Scripted pipelines with non-serializable objects fail on master restart; Declarative enforces serializable boundaries by default
+
+### Security Model
+| Aspect | Declarative | Scripted |
+|--------|-------------|----------|
+| **Sandbox Default** | Yes | Requires `@NonCPS` or approval |
+| **Method Approvals** | Minimal (DSL methods only) | Extensive (Groovy runtime) |
+| **Credential Injection** | `environment { SECRET = credentials('id') }` | `withCredentials` wrapper |
+
+### Tooling Support
+- **Jenkinsfile Validator**: Declarative has built-in `Jenkinsfile` linting in Visual Studio Code (via Jenkins Pipeline Linter Connector)
+- **Syntax Highlighting**: Both supported, but Declarative has schema-aware autocomplete
+
+---
+
+## Recommendation Framework
+
+**Use Declarative when**:
+- Build process follows standard CI/CD phases (Build → Test → Deploy)
+- Team includes non-developers (QA, Ops) maintaining pipelines
+- Blue Ocean visualization is required for stakeholder reporting
+- Branch/PR-based multi-branch pipelines are primary use case
+
+**Use Scripted when**:
+- Build orchestration requires dynamic stage generation (e.g., microservice list from external API)
+- Complex error handling with recovery logic (retry with backoff, circuit breakers)
+- Integration with legacy Jenkins plugins lacking Declarative wrappers
+- Implementing Shared Library primitives (`vars/` or `src/`)
+
+**Default Position**: Start with **Declarative**; introduce Scripted blocks or migrate fully only when hitting structural limitations in conditional flow or dynamic parallelism.
