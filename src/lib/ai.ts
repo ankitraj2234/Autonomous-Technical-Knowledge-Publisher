@@ -21,14 +21,8 @@ CRITICAL RULES:
 - Write exactly like a senior engineer jotting down their technical notes: crisp, clear, and absolutely no fluff.
 - Be concise. Explain the "Why" and the "How". Do not generate excessively long text. 500 to 800 words of high-density knowledge is optimal.
 
-Your document must start with this header:
+Your document must start with ONE single H1 header containing the exact topic name. Do NOT include any AI warnings, disclaimers, metadata blockquotes, or generated timestamps.
 # [The exact topic title]
-
-> **Category:** [Category Name]
-> **Generated:** [YYYY-MM-DD]
-> **AI Model:** Kimi K2.5 via NVIDIA NIM
-
----
 
 (Begin dense, technical explanation here...)`;
 

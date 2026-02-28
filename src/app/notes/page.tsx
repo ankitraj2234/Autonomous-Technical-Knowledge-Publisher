@@ -304,9 +304,9 @@ function NotesPage() {
                                     <button
                                         className={`file-item ${selectedNote === note.path ? 'active' : ''}`}
                                         onClick={() => loadNote(note.path)}
-                                        style={{ flex: 1 }}
+                                        style={{ flex: 1, minWidth: 0 }}
                                     >
-                                        <HiOutlineDocumentText />
+                                        <HiOutlineDocumentText style={{ flexShrink: 0 }} />
                                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flex: 1, overflow: 'hidden' }}>
                                             <span style={{ fontSize: '14px', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                                                 {note.name}
@@ -318,7 +318,7 @@ function NotesPage() {
                                             )}
                                         </div>
                                     </button>
-                                    <button className="btn btn-danger btn-sm" onClick={() => deleteNote(note.path)} style={{ padding: '4px 6px', opacity: 0.6, background: 'transparent', border: 'none' }} title="Delete"><HiOutlineTrash /></button>
+                                    <button className="btn btn-danger btn-sm" onClick={() => deleteNote(note.path)} style={{ padding: '4px 6px', opacity: 0.6, background: 'transparent', border: 'none', flexShrink: 0 }} title="Delete"><HiOutlineTrash /></button>
                                 </div>
                             ))}
                         </div>

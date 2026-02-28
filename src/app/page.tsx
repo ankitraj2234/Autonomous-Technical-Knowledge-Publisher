@@ -106,25 +106,30 @@ export default function DashboardPage() {
             const text = await res.text();
             toast.error(text || 'Generation failed');
             isTopicSpecific ? setGeneratingTopic(null) : setGenerating(false);
+            setStreamModalOpen(false);
             return;
         }
 
-        setStreamTitle(`Generating: ${title}`);
-        setStreamContent('');
-        setStreamModalOpen(true);
         toast.success('AI generation started...');
 
         const reader = res.body?.getReader();
         const decoder = new TextDecoder();
         let fullText = '';
+        let firstChunkReceived = false;
 
         if (reader) {
             while (true) {
                 const { done, value } = await reader.read();
                 if (done) break;
+
+                if (!firstChunkReceived) {
+                    firstChunkReceived = true;
+                    setStreamContent(''); // clear the "Connecting..." message
+                }
+
                 const chunk = decoder.decode(value, { stream: true });
                 fullText += chunk;
-                setStreamContent(fullText);
+                setStreamContent(prev => prev + chunk); // append safely
             }
         }
 
@@ -137,24 +142,31 @@ export default function DashboardPage() {
         }
 
         isTopicSpecific ? setGeneratingTopic(null) : setGenerating(false);
-        fetchData();
+        fetchData(); // This refreshes the dashboard and removes the completed schedule item
     };
 
     // Generate Now: picks next topic from schedule
     const handleGenerate = async () => {
         setGenerating(true);
+        setStreamTitle('Generating: Next Auto-Topic');
+        setStreamContent('Connecting to AI (this might take a moment)...');
+        setStreamModalOpen(true);
         try {
             const res = await fetch('/api/generate', { method: 'POST' });
             await handleStreamReading(res, 'Next Auto-Topic', false);
         } catch {
             toast.error('Network error — check Vercel function logs');
             setGenerating(false);
+            setStreamModalOpen(false);
         }
     };
 
     // Generate a specific topic from the schedule
     const handleGenerateTopic = async (entryId: string, topic: string, category: string) => {
         setGeneratingTopic(entryId);
+        setStreamTitle(`Generating: ${topic}`);
+        setStreamContent('Connecting to AI (this might take a moment)...');
+        setStreamModalOpen(true);
         try {
             const res = await fetch('/api/generate-topic', {
                 method: 'POST',
@@ -165,6 +177,7 @@ export default function DashboardPage() {
         } catch {
             toast.error('Network error');
             setGeneratingTopic(null);
+            setStreamModalOpen(false);
         }
     };
 
@@ -316,69 +329,73 @@ export default function DashboardPage() {
                             <HiOutlineArrowPath />
                         </button>
                     </div>
-                    {schedule?.hasSchedule && schedule.entries ? (
-                        <div className="timeline">
-                            {schedule.entries.map(entry => {
-                                const isGenerating = generatingTopic === entry.id;
-                                return (
-                                    <div className="timeline-item" key={entry.id} style={{
-                                        opacity: entry.completed ? 0.65 : 1,
-                                    }}>
-                                        <span className={`timeline-dot ${entry.completed ? 'completed' : entry.error ? 'failed' : 'upcoming'}`} />
-                                        <div className="timeline-content" style={{ flex: 1, minWidth: 0 }}>
-                                            <div className="timeline-title" style={{
-                                                textDecoration: entry.completed ? 'line-through' : 'none',
-                                            }}>
-                                                {entry.topicTitle}
+                    {schedule?.hasSchedule ? (
+                        schedule.entries?.filter(e => !e.completed).length ? (
+                            <div className="timeline">
+                                {schedule.entries.filter(e => !e.completed).map(entry => {
+                                    const isGenerating = generatingTopic === entry.id;
+                                    return (
+                                        <div className="timeline-item" key={entry.id}>
+                                            <span className={`timeline-dot ${entry.error ? 'failed' : 'upcoming'}`} />
+                                            <div className="timeline-content" style={{ flex: 1, minWidth: 0 }}>
+                                                <div className="timeline-title">
+                                                    {entry.topicTitle}
+                                                </div>
+                                                <div className="timeline-category">
+                                                    <span
+                                                        className="category-badge"
+                                                        style={{
+                                                            color: CATEGORY_COLORS[entry.category] || '#6b7280',
+                                                            borderColor: `${CATEGORY_COLORS[entry.category] || '#6b7280'}40`,
+                                                            background: `${CATEGORY_COLORS[entry.category] || '#6b7280'}15`,
+                                                        }}
+                                                    >
+                                                        {entry.category}
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <div className="timeline-category">
-                                                <span
-                                                    className="category-badge"
-                                                    style={{
-                                                        color: CATEGORY_COLORS[entry.category] || '#6b7280',
-                                                        borderColor: `${CATEGORY_COLORS[entry.category] || '#6b7280'}40`,
-                                                        background: `${CATEGORY_COLORS[entry.category] || '#6b7280'}15`,
-                                                    }}
-                                                >
-                                                    {entry.category}
-                                                </span>
+                                            <div style={{ display: 'flex', gap: '4px', alignItems: 'center', flexShrink: 0 }}>
+                                                {entry.error ? (
+                                                    <HiOutlineXCircle style={{ fontSize: '20px', color: 'var(--status-error)' }} title="GitHub Sync Error" />
+                                                ) : (
+                                                    <>
+                                                        <button
+                                                            className="btn btn-secondary btn-sm"
+                                                            onClick={() => handleAskAI(entry.topicTitle, entry.id)}
+                                                            title="Ask AI about this topic"
+                                                            style={{ padding: '4px 6px', fontSize: '14px' }}
+                                                        >
+                                                            <HiOutlineSparkles />
+                                                        </button>
+                                                        <button
+                                                            className="btn btn-primary btn-sm"
+                                                            onClick={() => handleGenerateTopic(entry.id, entry.topicTitle, entry.category)}
+                                                            disabled={isGenerating}
+                                                            title="Generate & commit this topic"
+                                                            style={{ padding: '4px 6px', fontSize: '14px' }}
+                                                        >
+                                                            {isGenerating ? (
+                                                                <span className="spinner" style={{ width: 14, height: 14 }} />
+                                                            ) : (
+                                                                <HiOutlineArrowTopRightOnSquare />
+                                                            )}
+                                                        </button>
+                                                    </>
+                                                )}
                                             </div>
                                         </div>
-                                        <div style={{ display: 'flex', gap: '4px', alignItems: 'center', flexShrink: 0 }}>
-                                            {entry.completed ? (
-                                                <HiOutlineCheckCircle style={{ fontSize: '20px', color: 'var(--status-success)' }} />
-                                            ) : entry.error ? (
-                                                <HiOutlineXCircle style={{ fontSize: '20px', color: 'var(--status-error)' }} />
-                                            ) : (
-                                                <>
-                                                    <button
-                                                        className="btn btn-secondary btn-sm"
-                                                        onClick={() => handleAskAI(entry.topicTitle, entry.id)}
-                                                        title="Ask AI about this topic"
-                                                        style={{ padding: '4px 6px', fontSize: '14px' }}
-                                                    >
-                                                        <HiOutlineSparkles />
-                                                    </button>
-                                                    <button
-                                                        className="btn btn-primary btn-sm"
-                                                        onClick={() => handleGenerateTopic(entry.id, entry.topicTitle, entry.category)}
-                                                        disabled={isGenerating}
-                                                        title="Generate & commit this topic"
-                                                        style={{ padding: '4px 6px', fontSize: '14px' }}
-                                                    >
-                                                        {isGenerating ? (
-                                                            <span className="spinner" style={{ width: 14, height: 14 }} />
-                                                        ) : (
-                                                            <HiOutlineArrowTopRightOnSquare />
-                                                        )}
-                                                    </button>
-                                                </>
-                                            )}
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                        </div>
+                                    );
+                                })}
+                            </div>
+                        ) : (
+                            <div className="empty-state" style={{ padding: '40px 20px' }}>
+                                <div className="empty-state-icon">🎉</div>
+                                <div className="empty-state-title">All Done!</div>
+                                <div className="empty-state-desc">
+                                    You have completed all scheduled topics for today.
+                                </div>
+                            </div>
+                        )
                     ) : (
                         <div className="empty-state" style={{ padding: '40px 20px' }}>
                             <div className="empty-state-icon">📅</div>
