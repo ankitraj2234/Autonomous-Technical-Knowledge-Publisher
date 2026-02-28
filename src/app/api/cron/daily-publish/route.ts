@@ -11,21 +11,10 @@ import { selectTopics } from '@/lib/topics';
 import { generateArticle } from '@/lib/ai';
 import { commitArticle } from '@/lib/github';
 
-export const maxDuration = 300; // 5 min max for Vercel Pro, 60s for Hobby
+export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
 
-export async function GET(request: Request) {
-    // Auth: allow Vercel cron (sets x-vercel-cron header), dashboard calls (no secret),
-    // and secret-authenticated calls. Only reject if a wrong secret is explicitly sent.
-    const { searchParams } = new URL(request.url);
-    const secret =
-        searchParams.get('secret') ||
-        request.headers.get('authorization')?.replace('Bearer ', '');
-    const isVercelCron = request.headers.get('x-vercel-cron') === '1';
-
-    if (secret && process.env.CRON_SECRET && secret !== process.env.CRON_SECRET && !isVercelCron) {
-        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
+export async function GET() {
     try {
         // Step 1: Generate daily plan
         const totalCommits = Math.floor(Math.random() * 10) + 1;
@@ -113,7 +102,7 @@ export async function GET(request: Request) {
     } catch (error) {
         console.error('Daily publish failed:', error);
         return NextResponse.json(
-            { error: 'Daily publish failed' },
+            { error: error instanceof Error ? error.message : 'Daily publish failed' },
             { status: 500 }
         );
     }

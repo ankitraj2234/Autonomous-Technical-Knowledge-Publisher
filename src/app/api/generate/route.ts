@@ -4,6 +4,7 @@ import { commitArticle } from '@/lib/github';
 import { addPublishedTopic, isTopicPublished } from '@/lib/store';
 import { selectTopics } from '@/lib/topics';
 
+export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
 export async function POST(request: Request) {
