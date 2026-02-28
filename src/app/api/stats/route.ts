@@ -18,15 +18,15 @@ function getRepoInfo() {
     return { owner, repo };
 }
 
-// Count all .md files under knowledge-base/ on GitHub
+// Count all .md files under Knowledge/ on GitHub
 async function countArticles(octokit: Octokit, owner: string, repo: string) {
     const categories: Record<string, number> = {};
     let total = 0;
 
     try {
-        // List top-level folders under knowledge-base/
+        // List top-level folders under Knowledge/
         const { data: folders } = await octokit.repos.getContent({
-            owner, repo, path: 'knowledge-base',
+            owner, repo, path: 'Knowledge',
         });
 
         if (Array.isArray(folders)) {
@@ -37,19 +37,17 @@ async function countArticles(octokit: Octokit, owner: string, repo: string) {
                             owner, repo, path: folder.path,
                         });
                         if (Array.isArray(files)) {
-                            const mdFiles = files.filter(f => f.name.endsWith('.md'));
+                            const mdFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.txt'));
                             const count = mdFiles.length;
                             total += count;
-                            // Map folder name back to display name
-                            const catName = folder.name.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-                            categories[catName] = count;
+                            categories[folder.name] = count;
                         }
                     } catch { /* empty folder */ }
                 }
             }
         }
     } catch {
-        // knowledge-base/ doesn't exist yet
+        // Knowledge/ doesn't exist yet
     }
 
     return { total, categories };

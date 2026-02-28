@@ -26,13 +26,13 @@ export async function POST(req: Request) {
             messages: [
                 {
                     role: 'system',
-                    content: 'You are a senior technical engineer. Provide clear, detailed, and structured answers. Use markdown formatting. Be precise and thorough. Avoid fluff.',
+                    content: 'You are an elite Staff Software Engineer. Provide clear, dense, and structured technical answers. DO NOT use generic phrases, fluff, or robotic bulleted formats. Use code snippets to illustrate points. Keep explanations under 800 words, focusing only on the "Why" and "How".',
                 },
                 { role: 'user', content: prompt },
             ],
-            temperature: 1.0,
-            top_p: 1.0,
-            max_tokens: 16384,
+            temperature: 0.8,
+            top_p: 0.9,
+            max_tokens: 4096,
             stream: true, // STREAMING ENABLED
         });
 

@@ -169,8 +169,8 @@ export default function DashboardPage() {
     };
 
     // Send topic to AI Ask on Notes page
-    const handleAskAI = (topic: string) => {
-        router.push(`/notes?ask=${encodeURIComponent(topic)}`);
+    const handleAskAI = (topic: string, entryId?: string) => {
+        router.push(`/notes?ask=${encodeURIComponent(topic)}${entryId ? `&entryId=${encodeURIComponent(entryId)}` : ''}`);
     };
 
     const handlePlanDay = async () => {
@@ -353,7 +353,7 @@ export default function DashboardPage() {
                                                 <>
                                                     <button
                                                         className="btn btn-secondary btn-sm"
-                                                        onClick={() => handleAskAI(entry.topicTitle)}
+                                                        onClick={() => handleAskAI(entry.topicTitle, entry.id)}
                                                         title="Ask AI about this topic"
                                                         style={{ padding: '4px 6px', fontSize: '14px' }}
                                                     >

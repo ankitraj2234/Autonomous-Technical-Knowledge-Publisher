@@ -21,6 +21,7 @@ interface NoteFile {
     path: string;
     size: number;
     sha: string;
+    folder?: string;
 }
 
 export default function NotesPageWrapper() {
@@ -83,24 +84,30 @@ function NotesPage() {
         fetchFolders();
     }, [fetchNotes, fetchFolders]);
 
-    // Auto-fill AI Ask from URL param ?ask=topic
+    // Auto-fill AI Ask from URL param ?ask=topic&entryId=xxx
+    const [askEntryId, setAskEntryId] = useState<string | null>(null);
+
     useEffect(() => {
         const askParam = searchParams.get('ask');
+        const entryIdParam = searchParams.get('entryId');
+
         if (askParam) {
             setAskMode(true);
             setAskPrompt(askParam);
+            setAskEntryId(entryIdParam);
+
             setCreating(false);
             setSelectedNote(null);
             setCommitMode(false);
         }
     }, [searchParams]);
 
-    const loadNote = async (filename: string) => {
+    const loadNote = async (path: string) => {
         try {
-            const res = await fetch(`/api/notes/${encodeURIComponent(filename)}`);
+            const res = await fetch(`/api/notes?path=${encodeURIComponent(path)}`);
             const data = await res.json();
             setContent(data.content || '');
-            setSelectedNote(filename);
+            setSelectedNote(path);
             setCreating(false);
             setAskMode(false);
             setCommitMode(false);
@@ -113,18 +120,18 @@ function NotesPage() {
         if (!selectedNote && !creating) return;
         setSaving(true);
         try {
-            const filename = creating ? newFilename : selectedNote!;
+            const path = creating ? `notes/${newFilename}` : selectedNote!;
             const method = creating ? 'POST' : 'PUT';
             const res = await fetch('/api/notes', {
                 method,
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ filename, content }),
+                body: JSON.stringify({ path, content }),
             });
             const data = await res.json();
             if (res.ok) {
-                toast.success(creating ? `Created & committed ${data.filename}` : `Saved & committed ${filename}`);
+                toast.success(creating ? `Created & committed ${data.path}` : `Saved & committed ${path}`);
                 setCreating(false);
-                setSelectedNote(data.filename || filename);
+                setSelectedNote(data.path || path);
                 setNewFilename('');
                 fetchNotes();
             } else {
@@ -137,17 +144,17 @@ function NotesPage() {
         }
     };
 
-    const deleteNote = async (filename: string) => {
-        if (!confirm(`Delete ${filename}?`)) return;
+    const deleteNote = async (path: string) => {
+        if (!confirm(`Delete ${path}?`)) return;
         try {
             const res = await fetch('/api/notes', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ filename }),
+                body: JSON.stringify({ path }),
             });
             if (res.ok) {
-                toast.success(`Deleted ${filename}`);
-                if (selectedNote === filename) { setSelectedNote(null); setContent(''); }
+                toast.success(`Deleted ${path}`);
+                if (selectedNote === path) { setSelectedNote(null); setContent(''); }
                 fetchNotes();
             }
         } catch {
@@ -244,6 +251,7 @@ function NotesPage() {
                     folder,
                     filename: commitFilename,
                     content,
+                    entryId: askEntryId,
                 }),
             });
             const data = await res.json();
@@ -292,16 +300,25 @@ function NotesPage() {
                     ) : notes.length > 0 ? (
                         <div className="file-list">
                             {notes.map(note => (
-                                <div key={note.name} style={{ display: 'flex', alignItems: 'center' }}>
+                                <div key={note.path} style={{ display: 'flex', alignItems: 'center' }}>
                                     <button
-                                        className={`file-item ${selectedNote === note.name ? 'active' : ''}`}
-                                        onClick={() => loadNote(note.name)}
+                                        className={`file-item ${selectedNote === note.path ? 'active' : ''}`}
+                                        onClick={() => loadNote(note.path)}
                                         style={{ flex: 1 }}
                                     >
                                         <HiOutlineDocumentText />
-                                        <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{note.name}</span>
+                                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', flex: 1, overflow: 'hidden' }}>
+                                            <span style={{ fontSize: '14px', width: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                                {note.name}
+                                            </span>
+                                            {note.folder && (
+                                                <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
+                                                    {note.folder}
+                                                </span>
+                                            )}
+                                        </div>
                                     </button>
-                                    <button className="btn btn-danger btn-sm" onClick={() => deleteNote(note.name)} style={{ padding: '4px 6px', opacity: 0.6, background: 'transparent', border: 'none' }} title="Delete"><HiOutlineTrash /></button>
+                                    <button className="btn btn-danger btn-sm" onClick={() => deleteNote(note.path)} style={{ padding: '4px 6px', opacity: 0.6, background: 'transparent', border: 'none' }} title="Delete"><HiOutlineTrash /></button>
                                 </div>
                             ))}
                         </div>

@@ -63,15 +63,12 @@ export async function commitFile(
  */
 export async function commitArticle(
     category: string,
-    slug: string,
+    filename: string, // this will now receive the properly-cased title
     content: string,
     title: string
 ): Promise<string> {
-    const categoryFolder = category
-        .toLowerCase()
-        .replace(/[^a-z0-9\s]/g, '')
-        .replace(/\s+/g, '-');
-    const filePath = `knowledge-base/${categoryFolder}/${slug}.md`;
+    const categoryFolder = category.replace(/[<>:"/\\|?*]+/g, '').trim();
+    const filePath = `Knowledge/${categoryFolder}/${filename}.md`;
     const commitMessage = `docs: add article on ${title}`;
     return commitFile(filePath, content, commitMessage);
 }

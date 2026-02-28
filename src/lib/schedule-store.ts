@@ -92,17 +92,44 @@ export async function getTodaySchedule(): Promise<DailySchedule | null> {
     return schedule;
 }
 
-/** Mark an entry as completed in the schedule on GitHub */
+/** 
+ * Safely mark an entry as completed in the schedule on GitHub.
+ * Includes a robust retry loop for 409 Conflicts (which happen when multiple automated processes try to update the schedule JSON simultaneously). 
+ */
 export async function markEntryComplete(entryId: string, commitSha: string): Promise<void> {
-    const { schedule, sha } = await getSchedule();
-    if (!schedule) return;
+    const MAX_RETRIES = 5;
+    let retries = 0;
 
-    const entry = schedule.entries.find(e => e.id === entryId);
-    if (entry) {
-        entry.completed = true;
-        entry.completedAt = new Date().toISOString();
-        entry.commitSha = commitSha;
-        await saveSchedule(schedule, sha);
+    while (retries < MAX_RETRIES) {
+        try {
+            const { schedule, sha } = await getSchedule();
+            if (!schedule) return;
+
+            const entry = schedule.entries.find(e => e.id === entryId);
+            if (entry) {
+                // Check if already completed to avoid unnecessary writes
+                if (entry.completed && entry.commitSha === commitSha) return;
+
+                entry.completed = true;
+                entry.completedAt = new Date().toISOString();
+                entry.commitSha = commitSha;
+
+                await saveSchedule(schedule, sha);
+                return; // Success
+            }
+            return; // Entry not found
+        } catch (error: any) {
+            // 409 Conflict means the file was updated by another process since we fetched the SHA
+            if (error.status === 409 && retries < MAX_RETRIES - 1) {
+                retries++;
+                const backoff = 1000 * Math.pow(2, retries); // 2s, 4s, 8s, 16s
+                console.warn(`[ScheduleStore] 409 Conflict updating schedule. Retrying in ${backoff}ms... (Attempt ${retries}/${MAX_RETRIES})`);
+                await new Promise(r => setTimeout(r, backoff));
+                continue;
+            }
+            console.error(`[ScheduleStore] Failed to update schedule after ${retries} retries:`, error);
+            throw error;
+        }
     }
 }
 

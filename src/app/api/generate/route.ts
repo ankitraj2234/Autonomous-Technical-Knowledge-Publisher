@@ -1,6 +1,6 @@
 import { generateArticleStream } from '@/lib/ai';
 import { commitArticle } from '@/lib/github';
-import { getSchedule, saveSchedule } from '@/lib/schedule-store';
+import { getSchedule, saveSchedule, markEntryComplete } from '@/lib/schedule-store';
 
 export const runtime = 'edge';
 
@@ -24,21 +24,12 @@ export async function POST() {
 
         const stream = await generateArticleStream(topic, category, async (fullMarkdownContent) => {
             try {
-                // Background commit after generating Markdown
-                const slug = topic.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').substring(0, 80);
-                const commitSha = await commitArticle(category, slug, fullMarkdownContent, topic);
+                // Build proper filename
+                const filename = topic.replace(/[<>:"/\\|?*]+/g, '').trim().substring(0, 100);
+                const commitSha = await commitArticle(category, filename, fullMarkdownContent, topic);
 
-                const { schedule: currentSchedule, sha: currentSha } = await getSchedule();
-                if (currentSchedule) {
-                    const currentEntry = currentSchedule.entries.find((e: any) => e.id === entry.id);
-                    if (currentEntry) {
-                        currentEntry.completed = true;
-                        currentEntry.completedAt = new Date().toISOString();
-                        currentEntry.commitSha = commitSha;
-                        const { sha: freshSha } = await getSchedule();
-                        await saveSchedule(currentSchedule, freshSha);
-                    }
-                }
+                await markEntryComplete(entry.id, commitSha);
+
                 return { commitSha };
             } catch (error: any) {
                 console.error('Commit/Schedule update failed:', error);

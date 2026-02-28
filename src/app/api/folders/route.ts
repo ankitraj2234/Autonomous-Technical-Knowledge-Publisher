@@ -17,7 +17,7 @@ export async function GET() {
 
         try {
             const { data } = await octokit.repos.getContent({
-                owner, repo, path: 'knowledge-base',
+                owner, repo, path: 'Knowledge',
             });
 
             if (Array.isArray(data)) {
@@ -27,7 +27,7 @@ export async function GET() {
                 return NextResponse.json({ folders });
             }
         } catch {
-            // knowledge-base/ doesn't exist yet
+            // Knowledge/ doesn't exist yet
         }
 
         return NextResponse.json({ folders: [] });
