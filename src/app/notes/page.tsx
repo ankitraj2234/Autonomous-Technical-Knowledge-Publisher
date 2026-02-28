@@ -12,6 +12,8 @@ import {
     HiOutlineCloudArrowUp,
     HiOutlineSparkles,
     HiOutlinePaperAirplane,
+    HiOutlineFolderOpen,
+    HiOutlineFolderPlus,
 } from 'react-icons/hi2';
 
 interface NoteFile {
@@ -21,7 +23,6 @@ interface NoteFile {
     sha: string;
 }
 
-// Wrapper to provide Suspense boundary for useSearchParams
 export default function NotesPageWrapper() {
     return (
         <Suspense fallback={<div className="empty-state"><div className="spinner" style={{ width: 40, height: 40 }} /></div>}>
@@ -46,6 +47,15 @@ function NotesPage() {
     const [askLoading, setAskLoading] = useState(false);
     const [askResponse, setAskResponse] = useState('');
 
+    // Commit-to-folder state
+    const [commitMode, setCommitMode] = useState(false);
+    const [folders, setFolders] = useState<string[]>([]);
+    const [selectedFolder, setSelectedFolder] = useState('');
+    const [newFolderName, setNewFolderName] = useState('');
+    const [creatingFolder, setCreatingFolder] = useState(false);
+    const [committing, setCommitting] = useState(false);
+    const [commitFilename, setCommitFilename] = useState('');
+
     const fetchNotes = useCallback(async () => {
         try {
             const res = await fetch('/api/notes');
@@ -53,15 +63,25 @@ function NotesPage() {
             setNotes(data.notes || []);
         } catch (err) {
             console.error('Failed to fetch notes:', err);
-            toast.error('Failed to load notes');
         } finally {
             setLoading(false);
         }
     }, []);
 
+    const fetchFolders = useCallback(async () => {
+        try {
+            const res = await fetch('/api/folders');
+            const data = await res.json();
+            setFolders(data.folders || []);
+        } catch {
+            console.error('Failed to fetch folders');
+        }
+    }, []);
+
     useEffect(() => {
         fetchNotes();
-    }, [fetchNotes]);
+        fetchFolders();
+    }, [fetchNotes, fetchFolders]);
 
     // Auto-fill AI Ask from URL param ?ask=topic
     useEffect(() => {
@@ -71,6 +91,7 @@ function NotesPage() {
             setAskPrompt(askParam);
             setCreating(false);
             setSelectedNote(null);
+            setCommitMode(false);
         }
     }, [searchParams]);
 
@@ -82,6 +103,7 @@ function NotesPage() {
             setSelectedNote(filename);
             setCreating(false);
             setAskMode(false);
+            setCommitMode(false);
         } catch {
             toast.error('Failed to load note');
         }
@@ -100,9 +122,7 @@ function NotesPage() {
             });
             const data = await res.json();
             if (res.ok) {
-                toast.success(
-                    creating ? `Created & committed ${data.filename}` : `Saved & committed ${filename}`
-                );
+                toast.success(creating ? `Created & committed ${data.filename}` : `Saved & committed ${filename}`);
                 setCreating(false);
                 setSelectedNote(data.filename || filename);
                 setNewFilename('');
@@ -118,7 +138,7 @@ function NotesPage() {
     };
 
     const deleteNote = async (filename: string) => {
-        if (!confirm(`Delete ${filename}? This will commit the deletion to GitHub.`)) return;
+        if (!confirm(`Delete ${filename}?`)) return;
         try {
             const res = await fetch('/api/notes', {
                 method: 'DELETE',
@@ -127,14 +147,8 @@ function NotesPage() {
             });
             if (res.ok) {
                 toast.success(`Deleted ${filename}`);
-                if (selectedNote === filename) {
-                    setSelectedNote(null);
-                    setContent('');
-                }
+                if (selectedNote === filename) { setSelectedNote(null); setContent(''); }
                 fetchNotes();
-            } else {
-                const data = await res.json();
-                toast.error(data.error || 'Delete failed');
             }
         } catch {
             toast.error('Network error');
@@ -147,6 +161,7 @@ function NotesPage() {
         setContent('');
         setNewFilename('');
         setAskMode(false);
+        setCommitMode(false);
     };
 
     const startAskMode = () => {
@@ -156,6 +171,7 @@ function NotesPage() {
         setContent('');
         setAskPrompt('');
         setAskResponse('');
+        setCommitMode(false);
     };
 
     const handleAsk = async () => {
@@ -171,32 +187,65 @@ function NotesPage() {
             const data = await res.json();
             if (res.ok) {
                 setAskResponse(data.response);
-                // Pre-fill the content and switch to create mode
-                setContent(
-                    `# ${askPrompt}\n\n---\n*AI-generated response via Kimi K2.5*\n\n${data.response}`
-                );
-                toast.success('AI response received! You can now save it as a file.');
+                setContent(`# ${askPrompt}\n\n---\n*AI-generated via Kimi K2.5*\n\n${data.response}`);
+                // Auto-generate filename from prompt
+                const slug = askPrompt.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').substring(0, 50);
+                setCommitFilename(`${slug}.txt`);
+                toast.success('AI response received!');
             } else {
                 toast.error(data.error || 'AI request failed');
             }
         } catch {
-            toast.error('Network error');
+            toast.error('Network error — AI may be taking too long');
         } finally {
             setAskLoading(false);
         }
     };
 
-    const saveAskAsFile = () => {
-        // Switch to creating mode with the AI response as content
-        const slug = askPrompt
-            .toLowerCase()
-            .replace(/[^a-z0-9\s-]/g, '')
-            .replace(/\s+/g, '-')
-            .substring(0, 50);
-        setNewFilename(`${slug}.txt`);
-        setCreating(true);
+    // Show commit-to-folder UI
+    const showCommitFlow = () => {
+        setCommitMode(true);
         setAskMode(false);
-        // content is already set from handleAsk
+        fetchFolders();
+    };
+
+    // Commit content to a folder in knowledge-base/
+    const handleCommitToFolder = async () => {
+        const folder = creatingFolder ? newFolderName : selectedFolder;
+        if (!folder.trim() || !commitFilename.trim() || !content.trim()) {
+            toast.error('Folder, filename, and content are required');
+            return;
+        }
+        setCommitting(true);
+        try {
+            const res = await fetch('/api/commit-to-folder', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    folder,
+                    filename: commitFilename,
+                    content,
+                }),
+            });
+            const data = await res.json();
+            if (res.ok) {
+                toast.success(`Committed to ${data.path}`);
+                setCommitMode(false);
+                setAskResponse('');
+                setContent('');
+                setCommitFilename('');
+                setSelectedFolder('');
+                setNewFolderName('');
+                setCreatingFolder(false);
+                fetchFolders();
+            } else {
+                toast.error(data.error || 'Commit failed');
+            }
+        } catch {
+            toast.error('Network error');
+        } finally {
+            setCommitting(false);
+        }
     };
 
     return (
@@ -204,97 +253,36 @@ function NotesPage() {
             <div className="page-header">
                 <h1 className="page-title">Notes</h1>
                 <p className="page-subtitle">
-                    Create TXT files manually or ask Kimi AI a question — each save commits to GitHub
+                    Create TXT files, ask Kimi AI, and commit to GitHub folders
                 </p>
             </div>
 
             <div className="editor-layout">
                 {/* File List Sidebar */}
                 <div className="card" style={{ padding: '16px' }}>
-                    <div
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            marginBottom: '12px',
-                            padding: '0 8px',
-                        }}
-                    >
-                        <span
-                            style={{
-                                fontSize: '13px',
-                                fontWeight: 600,
-                                color: 'var(--text-secondary)',
-                                textTransform: 'uppercase',
-                                letterSpacing: '0.5px',
-                            }}
-                        >
-                            Files
-                        </span>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', padding: '0 8px' }}>
+                        <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Files</span>
                         <div style={{ display: 'flex', gap: '4px' }}>
-                            <button
-                                className="btn btn-secondary btn-sm"
-                                onClick={fetchNotes}
-                                title="Refresh"
-                                style={{ padding: '4px 8px' }}
-                            >
-                                <HiOutlineArrowPath />
-                            </button>
-                            <button
-                                className="btn btn-secondary btn-sm"
-                                onClick={startAskMode}
-                                title="Ask AI"
-                                style={{ padding: '4px 8px' }}
-                            >
-                                <HiOutlineSparkles />
-                            </button>
-                            <button
-                                className="btn btn-primary btn-sm"
-                                onClick={startCreate}
-                                style={{ padding: '4px 8px' }}
-                            >
-                                <HiOutlinePlus />
-                            </button>
+                            <button className="btn btn-secondary btn-sm" onClick={fetchNotes} title="Refresh" style={{ padding: '4px 8px' }}><HiOutlineArrowPath /></button>
+                            <button className="btn btn-secondary btn-sm" onClick={startAskMode} title="Ask AI" style={{ padding: '4px 8px' }}><HiOutlineSparkles /></button>
+                            <button className="btn btn-primary btn-sm" onClick={startCreate} style={{ padding: '4px 8px' }}><HiOutlinePlus /></button>
                         </div>
                     </div>
-
                     {loading ? (
-                        <div className="empty-state" style={{ padding: '40px 0' }}>
-                            <div className="spinner" />
-                        </div>
+                        <div className="empty-state" style={{ padding: '40px 0' }}><div className="spinner" /></div>
                     ) : notes.length > 0 ? (
                         <div className="file-list">
                             {notes.map(note => (
-                                <div
-                                    key={note.name}
-                                    style={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                    }}
-                                >
+                                <div key={note.name} style={{ display: 'flex', alignItems: 'center' }}>
                                     <button
                                         className={`file-item ${selectedNote === note.name ? 'active' : ''}`}
                                         onClick={() => loadNote(note.name)}
                                         style={{ flex: 1 }}
                                     >
                                         <HiOutlineDocumentText />
-                                        <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                            {note.name}
-                                        </span>
+                                        <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{note.name}</span>
                                     </button>
-                                    <button
-                                        className="btn btn-danger btn-sm"
-                                        onClick={() => deleteNote(note.name)}
-                                        style={{
-                                            padding: '4px 6px',
-                                            opacity: 0.6,
-                                            background: 'transparent',
-                                            border: 'none',
-                                        }}
-                                        title="Delete"
-                                    >
-                                        <HiOutlineTrash />
-                                    </button>
+                                    <button className="btn btn-danger btn-sm" onClick={() => deleteNote(note.name)} style={{ padding: '4px 6px', opacity: 0.6, background: 'transparent', border: 'none' }} title="Delete"><HiOutlineTrash /></button>
                                 </div>
                             ))}
                         </div>
@@ -306,78 +294,137 @@ function NotesPage() {
                     )}
                 </div>
 
-                {/* Editor Area */}
+                {/* Editor / AI Area */}
                 <div className="card editor-area">
-                    {/* AI Ask Mode */}
-                    {askMode ? (
+                    {/* COMMIT TO FOLDER MODE */}
+                    {commitMode ? (
                         <>
-                            <div style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '8px',
-                                marginBottom: '4px',
-                            }}>
-                                <HiOutlineSparkles style={{ color: 'var(--accent-secondary)', fontSize: '20px' }} />
-                                <span style={{ fontWeight: 700, fontSize: '16px', background: 'var(--gradient-secondary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                                    Ask Kimi AI
-                                </span>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                                <HiOutlineFolderOpen style={{ color: 'var(--accent-primary)', fontSize: '20px' }} />
+                                <span style={{ fontWeight: 700, fontSize: '16px' }}>Commit to GitHub Folder</span>
                             </div>
                             <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                                Type any topic or question. Kimi K2.5 will generate a response that you can save as a TXT file and commit to GitHub.
+                                Choose an existing folder or create a new one under <code>knowledge-base/</code>
                             </p>
 
-                            {/* Prompt input */}
-                            <div style={{ display: 'flex', gap: '10px', marginBottom: '16px' }}>
+                            {/* Folder selection */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '16px' }}>
+                                <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                                    <select
+                                        className="input"
+                                        value={creatingFolder ? '__new__' : selectedFolder}
+                                        onChange={e => {
+                                            if (e.target.value === '__new__') {
+                                                setCreatingFolder(true);
+                                                setSelectedFolder('');
+                                            } else {
+                                                setCreatingFolder(false);
+                                                setSelectedFolder(e.target.value);
+                                                setNewFolderName('');
+                                            }
+                                        }}
+                                        style={{ flex: 1 }}
+                                    >
+                                        <option value="">Select folder...</option>
+                                        {folders.map(f => (
+                                            <option key={f} value={f}>{f}</option>
+                                        ))}
+                                        <option value="__new__">➕ Create new folder</option>
+                                    </select>
+                                </div>
+
+                                {creatingFolder && (
+                                    <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                                        <HiOutlineFolderPlus style={{ color: 'var(--accent-secondary)', flexShrink: 0 }} />
+                                        <input
+                                            className="input"
+                                            placeholder="New folder name (e.g. kubernetes, cloud-security)"
+                                            value={newFolderName}
+                                            onChange={e => setNewFolderName(e.target.value)}
+                                            style={{ flex: 1 }}
+                                        />
+                                    </div>
+                                )}
+
+                                <input
+                                    className="input"
+                                    placeholder="filename.txt"
+                                    value={commitFilename}
+                                    onChange={e => setCommitFilename(e.target.value)}
+                                />
+                            </div>
+
+                            {/* Preview */}
+                            <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '12px', fontFamily: "'JetBrains Mono', monospace" }}>
+                                📁 knowledge-base/{creatingFolder ? (newFolderName || '???') : (selectedFolder || '???')}/{commitFilename || 'file.txt'}
+                            </div>
+
+                            <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
+                                <button className="btn btn-secondary" onClick={() => { setCommitMode(false); setAskMode(true); }}>
+                                    ← Back
+                                </button>
+                                <button
+                                    className="btn btn-primary"
+                                    onClick={handleCommitToFolder}
+                                    disabled={committing || (!selectedFolder && !newFolderName.trim()) || !commitFilename.trim()}
+                                >
+                                    {committing ? <span className="spinner" /> : <HiOutlineCloudArrowUp />}
+                                    {committing ? 'Committing...' : 'Commit to GitHub'}
+                                </button>
+                            </div>
+
+                            <textarea
+                                className="input textarea"
+                                value={content}
+                                onChange={e => setContent(e.target.value)}
+                                style={{ flex: 1 }}
+                                readOnly
+                            />
+                        </>
+
+                    ) : askMode ? (
+                        /* AI ASK MODE */
+                        <>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                                <HiOutlineSparkles style={{ color: 'var(--accent-secondary)', fontSize: '20px' }} />
+                                <span style={{ fontWeight: 700, fontSize: '16px', background: 'var(--gradient-secondary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Ask Kimi AI</span>
+                            </div>
+                            <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '16px' }}>
+                                Type any topic or question. Get AI response, then commit it to a GitHub folder.
+                            </p>
+
+                            <div style={{ display: 'flex', gap: '10px', marginBottom: '16px', flexWrap: 'wrap' }}>
                                 <input
                                     className="input"
                                     placeholder="e.g. Explain Kubernetes Network Policies in depth..."
                                     value={askPrompt}
                                     onChange={e => setAskPrompt(e.target.value)}
                                     onKeyDown={e => { if (e.key === 'Enter' && !askLoading) handleAsk(); }}
-                                    style={{ flex: 1 }}
+                                    style={{ flex: 1, minWidth: '200px' }}
                                 />
-                                <button
-                                    className="btn btn-primary"
-                                    onClick={handleAsk}
-                                    disabled={askLoading || !askPrompt.trim()}
-                                >
+                                <button className="btn btn-primary" onClick={handleAsk} disabled={askLoading || !askPrompt.trim()}>
                                     {askLoading ? <span className="spinner" /> : <HiOutlinePaperAirplane />}
                                     {askLoading ? 'Thinking...' : 'Ask'}
                                 </button>
                             </div>
 
-                            {/* Response area */}
                             {askLoading && (
-                                <div style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: '40px',
-                                    gap: '12px',
-                                    color: 'var(--text-muted)',
-                                }}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px', gap: '12px', color: 'var(--text-muted)' }}>
                                     <div className="spinner" style={{ width: 24, height: 24 }} />
-                                    <span>Kimi K2.5 is thinking...</span>
+                                    <span>Kimi K2.5 is generating response... (up to 30 sec)</span>
                                 </div>
                             )}
 
                             {askResponse && (
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
-                                    <div style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        alignItems: 'center',
-                                    }}>
-                                        <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                                            AI Response
-                                        </span>
-                                        <button
-                                            className="btn btn-primary btn-sm"
-                                            onClick={saveAskAsFile}
-                                        >
-                                            <HiOutlineCloudArrowUp />
-                                            Save as TXT & Commit
-                                        </button>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+                                        <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-secondary)', textTransform: 'uppercase' }}>AI Response</span>
+                                        <div style={{ display: 'flex', gap: '8px' }}>
+                                            <button className="btn btn-primary btn-sm" onClick={showCommitFlow}>
+                                                <HiOutlineFolderOpen />
+                                                Save to Folder & Commit
+                                            </button>
+                                        </div>
                                     </div>
                                     <div style={{
                                         flex: 1,
@@ -404,71 +451,48 @@ function NotesPage() {
                                     <div className="empty-state-icon">🤖</div>
                                     <div className="empty-state-title">Ask anything technical</div>
                                     <div className="empty-state-desc">
-                                        Your question goes to Kimi K2.5 AI. The response can be saved as a TXT file and committed to your GitHub repo.
+                                        Kimi K2.5 will respond. You can then save the response as a TXT file and commit it to any folder in your GitHub repo.
                                     </div>
                                 </div>
                             )}
                         </>
+
                     ) : creating ? (
+                        /* CREATE MODE */
                         <>
                             <div className="editor-toolbar">
-                                <input
-                                    className="input"
-                                    placeholder="filename.txt"
-                                    value={newFilename}
-                                    onChange={e => setNewFilename(e.target.value)}
-                                    style={{ maxWidth: '300px' }}
-                                />
-                                <button
-                                    className="btn btn-primary"
-                                    onClick={saveNote}
-                                    disabled={saving || !newFilename.trim() || !content.trim()}
-                                >
+                                <input className="input" placeholder="filename.txt" value={newFilename} onChange={e => setNewFilename(e.target.value)} style={{ maxWidth: '300px' }} />
+                                <button className="btn btn-primary" onClick={saveNote} disabled={saving || !newFilename.trim() || !content.trim()}>
                                     {saving ? <span className="spinner" /> : <HiOutlineCloudArrowUp />}
                                     {saving ? 'Committing...' : 'Create & Commit'}
                                 </button>
                             </div>
-                            <textarea
-                                className="input textarea"
-                                value={content}
-                                onChange={e => setContent(e.target.value)}
-                                placeholder="Write your note content here..."
-                                style={{ flex: 1 }}
-                            />
+                            <textarea className="input textarea" value={content} onChange={e => setContent(e.target.value)} placeholder="Write your note content here..." style={{ flex: 1 }} />
                         </>
+
                     ) : selectedNote ? (
+                        /* EDIT MODE */
                         <>
                             <div className="editor-toolbar">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
                                     <HiOutlinePencilSquare style={{ color: 'var(--accent-primary)' }} />
-                                    <span style={{ fontWeight: 600, fontSize: '15px' }}>
-                                        {selectedNote}
-                                    </span>
+                                    <span style={{ fontWeight: 600, fontSize: '15px' }}>{selectedNote}</span>
                                 </div>
-                                <button
-                                    className="btn btn-primary"
-                                    onClick={saveNote}
-                                    disabled={saving}
-                                >
+                                <button className="btn btn-primary" onClick={saveNote} disabled={saving}>
                                     {saving ? <span className="spinner" /> : <HiOutlineCloudArrowUp />}
                                     {saving ? 'Committing...' : 'Save & Commit'}
                                 </button>
                             </div>
-                            <textarea
-                                className="input textarea"
-                                value={content}
-                                onChange={e => setContent(e.target.value)}
-                                style={{ flex: 1 }}
-                            />
+                            <textarea className="input textarea" value={content} onChange={e => setContent(e.target.value)} style={{ flex: 1 }} />
                         </>
+
                     ) : (
+                        /* EMPTY STATE */
                         <div className="empty-state" style={{ flex: 1 }}>
                             <div className="empty-state-icon">✏️</div>
                             <div className="empty-state-title">Select or create a note</div>
                             <div className="empty-state-desc">
-                                Choose a file from the sidebar, create a new one, or click the{' '}
-                                <span style={{ color: 'var(--accent-secondary)' }}>✦ Ask AI</span>{' '}
-                                button to generate content with Kimi K2.5.
+                                Choose a file, create a new one, or click <span style={{ color: 'var(--accent-secondary)' }}>✦ Ask AI</span> to generate content with Kimi K2.5 and commit to any folder.
                             </div>
                         </div>
                     )}
