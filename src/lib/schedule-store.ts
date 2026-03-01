@@ -68,22 +68,46 @@ export async function getSchedule(): Promise<{ schedule: DailySchedule | null; s
     }
 }
 
-/** Save schedule to GitHub */
-export async function saveSchedule(schedule: DailySchedule, existingSha: string | null): Promise<void> {
+/** Save schedule to GitHub — always fetches the latest SHA for conflict safety */
+export async function saveSchedule(schedule: DailySchedule): Promise<void> {
     const octokit = getOctokit();
     const { owner, repo } = getRepo();
+    const MAX_RETRIES = 5;
 
-    const content = Buffer.from(
-        JSON.stringify(schedule, null, 2), 'utf-8'
-    ).toString('base64');
+    for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+        // Always fetch the freshest SHA right before writing to avoid 409 conflicts
+        let freshSha: string | null = null;
+        try {
+            const { data } = await octokit.repos.getContent({ owner, repo, path: SCHEDULE_PATH });
+            if (!Array.isArray(data) && data.type === 'file') {
+                freshSha = data.sha;
+            }
+        } catch (e: any) {
+            if (e.status !== 404) throw e;
+            // 404 is fine — file doesn't exist yet, no SHA needed
+        }
 
-    await octokit.repos.createOrUpdateFileContents({
-        owner, repo,
-        path: SCHEDULE_PATH,
-        message: `atkp: update schedule for ${schedule.date}`,
-        content,
-        sha: existingSha || undefined,
-    });
+        const content = Buffer.from(JSON.stringify(schedule, null, 2), 'utf-8').toString('base64');
+
+        try {
+            await octokit.repos.createOrUpdateFileContents({
+                owner, repo,
+                path: SCHEDULE_PATH,
+                message: `atkp: update schedule for ${schedule.date}`,
+                content,
+                sha: freshSha || undefined,
+            });
+            return; // Success
+        } catch (err: any) {
+            if (err.status === 409 && attempt < MAX_RETRIES - 1) {
+                const backoff = 500 * Math.pow(2, attempt); // 500ms, 1s, 2s, 4s ...
+                console.warn(`[saveSchedule] 409 on attempt ${attempt + 1}, retrying in ${backoff}ms`);
+                await new Promise(r => setTimeout(r, backoff));
+                continue;
+            }
+            throw err;
+        }
+    }
 }
 
 /** Get today's schedule (convenience) */
@@ -114,7 +138,7 @@ export async function markEntryComplete(entryId: string, commitSha: string): Pro
                 entry.completedAt = new Date().toISOString();
                 entry.commitSha = commitSha;
 
-                await saveSchedule(schedule, sha);
+                await saveSchedule(schedule);
                 return; // Success
             }
             return; // Entry not found

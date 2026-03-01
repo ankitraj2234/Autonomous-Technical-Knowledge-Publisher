@@ -1,6 +1,6 @@
 import { generateArticleStream } from '@/lib/ai';
 import { commitArticle } from '@/lib/github';
-import { getSchedule, saveSchedule, markEntryComplete } from '@/lib/schedule-store';
+import { markEntryComplete } from '@/lib/schedule-store';
 
 export const runtime = 'edge';
 

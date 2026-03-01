@@ -1,13 +1,13 @@
 import { generateArticleStream } from '@/lib/ai';
 import { commitArticle } from '@/lib/github';
-import { getSchedule, saveSchedule, markEntryComplete } from '@/lib/schedule-store';
+import { getSchedule, markEntryComplete } from '@/lib/schedule-store';
 
 export const runtime = 'edge';
 
 export async function POST() {
     try {
         // Read today's schedule from GitHub
-        const { schedule, sha } = await getSchedule();
+        const { schedule } = await getSchedule();
 
         if (!schedule) {
             return new Response(JSON.stringify({ error: 'No schedule for today. Click Plan Day first.' }), { status: 400 });

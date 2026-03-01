@@ -27,11 +27,8 @@ export async function GET() {
             createdAt: now.toISOString(),
         };
 
-        // Get existing SHA if schedule file exists
-        const { sha: existingSha } = await getSchedule();
-
-        // Save to GitHub (persists across serverless instances)
-        await saveSchedule(schedule, existingSha);
+        // Get existing SHA if schedule file exists — saveSchedule now fetches this internally
+        await saveSchedule(schedule);
 
         return NextResponse.json({
             success: true,
