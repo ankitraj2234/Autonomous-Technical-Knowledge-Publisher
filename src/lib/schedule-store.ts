@@ -75,7 +75,8 @@ export async function saveSchedule(schedule: DailySchedule): Promise<void> {
     const MAX_RETRIES = 5;
 
     for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
-        // Always fetch the freshest SHA right before writing to avoid 409 conflicts
+        // Always fetch the freshest SHA immediately before writing.
+        // GitHub returns 409 (Conflict) or 422 (Unprocessable, SHA mismatch) when stale.
         let freshSha: string | null = null;
         try {
             const { data } = await octokit.repos.getContent({ owner, repo, path: SCHEDULE_PATH });
@@ -99,9 +100,12 @@ export async function saveSchedule(schedule: DailySchedule): Promise<void> {
             });
             return; // Success
         } catch (err: any) {
-            if (err.status === 409 && attempt < MAX_RETRIES - 1) {
+            // GitHub returns 409 (Conflict) AND 422 (SHA mismatch) for stale writes.
+            // Re-fetch the SHA on the next loop iteration and retry.
+            const isRetryable = (err.status === 409 || err.status === 422) && attempt < MAX_RETRIES - 1;
+            if (isRetryable) {
                 const backoff = 500 * Math.pow(2, attempt); // 500ms, 1s, 2s, 4s ...
-                console.warn(`[saveSchedule] 409 on attempt ${attempt + 1}, retrying in ${backoff}ms`);
+                console.warn(`[saveSchedule] HTTP ${err.status} on attempt ${attempt + 1}, retrying in ${backoff}ms`);
                 await new Promise(r => setTimeout(r, backoff));
                 continue;
             }
@@ -118,43 +122,24 @@ export async function getTodaySchedule(): Promise<DailySchedule | null> {
 
 /** 
  * Safely mark an entry as completed in the schedule on GitHub.
- * Includes a robust retry loop for 409 Conflicts (which happen when multiple automated processes try to update the schedule JSON simultaneously). 
+ * saveSchedule() handles its own SHA fetch and retries internally.
  */
 export async function markEntryComplete(entryId: string, commitSha: string): Promise<void> {
-    const MAX_RETRIES = 5;
-    let retries = 0;
+    const { schedule } = await getSchedule();
+    if (!schedule) return;
 
-    while (retries < MAX_RETRIES) {
-        try {
-            const { schedule, sha } = await getSchedule();
-            if (!schedule) return;
+    const entry = schedule.entries.find(e => e.id === entryId);
+    if (!entry) return;
 
-            const entry = schedule.entries.find(e => e.id === entryId);
-            if (entry) {
-                // Check if already completed to avoid unnecessary writes
-                if (entry.completed && entry.commitSha === commitSha) return;
+    // Idempotency guard — don't re-write if already marked complete with same sha
+    if (entry.completed && entry.commitSha === commitSha) return;
 
-                entry.completed = true;
-                entry.completedAt = new Date().toISOString();
-                entry.commitSha = commitSha;
+    entry.completed = true;
+    entry.completedAt = new Date().toISOString();
+    entry.commitSha = commitSha;
 
-                await saveSchedule(schedule);
-                return; // Success
-            }
-            return; // Entry not found
-        } catch (error: any) {
-            // 409 Conflict means the file was updated by another process since we fetched the SHA
-            if (error.status === 409 && retries < MAX_RETRIES - 1) {
-                retries++;
-                const backoff = 1000 * Math.pow(2, retries); // 2s, 4s, 8s, 16s
-                console.warn(`[ScheduleStore] 409 Conflict updating schedule. Retrying in ${backoff}ms... (Attempt ${retries}/${MAX_RETRIES})`);
-                await new Promise(r => setTimeout(r, backoff));
-                continue;
-            }
-            console.error(`[ScheduleStore] Failed to update schedule after ${retries} retries:`, error);
-            throw error;
-        }
-    }
+    // saveSchedule has its own retry loop with fresh-SHA fetch on every attempt
+    await saveSchedule(schedule);
 }
 
 /** Get the next uncompleted entry from today's schedule */
