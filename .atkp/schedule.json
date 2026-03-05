@@ -1,21 +1,19 @@
 {
-  "date": "2026-02-28",
+  "date": "2026-03-05",
   "totalPlanned": 2,
   "entries": [
     {
-      "id": "1772311391278-vokunk2",
-      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
-      "category": "DevOps",
+      "id": "1772738979983-6x1g8b9",
+      "topicTitle": "Service Discovery in Distributed Systems",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1772311391278-pvdldv4",
-      "topicTitle": "Step-Up Authentication Pattern Implementation",
-      "category": "Authentication & Authorization",
-      "completed": true,
-      "completedAt": "2026-02-28T22:17:50.135Z",
-      "commitSha": "320498d38854d7ad01ca84cd62df5e5e8b39420e"
+      "id": "1772738979983-3tagr0u",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
+      "category": "DevOps",
+      "completed": false
     }
   ],
-  "createdAt": "2026-02-28T20:43:11.278Z"
+  "createdAt": "2026-03-05T19:29:39.983Z"
 }
