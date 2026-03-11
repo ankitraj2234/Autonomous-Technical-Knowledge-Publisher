@@ -1,19 +1,49 @@
 {
-  "date": "2026-03-05",
-  "totalPlanned": 2,
+  "date": "2026-03-11",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1772738979983-6x1g8b9",
-      "topicTitle": "Service Discovery in Distributed Systems",
+      "id": "1773256262164-v8rdh4p",
+      "topicTitle": "URL Shortener Architecture: Complete System Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1773256262164-r5mtgsp",
+      "topicTitle": "Terraform Module Design Patterns and Composition",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1773256262164-0olw1ym",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1773256262164-psennw7",
+      "topicTitle": "Web Application Firewall Bypass Techniques",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1773256262164-0uwulv4",
+      "topicTitle": "Spine-Leaf Data Center Network Topology",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1772738979983-3tagr0u",
-      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
-      "category": "DevOps",
+      "id": "1773256262164-v62tbgu",
+      "topicTitle": "Identity Federation Architecture Across Organizations",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1773256262164-sb17sl7",
+      "topicTitle": "Pod Security Standards and Admission Controllers",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-05T19:29:39.983Z"
+  "createdAt": "2026-03-11T19:11:02.164Z"
 }
