@@ -1,49 +1,25 @@
 {
-  "date": "2026-03-11",
-  "totalPlanned": 7,
+  "date": "2026-03-12",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1773256262164-v8rdh4p",
-      "topicTitle": "URL Shortener Architecture: Complete System Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1773256262164-r5mtgsp",
-      "topicTitle": "Terraform Module Design Patterns and Composition",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1773256262164-0olw1ym",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "id": "1773341006168-zuy70jd",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1773256262164-psennw7",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
-      "category": "Cybersecurity",
+      "id": "1773341006168-8q5n4rv",
+      "topicTitle": "Policy as Code with Sentinel and Rego",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1773256262164-0uwulv4",
-      "topicTitle": "Spine-Leaf Data Center Network Topology",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1773256262164-v62tbgu",
-      "topicTitle": "Identity Federation Architecture Across Organizations",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1773256262164-sb17sl7",
-      "topicTitle": "Pod Security Standards and Admission Controllers",
+      "id": "1773341006168-qce0x2x",
+      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
       "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-11T19:11:02.164Z"
+  "createdAt": "2026-03-12T18:43:26.168Z"
 }
