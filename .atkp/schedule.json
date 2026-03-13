@@ -1,25 +1,31 @@
 {
-  "date": "2026-03-12",
-  "totalPlanned": 3,
+  "date": "2026-03-13",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1773341006168-zuy70jd",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
+      "id": "1773426828141-o8jqs15",
+      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1773341006168-8q5n4rv",
-      "topicTitle": "Policy as Code with Sentinel and Rego",
+      "id": "1773426828141-xnjjk8z",
+      "topicTitle": "Terraform State Management and Locking Architecture",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1773341006168-qce0x2x",
-      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
-      "category": "Containerization",
+      "id": "1773426828141-xzuc9pd",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1773426828141-wi08ghp",
+      "topicTitle": "DNS-over-HTTPS Security Implications",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-12T18:43:26.168Z"
+  "createdAt": "2026-03-13T18:33:48.141Z"
 }
