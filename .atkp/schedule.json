@@ -1,31 +1,25 @@
 {
-  "date": "2026-03-13",
-  "totalPlanned": 4,
+  "date": "2026-03-14",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1773426828141-o8jqs15",
+      "id": "1773514410915-mq7ve7v",
+      "topicTitle": "Continuous Profiling Architecture",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1773514410915-6ibqv3q",
+      "topicTitle": "Container Storage Interface (CSI) Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1773514410915-0is7vn5",
       "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
       "category": "Networking",
       "completed": false
-    },
-    {
-      "id": "1773426828141-xnjjk8z",
-      "topicTitle": "Terraform State Management and Locking Architecture",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1773426828141-xzuc9pd",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1773426828141-wi08ghp",
-      "topicTitle": "DNS-over-HTTPS Security Implications",
-      "category": "Cybersecurity",
-      "completed": false
     }
   ],
-  "createdAt": "2026-03-13T18:33:48.141Z"
+  "createdAt": "2026-03-14T18:53:30.915Z"
 }
