@@ -23,7 +23,7 @@ Your middleware must implement ACR hierarchy validation rather than binary MFA c
 def require_step_up(required_acr):
     def decorator(func):
         def wrapper(request):
-            token = extract_token(request)
+            tok
             current_acr = token.get("a
            requirement
             if not acr_dominates(current_acr, required_acr):
