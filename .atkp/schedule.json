@@ -1,25 +1,25 @@
 {
-  "date": "2026-03-14",
+  "date": "2026-03-15",
   "totalPlanned": 3,
   "entries": [
     {
-      "id": "1773514410915-mq7ve7v",
-      "topicTitle": "Continuous Profiling Architecture",
-      "category": "Observability",
+      "id": "1773599603883-uc6r1xz",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1773514410915-6ibqv3q",
-      "topicTitle": "Container Storage Interface (CSI) Architecture",
-      "category": "Containerization",
+      "id": "1773599603883-kl3leez",
+      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1773514410915-0is7vn5",
-      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
-      "category": "Networking",
+      "id": "1773599603883-q9g535y",
+      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-14T18:53:30.915Z"
+  "createdAt": "2026-03-15T18:33:23.883Z"
 }
