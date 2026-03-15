@@ -30,7 +30,7 @@ def require_step_up(required_acr):
                 raise StepUpRequired(required_acr)
             
             # Re-authentication if elevation expired (5 min window)
-            if time.now() - auth_time > 300:
+            if time.now() 
                 raise SessionStale()
                 
             return func(request)
