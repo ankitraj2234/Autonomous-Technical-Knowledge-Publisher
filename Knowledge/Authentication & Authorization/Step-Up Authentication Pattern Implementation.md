@@ -24,9 +24,7 @@ def require_step_up(required_acr):
     def decorator(func):
         def wrapper(request):
             token = extract_token(request)
-            current_acr = token.get("acr")
-            auth_time = token.get("auth_time")
-            
+            current_acr = token.get("a
             # ACR dominance check with freshness requirement
             if not acr_dominates(current_acr, required_acr):
                 raise StepUpRequired(required_acr)
