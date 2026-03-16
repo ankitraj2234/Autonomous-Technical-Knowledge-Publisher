@@ -1,25 +1,19 @@
 {
-  "date": "2026-03-15",
-  "totalPlanned": 3,
+  "date": "2026-03-16",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1773599603883-uc6r1xz",
-      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
-      "category": "Cybersecurity",
+      "id": "1773686973952-90texdb",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1773599603883-kl3leez",
-      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "id": "1773686973952-3n3iybd",
+      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
       "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1773599603883-q9g535y",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
-      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-15T18:33:23.883Z"
+  "createdAt": "2026-03-16T18:49:33.952Z"
 }
