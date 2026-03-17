@@ -1,19 +1,43 @@
 {
-  "date": "2026-03-16",
-  "totalPlanned": 2,
+  "date": "2026-03-17",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1773686973952-90texdb",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
+      "id": "1773773613149-xnhrgmz",
+      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1773686973952-3n3iybd",
-      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
+      "id": "1773773613149-ej8pqlg",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1773773613149-0aa659w",
+      "topicTitle": "API Key Management and Rotation Strategies",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1773773613149-ov442c9",
+      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1773773613149-nxtp778",
+      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1773773613149-e1cqjrh",
+      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-16T18:49:33.952Z"
+  "createdAt": "2026-03-17T18:53:33.149Z"
 }
