@@ -1,43 +1,43 @@
 {
-  "date": "2026-03-17",
+  "date": "2026-03-18",
   "totalPlanned": 6,
   "entries": [
     {
-      "id": "1773773613149-xnhrgmz",
-      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
+      "id": "1773861796151-op6j6np",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1773861796151-2bxx4vp",
+      "topicTitle": "Saga Pattern for Distributed Transactions",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1773861796151-ceg64u9",
+      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1773773613149-ej8pqlg",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
+      "id": "1773861796151-5f07r1g",
+      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1773773613149-0aa659w",
-      "topicTitle": "API Key Management and Rotation Strategies",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1773773613149-ov442c9",
-      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1773773613149-nxtp778",
-      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
+      "id": "1773861796151-ryvgyrw",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1773773613149-e1cqjrh",
-      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
-      "category": "Cloud Architecture",
+      "id": "1773861796151-uswbxsi",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-17T18:53:33.149Z"
+  "createdAt": "2026-03-18T19:23:16.151Z"
 }
