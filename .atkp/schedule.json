@@ -1,13 +1,31 @@
 {
-  "date": "2026-03-19",
-  "totalPlanned": 1,
+  "date": "2026-03-20",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1773946579102-z8fb7or",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
-      "category": "Cloud Architecture",
+      "id": "1774034586236-tilogib",
+      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1774034586236-hgf3d4r",
+      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1774034586236-igkj6t8",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1774034586236-13aaalf",
+      "topicTitle": "Web Application Firewall Bypass Techniques",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-19T18:56:19.102Z"
+  "createdAt": "2026-03-20T19:23:06.236Z"
 }
