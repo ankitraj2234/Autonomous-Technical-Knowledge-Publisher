@@ -1,31 +1,31 @@
 {
-  "date": "2026-03-20",
+  "date": "2026-03-21",
   "totalPlanned": 4,
   "entries": [
     {
-      "id": "1774034586236-tilogib",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1774034586236-hgf3d4r",
-      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1774034586236-igkj6t8",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "id": "1774120919080-fjjmbku",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1774034586236-13aaalf",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
-      "category": "Cybersecurity",
+      "id": "1774120919080-ue40def",
+      "topicTitle": "Alert Fatigue Reduction and Intelligent Alerting",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1774120919080-ffrrc1p",
+      "topicTitle": "Observability vs Monitoring: Architecture Differences",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1774120919080-cug4g6b",
+      "topicTitle": "Multi-Account Infrastructure Architecture",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-20T19:23:06.236Z"
+  "createdAt": "2026-03-21T19:21:59.080Z"
 }
