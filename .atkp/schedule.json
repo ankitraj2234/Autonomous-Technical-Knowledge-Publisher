@@ -1,31 +1,43 @@
 {
-  "date": "2026-03-21",
-  "totalPlanned": 4,
+  "date": "2026-03-22",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1774120919080-fjjmbku",
-      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
+      "id": "1774206955054-pb6pqe7",
+      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1774206955054-0zys6re",
+      "topicTitle": "WireGuard VPN Architecture and Performance",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1774206955054-hyw016n",
+      "topicTitle": "Saga Pattern for Distributed Transactions",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1774206955054-5nqomws",
+      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1774206955054-cxz7uve",
+      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1774120919080-ue40def",
-      "topicTitle": "Alert Fatigue Reduction and Intelligent Alerting",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1774120919080-ffrrc1p",
-      "topicTitle": "Observability vs Monitoring: Architecture Differences",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1774120919080-cug4g6b",
-      "topicTitle": "Multi-Account Infrastructure Architecture",
-      "category": "Infrastructure as Code",
+      "id": "1774206955054-p5yprda",
+      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-21T19:21:59.080Z"
+  "createdAt": "2026-03-22T19:15:55.054Z"
 }
