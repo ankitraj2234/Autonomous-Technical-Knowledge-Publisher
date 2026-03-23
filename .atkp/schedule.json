@@ -1,43 +1,49 @@
 {
-  "date": "2026-03-22",
-  "totalPlanned": 6,
+  "date": "2026-03-23",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1774206955054-pb6pqe7",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1774206955054-0zys6re",
-      "topicTitle": "WireGuard VPN Architecture and Performance",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1774206955054-hyw016n",
-      "topicTitle": "Saga Pattern for Distributed Transactions",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1774206955054-5nqomws",
-      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1774206955054-cxz7uve",
-      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
+      "id": "1774293685266-r4m2vna",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1774206955054-p5yprda",
-      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
-      "category": "Containerization",
+      "id": "1774293685266-zpluduw",
+      "topicTitle": "Spine-Leaf Data Center Network Topology",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1774293685266-q4hxr3j",
+      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1774293685266-bzzkez6",
+      "topicTitle": "Consistent Hashing for Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1774293685266-2ps231z",
+      "topicTitle": "Environment Provisioning Automation Patterns",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1774293685266-xwtkekx",
+      "topicTitle": "Database Sharding Strategies and Rebalancing",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1774293685266-ziuoslh",
+      "topicTitle": "mTLS Architecture and Certificate Rotation",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-22T19:15:55.054Z"
+  "createdAt": "2026-03-23T19:21:25.266Z"
 }
