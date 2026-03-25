@@ -1,37 +1,37 @@
 {
-  "date": "2026-03-24",
+  "date": "2026-03-25",
   "totalPlanned": 5,
   "entries": [
     {
-      "id": "1774377857286-yeptjbt",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "id": "1774466367150-5dqqi3g",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1774377857286-1zepotr",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
+      "id": "1774466367150-gj7j12a",
+      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1774377857286-n6zuicx",
-      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1774377857286-3yvrxly",
-      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
+      "id": "1774466367150-9gisvt4",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1774377857286-jznilil",
-      "topicTitle": "Distributed Tracing Architecture",
-      "category": "System Design",
+      "id": "1774466367150-5uvui9p",
+      "topicTitle": "Init Container and Startup Probe Patterns",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1774466367150-4fdxmig",
+      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-24T18:44:17.286Z"
+  "createdAt": "2026-03-25T19:19:27.150Z"
 }
