@@ -1,67 +1,37 @@
 {
-  "date": "2026-03-26",
-  "totalPlanned": 10,
+  "date": "2026-03-27",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1774549826229-47r9k9h",
-      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
+      "id": "1774637976848-17f6bs8",
+      "topicTitle": "Raft Consensus Algorithm Deep Dive",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1774549826229-soipxbl",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1774549826229-nsevn1k",
-      "topicTitle": "Init Container and Startup Probe Patterns",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1774549826229-dco82js",
-      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
+      "id": "1774637976848-7meuq0d",
+      "topicTitle": "Infrastructure Pipeline: Plan, Apply, Validate",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1774549826229-jumq5gt",
-      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1774549826229-sf8yije",
-      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1774549826229-ayeh0pd",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1774549826229-w773q6z",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "id": "1774637976848-4f901ut",
+      "topicTitle": "Web Application Firewall Bypass Techniques",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1774549826229-n3n6rj3",
-      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1774637976848-q3rz44g",
+      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1774549826229-72aibad",
-      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
-      "category": "Containerization",
+      "id": "1774637976848-ignodhn",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-26T18:30:26.229Z"
+  "createdAt": "2026-03-27T18:59:36.848Z"
 }
