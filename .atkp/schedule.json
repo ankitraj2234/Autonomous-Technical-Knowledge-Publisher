@@ -1,37 +1,31 @@
 {
-  "date": "2026-03-27",
-  "totalPlanned": 5,
+  "date": "2026-03-28",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1774637976848-17f6bs8",
-      "topicTitle": "Raft Consensus Algorithm Deep Dive",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1774637976848-7meuq0d",
-      "topicTitle": "Infrastructure Pipeline: Plan, Apply, Validate",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1774637976848-4f901ut",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
+      "id": "1774723163828-p9w0z8m",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1774637976848-q3rz44g",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
-      "category": "DevOps",
+      "id": "1774723163828-pnbu8g9",
+      "topicTitle": "URL Shortener Architecture: Complete System Design",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1774637976848-ignodhn",
-      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
-      "category": "Cloud Architecture",
+      "id": "1774723163828-vcg0zkb",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1774723163828-nby9oie",
+      "topicTitle": "Multi-Factor Authentication Architecture",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-27T18:59:36.848Z"
+  "createdAt": "2026-03-28T18:39:23.828Z"
 }
