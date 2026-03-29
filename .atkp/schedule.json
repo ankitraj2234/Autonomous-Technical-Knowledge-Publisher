@@ -1,31 +1,25 @@
 {
-  "date": "2026-03-28",
-  "totalPlanned": 4,
+  "date": "2026-03-29",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1774723163828-p9w0z8m",
-      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
+      "id": "1774811623997-9cwzlx8",
+      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1774811623997-x4yzcmw",
+      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1774723163828-pnbu8g9",
-      "topicTitle": "URL Shortener Architecture: Complete System Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1774723163828-vcg0zkb",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1774723163828-nby9oie",
-      "topicTitle": "Multi-Factor Authentication Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1774811623997-kr26yc3",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-28T18:39:23.828Z"
+  "createdAt": "2026-03-29T19:13:43.997Z"
 }
