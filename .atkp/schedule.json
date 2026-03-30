@@ -1,25 +1,61 @@
 {
-  "date": "2026-03-29",
-  "totalPlanned": 3,
+  "date": "2026-03-30",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1774811623997-9cwzlx8",
-      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
-      "category": "Observability",
+      "id": "1774897967095-vgtu2lw",
+      "topicTitle": "Multi-Account Infrastructure Architecture",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1774811623997-x4yzcmw",
-      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
-      "category": "Cybersecurity",
+      "id": "1774897967095-hhpenk7",
+      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1774811623997-kr26yc3",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "id": "1774897967095-v9vjsrc",
+      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1774897967095-5pgrahv",
+      "topicTitle": "Kubernetes Network Policy Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1774897967095-2ziljnw",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1774897967095-anc6i6b",
+      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1774897967095-n8ffkzk",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1774897967095-pudgd3a",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1774897967095-nv642nq",
+      "topicTitle": "Policy as Code with Sentinel and Rego",
       "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-29T19:13:43.997Z"
+  "createdAt": "2026-03-30T19:12:47.096Z"
 }
