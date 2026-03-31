@@ -1,61 +1,31 @@
 {
-  "date": "2026-03-30",
-  "totalPlanned": 9,
+  "date": "2026-03-31",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1774897967095-vgtu2lw",
-      "topicTitle": "Multi-Account Infrastructure Architecture",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1774897967095-hhpenk7",
-      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1774897967095-v9vjsrc",
-      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1774897967095-5pgrahv",
-      "topicTitle": "Kubernetes Network Policy Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1774897967095-2ziljnw",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "id": "1774983008860-uezu73z",
+      "topicTitle": "Time-Series Database Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1774897967095-anc6i6b",
-      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
-      "category": "Cloud Architecture",
+      "id": "1774983008860-xcket5m",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1774897967095-n8ffkzk",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
-      "category": "Containerization",
+      "id": "1774983008860-mqdd8qh",
+      "topicTitle": "Database Sharding Strategies and Rebalancing",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1774897967095-pudgd3a",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1774897967095-nv642nq",
-      "topicTitle": "Policy as Code with Sentinel and Rego",
-      "category": "Infrastructure as Code",
+      "id": "1774983008860-g9mbnbx",
+      "topicTitle": "APM Architecture: End-to-End Request Tracing",
+      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-30T19:12:47.096Z"
+  "createdAt": "2026-03-31T18:50:08.860Z"
 }
