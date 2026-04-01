@@ -1,31 +1,31 @@
 {
-  "date": "2026-03-31",
+  "date": "2026-04-01",
   "totalPlanned": 4,
   "entries": [
     {
-      "id": "1774983008860-uezu73z",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
+      "id": "1775070895970-g7i2g2x",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1774983008860-xcket5m",
-      "topicTitle": "Gossip Protocol in Distributed Systems",
-      "category": "System Design",
+      "id": "1775070895970-vxm7eku",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1774983008860-mqdd8qh",
-      "topicTitle": "Database Sharding Strategies and Rebalancing",
-      "category": "System Design",
+      "id": "1775070895970-x9d490w",
+      "topicTitle": "Container Image Layer Optimization Strategies",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1774983008860-g9mbnbx",
-      "topicTitle": "APM Architecture: End-to-End Request Tracing",
-      "category": "Observability",
+      "id": "1775070895970-q8ryp8n",
+      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-03-31T18:50:08.860Z"
+  "createdAt": "2026-04-01T19:14:55.970Z"
 }
