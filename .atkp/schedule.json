@@ -1,31 +1,43 @@
 {
-  "date": "2026-04-01",
-  "totalPlanned": 4,
+  "date": "2026-04-02",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1775070895970-g7i2g2x",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1775070895970-vxm7eku",
-      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1775070895970-x9d490w",
-      "topicTitle": "Container Image Layer Optimization Strategies",
+      "id": "1775155469134-8crq48h",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1775070895970-q8ryp8n",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "id": "1775155469134-d7et960",
+      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1775155469134-b8h9fiw",
+      "topicTitle": "Subdomain Takeover Detection and Prevention",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1775155469134-e1emlhs",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1775155469134-38zgkk6",
+      "topicTitle": "Environment Provisioning Automation Patterns",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1775155469134-1jllr8r",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
       "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-01T19:14:55.970Z"
+  "createdAt": "2026-04-02T18:44:29.134Z"
 }
