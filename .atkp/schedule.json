@@ -1,43 +1,25 @@
 {
-  "date": "2026-04-02",
-  "totalPlanned": 6,
+  "date": "2026-04-03",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1775155469134-8crq48h",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1775155469134-d7et960",
-      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1775155469134-b8h9fiw",
-      "topicTitle": "Subdomain Takeover Detection and Prevention",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1775155469134-e1emlhs",
-      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
+      "id": "1775241913114-f8hrdhx",
+      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775155469134-38zgkk6",
-      "topicTitle": "Environment Provisioning Automation Patterns",
+      "id": "1775241913114-uqpcl4i",
+      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775155469134-1jllr8r",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
+      "id": "1775241913114-pj7s5ob",
+      "topicTitle": "Network Traffic Analysis and DPI Architecture",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-02T18:44:29.134Z"
+  "createdAt": "2026-04-03T18:45:13.114Z"
 }
