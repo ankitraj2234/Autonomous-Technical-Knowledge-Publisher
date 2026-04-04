@@ -1,25 +1,25 @@
 {
-  "date": "2026-04-03",
+  "date": "2026-04-04",
   "totalPlanned": 3,
   "entries": [
     {
-      "id": "1775241913114-f8hrdhx",
-      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
+      "id": "1775328142946-a7f0gq6",
+      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1775328142946-q94f651",
+      "topicTitle": "Environment Provisioning Automation Patterns",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775241913114-uqpcl4i",
-      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1775241913114-pj7s5ob",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
+      "id": "1775328142946-vnosmlk",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-03T18:45:13.114Z"
+  "createdAt": "2026-04-04T18:42:22.946Z"
 }
