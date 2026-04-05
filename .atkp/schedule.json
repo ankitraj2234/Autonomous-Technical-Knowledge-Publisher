@@ -1,25 +1,49 @@
 {
-  "date": "2026-04-04",
-  "totalPlanned": 3,
+  "date": "2026-04-05",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1775328142946-a7f0gq6",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1775416683006-d9kgoqp",
+      "topicTitle": "Back-Pressure Handling in Reactive Systems",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1775328142946-q94f651",
-      "topicTitle": "Environment Provisioning Automation Patterns",
+      "id": "1775416683006-x6vsi77",
+      "topicTitle": "Log Correlation Across Microservices",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1775416683006-wchwh2r",
+      "topicTitle": "Container Storage Interface (CSI) Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1775416683006-6famvn3",
+      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1775416683006-ruh6g1s",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775328142946-vnosmlk",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
+      "id": "1775416683006-hbggunv",
+      "topicTitle": "Distributed Tracing Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1775416683006-1btfyhz",
+      "topicTitle": "mTLS Architecture and Certificate Rotation",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-04T18:42:22.946Z"
+  "createdAt": "2026-04-05T19:18:03.006Z"
 }
