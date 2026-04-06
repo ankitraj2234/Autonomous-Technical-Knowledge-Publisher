@@ -1,49 +1,55 @@
 {
-  "date": "2026-04-05",
-  "totalPlanned": 7,
+  "date": "2026-04-06",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1775416683006-d9kgoqp",
-      "topicTitle": "Back-Pressure Handling in Reactive Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1775416683006-x6vsi77",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1775416683006-wchwh2r",
-      "topicTitle": "Container Storage Interface (CSI) Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1775416683006-6famvn3",
-      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1775416683006-ruh6g1s",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "id": "1775503296077-1hw5vhn",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775416683006-hbggunv",
-      "topicTitle": "Distributed Tracing Architecture",
+      "id": "1775503296077-go9h6hq",
+      "topicTitle": "Distributed Lock Manager Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1775416683006-1btfyhz",
-      "topicTitle": "mTLS Architecture and Certificate Rotation",
-      "category": "Networking",
+      "id": "1775503296077-gli0aun",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1775503296077-dvq4lhb",
+      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1775503296077-vyysq61",
+      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1775503296077-zir6o3j",
+      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1775503296077-v0gz1m3",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1775503296077-zedw950",
+      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-05T19:18:03.006Z"
+  "createdAt": "2026-04-06T19:21:36.077Z"
 }
