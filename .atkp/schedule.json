@@ -1,55 +1,67 @@
 {
-  "date": "2026-04-06",
-  "totalPlanned": 8,
+  "date": "2026-04-07",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1775503296077-1hw5vhn",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "id": "1775587907142-yget8aw",
+      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1775587907142-n51be37",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1775587907142-svq63x3",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775503296077-go9h6hq",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1775503296077-gli0aun",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1775503296077-dvq4lhb",
-      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "id": "1775587907142-dd8o213",
+      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1775503296077-vyysq61",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
+      "id": "1775587907142-90d9wf8",
+      "topicTitle": "Kubernetes Admission Webhook Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1775587907142-g4c3o4o",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1775587907142-w2rj8kd",
+      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1775587907142-lrwuwxu",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1775587907142-bhfa2jq",
+      "topicTitle": "Session Management: Stateful vs Stateless Patterns",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1775503296077-zir6o3j",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1775503296077-v0gz1m3",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1775503296077-zedw950",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
-      "category": "DevOps",
+      "id": "1775587907142-vvnvgfr",
+      "topicTitle": "Consistent Hashing for Distributed Systems",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-06T19:21:36.077Z"
+  "createdAt": "2026-04-07T18:51:47.142Z"
 }
