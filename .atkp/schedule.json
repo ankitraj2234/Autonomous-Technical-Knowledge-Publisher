@@ -1,67 +1,13 @@
 {
-  "date": "2026-04-07",
-  "totalPlanned": 10,
+  "date": "2026-04-08",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1775587907142-yget8aw",
-      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-n51be37",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-svq63x3",
-      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-dd8o213",
-      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-90d9wf8",
-      "topicTitle": "Kubernetes Admission Webhook Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-g4c3o4o",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-w2rj8kd",
-      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-lrwuwxu",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-bhfa2jq",
-      "topicTitle": "Session Management: Stateful vs Stateless Patterns",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1775587907142-vvnvgfr",
-      "topicTitle": "Consistent Hashing for Distributed Systems",
-      "category": "System Design",
+      "id": "1775674307070-4sw21qj",
+      "topicTitle": "Infrastructure Dependency Graph Resolution",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-07T18:51:47.142Z"
+  "createdAt": "2026-04-08T18:51:47.070Z"
 }
