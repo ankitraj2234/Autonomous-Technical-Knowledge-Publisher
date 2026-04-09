@@ -1,13 +1,61 @@
 {
-  "date": "2026-04-08",
-  "totalPlanned": 1,
+  "date": "2026-04-09",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1775674307070-4sw21qj",
-      "topicTitle": "Infrastructure Dependency Graph Resolution",
-      "category": "Infrastructure as Code",
+      "id": "1775762699985-5w08r1y",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-jmnaceg",
+      "topicTitle": "Kubernetes Admission Webhook Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-y61nryc",
+      "topicTitle": "Multi-Environment Promotion Strategy",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-hkc21t0",
+      "topicTitle": "Distributed Tracing Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-rfft7fs",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-ctu0bzo",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-h0za4eb",
+      "topicTitle": "DNS-over-HTTPS Security Implications",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-0xvefg8",
+      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1775762699985-pa7d7fh",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-08T18:51:47.070Z"
+  "createdAt": "2026-04-09T19:24:59.985Z"
 }
