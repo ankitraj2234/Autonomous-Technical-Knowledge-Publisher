@@ -1,1 +1,167 @@
-https://propalmsnetwork-my.sharepoint.com/personal/apoorv_sachan_accops_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fapoorv%5Fsachan%5Faccops%5Fcom%2FDocuments%2FAirbridge%5Fartifacts&ga=1
+ubuntuvdi@ubuntuvdi:~/Desktop/Linux_Assistive_Package_3.4.0.42_Ubuntu/Linux_Assistive_Package_3.4.0.42_Ubuntu$ sudo tcpdump -i eth0 port 3389
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+12:29:37.250708 IP 192.168.1.6.65475 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1270971893, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:37.250774 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65475: Flags [R.], seq 0, ack 1270971894, win 0, length 0
+12:29:37.754543 IP 192.168.1.6.65475 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1270971893, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:37.754626 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65475: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:38.265780 IP 192.168.1.6.65475 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1270971893, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:38.265874 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65475: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:38.779394 IP 192.168.1.6.65475 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1270971893, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:38.779501 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65475: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:39.293056 IP 192.168.1.6.65475 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1270971893, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:39.293206 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65475: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:39.809929 IP 192.168.1.6.65477 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3158514661, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:39.809982 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65477: Flags [R.], seq 0, ack 3158514662, win 0, length 0
+12:29:40.312302 IP 192.168.1.6.65477 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3158514661, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:40.312429 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65477: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:40.825091 IP 192.168.1.6.65477 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3158514661, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:40.825263 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65477: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:41.334303 IP 192.168.1.6.65477 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3158514661, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:41.334425 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65477: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:41.845691 IP 192.168.1.6.65477 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3158514661, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:41.845763 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65477: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:42.355874 IP 192.168.1.6.65479 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3951049695, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:42.356011 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65479: Flags [R.], seq 0, ack 3951049696, win 0, length 0
+12:29:42.865489 IP 192.168.1.6.65479 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3951049695, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:42.865561 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65479: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:43.380136 IP 192.168.1.6.65479 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3951049695, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:43.380258 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65479: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:43.888456 IP 192.168.1.6.65479 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3951049695, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:43.888586 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65479: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:44.395806 IP 192.168.1.6.65479 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3951049695, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:44.395887 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65479: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:44.903366 IP 192.168.1.6.65481 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3236331069, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:44.903478 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65481: Flags [R.], seq 0, ack 3236331070, win 0, length 0
+12:29:45.418123 IP 192.168.1.6.65481 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3236331069, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:45.418255 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65481: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:45.929547 IP 192.168.1.6.65481 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3236331069, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:45.929617 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65481: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:46.441252 IP 192.168.1.6.65481 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3236331069, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:46.441305 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65481: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:46.951688 IP 192.168.1.6.65481 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3236331069, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:46.951881 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65481: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:46.971441 IP 192.168.1.6.65482 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3966875135, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:46.971484 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65482: Flags [R.], seq 0, ack 3966875136, win 0, length 0
+12:29:47.478997 IP 192.168.1.6.65482 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3966875135, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:47.479053 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65482: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:47.988568 IP 192.168.1.6.65482 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3966875135, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:47.988836 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65482: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:48.502635 IP 192.168.1.6.65482 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3966875135, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:48.502745 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65482: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:49.010274 IP 192.168.1.6.65482 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3966875135, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:49.010326 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65482: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:49.511807 IP 192.168.1.6.65484 > ubuntuvdi.ms-wbt-server: Flags [S], seq 53212894, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:49.511859 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65484: Flags [R.], seq 0, ack 53212895, win 0, length 0
+12:29:50.018610 IP 192.168.1.6.65484 > ubuntuvdi.ms-wbt-server: Flags [S], seq 53212894, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:50.018700 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65484: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:50.528407 IP 192.168.1.6.65484 > ubuntuvdi.ms-wbt-server: Flags [S], seq 53212894, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:50.528519 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65484: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:51.040759 IP 192.168.1.6.65484 > ubuntuvdi.ms-wbt-server: Flags [S], seq 53212894, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:51.040840 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65484: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:51.551049 IP 192.168.1.6.65484 > ubuntuvdi.ms-wbt-server: Flags [S], seq 53212894, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:51.551134 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65484: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:52.059130 IP 192.168.1.6.65485 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2757249970, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:52.059189 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65485: Flags [R.], seq 0, ack 2757249971, win 0, length 0
+12:29:52.572954 IP 192.168.1.6.65485 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2757249970, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:52.573101 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65485: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:53.083082 IP 192.168.1.6.65485 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2757249970, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:53.083197 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65485: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:53.594971 IP 192.168.1.6.65485 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2757249970, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:53.595043 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65485: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:54.106832 IP 192.168.1.6.65485 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2757249970, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:54.106963 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65485: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:54.622064 IP 192.168.1.6.65486 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4118534483, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:54.622108 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65486: Flags [R.], seq 0, ack 4118534484, win 0, length 0
+12:29:55.129578 IP 192.168.1.6.65486 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4118534483, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:55.129611 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65486: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:55.640867 IP 192.168.1.6.65486 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4118534483, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:55.640964 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65486: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:56.151481 IP 192.168.1.6.65486 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4118534483, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:56.151557 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65486: Flags [R.], seq 0, ack 1, win 0, length 0
+12:29:56.662074 IP 192.168.1.6.65486 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4118534483, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:29:56.662169 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65486: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:11.301308 IP 192.168.1.6.65491 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2368967485, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:11.301369 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65491: Flags [R.], seq 0, ack 2368967486, win 0, length 0
+12:30:11.817763 IP 192.168.1.6.65491 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2368967485, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:11.817848 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65491: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:12.330302 IP 192.168.1.6.65491 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2368967485, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:12.330428 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65491: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:12.841727 IP 192.168.1.6.65491 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2368967485, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:12.841859 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65491: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:13.350118 IP 192.168.1.6.65491 > ubuntuvdi.ms-wbt-server: Flags [S], seq 2368967485, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:13.350184 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65491: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:13.856991 IP 192.168.1.6.65492 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4090380239, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:13.857086 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65492: Flags [R.], seq 0, ack 4090380240, win 0, length 0
+12:30:14.370773 IP 192.168.1.6.65492 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4090380239, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:14.370889 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65492: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:14.883339 IP 192.168.1.6.65492 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4090380239, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:14.883461 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65492: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:15.393000 IP 192.168.1.6.65492 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4090380239, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:15.393110 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65492: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:15.903134 IP 192.168.1.6.65492 > ubuntuvdi.ms-wbt-server: Flags [S], seq 4090380239, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:15.903228 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.65492: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:16.419674 IP 192.168.1.6.62082 > ubuntuvdi.ms-wbt-server: Flags [S], seq 690056519, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:16.419711 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62082: Flags [R.], seq 0, ack 690056520, win 0, length 0
+12:30:16.925217 IP 192.168.1.6.62082 > ubuntuvdi.ms-wbt-server: Flags [S], seq 690056519, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:16.925298 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62082: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:17.434911 IP 192.168.1.6.62082 > ubuntuvdi.ms-wbt-server: Flags [S], seq 690056519, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:17.434951 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62082: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:17.950006 IP 192.168.1.6.62082 > ubuntuvdi.ms-wbt-server: Flags [S], seq 690056519, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:17.950059 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62082: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:18.462180 IP 192.168.1.6.62082 > ubuntuvdi.ms-wbt-server: Flags [S], seq 690056519, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:18.462235 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62082: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:18.997771 IP 192.168.1.6.62083 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3233440087, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:18.997888 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62083: Flags [R.], seq 0, ack 3233440088, win 0, length 0
+12:30:19.502851 IP 192.168.1.6.62083 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3233440087, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:19.502911 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62083: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:20.016019 IP 192.168.1.6.62083 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3233440087, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:20.016139 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62083: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:20.527411 IP 192.168.1.6.62083 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3233440087, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:20.527531 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62083: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:21.039138 IP 192.168.1.6.62083 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3233440087, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:21.039285 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62083: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:21.056668 IP 192.168.1.6.62084 > ubuntuvdi.ms-wbt-server: Flags [S], seq 819797840, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:21.056723 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62084: Flags [R.], seq 0, ack 819797841, win 0, length 0
+12:30:21.564396 IP 192.168.1.6.62084 > ubuntuvdi.ms-wbt-server: Flags [S], seq 819797840, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:21.564521 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62084: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:22.077008 IP 192.168.1.6.62084 > ubuntuvdi.ms-wbt-server: Flags [S], seq 819797840, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:22.077099 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62084: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:22.591800 IP 192.168.1.6.62084 > ubuntuvdi.ms-wbt-server: Flags [S], seq 819797840, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:22.591844 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62084: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:23.100438 IP 192.168.1.6.62084 > ubuntuvdi.ms-wbt-server: Flags [S], seq 819797840, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:23.100490 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62084: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:23.610635 IP 192.168.1.6.62085 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1727204664, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:23.610791 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62085: Flags [R.], seq 0, ack 1727204665, win 0, length 0
+12:30:24.122715 IP 192.168.1.6.62085 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1727204664, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:24.122769 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62085: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:24.637445 IP 192.168.1.6.62085 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1727204664, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:24.637498 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62085: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:25.154293 IP 192.168.1.6.62085 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1727204664, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:25.154368 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62085: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:25.671609 IP 192.168.1.6.62085 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1727204664, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:25.671663 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62085: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:26.187301 IP 192.168.1.6.62087 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3483670142, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:26.187426 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62087: Flags [R.], seq 0, ack 3483670143, win 0, length 0
+12:30:26.700691 IP 192.168.1.6.62087 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3483670142, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:26.700796 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62087: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:27.221122 IP 192.168.1.6.62087 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3483670142, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:27.221185 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62087: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:27.727303 IP 192.168.1.6.62087 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3483670142, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:27.727361 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62087: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:28.241161 IP 192.168.1.6.62087 > ubuntuvdi.ms-wbt-server: Flags [S], seq 3483670142, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:28.241230 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62087: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:28.747831 IP 192.168.1.6.62089 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1802400847, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:28.747895 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62089: Flags [R.], seq 0, ack 1802400848, win 0, length 0
+12:30:29.260714 IP 192.168.1.6.62089 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1802400847, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:29.260780 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62089: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:29.770711 IP 192.168.1.6.62089 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1802400847, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:29.770769 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62089: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:30.282135 IP 192.168.1.6.62089 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1802400847, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:30.282257 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62089: Flags [R.], seq 0, ack 1, win 0, length 0
+12:30:30.794710 IP 192.168.1.6.62089 > ubuntuvdi.ms-wbt-server: Flags [S], seq 1802400847, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+12:30:30.794801 IP ubuntuvdi.ms-wbt-server > 192.168.1.6.62089: Flags [R.], seq 0, ack 1, win 0, length 0
+^C
+160 packets captured
+160 packets received by filter
+0 packets dropped by kernel
