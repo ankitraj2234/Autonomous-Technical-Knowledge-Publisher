@@ -1,61 +1,67 @@
 {
-  "date": "2026-04-09",
-  "totalPlanned": 9,
+  "date": "2026-04-20",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1775762699985-5w08r1y",
+      "id": "1776713059885-akzjb8q",
       "topicTitle": "Network Function Virtualization (NFV) Design",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1775762699985-jmnaceg",
-      "topicTitle": "Kubernetes Admission Webhook Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1775762699985-y61nryc",
-      "topicTitle": "Multi-Environment Promotion Strategy",
+      "id": "1776713059885-34pxyoy",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775762699985-hkc21t0",
-      "topicTitle": "Distributed Tracing Architecture",
-      "category": "System Design",
+      "id": "1776713059885-zhseq2r",
+      "topicTitle": "Decentralized Identity and Verifiable Credentials",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1775762699985-rfft7fs",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
-      "category": "Networking",
+      "id": "1776713059885-b3a7mm9",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1775762699985-ctu0bzo",
-      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1775762699985-h0za4eb",
-      "topicTitle": "DNS-over-HTTPS Security Implications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1775762699985-0xvefg8",
-      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "id": "1776713059885-4f3skou",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1775762699985-pa7d7fh",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
+      "id": "1776713059885-jjiemhg",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1776713059885-68ea3r3",
+      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1776713059885-sld8hwi",
+      "topicTitle": "Bloom Filter Architecture and Applications",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1776713059885-5n3hadt",
+      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1776713059885-ruyz0gi",
+      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-09T19:24:59.985Z"
+  "createdAt": "2026-04-20T19:24:19.885Z"
 }
