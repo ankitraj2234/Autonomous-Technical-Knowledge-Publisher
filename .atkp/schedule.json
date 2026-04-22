@@ -1,67 +1,19 @@
 {
-  "date": "2026-04-20",
-  "totalPlanned": 10,
+  "date": "2026-04-22",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1776713059885-akzjb8q",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-34pxyoy",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-zhseq2r",
-      "topicTitle": "Decentralized Identity and Verifiable Credentials",
+      "id": "1776885407457-4xvxtnn",
+      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1776713059885-b3a7mm9",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-4f3skou",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-jjiemhg",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-68ea3r3",
-      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-sld8hwi",
-      "topicTitle": "Bloom Filter Architecture and Applications",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-5n3hadt",
-      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1776713059885-ruyz0gi",
-      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
-      "category": "Networking",
+      "id": "1776885407457-i6safg3",
+      "topicTitle": "Self-Service Infrastructure with Backstage Templates",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-20T19:24:19.885Z"
+  "createdAt": "2026-04-22T19:16:47.458Z"
 }
