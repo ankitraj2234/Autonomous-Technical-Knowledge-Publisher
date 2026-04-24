@@ -1,49 +1,13 @@
 {
-  "date": "2026-04-23",
-  "totalPlanned": 7,
+  "date": "2026-04-24",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1776972397259-aqudbtc",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1776972397259-p3uhb2b",
-      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1776972397259-ymfafye",
-      "topicTitle": "Vector Clock and Causal Ordering",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1776972397259-6lakyzk",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1776972397262-laxwr7y",
-      "topicTitle": "Network Observability with eBPF",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1776972397262-qcob6o3",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1776972397262-gmefwc2",
-      "topicTitle": "GitOps Multi-Tenancy Architecture",
-      "category": "DevOps",
+      "id": "1777056803325-0zfuak1",
+      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-23T19:26:37.262Z"
+  "createdAt": "2026-04-24T18:53:23.325Z"
 }
