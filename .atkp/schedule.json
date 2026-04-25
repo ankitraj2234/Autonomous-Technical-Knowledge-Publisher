@@ -1,13 +1,13 @@
 {
-  "date": "2026-04-24",
+  "date": "2026-04-25",
   "totalPlanned": 1,
   "entries": [
     {
-      "id": "1777056803325-0zfuak1",
-      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
-      "category": "Containerization",
+      "id": "1777144578101-hsccfwr",
+      "topicTitle": "Web Application Firewall Bypass Techniques",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-24T18:53:23.325Z"
+  "createdAt": "2026-04-25T19:16:18.101Z"
 }
