@@ -1,13 +1,43 @@
 {
-  "date": "2026-04-25",
-  "totalPlanned": 1,
+  "date": "2026-04-27",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1777144578101-hsccfwr",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
-      "category": "Cybersecurity",
+      "id": "1777316618970-yl5zpaa",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1777316618970-5dtsaqo",
+      "topicTitle": "Leader Election Algorithms in Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1777316618970-koedzaw",
+      "topicTitle": "CloudFormation Stack Architecture and Nested Stacks",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1777316618970-3wr8kxt",
+      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1777316618970-k96id99",
+      "topicTitle": "Multi-Environment Promotion Strategy",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1777316618970-4kznfsn",
+      "topicTitle": "Vector Clock and Causal Ordering",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-25T19:16:18.101Z"
+  "createdAt": "2026-04-27T19:03:38.970Z"
 }
