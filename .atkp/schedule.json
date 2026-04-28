@@ -1,43 +1,43 @@
 {
-  "date": "2026-04-27",
+  "date": "2026-04-28",
   "totalPlanned": 6,
   "entries": [
     {
-      "id": "1777316618970-yl5zpaa",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1777316618970-5dtsaqo",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1777316618970-koedzaw",
-      "topicTitle": "CloudFormation Stack Architecture and Nested Stacks",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1777316618970-3wr8kxt",
-      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1777316618970-k96id99",
-      "topicTitle": "Multi-Environment Promotion Strategy",
+      "id": "1777403120260-p8wzv5y",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1777316618970-4kznfsn",
-      "topicTitle": "Vector Clock and Causal Ordering",
-      "category": "System Design",
+      "id": "1777403120260-ur5bd6r",
+      "topicTitle": "Kubernetes Network Policy Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1777403120260-u80u7rs",
+      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1777403120260-obov4t0",
+      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1777403120260-4rz7obr",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1777403120260-mw5q5av",
+      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-27T19:03:38.970Z"
+  "createdAt": "2026-04-28T19:05:20.260Z"
 }
