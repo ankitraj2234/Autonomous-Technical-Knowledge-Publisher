@@ -1,43 +1,37 @@
 {
-  "date": "2026-04-28",
-  "totalPlanned": 6,
+  "date": "2026-04-29",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1777403120260-p8wzv5y",
-      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1777403120260-ur5bd6r",
-      "topicTitle": "Kubernetes Network Policy Architecture",
+      "id": "1777488469129-x6r45go",
+      "topicTitle": "Container Networking: Bridge vs Overlay vs Host",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1777403120260-u80u7rs",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
-      "category": "Cybersecurity",
+      "id": "1777488469129-kmaagbv",
+      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1777403120260-obov4t0",
-      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
+      "id": "1777488469129-k7euaxi",
+      "topicTitle": "API Key Management and Rotation Strategies",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1777403120260-4rz7obr",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
-      "category": "Infrastructure as Code",
+      "id": "1777488469129-jbxa0g7",
+      "topicTitle": "Continuous Profiling Architecture",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1777403120260-mw5q5av",
-      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
-      "category": "Containerization",
+      "id": "1777488469129-qopcvws",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-28T19:05:20.260Z"
+  "createdAt": "2026-04-29T18:47:49.129Z"
 }
