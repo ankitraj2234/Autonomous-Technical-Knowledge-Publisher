@@ -1,37 +1,37 @@
 {
-  "date": "2026-04-29",
+  "date": "2026-04-30",
   "totalPlanned": 5,
   "entries": [
     {
-      "id": "1777488469129-x6r45go",
-      "topicTitle": "Container Networking: Bridge vs Overlay vs Host",
+      "id": "1777576671021-f7r3brh",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1777488469129-kmaagbv",
-      "topicTitle": "Kubernetes Multi-Cluster Federation",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1777488469129-k7euaxi",
-      "topicTitle": "API Key Management and Rotation Strategies",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1777488469129-jbxa0g7",
-      "topicTitle": "Continuous Profiling Architecture",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1777488469129-qopcvws",
+      "id": "1777576671021-vmxuylz",
       "topicTitle": "Global Load Balancing and GeoDNS Architecture",
       "category": "Cloud Architecture",
       "completed": false
+    },
+    {
+      "id": "1777576671021-k4yk27b",
+      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1777576671021-brjzcvn",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1777576671021-akqdff2",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
+      "completed": false
     }
   ],
-  "createdAt": "2026-04-29T18:47:49.129Z"
+  "createdAt": "2026-04-30T19:17:51.024Z"
 }
