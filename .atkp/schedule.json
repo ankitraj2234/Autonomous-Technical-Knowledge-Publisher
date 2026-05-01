@@ -1,37 +1,49 @@
 {
-  "date": "2026-04-30",
-  "totalPlanned": 5,
+  "date": "2026-05-01",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1777576671021-f7r3brh",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1777661337133-l8nyaur",
+      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1777576671021-vmxuylz",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "id": "1777661337133-auxcvef",
+      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1777576671021-k4yk27b",
-      "topicTitle": "Infrastructure State Drift Detection Strategies",
-      "category": "Infrastructure as Code",
+      "id": "1777661337133-63i8cv9",
+      "topicTitle": "Back-Pressure Handling in Reactive Systems",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1777576671021-brjzcvn",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "id": "1777661337133-kznvd59",
+      "topicTitle": "ARP Spoofing Detection and Prevention",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1777576671021-akqdff2",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
+      "id": "1777661337133-mys8bir",
+      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1777661337133-igg6kgn",
+      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1777661337133-wr18wun",
+      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-04-30T19:17:51.024Z"
+  "createdAt": "2026-05-01T18:48:57.133Z"
 }
