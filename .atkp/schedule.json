@@ -1,49 +1,61 @@
 {
-  "date": "2026-05-01",
-  "totalPlanned": 7,
+  "date": "2026-05-02",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1777661337133-l8nyaur",
-      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1777661337133-auxcvef",
-      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "id": "1777747666967-9gby4d3",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1777661337133-63i8cv9",
-      "topicTitle": "Back-Pressure Handling in Reactive Systems",
+      "id": "1777747666967-rj6t9rc",
+      "topicTitle": "Time-Series Database Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1777661337133-kznvd59",
-      "topicTitle": "ARP Spoofing Detection and Prevention",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1777661337133-mys8bir",
-      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1777661337133-igg6kgn",
-      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "id": "1777747666967-ph1v3cn",
+      "topicTitle": "GitOps Multi-Tenancy Architecture",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1777661337133-wr18wun",
-      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "id": "1777747666967-ev0zn6c",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1777747666967-v0yjom7",
+      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1777747666967-t45qrng",
+      "topicTitle": "Environment Provisioning Automation Patterns",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1777747666967-wo9qhg1",
+      "topicTitle": "Kubernetes Admission Webhook Architecture",
       "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1777747666967-fjq1kn6",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1777747666967-k8odp4v",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-01T18:48:57.133Z"
+  "createdAt": "2026-05-02T18:47:46.967Z"
 }
