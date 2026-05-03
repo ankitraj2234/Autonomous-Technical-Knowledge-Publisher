@@ -1,61 +1,13 @@
 {
-  "date": "2026-05-02",
-  "totalPlanned": 9,
+  "date": "2026-05-03",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1777747666967-9gby4d3",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-rj6t9rc",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-ph1v3cn",
-      "topicTitle": "GitOps Multi-Tenancy Architecture",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-ev0zn6c",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "id": "1777835113109-mi8wkk1",
+      "topicTitle": "Network Automation with NETCONF and YANG",
       "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-v0yjom7",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-t45qrng",
-      "topicTitle": "Environment Provisioning Automation Patterns",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-wo9qhg1",
-      "topicTitle": "Kubernetes Admission Webhook Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-fjq1kn6",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1777747666967-k8odp4v",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-02T18:47:46.967Z"
+  "createdAt": "2026-05-03T19:05:13.109Z"
 }
