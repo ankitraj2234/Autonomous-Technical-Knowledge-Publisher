@@ -1,13 +1,37 @@
 {
-  "date": "2026-05-03",
-  "totalPlanned": 1,
+  "date": "2026-05-04",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1777835113109-mi8wkk1",
-      "topicTitle": "Network Automation with NETCONF and YANG",
-      "category": "Networking",
+      "id": "1777920895992-9agp61u",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1777920895992-ihfv165",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1777920895992-j9iuzwc",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1777920895992-fs14p8s",
+      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1777920895993-1zp0mva",
+      "topicTitle": "Observability Data Pipeline Cost Optimization",
+      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-03T19:05:13.109Z"
+  "createdAt": "2026-05-04T18:54:55.993Z"
 }
