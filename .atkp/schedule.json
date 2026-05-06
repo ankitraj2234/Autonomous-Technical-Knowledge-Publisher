@@ -1,37 +1,67 @@
 {
-  "date": "2026-05-05",
-  "totalPlanned": 5,
+  "date": "2026-05-06",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1778006775150-1p30751",
-      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
+      "id": "1778092252187-6ba9ogu",
+      "topicTitle": "Container Networking: Bridge vs Overlay vs Host",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-yogq62k",
+      "topicTitle": "MPLS Architecture and Traffic Engineering",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-mmhw2p0",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-h9ebb5j",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-yyfyf60",
+      "topicTitle": "Container Escape Techniques and Kernel Exploits",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1778006775150-r1uorqs",
-      "topicTitle": "Network Segmentation Strategies for Zero Trust",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1778006775150-fdp9u4z",
-      "topicTitle": "Real User Monitoring (RUM) Architecture",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1778006775150-1innfll",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1778006775150-ofa9lkw",
-      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
+      "id": "1778092252187-bhe68cm",
+      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-3kc7nxd",
+      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-xxzuk4z",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-4lhoqxj",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1778092252187-ji4jweh",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-05T18:46:15.150Z"
+  "createdAt": "2026-05-06T18:30:52.188Z"
 }
