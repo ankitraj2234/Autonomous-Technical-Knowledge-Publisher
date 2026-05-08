@@ -1,43 +1,43 @@
 {
-  "date": "2026-05-07",
+  "date": "2026-05-08",
   "totalPlanned": 6,
   "entries": [
     {
-      "id": "1778180005126-t0qctm9",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
-      "category": "DevOps",
+      "id": "1778267872156-tgddcli",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1778180005126-ttry9td",
-      "topicTitle": "APM Architecture: End-to-End Request Tracing",
+      "id": "1778267872156-3peel6g",
+      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778267872156-en3iykb",
+      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778267872156-nux1hdi",
+      "topicTitle": "Synthetic Monitoring Architecture and Implementation",
       "category": "Observability",
       "completed": false
     },
     {
-      "id": "1778180005126-hvnrh2e",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
-      "category": "Infrastructure as Code",
+      "id": "1778267872156-9om7jjc",
+      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1778180005126-ryln13w",
-      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1778180005126-ee6fcbz",
-      "topicTitle": "Session Management: Stateful vs Stateless Patterns",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1778180005126-ptd3uz0",
-      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
-      "category": "DevOps",
+      "id": "1778267872156-nywit7r",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-07T18:53:25.126Z"
+  "createdAt": "2026-05-08T19:17:52.156Z"
 }
