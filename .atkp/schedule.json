@@ -1,43 +1,55 @@
 {
-  "date": "2026-05-08",
-  "totalPlanned": 6,
+  "date": "2026-05-09",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1778267872156-tgddcli",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "id": "1778351485055-k938kdz",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1778267872156-3peel6g",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
-      "category": "Cloud Architecture",
+      "id": "1778351485055-iztnrwo",
+      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1778267872156-en3iykb",
-      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1778267872156-nux1hdi",
-      "topicTitle": "Synthetic Monitoring Architecture and Implementation",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1778267872156-9om7jjc",
-      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "id": "1778351485055-uxm561z",
+      "topicTitle": "Kubernetes Ingress Architecture Comparison",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1778267872156-nywit7r",
+      "id": "1778351485055-5sdw9u6",
+      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1778351485055-rgj7vqn",
+      "topicTitle": "APM Architecture: End-to-End Request Tracing",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1778351485055-doeul9t",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1778351485055-r1c7yti",
       "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
       "category": "Cybersecurity",
       "completed": false
+    },
+    {
+      "id": "1778351485055-061ux5h",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
+      "completed": false
     }
   ],
-  "createdAt": "2026-05-08T19:17:52.156Z"
+  "createdAt": "2026-05-09T18:31:25.056Z"
 }
