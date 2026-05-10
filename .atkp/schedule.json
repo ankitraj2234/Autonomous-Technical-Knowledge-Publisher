@@ -1,55 +1,55 @@
 {
-  "date": "2026-05-09",
+  "date": "2026-05-10",
   "totalPlanned": 8,
   "entries": [
     {
-      "id": "1778351485055-k938kdz",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1778351485055-iztnrwo",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1778351485055-uxm561z",
-      "topicTitle": "Kubernetes Ingress Architecture Comparison",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1778351485055-5sdw9u6",
-      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1778351485055-rgj7vqn",
-      "topicTitle": "APM Architecture: End-to-End Request Tracing",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1778351485055-doeul9t",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1778351485055-r1c7yti",
+      "id": "1778438932006-gka954t",
       "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1778351485055-061ux5h",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "id": "1778438932006-lgfvl21",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1778438932006-yasrqtj",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1778438932006-4fw43ym",
+      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1778438932006-t3w0vim",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1778438932006-dversp0",
+      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778438932006-h3dnf9n",
+      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778438932006-sp291m6",
+      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-09T18:31:25.056Z"
+  "createdAt": "2026-05-10T18:48:52.006Z"
 }
