@@ -1,31 +1,61 @@
 {
-  "date": "2026-05-11",
-  "totalPlanned": 4,
+  "date": "2026-05-12",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1778527206970-kvaueqz",
-      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "id": "1778613577201-1kdicth",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1778527206970-qlojh8n",
-      "topicTitle": "Database Sharding Strategies and Rebalancing",
+      "id": "1778613577202-mswsdh3",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1778613577202-wt5ld89",
+      "topicTitle": "Time-Series Database Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1778527206970-4oyffz0",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
+      "id": "1778613577202-u5lhvwy",
+      "topicTitle": "Bloom Filter Architecture and Applications",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1778527206970-sg8m7wq",
-      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
-      "category": "Cybersecurity",
+      "id": "1778613577202-jos143t",
+      "topicTitle": "Spine-Leaf Data Center Network Topology",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1778613577202-ew6e5co",
+      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1778613577202-pzb7k9r",
+      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1778613577202-6oza3tj",
+      "topicTitle": "Init Container and Startup Probe Patterns",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1778613577202-ptju8qr",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-11T19:20:06.970Z"
+  "createdAt": "2026-05-12T19:19:37.202Z"
 }
