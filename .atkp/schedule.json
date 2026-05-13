@@ -1,61 +1,67 @@
 {
-  "date": "2026-05-12",
-  "totalPlanned": 9,
+  "date": "2026-05-13",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1778613577201-1kdicth",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "id": "1778700217185-4277spo",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1778613577202-mswsdh3",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1778613577202-wt5ld89",
-      "topicTitle": "Time-Series Database Architecture",
+      "id": "1778700217185-zdyuzsr",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1778613577202-u5lhvwy",
-      "topicTitle": "Bloom Filter Architecture and Applications",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1778613577202-jos143t",
-      "topicTitle": "Spine-Leaf Data Center Network Topology",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1778613577202-ew6e5co",
-      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1778613577202-pzb7k9r",
-      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "id": "1778700217185-slwym5x",
+      "topicTitle": "Self-Service Infrastructure with Backstage Templates",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1778613577202-6oza3tj",
-      "topicTitle": "Init Container and Startup Probe Patterns",
+      "id": "1778700217185-kpvuf2y",
+      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1778700217185-dlrvyo0",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1778613577202-ptju8qr",
-      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "id": "1778700217185-ma8q2ab",
+      "topicTitle": "Database Sharding Strategies and Rebalancing",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1778700217185-l6w0q6g",
+      "topicTitle": "Traffic Shaping and QoS Policy Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1778700217185-d0pdcke",
+      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1778700217185-fysv9c0",
+      "topicTitle": "Multi-Region Active-Active Database Architecture",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1778700217185-nka61la",
+      "topicTitle": "Container Image Layer Optimization Strategies",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-12T19:19:37.202Z"
+  "createdAt": "2026-05-13T19:23:37.185Z"
 }
