@@ -1,67 +1,49 @@
 {
-  "date": "2026-05-13",
-  "totalPlanned": 10,
+  "date": "2026-05-14",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1778700217185-4277spo",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1778700217185-zdyuzsr",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1778700217185-slwym5x",
-      "topicTitle": "Self-Service Infrastructure with Backstage Templates",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1778700217185-kpvuf2y",
+      "id": "1778784136167-ez64sbk",
       "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1778700217185-dlrvyo0",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1778700217185-ma8q2ab",
-      "topicTitle": "Database Sharding Strategies and Rebalancing",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1778700217185-l6w0q6g",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
+      "id": "1778784136167-xuw6jub",
+      "topicTitle": "mTLS Architecture and Certificate Rotation",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1778700217185-d0pdcke",
-      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
+      "id": "1778784136167-bp8mlbg",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1778784136167-a8z1ng3",
+      "topicTitle": "Network Traffic Analysis and DPI Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1778784136167-5agcnp3",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1778700217185-fysv9c0",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
-      "category": "Cloud Architecture",
+      "id": "1778784136167-nvizcgy",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1778700217185-nka61la",
-      "topicTitle": "Container Image Layer Optimization Strategies",
-      "category": "Containerization",
+      "id": "1778784136167-crwor5y",
+      "topicTitle": "Observability Data Pipeline Cost Optimization",
+      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-13T19:23:37.185Z"
+  "createdAt": "2026-05-14T18:42:16.168Z"
 }
