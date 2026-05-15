@@ -1,49 +1,25 @@
 {
-  "date": "2026-05-14",
-  "totalPlanned": 7,
+  "date": "2026-05-15",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1778784136167-ez64sbk",
-      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1778784136167-xuw6jub",
-      "topicTitle": "mTLS Architecture and Certificate Rotation",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1778784136167-bp8mlbg",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "id": "1778872379051-pltleqr",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1778784136167-a8z1ng3",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1778784136167-5agcnp3",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
+      "id": "1778872379051-zrnv6iq",
+      "topicTitle": "TLS 1.3 Handshake Internals and Downgrade Protection",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1778784136167-nvizcgy",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1778784136167-crwor5y",
-      "topicTitle": "Observability Data Pipeline Cost Optimization",
-      "category": "Observability",
+      "id": "1778872379051-6p1z82t",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-14T18:42:16.168Z"
+  "createdAt": "2026-05-15T19:12:59.051Z"
 }
