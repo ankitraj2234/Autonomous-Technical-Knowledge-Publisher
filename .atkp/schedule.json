@@ -1,67 +1,19 @@
 {
-  "date": "2026-05-16",
-  "totalPlanned": 10,
+  "date": "2026-05-17",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1778959410884-vfjmasm",
-      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
-      "category": "Containerization",
+      "id": "1779045458009-x4l1736",
+      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1778959410884-3sk2w9f",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-sj2njhs",
-      "topicTitle": "Reverse Proxy Security Hardening Checklist",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-5f4y1si",
-      "topicTitle": "Step-Up Authentication Pattern Implementation",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-l5srnou",
-      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-k3195e8",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-7isvhtf",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-0k7maqx",
-      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-t10fcnm",
-      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1778959410884-9c3pkg5",
-      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
-      "category": "Networking",
+      "id": "1779045458009-4nh6ipy",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-16T19:23:30.884Z"
+  "createdAt": "2026-05-17T19:17:38.009Z"
 }
