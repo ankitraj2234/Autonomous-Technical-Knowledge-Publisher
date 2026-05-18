@@ -1,19 +1,67 @@
 {
-  "date": "2026-05-17",
-  "totalPlanned": 2,
+  "date": "2026-05-18",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1779045458009-x4l1736",
-      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "id": "1779130547096-tg29q2h",
+      "topicTitle": "Dashboard Design Principles for Operational Excellence",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-r35q46u",
+      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-tmpiqkc",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-ezyf9or",
+      "topicTitle": "Distributed Lock Manager Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-dqjcv4d",
+      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-ern3oey",
+      "topicTitle": "Policy as Code with Sentinel and Rego",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-yah07ay",
+      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-r4n619r",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1779130547096-6f2hafv",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779045458009-4nh6ipy",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
-      "category": "DevOps",
+      "id": "1779130547096-6zlxoth",
+      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-17T19:17:38.009Z"
+  "createdAt": "2026-05-18T18:55:47.096Z"
 }
