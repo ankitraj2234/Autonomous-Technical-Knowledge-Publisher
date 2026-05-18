@@ -1,164 +1,164 @@
-[34m[13:20:33] ▶ Validating SSH key files[0m
-[32m[13:20:33] ✓ SSH keys validated[0m
+[34m[13:37:01] ▶ Validating SSH key files[0m
+[32m[13:37:01] ✓ SSH keys validated[0m
 
 [32m=== Deployment Configuration ===[0m
-[35m[13:20:33] [DEBUG] SCRIPT_DIR=/home/airbridge1/Airbridge_artifacts[0m
-[35m[13:20:33] [DEBUG] LOG_FILE=/home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-132033.log[0m
+[35m[13:37:01] [DEBUG] SCRIPT_DIR=/home/airbridge1/Airbridge_artifacts[0m
+[35m[13:37:01] [DEBUG] LOG_FILE=/home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-133701.log[0m
   Server1: 192.168.1.3 (user=airbridge1, key=/home/airbridge1/.ssh/id_rsa)
   Server2: 192.168.1.7 (user=airbridge2, key=/home/airbridge1/.ssh/id_rsa)
-[35m[13:20:33] [DEBUG] TAR files location: /home/airbridge1/Airbridge_artifacts/tar_files/[0m
-  Log: /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-132033.log
+[35m[13:37:01] [DEBUG] TAR files location: /home/airbridge1/Airbridge_artifacts/tar_files/[0m
+  Log: /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-133701.log
 
-[34m[13:20:33] ▶ Testing SSH connectivity to both servers[0m
-[32m[13:20:38] ✓ SSH connectivity verified for both servers[0m
+[34m[13:37:01] ▶ Testing SSH connectivity to both servers[0m
+[32m[13:37:02] ✓ SSH connectivity verified for both servers[0m
 
-[34m[13:20:38] ▶ Preparing deployment scripts[0m
-[32m[13:20:38] ✓ Deployment templates loaded[0m
+[34m[13:37:02] ▶ Preparing deployment scripts[0m
+[32m[13:37:02] ✓ Deployment templates loaded[0m
 
 [32m\n╔════════════════════════════════════════════════════════════╗[0m
 [32m║  AIRBRIDGE DEPLOYMENT - STARTING                           ║[0m
 [32m╚════════════════════════════════════════════════════════════╝[0m
-[90m[13:20:38] [TRACE] === DEPLOYMENT STARTED ===[0m
-[35m[13:20:38] [DEBUG] Deployment timestamp: Mon May 18 01:20:38 PM IST 2026[0m
-[35m[13:20:38] [DEBUG] Script location: /home/airbridge1/Airbridge_artifacts[0m
-[35m[13:20:38] [DEBUG] Log file: /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-132033.log[0m
-[35m[13:20:38] [DEBUG] Server1: 192.168.1.3 (airbridge1)[0m
-[35m[13:20:38] [DEBUG] Server2: 192.168.1.7 (airbridge2)[0m
+[90m[13:37:02] [TRACE] === DEPLOYMENT STARTED ===[0m
+[35m[13:37:02] [DEBUG] Deployment timestamp: Mon May 18 01:37:02 PM IST 2026[0m
+[35m[13:37:02] [DEBUG] Script location: /home/airbridge1/Airbridge_artifacts[0m
+[35m[13:37:02] [DEBUG] Log file: /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-133701.log[0m
+[35m[13:37:02] [DEBUG] Server1: 192.168.1.3 (airbridge1)[0m
+[35m[13:37:02] [DEBUG] Server2: 192.168.1.7 (airbridge2)[0m
 [32m\n=== Provisioning 192.168.1.3 (Oracle Linux 9.6 - Docker pre-check + Nginx) ===[0m
-[90m[13:20:38] [TRACE] provision_host() called: HOST=192.168.1.3[0m
-[35m[13:20:38] [DEBUG] Provisioning script length: 2733 characters[0m
-[34m[13:20:38] ▶ Checking Docker pre-requisite and installing Nginx on 192.168.1.3[0m
-[90m[13:20:38] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[90m[13:20:38] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:20:38] ▶ SSH to airbridge1@192.168.1.3: bash -s[0m
-[34m[13:20:38] ▶ SSH to airbridge1@192.168.1.3: bash -s[0m
-[remote 13:20:43] Starting remote provisioning for Oracle Linux 9.6
-[remote 13:20:43] Starting remote provisioning for Oracle Linux 9.6
-[remote 13:20:43] Created /opt/airbridge directory
-[remote 13:20:43] Created /opt/airbridge directory
-[remote 13:20:43] Creating SFTP storage directories on host...
-[remote 13:20:43] Creating SFTP storage directories on host...
-[remote 13:20:43] SFTP directories created with UID/GID 1001:1001 for persistence
-[remote 13:20:43] SFTP directories created with UID/GID 1001:1001 for persistence
-[remote 13:20:43] Detected OS: Ubuntu 24.04
-[remote 13:20:43] Detected OS: Ubuntu 24.04
-[remote 13:20:43] Checking Docker pre-requisite...
-[remote 13:20:43] Checking Docker pre-requisite...
-[remote 13:20:43] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
-[remote 13:20:43] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
-[remote 13:20:43] Docker Compose plugin check passed: Docker Compose version v5.1.3
+[90m[13:37:02] [TRACE] provision_host() called: HOST=192.168.1.3[0m
+[35m[13:37:02] [DEBUG] Provisioning script length: 2733 characters[0m
+[34m[13:37:02] ▶ Checking Docker pre-requisite and installing Nginx on 192.168.1.3[0m
+[90m[13:37:02] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[90m[13:37:02] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:37:02] ▶ SSH to airbridge1@192.168.1.3: bash -s[0m
+[34m[13:37:02] ▶ SSH to airbridge1@192.168.1.3: bash -s[0m
+[remote 13:37:02] Starting remote provisioning for Oracle Linux 9.6
+[remote 13:37:02] Starting remote provisioning for Oracle Linux 9.6
+[remote 13:37:02] Created /opt/airbridge directory
+[remote 13:37:02] Created /opt/airbridge directory
+[remote 13:37:02] Creating SFTP storage directories on host...
+[remote 13:37:02] Creating SFTP storage directories on host...
+[remote 13:37:02] SFTP directories created with UID/GID 1001:1001 for persistence
+[remote 13:37:02] SFTP directories created with UID/GID 1001:1001 for persistence
+[remote 13:37:02] Detected OS: Ubuntu 24.04
+[remote 13:37:02] Detected OS: Ubuntu 24.04
+[remote 13:37:02] Checking Docker pre-requisite...
+[remote 13:37:02] Checking Docker pre-requisite...
+[remote 13:37:02] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
+[remote 13:37:02] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
+[remote 13:37:02] Docker Compose plugin check passed: Docker Compose version v5.1.3
+[remote] Nginx will be deployed as a container from tar files
+[remote 13:37:02] Docker Compose plugin check passed: Docker Compose version v5.1.3
 [remote] Nginx will be deployed as a container from tar files
 [remote] Remote provisioning completed
-[remote 13:20:43] Docker Compose plugin check passed: Docker Compose version v5.1.3
-[remote] Nginx will be deployed as a container from tar files
 [remote] Remote provisioning completed
-[90m[13:20:43] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:20:43] [TRACE] rsh() completed with exit_code=0[0m
-[32m[13:20:43] ✓ Provisioning completed on 192.168.1.3 (took 5s)[0m
-[90m[13:20:43] [TRACE] provision_host() completed successfully[0m
+[90m[13:37:02] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:37:02] [TRACE] rsh() completed with exit_code=0[0m
+[32m[13:37:02] ✓ Provisioning completed on 192.168.1.3 (took 0s)[0m
+[90m[13:37:02] [TRACE] provision_host() completed successfully[0m
 [32m\n=== Provisioning 192.168.1.7 (Oracle Linux 9.6 - Docker pre-check + Nginx) ===[0m
-[90m[13:20:43] [TRACE] provision_host() called: HOST=192.168.1.7[0m
-[35m[13:20:43] [DEBUG] Provisioning script length: 2733 characters[0m
-[34m[13:20:43] ▶ Checking Docker pre-requisite and installing Nginx on 192.168.1.7[0m
-[90m[13:20:43] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[90m[13:20:43] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:20:43] ▶ SSH to airbridge2@192.168.1.7: bash -s[0m
-[34m[13:20:43] ▶ SSH to airbridge2@192.168.1.7: bash -s[0m
-[remote 13:20:43] Starting remote provisioning for Oracle Linux 9.6
-[remote 13:20:43] Starting remote provisioning for Oracle Linux 9.6
-[remote 13:20:43] Created /opt/airbridge directory
-[remote 13:20:43] Created /opt/airbridge directory
-[remote 13:20:43] Creating SFTP storage directories on host...
-[remote 13:20:43] Creating SFTP storage directories on host...
-[remote 13:20:43] SFTP directories created with UID/GID 1001:1001 for persistence
-[remote 13:20:43] SFTP directories created with UID/GID 1001:1001 for persistence
-[remote 13:20:43] Detected OS: Ubuntu 24.04
-[remote 13:20:43] Detected OS: Ubuntu 24.04
-[remote 13:20:43] Checking Docker pre-requisite...
-[remote 13:20:43] Checking Docker pre-requisite...
-[remote 13:20:43] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
-[remote 13:20:43] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
-[remote 13:20:43] Docker Compose plugin check passed: Docker Compose version v5.1.3
+[90m[13:37:02] [TRACE] provision_host() called: HOST=192.168.1.7[0m
+[35m[13:37:02] [DEBUG] Provisioning script length: 2733 characters[0m
+[34m[13:37:02] ▶ Checking Docker pre-requisite and installing Nginx on 192.168.1.7[0m
+[90m[13:37:02] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[90m[13:37:02] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:37:02] ▶ SSH to airbridge2@192.168.1.7: bash -s[0m
+[34m[13:37:02] ▶ SSH to airbridge2@192.168.1.7: bash -s[0m
+[remote 13:37:03] Starting remote provisioning for Oracle Linux 9.6
+[remote 13:37:03] Starting remote provisioning for Oracle Linux 9.6
+[remote 13:37:03] Created /opt/airbridge directory
+[remote 13:37:03] Created /opt/airbridge directory
+[remote 13:37:03] Creating SFTP storage directories on host...
+[remote 13:37:03] Creating SFTP storage directories on host...
+[remote 13:37:03] SFTP directories created with UID/GID 1001:1001 for persistence
+[remote 13:37:03] SFTP directories created with UID/GID 1001:1001 for persistence
+[remote 13:37:03] Detected OS: Ubuntu 24.04
+[remote 13:37:03] Detected OS: Ubuntu 24.04
+[remote 13:37:03] Checking Docker pre-requisite...
+[remote 13:37:03] Checking Docker pre-requisite...
+[remote 13:37:03] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
+[remote 13:37:03] Docker pre-requisite check passed: Docker version 29.5.0, build 98f1464
+[remote 13:37:03] Docker Compose plugin check passed: Docker Compose version v5.1.3
 [remote] Nginx will be deployed as a container from tar files
 [remote] Remote provisioning completed
-[remote 13:20:43] Docker Compose plugin check passed: Docker Compose version v5.1.3
+[remote 13:37:03] Docker Compose plugin check passed: Docker Compose version v5.1.3
 [remote] Nginx will be deployed as a container from tar files
 [remote] Remote provisioning completed
-[90m[13:20:43] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:20:43] [TRACE] rsh() completed with exit_code=0[0m
-[32m[13:20:43] ✓ Provisioning completed on 192.168.1.7 (took 0s)[0m
-[90m[13:20:43] [TRACE] provision_host() completed successfully[0m
-[34m[13:20:43] ▶ === PRE-DEPLOYMENT: Deleting ALL Docker Images ===[0m
+[90m[13:37:03] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:37:03] [TRACE] rsh() completed with exit_code=0[0m
+[32m[13:37:03] ✓ Provisioning completed on 192.168.1.7 (took 1s)[0m
+[90m[13:37:03] [TRACE] provision_host() completed successfully[0m
+[34m[13:37:03] ▶ === PRE-DEPLOYMENT: Deleting ALL Docker Images ===[0m
 [32m\n=== Deleting ALL Docker Images on 192.168.1.3 ===[0m
-[90m[13:20:43] [TRACE] delete_all_docker_images() called: HOST=192.168.1.3[0m
-[34m[13:20:43] ▶ Removing ALL Docker images (all tags, all images)[0m
-[90m[13:20:43] [TRACE] Command: sudo docker images -aq[0m
-[90m[13:20:58] [TRACE] Found 0 images to delete[0m
-[35m[13:20:58] [DEBUG] No images to remove[0m
-[34m[13:20:58] ▶ Verifying image deletion[0m
-[90m[13:21:00] [TRACE] Remaining images: 0[0m
-[32m[13:21:00] ✓ All Docker images deleted successfully[0m
-[90m[13:21:00] [TRACE] delete_all_docker_images() completed[0m
+[90m[13:37:03] [TRACE] delete_all_docker_images() called: HOST=192.168.1.3[0m
+[34m[13:37:03] ▶ Removing ALL Docker images (all tags, all images)[0m
+[90m[13:37:03] [TRACE] Command: sudo docker images -aq[0m
+[90m[13:37:03] [TRACE] Found 0 images to delete[0m
+[35m[13:37:03] [DEBUG] No images to remove[0m
+[34m[13:37:03] ▶ Verifying image deletion[0m
+[90m[13:37:03] [TRACE] Remaining images: 0[0m
+[32m[13:37:03] ✓ All Docker images deleted successfully[0m
+[90m[13:37:03] [TRACE] delete_all_docker_images() completed[0m
 [32m\n=== Deleting ALL Docker Images on 192.168.1.7 ===[0m
-[90m[13:21:00] [TRACE] delete_all_docker_images() called: HOST=192.168.1.7[0m
-[34m[13:21:00] ▶ Removing ALL Docker images (all tags, all images)[0m
-[90m[13:21:00] [TRACE] Command: sudo docker images -aq[0m
-[90m[13:21:00] [TRACE] Found 0 images to delete[0m
-[35m[13:21:00] [DEBUG] No images to remove[0m
-[34m[13:21:00] ▶ Verifying image deletion[0m
-[90m[13:21:00] [TRACE] Remaining images: 0[0m
-[32m[13:21:01] ✓ All Docker images deleted successfully[0m
-[90m[13:21:01] [TRACE] delete_all_docker_images() completed[0m
+[90m[13:37:03] [TRACE] delete_all_docker_images() called: HOST=192.168.1.7[0m
+[34m[13:37:03] ▶ Removing ALL Docker images (all tags, all images)[0m
+[90m[13:37:03] [TRACE] Command: sudo docker images -aq[0m
+[90m[13:37:04] [TRACE] Found 0 images to delete[0m
+[35m[13:37:04] [DEBUG] No images to remove[0m
+[34m[13:37:04] ▶ Verifying image deletion[0m
+[90m[13:37:04] [TRACE] Remaining images: 0[0m
+[32m[13:37:04] ✓ All Docker images deleted successfully[0m
+[90m[13:37:04] [TRACE] delete_all_docker_images() completed[0m
 [32m\n=== Cleaning Up All Docker Containers and Images on 192.168.1.3 ===[0m
-[90m[13:21:01] [TRACE] cleanup_all_docker() called: HOST=192.168.1.3[0m
-[34m[13:21:01] ▶ Stopping and removing ALL containers (running and stopped)[0m
-[90m[13:21:01] [TRACE] Command: sudo docker ps -aq (all containers)[0m
-[90m[13:21:02] [TRACE] Found 0 containers (running and stopped)[0m
-[35m[13:21:02] [DEBUG] No containers to remove[0m
-[34m[13:21:02] ▶ Removing all Docker Compose stacks[0m
-[90m[13:21:02] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:21:02] ▶ SSH to airbridge1@192.168.1.3: test -f /opt/airbridge/docker-compose.yml[0m
-[90m[13:21:03] [TRACE] rsh() completed with exit_code=1[0m
-[35m[13:21:03] [DEBUG] No docker-compose.yml found, skipping compose cleanup[0m
-[34m[13:21:03] ▶ Removing old tar files from target server[0m
-[90m[13:21:03] [TRACE] Removing tar files from temporary directory /tmp/airbridge_tarfiles/[0m
-[90m[13:21:03] [TRACE] [0m
-[90m[13:21:03] [TRACE] Cleaning up any stray tar files from /home/airbridge1/airbridge/tar_files/ on target server[0m
-[90m[13:21:03] [TRACE] [0m
-[32m[13:21:03] ✓ Old tar files removed from target server[0m
-[34m[13:21:03] ▶ Verifying cleanup[0m
-[90m[13:21:05] [TRACE] Remaining containers: 0[0m
-[32m[13:21:05] ✓ Docker cleanup completed - all containers removed[0m
-[90m[13:21:05] [TRACE] cleanup_all_docker() completed[0m
+[90m[13:37:04] [TRACE] cleanup_all_docker() called: HOST=192.168.1.3[0m
+[34m[13:37:04] ▶ Stopping and removing ALL containers (running and stopped)[0m
+[90m[13:37:04] [TRACE] Command: sudo docker ps -aq (all containers)[0m
+[90m[13:37:04] [TRACE] Found 0 containers (running and stopped)[0m
+[35m[13:37:04] [DEBUG] No containers to remove[0m
+[34m[13:37:04] ▶ Removing all Docker Compose stacks[0m
+[90m[13:37:04] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:37:04] ▶ SSH to airbridge1@192.168.1.3: test -f /opt/airbridge/docker-compose.yml[0m
+[90m[13:37:05] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:37:05] [TRACE] [0m
+[34m[13:37:05] ▶ Removing old tar files from target server[0m
+[90m[13:37:05] [TRACE] Removing tar files from temporary directory /tmp/airbridge_tarfiles/[0m
+[90m[13:37:05] [TRACE] [0m
+[90m[13:37:05] [TRACE] Cleaning up any stray tar files from /home/airbridge1/airbridge/tar_files/ on target server[0m
+[90m[13:37:05] [TRACE] [0m
+[32m[13:37:05] ✓ Old tar files removed from target server[0m
+[34m[13:37:05] ▶ Verifying cleanup[0m
+[90m[13:37:05] [TRACE] Remaining containers: 0[0m
+[32m[13:37:05] ✓ Docker cleanup completed - all containers removed[0m
+[90m[13:37:05] [TRACE] cleanup_all_docker() completed[0m
 [32m\n=== Cleaning Up All Docker Containers and Images on 192.168.1.7 ===[0m
-[90m[13:21:05] [TRACE] cleanup_all_docker() called: HOST=192.168.1.7[0m
-[34m[13:21:05] ▶ Stopping and removing ALL containers (running and stopped)[0m
-[90m[13:21:05] [TRACE] Command: sudo docker ps -aq (all containers)[0m
-[90m[13:21:05] [TRACE] Found 0 containers (running and stopped)[0m
-[35m[13:21:05] [DEBUG] No containers to remove[0m
-[34m[13:21:05] ▶ Removing all Docker Compose stacks[0m
-[90m[13:21:05] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:21:05] ▶ SSH to airbridge2@192.168.1.7: test -f /opt/airbridge/docker-compose.yml[0m
-[90m[13:21:05] [TRACE] rsh() completed with exit_code=1[0m
-[35m[13:21:05] [DEBUG] No docker-compose.yml found, skipping compose cleanup[0m
-[34m[13:21:05] ▶ Removing old tar files from target server[0m
-[90m[13:21:05] [TRACE] Removing tar files from temporary directory /tmp/airbridge_tarfiles/[0m
-[90m[13:21:05] [TRACE] [0m
-[90m[13:21:05] [TRACE] Cleaning up any stray tar files from /home/airbridge2/airbridge/tar_files/ on target server[0m
-[90m[13:21:05] [TRACE] [0m
-[32m[13:21:05] ✓ Old tar files removed from target server[0m
-[34m[13:21:05] ▶ Verifying cleanup[0m
-[90m[13:21:05] [TRACE] Remaining containers: 0[0m
-[32m[13:21:05] ✓ Docker cleanup completed - all containers removed[0m
-[90m[13:21:05] [TRACE] cleanup_all_docker() completed[0m
+[90m[13:37:05] [TRACE] cleanup_all_docker() called: HOST=192.168.1.7[0m
+[34m[13:37:05] ▶ Stopping and removing ALL containers (running and stopped)[0m
+[90m[13:37:05] [TRACE] Command: sudo docker ps -aq (all containers)[0m
+[90m[13:37:05] [TRACE] Found 0 containers (running and stopped)[0m
+[35m[13:37:05] [DEBUG] No containers to remove[0m
+[34m[13:37:05] ▶ Removing all Docker Compose stacks[0m
+[90m[13:37:05] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:37:05] ▶ SSH to airbridge2@192.168.1.7: test -f /opt/airbridge/docker-compose.yml[0m
+[90m[13:37:05] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:37:05] [TRACE] [0m
+[34m[13:37:05] ▶ Removing old tar files from target server[0m
+[90m[13:37:05] [TRACE] Removing tar files from temporary directory /tmp/airbridge_tarfiles/[0m
+[90m[13:37:05] [TRACE] [0m
+[90m[13:37:05] [TRACE] Cleaning up any stray tar files from /home/airbridge2/airbridge/tar_files/ on target server[0m
+[90m[13:37:05] [TRACE] [0m
+[32m[13:37:06] ✓ Old tar files removed from target server[0m
+[34m[13:37:06] ▶ Verifying cleanup[0m
+[90m[13:37:06] [TRACE] Remaining containers: 0[0m
+[32m[13:37:06] ✓ Docker cleanup completed - all containers removed[0m
+[90m[13:37:06] [TRACE] cleanup_all_docker() completed[0m
 [32m\n=== Verifying TAR Files (server1) ===[0m
-[90m[13:21:05] [TRACE] verify_tar_files() called: HOST=192.168.1.3, role=server1[0m
-[35m[13:21:05] [DEBUG] SCRIPT_DIR=/home/airbridge1/Airbridge_artifacts[0m
-[35m[13:21:05] [DEBUG] Server1 requires: sftp.tar mysql.tar nginx.tar storage-service.tar management-service.tar notification-service.tar[0m
-[34m[13:21:05] ▶ Checking for tar files in /home/airbridge1/Airbridge_artifacts/tar_files/[0m
-[35m[13:21:05] [DEBUG] Checking if directory exists: /home/airbridge1/Airbridge_artifacts/tar_files[0m
-[35m[13:21:05] [DEBUG] Directory exists, listing contents:[0m
-[90m[13:21:05] [TRACE] total 4.7G
+[90m[13:37:06] [TRACE] verify_tar_files() called: HOST=192.168.1.3, role=server1[0m
+[35m[13:37:06] [DEBUG] SCRIPT_DIR=/home/airbridge1/Airbridge_artifacts[0m
+[35m[13:37:06] [DEBUG] Server1 requires: sftp.tar mysql.tar nginx.tar storage-service.tar management-service.tar notification-service.tar[0m
+[34m[13:37:06] ▶ Checking for tar files in /home/airbridge1/Airbridge_artifacts/tar_files/[0m
+[35m[13:37:06] [DEBUG] Checking if directory exists: /home/airbridge1/Airbridge_artifacts/tar_files[0m
+[35m[13:37:06] [DEBUG] Directory exists, listing contents:[0m
+[90m[13:37:06] [TRACE] total 4.7G
 -rw-rw-r-- 1 airbridge1 airbridge1 1.2G May 18 11:34 auth-service.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 1.1G May 18 11:35 management-service.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 225M May 18 11:35 mysql.tar
@@ -170,35 +170,35 @@
 -rw-rw-r-- 1 airbridge1 airbridge1  69M May 18 11:35 sftp.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 244M May 18 11:35 storage-service.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 164M May 18 11:35 webportal_service.tar[0m
-[90m[13:21:05] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
-[32m[13:21:05] ✓ Found: sftp.tar (69M, 71432192 bytes)[0m
-[90m[13:21:05] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 69M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
-[90m[13:21:05] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar[0m
-[32m[13:21:05] ✓ Found: mysql.tar (225M, 234906112 bytes)[0m
-[90m[13:21:05] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 225M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar[0m
-[90m[13:21:05] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
-[32m[13:21:06] ✓ Found: nginx.tar (58M, 59776512 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 58M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar[0m
-[32m[13:21:06] ✓ Found: storage-service.tar (244M, 255143424 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 244M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar[0m
-[32m[13:21:06] ✓ Found: management-service.tar (1.1G, 1180718592 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 1.1G May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar[0m
-[32m[13:21:06] ✓ Found: notification-service.tar (259M, 271088128 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 259M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar[0m
-[35m[13:21:06] [DEBUG] Verification summary: Found=6, Missing=0, Total=6[0m
-[32m[13:21:06] ✓ All required TAR files found (6/6)[0m
-[90m[13:21:06] [TRACE] verify_tar_files() completed successfully[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
+[32m[13:37:06] ✓ Found: sftp.tar (69M, 71432192 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 69M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar[0m
+[32m[13:37:06] ✓ Found: mysql.tar (225M, 234906112 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 225M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
+[32m[13:37:06] ✓ Found: nginx.tar (58M, 59776512 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 58M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar[0m
+[32m[13:37:06] ✓ Found: storage-service.tar (244M, 255143424 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 244M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar[0m
+[32m[13:37:06] ✓ Found: management-service.tar (1.1G, 1180718592 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 1.1G May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar[0m
+[32m[13:37:06] ✓ Found: notification-service.tar (259M, 271088128 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 259M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar[0m
+[35m[13:37:06] [DEBUG] Verification summary: Found=6, Missing=0, Total=6[0m
+[32m[13:37:06] ✓ All required TAR files found (6/6)[0m
+[90m[13:37:06] [TRACE] verify_tar_files() completed successfully[0m
 [32m\n=== Verifying TAR Files (server2) ===[0m
-[90m[13:21:06] [TRACE] verify_tar_files() called: HOST=192.168.1.7, role=server2[0m
-[35m[13:21:06] [DEBUG] SCRIPT_DIR=/home/airbridge1/Airbridge_artifacts[0m
-[35m[13:21:06] [DEBUG] Server2 requires: sftp.tar redis.tar rabbitmq.tar nginx.tar auth-service.tar scanning-service.tar webportal_service.tar[0m
-[34m[13:21:06] ▶ Checking for tar files in /home/airbridge1/Airbridge_artifacts/tar_files/[0m
-[35m[13:21:06] [DEBUG] Checking if directory exists: /home/airbridge1/Airbridge_artifacts/tar_files[0m
-[35m[13:21:06] [DEBUG] Directory exists, listing contents:[0m
-[90m[13:21:06] [TRACE] total 4.7G
+[90m[13:37:06] [TRACE] verify_tar_files() called: HOST=192.168.1.7, role=server2[0m
+[35m[13:37:06] [DEBUG] SCRIPT_DIR=/home/airbridge1/Airbridge_artifacts[0m
+[35m[13:37:06] [DEBUG] Server2 requires: sftp.tar redis.tar rabbitmq.tar nginx.tar auth-service.tar scanning-service.tar webportal_service.tar[0m
+[34m[13:37:06] ▶ Checking for tar files in /home/airbridge1/Airbridge_artifacts/tar_files/[0m
+[35m[13:37:06] [DEBUG] Checking if directory exists: /home/airbridge1/Airbridge_artifacts/tar_files[0m
+[35m[13:37:06] [DEBUG] Directory exists, listing contents:[0m
+[90m[13:37:06] [TRACE] total 4.7G
 -rw-rw-r-- 1 airbridge1 airbridge1 1.2G May 18 11:34 auth-service.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 1.1G May 18 11:35 management-service.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 225M May 18 11:35 mysql.tar
@@ -210,286 +210,286 @@
 -rw-rw-r-- 1 airbridge1 airbridge1  69M May 18 11:35 sftp.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 244M May 18 11:35 storage-service.tar
 -rw-rw-r-- 1 airbridge1 airbridge1 164M May 18 11:35 webportal_service.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
-[32m[13:21:06] ✓ Found: sftp.tar (69M, 71432192 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 69M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar[0m
-[32m[13:21:06] ✓ Found: redis.tar (17M, 17257984 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 17M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar[0m
-[32m[13:21:06] ✓ Found: rabbitmq.tar (98M, 102020608 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 98M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
-[32m[13:21:06] ✓ Found: nginx.tar (58M, 59776512 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 58M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar[0m
-[32m[13:21:06] ✓ Found: auth-service.tar (1.2G, 1189480960 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 1.2G May 18 11:34 /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar[0m
-[32m[13:21:06] ✓ Found: scanning-service.tar (1.4G, 1427222528 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 1.4G May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar[0m
-[90m[13:21:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar[0m
-[32m[13:21:06] ✓ Found: webportal_service.tar (164M, 171892736 bytes)[0m
-[90m[13:21:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 164M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar[0m
-[35m[13:21:06] [DEBUG] Verification summary: Found=7, Missing=0, Total=7[0m
-[32m[13:21:06] ✓ All required TAR files found (7/7)[0m
-[90m[13:21:06] [TRACE] verify_tar_files() completed successfully[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
+[32m[13:37:06] ✓ Found: sftp.tar (69M, 71432192 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 69M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar[0m
+[32m[13:37:06] ✓ Found: redis.tar (17M, 17257984 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 17M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar[0m
+[32m[13:37:06] ✓ Found: rabbitmq.tar (98M, 102020608 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 98M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
+[32m[13:37:06] ✓ Found: nginx.tar (58M, 59776512 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 58M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar[0m
+[32m[13:37:06] ✓ Found: auth-service.tar (1.2G, 1189480960 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 1.2G May 18 11:34 /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar[0m
+[32m[13:37:06] ✓ Found: scanning-service.tar (1.4G, 1427222528 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 1.4G May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar[0m
+[90m[13:37:06] [TRACE] Checking file: /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar[0m
+[32m[13:37:06] ✓ Found: webportal_service.tar (164M, 171892736 bytes)[0m
+[90m[13:37:06] [TRACE] File details: -rw-rw-r-- 1 airbridge1 airbridge1 164M May 18 11:35 /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar[0m
+[35m[13:37:06] [DEBUG] Verification summary: Found=7, Missing=0, Total=7[0m
+[32m[13:37:06] ✓ All required TAR files found (7/7)[0m
+[90m[13:37:06] [TRACE] verify_tar_files() completed successfully[0m
 [32m\n=== Loading Docker Images from TAR on 192.168.1.3 (server1) ===[0m
-[90m[13:21:06] [TRACE] load_docker_images() called: HOST=192.168.1.3, role=server1[0m
-[35m[13:21:06] [DEBUG] Server1: Loading 6 images[0m
-[35m[13:21:06] [DEBUG] TAR_FILES: sftp.tar mysql.tar nginx.tar storage-service.tar management-service.tar notification-service.tar[0m
-[35m[13:21:06] [DEBUG] IMAGE_TAGS: atmoz/sftp:latest mysql:8.0 nginx:latest storage-service:local management-service:local notification-service:local[0m
-[35m[13:21:06] [DEBUG] SSH credentials: user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[90m[13:21:06] [TRACE] Testing SSH connection to airbridge1@192.168.1.3...[0m
-[90m[13:21:07] [TRACE] SSH connection verified[0m
-[34m[13:21:07] ▶ Copying tar files to 192.168.1.3...[0m
-[90m[13:21:07] [TRACE] Creating temporary directory on remote server[0m
+[90m[13:37:06] [TRACE] load_docker_images() called: HOST=192.168.1.3, role=server1[0m
+[35m[13:37:06] [DEBUG] Server1: Loading 6 images[0m
+[35m[13:37:06] [DEBUG] TAR_FILES: sftp.tar mysql.tar nginx.tar storage-service.tar management-service.tar notification-service.tar[0m
+[35m[13:37:06] [DEBUG] IMAGE_TAGS: atmoz/sftp:latest mysql:8.0 nginx:latest storage-service:local management-service:local notification-service:local[0m
+[35m[13:37:06] [DEBUG] SSH credentials: user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[90m[13:37:06] [TRACE] Testing SSH connection to airbridge1@192.168.1.3...[0m
+[90m[13:37:06] [TRACE] SSH connection verified[0m
+[34m[13:37:06] ▶ Copying tar files to 192.168.1.3...[0m
+[90m[13:37:06] [TRACE] Creating temporary directory on remote server[0m
 Directory created
-[90m[13:21:08] [TRACE] Processing tar file: sftp.tar[0m
-[35m[13:21:08] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
-[34m[13:21:08] ▶ Copying sftp.tar (69M) to 192.168.1.3...[0m
-[90m[13:21:08] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
-[32m[13:21:10] ✓ Copied sftp.tar in 2s[0m
-[90m[13:21:10] [TRACE] Verifying file on remote server...[0m
-[90m[13:21:10] [TRACE] [0m
-[90m[13:21:11] [TRACE] Processing tar file: mysql.tar[0m
-[35m[13:21:11] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar[0m
-[34m[13:21:11] ▶ Copying mysql.tar (225M) to 192.168.1.3...[0m
-[90m[13:21:11] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
-[32m[13:21:13] ✓ Copied mysql.tar in 2s[0m
-[90m[13:21:13] [TRACE] Verifying file on remote server...[0m
-[90m[13:21:13] [TRACE] [0m
-[90m[13:21:14] [TRACE] Processing tar file: nginx.tar[0m
-[35m[13:21:14] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
-[34m[13:21:14] ▶ Copying nginx.tar (58M) to 192.168.1.3...[0m
-[90m[13:21:14] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
-[32m[13:21:15] ✓ Copied nginx.tar in 1s[0m
-[90m[13:21:15] [TRACE] Verifying file on remote server...[0m
-[90m[13:21:15] [TRACE] [0m
-[90m[13:21:16] [TRACE] Processing tar file: storage-service.tar[0m
-[35m[13:21:16] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar[0m
-[34m[13:21:16] ▶ Copying storage-service.tar (244M) to 192.168.1.3...[0m
-[90m[13:21:16] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
-[32m[13:21:18] ✓ Copied storage-service.tar in 2s[0m
-[90m[13:21:18] [TRACE] Verifying file on remote server...[0m
-[90m[13:21:18] [TRACE] [0m
-[90m[13:21:19] [TRACE] Processing tar file: management-service.tar[0m
-[35m[13:21:19] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar[0m
-[34m[13:21:19] ▶ Copying management-service.tar (1.1G) to 192.168.1.3...[0m
-[90m[13:21:19] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
-[32m[13:21:24] ✓ Copied management-service.tar in 5s[0m
-[90m[13:21:24] [TRACE] Verifying file on remote server...[0m
-[90m[13:21:24] [TRACE] [0m
-[90m[13:21:25] [TRACE] Processing tar file: notification-service.tar[0m
-[35m[13:21:25] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar[0m
-[34m[13:21:25] ▶ Copying notification-service.tar (259M) to 192.168.1.3...[0m
-[90m[13:21:25] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
-[32m[13:21:28] ✓ Copied notification-service.tar in 3s[0m
-[90m[13:21:28] [TRACE] Verifying file on remote server...[0m
-[90m[13:21:28] [TRACE] [0m
-[35m[13:21:29] [DEBUG] File copy summary: Success=6, Failed=0, Total=6[0m
-[34m[13:21:29] ▶ Loading sftp.tar as atmoz/sftp:latest...[0m
-[90m[13:21:29] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/sftp.tar[0m
-[90m[13:21:32] [TRACE] Docker load output: Loaded image: atmoz/sftp:latest[0m
-[90m[13:21:32] [TRACE] Load completed in 3s[0m
-[32m[13:21:32] ✓ Loaded: atmoz/sftp:latest (took 3s)[0m
-[35m[13:21:32] [DEBUG] Loaded image: atmoz/sftp:latest, Expected tag: atmoz/sftp:latest[0m
-[35m[13:21:32] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:21:32] ▶ Loading mysql.tar as mysql:8.0...[0m
-[90m[13:21:32] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/mysql.tar[0m
-[90m[13:21:39] [TRACE] Docker load output: Loaded image: mysql:8.0[0m
-[90m[13:21:39] [TRACE] Load completed in 7s[0m
-[32m[13:21:39] ✓ Loaded: mysql:8.0 (took 7s)[0m
-[35m[13:21:39] [DEBUG] Loaded image: mysql:8.0, Expected tag: mysql:8.0[0m
-[35m[13:21:39] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:21:39] ▶ Loading nginx.tar as nginx:latest...[0m
-[90m[13:21:39] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/nginx.tar[0m
-[90m[13:21:43] [TRACE] Docker load output: Loaded image: nginx:latest[0m
-[90m[13:21:43] [TRACE] Load completed in 4s[0m
-[32m[13:21:43] ✓ Loaded: nginx:latest (took 4s)[0m
-[35m[13:21:43] [DEBUG] Loaded image: nginx:latest, Expected tag: nginx:latest[0m
-[35m[13:21:43] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:21:43] ▶ Loading storage-service.tar as storage-service:local...[0m
-[90m[13:21:43] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/storage-service.tar[0m
-[90m[13:21:47] [TRACE] Docker load output: Loaded image: storage-service:local[0m
-[90m[13:21:47] [TRACE] Load completed in 4s[0m
-[32m[13:21:48] ✓ Loaded: storage-service:local (took 4s)[0m
-[35m[13:21:48] [DEBUG] Loaded image: storage-service:local, Expected tag: storage-service:local[0m
-[35m[13:21:48] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:21:48] ▶ Loading management-service.tar as management-service:local...[0m
-[90m[13:21:48] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/management-service.tar[0m
-[90m[13:22:00] [TRACE] Docker load output: Loaded image: management-service:latest[0m
-[90m[13:22:00] [TRACE] Load completed in 12s[0m
-[32m[13:22:00] ✓ Loaded: management-service:latest (took 12s)[0m
-[35m[13:22:00] [DEBUG] Loaded image: management-service:latest, Expected tag: management-service:local[0m
-[34m[13:22:00] ▶ Tagging management-service:latest as management-service:local[0m
-[90m[13:22:00] [TRACE] Docker tag command: docker tag 'management-service:latest' 'management-service:local'[0m
-[90m[13:22:00] [TRACE] [0m
-[32m[13:22:02] ✓ Tagged: management-service:local[0m
-[90m[13:22:02] [TRACE] Verifying tag...[0m
-[90m[13:22:02] [TRACE] [0m
-[34m[13:22:04] ▶ Loading notification-service.tar as notification-service:local...[0m
-[90m[13:22:04] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/notification-service.tar[0m
-[90m[13:22:09] [TRACE] Docker load output: Loaded image: notification-service:local[0m
-[90m[13:22:09] [TRACE] Load completed in 5s[0m
-[32m[13:22:09] ✓ Loaded: notification-service:local (took 5s)[0m
-[35m[13:22:09] [DEBUG] Loaded image: notification-service:local, Expected tag: notification-service:local[0m
-[35m[13:22:09] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[35m[13:22:09] [DEBUG] Image load summary: Success=6, Failed=0, Total=6[0m
-[34m[13:22:09] ▶ Cleaning up temporary tar files[0m
-[90m[13:22:09] [TRACE] Removing /tmp/airbridge_tarfiles on 192.168.1.3[0m
+[90m[13:37:06] [TRACE] Processing tar file: sftp.tar[0m
+[35m[13:37:06] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
+[34m[13:37:06] ▶ Copying sftp.tar (69M) to 192.168.1.3...[0m
+[90m[13:37:06] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:07] ✓ Copied sftp.tar in 1s[0m
+[90m[13:37:07] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:07] [TRACE] [0m
+[90m[13:37:07] [TRACE] Processing tar file: mysql.tar[0m
+[35m[13:37:07] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar[0m
+[34m[13:37:07] ▶ Copying mysql.tar (225M) to 192.168.1.3...[0m
+[90m[13:37:07] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/mysql.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:08] ✓ Copied mysql.tar in 1s[0m
+[90m[13:37:08] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:08] [TRACE] [0m
+[90m[13:37:09] [TRACE] Processing tar file: nginx.tar[0m
+[35m[13:37:09] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
+[34m[13:37:09] ▶ Copying nginx.tar (58M) to 192.168.1.3...[0m
+[90m[13:37:09] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:09] ✓ Copied nginx.tar in 0s[0m
+[90m[13:37:09] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:09] [TRACE] [0m
+[90m[13:37:09] [TRACE] Processing tar file: storage-service.tar[0m
+[35m[13:37:09] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar[0m
+[34m[13:37:09] ▶ Copying storage-service.tar (244M) to 192.168.1.3...[0m
+[90m[13:37:09] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/storage-service.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:10] ✓ Copied storage-service.tar in 1s[0m
+[90m[13:37:10] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:10] [TRACE] [0m
+[90m[13:37:11] [TRACE] Processing tar file: management-service.tar[0m
+[35m[13:37:11] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar[0m
+[34m[13:37:11] ▶ Copying management-service.tar (1.1G) to 192.168.1.3...[0m
+[90m[13:37:11] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/management-service.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:14] ✓ Copied management-service.tar in 3s[0m
+[90m[13:37:14] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:14] [TRACE] [0m
+[90m[13:37:14] [TRACE] Processing tar file: notification-service.tar[0m
+[35m[13:37:14] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar[0m
+[34m[13:37:14] ▶ Copying notification-service.tar (259M) to 192.168.1.3...[0m
+[90m[13:37:14] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/notification-service.tar airbridge1@192.168.1.3:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:16] ✓ Copied notification-service.tar in 2s[0m
+[90m[13:37:16] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:16] [TRACE] [0m
+[35m[13:37:16] [DEBUG] File copy summary: Success=6, Failed=0, Total=6[0m
+[34m[13:37:16] ▶ Loading sftp.tar as atmoz/sftp:latest...[0m
+[90m[13:37:16] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/sftp.tar[0m
+[90m[13:37:17] [TRACE] Docker load output: Loaded image: atmoz/sftp:latest[0m
+[90m[13:37:17] [TRACE] Load completed in 1s[0m
+[32m[13:37:17] ✓ Loaded: atmoz/sftp:latest (took 1s)[0m
+[35m[13:37:17] [DEBUG] Loaded image: atmoz/sftp:latest, Expected tag: atmoz/sftp:latest[0m
+[35m[13:37:17] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:17] ▶ Loading mysql.tar as mysql:8.0...[0m
+[90m[13:37:17] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/mysql.tar[0m
+[90m[13:37:18] [TRACE] Docker load output: Loaded image: mysql:8.0[0m
+[90m[13:37:18] [TRACE] Load completed in 1s[0m
+[32m[13:37:18] ✓ Loaded: mysql:8.0 (took 1s)[0m
+[35m[13:37:18] [DEBUG] Loaded image: mysql:8.0, Expected tag: mysql:8.0[0m
+[35m[13:37:18] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:18] ▶ Loading nginx.tar as nginx:latest...[0m
+[90m[13:37:18] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/nginx.tar[0m
+[90m[13:37:19] [TRACE] Docker load output: Loaded image: nginx:latest[0m
+[90m[13:37:19] [TRACE] Load completed in 1s[0m
+[32m[13:37:19] ✓ Loaded: nginx:latest (took 1s)[0m
+[35m[13:37:19] [DEBUG] Loaded image: nginx:latest, Expected tag: nginx:latest[0m
+[35m[13:37:19] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:19] ▶ Loading storage-service.tar as storage-service:local...[0m
+[90m[13:37:19] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/storage-service.tar[0m
+[90m[13:37:21] [TRACE] Docker load output: Loaded image: storage-service:local[0m
+[90m[13:37:21] [TRACE] Load completed in 2s[0m
+[32m[13:37:21] ✓ Loaded: storage-service:local (took 2s)[0m
+[35m[13:37:21] [DEBUG] Loaded image: storage-service:local, Expected tag: storage-service:local[0m
+[35m[13:37:21] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:21] ▶ Loading management-service.tar as management-service:local...[0m
+[90m[13:37:21] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/management-service.tar[0m
+[90m[13:37:29] [TRACE] Docker load output: Loaded image: management-service:latest[0m
+[90m[13:37:29] [TRACE] Load completed in 8s[0m
+[32m[13:37:29] ✓ Loaded: management-service:latest (took 8s)[0m
+[35m[13:37:29] [DEBUG] Loaded image: management-service:latest, Expected tag: management-service:local[0m
+[34m[13:37:29] ▶ Tagging management-service:latest as management-service:local[0m
+[90m[13:37:29] [TRACE] Docker tag command: docker tag 'management-service:latest' 'management-service:local'[0m
+[90m[13:37:29] [TRACE] [0m
+[32m[13:37:30] ✓ Tagged: management-service:local[0m
+[90m[13:37:30] [TRACE] Verifying tag...[0m
+[90m[13:37:30] [TRACE] [0m
+[34m[13:37:30] ▶ Loading notification-service.tar as notification-service:local...[0m
+[90m[13:37:30] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/notification-service.tar[0m
+[90m[13:37:32] [TRACE] Docker load output: Loaded image: notification-service:local[0m
+[90m[13:37:32] [TRACE] Load completed in 2s[0m
+[32m[13:37:32] ✓ Loaded: notification-service:local (took 2s)[0m
+[35m[13:37:32] [DEBUG] Loaded image: notification-service:local, Expected tag: notification-service:local[0m
+[35m[13:37:32] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[35m[13:37:32] [DEBUG] Image load summary: Success=6, Failed=0, Total=6[0m
+[34m[13:37:32] ▶ Cleaning up temporary tar files[0m
+[90m[13:37:32] [TRACE] Removing /tmp/airbridge_tarfiles on 192.168.1.3[0m
 Cleanup completed
-[32m[13:22:10] ✓ All images loaded successfully (6/6)[0m
-[34m[13:22:10] ▶ Listing loaded images[0m
-[90m[13:22:10] [TRACE] Querying docker images on 192.168.1.3[0m
-[90m[13:22:10] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:22:10] ▶ SSH to airbridge1@192.168.1.3: sudo docker images | grep -E '(sftp|mysql|redis|rabbitmq|:local)'[0m
+[32m[13:37:33] ✓ All images loaded successfully (6/6)[0m
+[34m[13:37:33] ▶ Listing loaded images[0m
+[90m[13:37:33] [TRACE] Querying docker images on 192.168.1.3[0m
+[90m[13:37:33] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:37:33] ▶ SSH to airbridge1@192.168.1.3: sudo docker images | grep -E '(sftp|mysql|redis|rabbitmq|:local)'[0m
 atmoz/sftp:latest            0960390462a4        264MB         71.4MB        
 management-service:local     1a3e16b700d7       2.44GB         1.18GB        
 mysql:8.0                    52cc603981fd       1.07GB          235MB        
 notification-service:local   9a2e74233bf9        572MB          271MB        
 storage-service:local        5c8192f18c94        553MB          255MB        
-[90m[13:22:12] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:22:12] [TRACE] load_docker_images() completed successfully[0m
+[90m[13:37:33] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:37:33] [TRACE] load_docker_images() completed successfully[0m
 [32m\n=== Loading Docker Images from TAR on 192.168.1.7 (server2) ===[0m
-[90m[13:22:12] [TRACE] load_docker_images() called: HOST=192.168.1.7, role=server2[0m
-[35m[13:22:12] [DEBUG] Server2: Loading 7 images[0m
-[35m[13:22:12] [DEBUG] TAR_FILES: sftp.tar redis.tar rabbitmq.tar nginx.tar auth-service.tar scanning-service.tar webportal_service.tar[0m
-[35m[13:22:12] [DEBUG] IMAGE_TAGS: atmoz/sftp:latest redis:7-alpine rabbitmq:3 nginx:latest auth-service:local scanning-service:local web-portal:local[0m
-[35m[13:22:12] [DEBUG] SSH credentials: user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[90m[13:22:12] [TRACE] Testing SSH connection to airbridge2@192.168.1.7...[0m
-[90m[13:22:12] [TRACE] SSH connection verified[0m
-[34m[13:22:12] ▶ Copying tar files to 192.168.1.7...[0m
-[90m[13:22:12] [TRACE] Creating temporary directory on remote server[0m
+[90m[13:37:33] [TRACE] load_docker_images() called: HOST=192.168.1.7, role=server2[0m
+[35m[13:37:33] [DEBUG] Server2: Loading 7 images[0m
+[35m[13:37:33] [DEBUG] TAR_FILES: sftp.tar redis.tar rabbitmq.tar nginx.tar auth-service.tar scanning-service.tar webportal_service.tar[0m
+[35m[13:37:33] [DEBUG] IMAGE_TAGS: atmoz/sftp:latest redis:7-alpine rabbitmq:3 nginx:latest auth-service:local scanning-service:local web-portal:local[0m
+[35m[13:37:33] [DEBUG] SSH credentials: user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[90m[13:37:33] [TRACE] Testing SSH connection to airbridge2@192.168.1.7...[0m
+[90m[13:37:33] [TRACE] SSH connection verified[0m
+[34m[13:37:33] ▶ Copying tar files to 192.168.1.7...[0m
+[90m[13:37:33] [TRACE] Creating temporary directory on remote server[0m
 Directory created
-[90m[13:22:12] [TRACE] Processing tar file: sftp.tar[0m
-[35m[13:22:12] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
-[34m[13:22:12] ▶ Copying sftp.tar (69M) to 192.168.1.7...[0m
-[90m[13:22:12] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:13] ✓ Copied sftp.tar in 1s[0m
-[90m[13:22:13] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:13] [TRACE] [0m
-[90m[13:22:13] [TRACE] Processing tar file: redis.tar[0m
-[35m[13:22:13] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar[0m
-[34m[13:22:13] ▶ Copying redis.tar (17M) to 192.168.1.7...[0m
-[90m[13:22:13] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:13] ✓ Copied redis.tar in 0s[0m
-[90m[13:22:13] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:13] [TRACE] [0m
-[90m[13:22:14] [TRACE] Processing tar file: rabbitmq.tar[0m
-[35m[13:22:14] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar[0m
-[34m[13:22:14] ▶ Copying rabbitmq.tar (98M) to 192.168.1.7...[0m
-[90m[13:22:14] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:14] ✓ Copied rabbitmq.tar in 0s[0m
-[90m[13:22:14] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:14] [TRACE] [0m
-[90m[13:22:15] [TRACE] Processing tar file: nginx.tar[0m
-[35m[13:22:15] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
-[34m[13:22:15] ▶ Copying nginx.tar (58M) to 192.168.1.7...[0m
-[90m[13:22:15] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:15] ✓ Copied nginx.tar in 0s[0m
-[90m[13:22:15] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:15] [TRACE] [0m
-[90m[13:22:15] [TRACE] Processing tar file: auth-service.tar[0m
-[35m[13:22:15] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar[0m
-[34m[13:22:15] ▶ Copying auth-service.tar (1.2G) to 192.168.1.7...[0m
-[90m[13:22:15] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:21] ✓ Copied auth-service.tar in 6s[0m
-[90m[13:22:21] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:21] [TRACE] [0m
-[90m[13:22:21] [TRACE] Processing tar file: scanning-service.tar[0m
-[35m[13:22:21] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar[0m
-[34m[13:22:21] ▶ Copying scanning-service.tar (1.4G) to 192.168.1.7...[0m
-[90m[13:22:21] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:27] ✓ Copied scanning-service.tar in 6s[0m
-[90m[13:22:27] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:27] [TRACE] [0m
-[90m[13:22:27] [TRACE] Processing tar file: webportal_service.tar[0m
-[35m[13:22:27] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar[0m
-[34m[13:22:27] ▶ Copying webportal_service.tar (164M) to 192.168.1.7...[0m
-[90m[13:22:27] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
-[32m[13:22:28] ✓ Copied webportal_service.tar in 1s[0m
-[90m[13:22:28] [TRACE] Verifying file on remote server...[0m
-[90m[13:22:28] [TRACE] [0m
-[35m[13:22:28] [DEBUG] File copy summary: Success=7, Failed=0, Total=7[0m
-[34m[13:22:28] ▶ Loading sftp.tar as atmoz/sftp:latest...[0m
-[90m[13:22:28] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/sftp.tar[0m
-[90m[13:22:30] [TRACE] Docker load output: Loaded image: atmoz/sftp:latest[0m
-[90m[13:22:30] [TRACE] Load completed in 2s[0m
-[32m[13:22:30] ✓ Loaded: atmoz/sftp:latest (took 2s)[0m
-[35m[13:22:30] [DEBUG] Loaded image: atmoz/sftp:latest, Expected tag: atmoz/sftp:latest[0m
-[35m[13:22:30] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:22:30] ▶ Loading redis.tar as redis:7-alpine...[0m
-[90m[13:22:30] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/redis.tar[0m
-[90m[13:22:31] [TRACE] Docker load output: Loaded image: redis:7-alpine[0m
-[90m[13:22:31] [TRACE] Load completed in 1s[0m
-[32m[13:22:31] ✓ Loaded: redis:7-alpine (took 1s)[0m
-[35m[13:22:31] [DEBUG] Loaded image: redis:7-alpine, Expected tag: redis:7-alpine[0m
-[35m[13:22:31] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:22:31] ▶ Loading rabbitmq.tar as rabbitmq:3...[0m
-[90m[13:22:31] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/rabbitmq.tar[0m
-[90m[13:22:35] [TRACE] Docker load output: Loaded image: rabbitmq:3[0m
-[90m[13:22:35] [TRACE] Load completed in 4s[0m
-[32m[13:22:35] ✓ Loaded: rabbitmq:3 (took 4s)[0m
-[35m[13:22:35] [DEBUG] Loaded image: rabbitmq:3, Expected tag: rabbitmq:3[0m
-[35m[13:22:35] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:22:35] ▶ Loading nginx.tar as nginx:latest...[0m
-[90m[13:22:35] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/nginx.tar[0m
-[90m[13:22:37] [TRACE] Docker load output: Loaded image: nginx:latest[0m
-[90m[13:22:37] [TRACE] Load completed in 2s[0m
-[32m[13:22:37] ✓ Loaded: nginx:latest (took 2s)[0m
-[35m[13:22:37] [DEBUG] Loaded image: nginx:latest, Expected tag: nginx:latest[0m
-[35m[13:22:37] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:22:37] ▶ Loading auth-service.tar as auth-service:local...[0m
-[90m[13:22:37] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/auth-service.tar[0m
-[90m[13:22:54] [TRACE] Docker load output: Loaded image: auth-service:local[0m
-[90m[13:22:54] [TRACE] Load completed in 17s[0m
-[32m[13:22:54] ✓ Loaded: auth-service:local (took 17s)[0m
-[35m[13:22:54] [DEBUG] Loaded image: auth-service:local, Expected tag: auth-service:local[0m
-[35m[13:22:54] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:22:54] ▶ Loading scanning-service.tar as scanning-service:local...[0m
-[90m[13:22:54] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/scanning-service.tar[0m
-[90m[13:23:13] [TRACE] Docker load output: Loaded image: scanning-service:local[0m
-[90m[13:23:13] [TRACE] Load completed in 19s[0m
-[32m[13:23:13] ✓ Loaded: scanning-service:local (took 19s)[0m
-[35m[13:23:13] [DEBUG] Loaded image: scanning-service:local, Expected tag: scanning-service:local[0m
-[35m[13:23:13] [DEBUG] Image already has correct tag, skipping tag operation[0m
-[34m[13:23:13] ▶ Loading webportal_service.tar as web-portal:local...[0m
-[90m[13:23:13] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/webportal_service.tar[0m
-[90m[13:23:17] [TRACE] Docker load output: Loaded image: k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service[0m
-[90m[13:23:17] [TRACE] Load completed in 4s[0m
-[32m[13:23:17] ✓ Loaded: k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service (took 4s)[0m
-[35m[13:23:17] [DEBUG] Loaded image: k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service, Expected tag: web-portal:local[0m
-[34m[13:23:17] ▶ Tagging k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service as web-portal:local[0m
-[90m[13:23:17] [TRACE] Docker tag command: docker tag 'k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service' 'web-portal:local'[0m
-[90m[13:23:17] [TRACE] [0m
-[32m[13:23:17] ✓ Tagged: web-portal:local[0m
-[90m[13:23:17] [TRACE] Verifying tag...[0m
-[90m[13:23:17] [TRACE] [0m
-[35m[13:23:17] [DEBUG] Image load summary: Success=7, Failed=0, Total=7[0m
-[34m[13:23:17] ▶ Cleaning up temporary tar files[0m
-[90m[13:23:17] [TRACE] Removing /tmp/airbridge_tarfiles on 192.168.1.7[0m
+[90m[13:37:34] [TRACE] Processing tar file: sftp.tar[0m
+[35m[13:37:34] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar[0m
+[34m[13:37:34] ▶ Copying sftp.tar (69M) to 192.168.1.7...[0m
+[90m[13:37:34] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/sftp.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:34] ✓ Copied sftp.tar in 0s[0m
+[90m[13:37:34] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:34] [TRACE] [0m
+[90m[13:37:34] [TRACE] Processing tar file: redis.tar[0m
+[35m[13:37:34] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar[0m
+[34m[13:37:34] ▶ Copying redis.tar (17M) to 192.168.1.7...[0m
+[90m[13:37:34] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/redis.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:35] ✓ Copied redis.tar in 0s[0m
+[90m[13:37:35] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:35] [TRACE] [0m
+[90m[13:37:35] [TRACE] Processing tar file: rabbitmq.tar[0m
+[35m[13:37:35] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar[0m
+[34m[13:37:35] ▶ Copying rabbitmq.tar (98M) to 192.168.1.7...[0m
+[90m[13:37:35] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/rabbitmq.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:36] ✓ Copied rabbitmq.tar in 1s[0m
+[90m[13:37:36] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:36] [TRACE] [0m
+[90m[13:37:36] [TRACE] Processing tar file: nginx.tar[0m
+[35m[13:37:36] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar[0m
+[34m[13:37:36] ▶ Copying nginx.tar (58M) to 192.168.1.7...[0m
+[90m[13:37:36] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/nginx.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:37] ✓ Copied nginx.tar in 1s[0m
+[90m[13:37:37] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:37] [TRACE] [0m
+[90m[13:37:37] [TRACE] Processing tar file: auth-service.tar[0m
+[35m[13:37:37] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar[0m
+[34m[13:37:37] ▶ Copying auth-service.tar (1.2G) to 192.168.1.7...[0m
+[90m[13:37:37] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/auth-service.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:42] ✓ Copied auth-service.tar in 5s[0m
+[90m[13:37:42] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:42] [TRACE] [0m
+[90m[13:37:42] [TRACE] Processing tar file: scanning-service.tar[0m
+[35m[13:37:42] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar[0m
+[34m[13:37:42] ▶ Copying scanning-service.tar (1.4G) to 192.168.1.7...[0m
+[90m[13:37:42] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/scanning-service.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:47] ✓ Copied scanning-service.tar in 5s[0m
+[90m[13:37:47] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:47] [TRACE] [0m
+[90m[13:37:48] [TRACE] Processing tar file: webportal_service.tar[0m
+[35m[13:37:48] [DEBUG] Source path: /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar[0m
+[34m[13:37:48] ▶ Copying webportal_service.tar (164M) to 192.168.1.7...[0m
+[90m[13:37:48] [TRACE] SCP command: scp /home/airbridge1/Airbridge_artifacts/tar_files/webportal_service.tar airbridge2@192.168.1.7:/tmp/airbridge_tarfiles/[0m
+[32m[13:37:48] ✓ Copied webportal_service.tar in 0s[0m
+[90m[13:37:48] [TRACE] Verifying file on remote server...[0m
+[90m[13:37:48] [TRACE] [0m
+[35m[13:37:49] [DEBUG] File copy summary: Success=7, Failed=0, Total=7[0m
+[34m[13:37:49] ▶ Loading sftp.tar as atmoz/sftp:latest...[0m
+[90m[13:37:49] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/sftp.tar[0m
+[90m[13:37:50] [TRACE] Docker load output: Loaded image: atmoz/sftp:latest[0m
+[90m[13:37:50] [TRACE] Load completed in 1s[0m
+[32m[13:37:50] ✓ Loaded: atmoz/sftp:latest (took 1s)[0m
+[35m[13:37:50] [DEBUG] Loaded image: atmoz/sftp:latest, Expected tag: atmoz/sftp:latest[0m
+[35m[13:37:50] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:50] ▶ Loading redis.tar as redis:7-alpine...[0m
+[90m[13:37:50] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/redis.tar[0m
+[90m[13:37:50] [TRACE] Docker load output: Loaded image: redis:7-alpine[0m
+[90m[13:37:50] [TRACE] Load completed in 0s[0m
+[32m[13:37:50] ✓ Loaded: redis:7-alpine (took 0s)[0m
+[35m[13:37:50] [DEBUG] Loaded image: redis:7-alpine, Expected tag: redis:7-alpine[0m
+[35m[13:37:50] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:50] ▶ Loading rabbitmq.tar as rabbitmq:3...[0m
+[90m[13:37:50] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/rabbitmq.tar[0m
+[90m[13:37:52] [TRACE] Docker load output: Loaded image: rabbitmq:3[0m
+[90m[13:37:52] [TRACE] Load completed in 2s[0m
+[32m[13:37:52] ✓ Loaded: rabbitmq:3 (took 2s)[0m
+[35m[13:37:52] [DEBUG] Loaded image: rabbitmq:3, Expected tag: rabbitmq:3[0m
+[35m[13:37:52] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:52] ▶ Loading nginx.tar as nginx:latest...[0m
+[90m[13:37:52] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/nginx.tar[0m
+[90m[13:37:53] [TRACE] Docker load output: Loaded image: nginx:latest[0m
+[90m[13:37:53] [TRACE] Load completed in 1s[0m
+[32m[13:37:53] ✓ Loaded: nginx:latest (took 1s)[0m
+[35m[13:37:53] [DEBUG] Loaded image: nginx:latest, Expected tag: nginx:latest[0m
+[35m[13:37:53] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:37:53] ▶ Loading auth-service.tar as auth-service:local...[0m
+[90m[13:37:53] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/auth-service.tar[0m
+[90m[13:38:01] [TRACE] Docker load output: Loaded image: auth-service:local[0m
+[90m[13:38:01] [TRACE] Load completed in 8s[0m
+[32m[13:38:01] ✓ Loaded: auth-service:local (took 8s)[0m
+[35m[13:38:01] [DEBUG] Loaded image: auth-service:local, Expected tag: auth-service:local[0m
+[35m[13:38:01] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:38:01] ▶ Loading scanning-service.tar as scanning-service:local...[0m
+[90m[13:38:01] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/scanning-service.tar[0m
+[90m[13:38:12] [TRACE] Docker load output: Loaded image: scanning-service:local[0m
+[90m[13:38:12] [TRACE] Load completed in 11s[0m
+[32m[13:38:12] ✓ Loaded: scanning-service:local (took 11s)[0m
+[35m[13:38:12] [DEBUG] Loaded image: scanning-service:local, Expected tag: scanning-service:local[0m
+[35m[13:38:12] [DEBUG] Image already has correct tag, skipping tag operation[0m
+[34m[13:38:12] ▶ Loading webportal_service.tar as web-portal:local...[0m
+[90m[13:38:12] [TRACE] Docker load command: docker load -i /tmp/airbridge_tarfiles/webportal_service.tar[0m
+[90m[13:38:15] [TRACE] Docker load output: Loaded image: k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service[0m
+[90m[13:38:15] [TRACE] Load completed in 3s[0m
+[32m[13:38:15] ✓ Loaded: k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service (took 3s)[0m
+[35m[13:38:15] [DEBUG] Loaded image: k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service, Expected tag: web-portal:local[0m
+[34m[13:38:15] ▶ Tagging k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service as web-portal:local[0m
+[90m[13:38:15] [TRACE] Docker tag command: docker tag 'k8s-cr.accops.in/airbridge:bdevelop_IMGv7webportal_service' 'web-portal:local'[0m
+[90m[13:38:15] [TRACE] [0m
+[32m[13:38:15] ✓ Tagged: web-portal:local[0m
+[90m[13:38:15] [TRACE] Verifying tag...[0m
+[90m[13:38:15] [TRACE] [0m
+[35m[13:38:15] [DEBUG] Image load summary: Success=7, Failed=0, Total=7[0m
+[34m[13:38:15] ▶ Cleaning up temporary tar files[0m
+[90m[13:38:15] [TRACE] Removing /tmp/airbridge_tarfiles on 192.168.1.7[0m
 Cleanup completed
-[32m[13:23:17] ✓ All images loaded successfully (7/7)[0m
-[34m[13:23:17] ▶ Listing loaded images[0m
-[90m[13:23:17] [TRACE] Querying docker images on 192.168.1.7[0m
-[90m[13:23:17] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:23:17] ▶ SSH to airbridge2@192.168.1.7: sudo docker images | grep -E '(sftp|mysql|redis|rabbitmq|:local)'[0m
+[32m[13:38:16] ✓ All images loaded successfully (7/7)[0m
+[34m[13:38:16] ▶ Listing loaded images[0m
+[90m[13:38:16] [TRACE] Querying docker images on 192.168.1.7[0m
+[90m[13:38:16] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:16] ▶ SSH to airbridge2@192.168.1.7: sudo docker images | grep -E '(sftp|mysql|redis|rabbitmq|:local)'[0m
 atmoz/sftp:latest                                            0960390462a4        264MB         71.4MB        
 auth-service:local                                           dddf7dcd0cf2       2.45GB         1.19GB        
 rabbitmq:3                                                   590901dae633        336MB          102MB        
 redis:7-alpine                                               4706ecab5371       60.7MB         17.2MB        
 scanning-service:local                                       d6e187245814       2.98GB         1.43GB        
 web-portal:local                                             c20e3fe09d1c        354MB          172MB        
-[90m[13:23:18] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:23:18] [TRACE] load_docker_images() completed successfully[0m
+[90m[13:38:16] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:38:16] [TRACE] load_docker_images() completed successfully[0m
 [32m\n=== Deploying Compose Stack to 192.168.1.3 (server1) ===[0m
-[90m[13:23:18] [TRACE] write_compose_and_env() called: HOST=192.168.1.3, role=server1[0m
-[34m[13:23:18] ▶ Generating .env and docker-compose.yml for server1[0m
-[34m[13:23:18] ▶ Services: mysql, sftp1, storage-service, management-service, notification-service[0m
-[35m[13:23:18] [DEBUG] Expanding server1 compose template[0m
-[35m[13:23:18] [DEBUG] Compose file generated (6842 characters)[0m
-[90m[13:23:18] [TRACE] Compose file preview (first 300 chars): services:
+[90m[13:38:16] [TRACE] write_compose_and_env() called: HOST=192.168.1.3, role=server1[0m
+[34m[13:38:16] ▶ Generating .env and docker-compose.yml for server1[0m
+[34m[13:38:16] ▶ Services: mysql, sftp1, storage-service, management-service, notification-service[0m
+[35m[13:38:16] [DEBUG] Expanding server1 compose template[0m
+[35m[13:38:16] [DEBUG] Compose file generated (6842 characters)[0m
+[90m[13:38:16] [TRACE] Compose file preview (first 300 chars): services:
   mysql:
     image: mysql:8.0
     platform: linux/amd64
@@ -501,17 +501,17 @@ web-portal:local                                             c20e3fe09d1c       
     volumes:
       - /opt/airbridge/mysql:/var/lib/mysql
       - /opt/airbridge/sql:/docker-entr...[0m
-[34m[13:23:18] ▶ Uploading files to 192.168.1.3:/opt/airbridge/[0m
+[34m[13:38:16] ▶ Uploading files to 192.168.1.3:/opt/airbridge/[0m
 [remote] Writing .env and docker-compose.yml to /opt/airbridge/
 [remote] Files uploaded successfully
-[32m[13:24:14] ✓ Compose stack uploaded to 192.168.1.3[0m
+[32m[13:38:16] ✓ Compose stack uploaded to 192.168.1.3[0m
 [32m\n=== Deploying Compose Stack to 192.168.1.7 (server2) ===[0m
-[90m[13:24:14] [TRACE] write_compose_and_env() called: HOST=192.168.1.7, role=server2[0m
-[34m[13:24:14] ▶ Generating .env and docker-compose.yml for server2[0m
-[34m[13:24:14] ▶ Services: redis, rabbitmq, sftp2, auth-service, scanning-service, web-portal[0m
-[35m[13:24:14] [DEBUG] Expanding server2 compose template[0m
-[35m[13:24:14] [DEBUG] Compose file generated (7241 characters)[0m
-[90m[13:24:14] [TRACE] Compose file preview (first 300 chars): services:
+[90m[13:38:16] [TRACE] write_compose_and_env() called: HOST=192.168.1.7, role=server2[0m
+[34m[13:38:16] ▶ Generating .env and docker-compose.yml for server2[0m
+[34m[13:38:16] ▶ Services: redis, rabbitmq, sftp2, auth-service, scanning-service, web-portal[0m
+[35m[13:38:16] [DEBUG] Expanding server2 compose template[0m
+[35m[13:38:16] [DEBUG] Compose file generated (7241 characters)[0m
+[90m[13:38:16] [TRACE] Compose file preview (first 300 chars): services:
   redis:
     image: redis:7-alpine
     platform: linux/amd64
@@ -527,30 +527,24 @@ web-portal:local                                             c20e3fe09d1c       
 
   rabbitmq:
     image: ...[0m
-[34m[13:24:14] ▶ Uploading files to 192.168.1.7:/opt/airbridge/[0m
+[34m[13:38:16] ▶ Uploading files to 192.168.1.7:/opt/airbridge/[0m
 [remote] Writing .env and docker-compose.yml to /opt/airbridge/
 [remote] Files uploaded successfully
-[32m[13:24:14] ✓ Compose stack uploaded to 192.168.1.7[0m
+[32m[13:38:17] ✓ Compose stack uploaded to 192.168.1.7[0m
 [32m\n=== Configuring Nginx Container on 192.168.1.3 ===[0m
-[90m[13:24:14] [TRACE] configure_nginx() called: HOST=192.168.1.3[0m
+[90m[13:38:17] [TRACE] configure_nginx() called: HOST=192.168.1.3[0m
 [32m\n=== Generating SSL Certificate on 192.168.1.3 ===[0m
-[90m[13:24:14] [TRACE] generate_ssl_certificate() called: HOST=192.168.1.3[0m
-[34m[13:24:14] ▶ Generating self-signed SSL certificate for 192.168.1.3[0m
+[90m[13:38:17] [TRACE] generate_ssl_certificate() called: HOST=192.168.1.3[0m
+[34m[13:38:17] ▶ Generating self-signed SSL certificate for 192.168.1.3[0m
 [remote] Creating SSL certificate directory
 [remote] Checking if certificate already exists
-[remote] Generating self-signed SSL certificate (valid for 365 days)
-[remote] ...+..................+......+........+.+.....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*......+...+...+..+.+..+....+......+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.......+..+......+...+..........+.....+....+..+.+.....+....+...+.....+...........................+.........+.+......+.....+.......+..+.........+....+..+.............+..+.+.................+.+.........+...+........+.........+...............+...+...+.+.....+...+......+.+......+.....+............................+......+...........+...+....+..+...+......................+.....+...............+......+.............+..............+.+..+....+...+...........+.........+.......+.....+...+......+............+...+.......+...+..+...+....+...+...+......+........+.+.....+.+........+...+....+.....+.+..+...............+.+.....+.+.....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-[remote] ......+...........+....+...+...+.....+...+.+.....+....+..+...+....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*....+..........+......+........+....+.................+.+.....+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.........+..+....+...........+...+....+.....+............+...+.+............+............+..+...............+..........+...........+....+........+...+..................+......+.+.....+.......+........+...+....+...............+......+......+........+.+.....+.+........+...+....+..............+..........+......+...+..+..........+...+...+.................+.+..+...............+...................+...+..+...+............+...+.+.....+.+........+...+....+.....+.+...+...........+....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-[remote] -----
-[remote] SSL certificate generated successfully
-[remote] Certificate: /opt/airbridge/nginx/ssl/airbridge.crt
-[remote] Private key: /opt/airbridge/nginx/ssl/airbridge.key
-[32m[13:24:16] ✓ SSL certificate generated on 192.168.1.3[0m
-[34m[13:24:16] ▶ Generating Nginx reverse proxy config for container[0m
-[35m[13:24:16] [DEBUG] SERVER1=192.168.1.3, SERVER2=192.168.1.7[0m
-[90m[13:24:16] [TRACE] Expanding Nginx template with envsubst[0m
-[35m[13:24:16] [DEBUG] Nginx config generated (3945 characters)[0m
-[90m[13:24:16] [TRACE] Nginx config preview (first 500 chars): # /etc/nginx/conf.d/airbridge.conf
+[remote] SSL certificate already exists, skipping generation
+[32m[13:38:17] ✓ SSL certificate generated on 192.168.1.3[0m
+[34m[13:38:17] ▶ Generating Nginx reverse proxy config for container[0m
+[35m[13:38:17] [DEBUG] SERVER1=192.168.1.3, SERVER2=192.168.1.7[0m
+[90m[13:38:17] [TRACE] Expanding Nginx template with envsubst[0m
+[35m[13:38:17] [DEBUG] Nginx config generated (3945 characters)[0m
+[90m[13:38:17] [TRACE] Nginx config preview (first 500 chars): # /etc/nginx/conf.d/airbridge.conf
 upstream web_upstream {
     server 192.168.1.3:8080 max_fails=3 fail_timeout=30s;
     server 192.168.1.7:8080 max_fails=3 fail_timeout=30s;
@@ -575,33 +569,27 @@ server {
 
     # Redirect all HTTP traffic to HTTPS
     return 301 https://...[0m
-[34m[13:24:16] ▶ Uploading Nginx config to 192.168.1.3 for container[0m
+[34m[13:38:17] ▶ Uploading Nginx config to 192.168.1.3 for container[0m
 [remote] Creating Nginx config directory for container
 [remote] Backing up existing Nginx config (if any)
 [remote] Writing new Nginx config for container
 [remote] Nginx config written to /opt/airbridge/nginx/airbridge.conf for container
 [remote] Nginx will run as a container and use this config file
-[32m[13:24:18] ✓ Nginx container config created on 192.168.1.3[0m
+[32m[13:38:17] ✓ Nginx container config created on 192.168.1.3[0m
 [32m\n=== Configuring Nginx Container on 192.168.1.7 ===[0m
-[90m[13:24:18] [TRACE] configure_nginx() called: HOST=192.168.1.7[0m
+[90m[13:38:17] [TRACE] configure_nginx() called: HOST=192.168.1.7[0m
 [32m\n=== Generating SSL Certificate on 192.168.1.7 ===[0m
-[90m[13:24:18] [TRACE] generate_ssl_certificate() called: HOST=192.168.1.7[0m
-[34m[13:24:18] ▶ Generating self-signed SSL certificate for 192.168.1.7[0m
+[90m[13:38:17] [TRACE] generate_ssl_certificate() called: HOST=192.168.1.7[0m
+[34m[13:38:17] ▶ Generating self-signed SSL certificate for 192.168.1.7[0m
 [remote] Creating SSL certificate directory
 [remote] Checking if certificate already exists
-[remote] Generating self-signed SSL certificate (valid for 365 days)
-[remote] .+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.+...+..+.......+......+.....+.........+.......+...+..+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*...+..+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-[remote] ...+...+..+......+...+....+......+.........+......+......+.....+......+....+...+........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*..............+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.+...............+...+..........+......+..+.........+.+...+..+.......+......+..+....+.........+.....+..........+...........+...+..........+...+........+.+...+...+........+....+...+.....+.......+......+..+.............+......+.....+.........+.+.....+.+...+..+.......+...............+......+..+.......+..+.+.........+...............+...+......+..+.......+...+...+...........+...............+...+......+......+..................+...+....+...........+....+......+.....+...+.+...+..+...+.+............+..+...+............................+.....+..........+......+...+......+..+.......+...+..+...+...+....+...+..+.......+......+...+.....+.......+..+................+..............+...+....+........+...+....+........+................+.....+.+.....................+.....+....+.....+..................................+............+..+...+..........+..+...............+...+....+...+..+......+...+.+......+.....+...+.......+..+..........+..+....+......+...+......+..+...+....+..+...+......+......+....+.........+..+...+...+....+...........+.......+..+....+.........+.....+...+...+..........+...........+.+.........+......+...+..+...+.+...+...+.........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-[remote] -----
-[remote] SSL certificate generated successfully
-[remote] Certificate: /opt/airbridge/nginx/ssl/airbridge.crt
-[remote] Private key: /opt/airbridge/nginx/ssl/airbridge.key
-[32m[13:24:19] ✓ SSL certificate generated on 192.168.1.7[0m
-[34m[13:24:19] ▶ Generating Nginx reverse proxy config for container[0m
-[35m[13:24:19] [DEBUG] SERVER1=192.168.1.3, SERVER2=192.168.1.7[0m
-[90m[13:24:19] [TRACE] Expanding Nginx template with envsubst[0m
-[35m[13:24:19] [DEBUG] Nginx config generated (3945 characters)[0m
-[90m[13:24:19] [TRACE] Nginx config preview (first 500 chars): # /etc/nginx/conf.d/airbridge.conf
+[remote] SSL certificate already exists, skipping generation
+[32m[13:38:18] ✓ SSL certificate generated on 192.168.1.7[0m
+[34m[13:38:18] ▶ Generating Nginx reverse proxy config for container[0m
+[35m[13:38:18] [DEBUG] SERVER1=192.168.1.3, SERVER2=192.168.1.7[0m
+[90m[13:38:18] [TRACE] Expanding Nginx template with envsubst[0m
+[35m[13:38:18] [DEBUG] Nginx config generated (3945 characters)[0m
+[90m[13:38:18] [TRACE] Nginx config preview (first 500 chars): # /etc/nginx/conf.d/airbridge.conf
 upstream web_upstream {
     server 192.168.1.3:8080 max_fails=3 fail_timeout=30s;
     server 192.168.1.7:8080 max_fails=3 fail_timeout=30s;
@@ -626,52 +614,52 @@ server {
 
     # Redirect all HTTP traffic to HTTPS
     return 301 https://...[0m
-[34m[13:24:19] ▶ Uploading Nginx config to 192.168.1.7 for container[0m
+[34m[13:38:18] ▶ Uploading Nginx config to 192.168.1.7 for container[0m
 [remote] Creating Nginx config directory for container
 [remote] Backing up existing Nginx config (if any)
 [remote] Writing new Nginx config for container
 [remote] Nginx config written to /opt/airbridge/nginx/airbridge.conf for container
 [remote] Nginx will run as a container and use this config file
-[32m[13:24:19] ✓ Nginx container config created on 192.168.1.7[0m
+[32m[13:38:18] ✓ Nginx container config created on 192.168.1.7[0m
 [32m\n=== Starting Containers on 192.168.1.3 ===[0m
-[90m[13:24:19] [TRACE] compose_up() called: HOST=192.168.1.3[0m
-[34m[13:24:19] ▶ Cleaning up existing containers (if any)[0m
-[90m[13:24:19] [TRACE] Checking for existing containers on 192.168.1.3[0m
-[90m[13:24:19] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:24:19] ▶ SSH to airbridge1@192.168.1.3: test -f /opt/airbridge/docker-compose.yml[0m
-[90m[13:24:20] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:24:20] [TRACE] docker-compose.yml exists, checking for containers[0m
-[90m[13:24:22] [TRACE] Found 0 existing containers[0m
-[35m[13:24:22] [DEBUG] No existing containers found[0m
-[34m[13:24:22] ▶ Skipping docker compose pull (using local tar-loaded images)[0m
-[35m[13:24:22] [DEBUG] Using pre-loaded images from tar files[0m
-[34m[13:24:22] ▶ Starting containers with docker compose up -d[0m
-[90m[13:24:22] [TRACE] Changing to /opt/airbridge directory[0m
-[90m[13:24:22] [TRACE] Command: cd /opt/airbridge && sudo docker compose up -d[0m
-[90m[13:24:22] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[90m[13:24:22] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:24:22] ▶ SSH to airbridge1@192.168.1.3: cd /opt/airbridge && sudo --preserve-env=PATH,HOME env $(cat .env | xargs) docker compose up -d[0m
-[34m[13:24:22] ▶ SSH to airbridge1@192.168.1.3: cd /opt/airbridge && sudo --preserve-env=PATH,HOME env $(cat .env | xargs) docker compose up -d[0m
+[90m[13:38:18] [TRACE] compose_up() called: HOST=192.168.1.3[0m
+[34m[13:38:18] ▶ Cleaning up existing containers (if any)[0m
+[90m[13:38:18] [TRACE] Checking for existing containers on 192.168.1.3[0m
+[90m[13:38:18] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:18] ▶ SSH to airbridge1@192.168.1.3: test -f /opt/airbridge/docker-compose.yml[0m
+[90m[13:38:18] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:38:18] [TRACE] docker-compose.yml exists, checking for containers[0m
+[90m[13:38:18] [TRACE] Found 0 existing containers[0m
+[35m[13:38:18] [DEBUG] No existing containers found[0m
+[34m[13:38:19] ▶ Skipping docker compose pull (using local tar-loaded images)[0m
+[35m[13:38:19] [DEBUG] Using pre-loaded images from tar files[0m
+[34m[13:38:19] ▶ Starting containers with docker compose up -d[0m
+[90m[13:38:19] [TRACE] Changing to /opt/airbridge directory[0m
+[90m[13:38:19] [TRACE] Command: cd /opt/airbridge && sudo docker compose up -d[0m
+[90m[13:38:19] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[90m[13:38:19] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:19] ▶ SSH to airbridge1@192.168.1.3: cd /opt/airbridge && sudo --preserve-env=PATH,HOME env $(cat .env | xargs) docker compose up -d[0m
+[34m[13:38:19] ▶ SSH to airbridge1@192.168.1.3: cd /opt/airbridge && sudo --preserve-env=PATH,HOME env $(cat .env | xargs) docker compose up -d[0m
 env: ‘PUBLIC’: No such file or directory
 env: ‘PUBLIC’: No such file or directory
-[90m[13:24:23] [TRACE] rsh() completed with exit_code=127[0m
-[90m[13:24:23] [TRACE] rsh() completed with exit_code=127[0m
-[31m[13:24:23] ✗ Failed to start containers on 192.168.1.3[0m
-[90m[13:24:23] [TRACE] Checking for errors...[0m
-[90m[13:24:23] [TRACE] [0m
-[31m\n!!! Error detected. Rolling back both servers. See /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-132033.log for details.[0m
+[90m[13:38:19] [TRACE] rsh() completed with exit_code=127[0m
+[90m[13:38:19] [TRACE] rsh() completed with exit_code=127[0m
+[31m[13:38:19] ✗ Failed to start containers on 192.168.1.3[0m
+[90m[13:38:19] [TRACE] Checking for errors...[0m
+[90m[13:38:19] [TRACE] [0m
+[31m\n!!! Error detected. Rolling back both servers. See /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-133701.log for details.[0m
 [33m[192.168.1.3] Rolling back: stopping containers[0m
-[90m[13:24:23] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:24:23] ▶ SSH to airbridge1@192.168.1.3: cd /opt/airbridge && sudo docker compose down || true[0m
-[90m[13:24:33] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:24:33] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:24:33] ▶ SSH to airbridge1@192.168.1.3: sudo rm -f /opt/airbridge/nginx/airbridge.conf || true[0m
-[90m[13:24:34] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:38:19] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:19] ▶ SSH to airbridge1@192.168.1.3: cd /opt/airbridge && sudo docker compose down || true[0m
+[90m[13:38:19] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:38:19] [TRACE] rsh() called: host=192.168.1.3, user=airbridge1, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:19] ▶ SSH to airbridge1@192.168.1.3: sudo rm -f /opt/airbridge/nginx/airbridge.conf || true[0m
+[90m[13:38:19] [TRACE] rsh() completed with exit_code=0[0m
 [33m[192.168.1.7] Rolling back: stopping containers[0m
-[90m[13:24:34] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:24:34] ▶ SSH to airbridge2@192.168.1.7: cd /opt/airbridge && sudo docker compose down || true[0m
-[90m[13:24:34] [TRACE] rsh() completed with exit_code=0[0m
-[90m[13:24:34] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
-[34m[13:24:34] ▶ SSH to airbridge2@192.168.1.7: sudo rm -f /opt/airbridge/nginx/airbridge.conf || true[0m
-[90m[13:24:34] [TRACE] rsh() completed with exit_code=0[0m
-[31m[13:24:34] ✗ Deployment failed. Check logs at /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-132033.log[0m
+[90m[13:38:19] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:19] ▶ SSH to airbridge2@192.168.1.7: cd /opt/airbridge && sudo docker compose down || true[0m
+[90m[13:38:20] [TRACE] rsh() completed with exit_code=0[0m
+[90m[13:38:20] [TRACE] rsh() called: host=192.168.1.7, user=airbridge2, key=/home/airbridge1/.ssh/id_rsa[0m
+[34m[13:38:20] ▶ SSH to airbridge2@192.168.1.7: sudo rm -f /opt/airbridge/nginx/airbridge.conf || true[0m
+[90m[13:38:20] [TRACE] rsh() completed with exit_code=0[0m
+[31m[13:38:20] ✗ Deployment failed. Check logs at /home/airbridge1/Airbridge_artifacts/airbridge-deploy-20260518-133701.log[0m
