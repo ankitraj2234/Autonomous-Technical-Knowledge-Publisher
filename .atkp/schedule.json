@@ -1,67 +1,55 @@
 {
-  "date": "2026-05-18",
-  "totalPlanned": 10,
+  "date": "2026-05-19",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1779130547096-tg29q2h",
-      "topicTitle": "Dashboard Design Principles for Operational Excellence",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-r35q46u",
-      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-tmpiqkc",
-      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-ezyf9or",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-dqjcv4d",
-      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-ern3oey",
-      "topicTitle": "Policy as Code with Sentinel and Rego",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-yah07ay",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1779130547096-r4n619r",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
+      "id": "1779216732159-h5m549r",
+      "topicTitle": "Network Traffic Analysis and DPI Architecture",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1779130547096-6f2hafv",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "id": "1779216732159-pd96om4",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1779216732159-xtlerku",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1779216732159-ace5vo6",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779130547096-6zlxoth",
-      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "id": "1779216732159-fnqt4eu",
+      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1779216732159-a59xieo",
+      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
       "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779216732159-hnunyac",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1779216732159-c850whi",
+      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-18T18:55:47.096Z"
+  "createdAt": "2026-05-19T18:52:12.160Z"
 }
