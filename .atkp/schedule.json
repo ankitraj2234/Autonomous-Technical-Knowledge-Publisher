@@ -1,55 +1,67 @@
 {
-  "date": "2026-05-19",
-  "totalPlanned": 8,
+  "date": "2026-05-20",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1779216732159-h5m549r",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
+      "id": "1779303393061-8dupx92",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1779216732159-pd96om4",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1779216732159-xtlerku",
-      "topicTitle": "Container Vulnerability Scanning Pipeline",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1779216732159-ace5vo6",
-      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
+      "id": "1779303393061-5yrn8aa",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779216732159-fnqt4eu",
-      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1779216732159-a59xieo",
-      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "id": "1779303393061-w119zkp",
+      "topicTitle": "Decentralized Identity and Verifiable Credentials",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1779216732159-hnunyac",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
+      "id": "1779303393061-76qdy4r",
+      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1779216732159-c850whi",
-      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
+      "id": "1779303393061-diqa8d5",
+      "topicTitle": "Incident Response Automation with SOAR Platforms",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1779303393061-9n8k356",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779303393061-inpd3g3",
+      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779303393061-wga7xxo",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779303393061-jejdkaq",
+      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1779303393061-h34x7fn",
+      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
       "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-19T18:52:12.160Z"
+  "createdAt": "2026-05-20T18:56:33.062Z"
 }
