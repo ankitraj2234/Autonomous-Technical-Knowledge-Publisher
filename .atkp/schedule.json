@@ -1,67 +1,67 @@
 {
-  "date": "2026-05-20",
+  "date": "2026-05-21",
   "totalPlanned": 10,
   "entries": [
     {
-      "id": "1779303393061-8dupx92",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
-      "category": "System Design",
+      "id": "1779390747212-msmucbv",
+      "topicTitle": "APM Architecture: End-to-End Request Tracing",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1779303393061-5yrn8aa",
-      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779303393061-w119zkp",
-      "topicTitle": "Decentralized Identity and Verifiable Credentials",
+      "id": "1779390747212-s0ubvec",
+      "topicTitle": "Multi-Factor Authentication Architecture",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1779303393061-76qdy4r",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
+      "id": "1779390747212-243voo8",
+      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779390747212-6hi47h4",
+      "topicTitle": "Init Container and Startup Probe Patterns",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1779390747212-u7dpt2j",
+      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779390747212-guxn31w",
+      "topicTitle": "Leader Election Algorithms in Distributed Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1779303393061-diqa8d5",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
+      "id": "1779390747212-83hlps1",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779390747212-cvtxstm",
+      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779390747212-0j9dt6k",
+      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1779390747212-w6uhhyn",
+      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
       "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1779303393061-9n8k356",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779303393061-inpd3g3",
-      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779303393061-wga7xxo",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779303393061-jejdkaq",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779303393061-h34x7fn",
-      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
-      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-20T18:56:33.062Z"
+  "createdAt": "2026-05-21T19:12:27.212Z"
 }
