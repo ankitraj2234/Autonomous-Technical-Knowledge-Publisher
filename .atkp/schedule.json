@@ -1,67 +1,49 @@
 {
-  "date": "2026-05-21",
-  "totalPlanned": 10,
+  "date": "2026-05-22",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1779390747212-msmucbv",
-      "topicTitle": "APM Architecture: End-to-End Request Tracing",
-      "category": "Observability",
+      "id": "1779475533921-8zzex5i",
+      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1779390747212-s0ubvec",
-      "topicTitle": "Multi-Factor Authentication Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1779475533921-7o5zcpf",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779390747212-243voo8",
-      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
-      "category": "Authentication & Authorization",
+      "id": "1779475533921-d6zdxye",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779390747212-6hi47h4",
-      "topicTitle": "Init Container and Startup Probe Patterns",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1779390747212-u7dpt2j",
-      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1779390747212-guxn31w",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
+      "id": "1779475533921-g33ripr",
+      "topicTitle": "Vector Clock and Causal Ordering",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1779390747212-83hlps1",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779390747212-cvtxstm",
-      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1779390747212-0j9dt6k",
-      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
+      "id": "1779475533921-tk4f5m7",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779390747212-w6uhhyn",
-      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
-      "category": "Cybersecurity",
+      "id": "1779475533921-6h8anc5",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1779475533921-hntd7ub",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-21T19:12:27.212Z"
+  "createdAt": "2026-05-22T18:45:33.921Z"
 }
