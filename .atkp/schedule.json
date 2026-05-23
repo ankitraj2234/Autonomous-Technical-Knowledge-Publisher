@@ -1,49 +1,13 @@
 {
-  "date": "2026-05-22",
-  "totalPlanned": 7,
+  "date": "2026-05-23",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1779475533921-8zzex5i",
-      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1779475533921-7o5zcpf",
-      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779475533921-d6zdxye",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779475533921-g33ripr",
-      "topicTitle": "Vector Clock and Causal Ordering",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779475533921-tk4f5m7",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1779475533921-6h8anc5",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779475533921-hntd7ub",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "id": "1779564104916-a9pp5ck",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
       "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-22T18:45:33.921Z"
+  "createdAt": "2026-05-23T19:21:44.916Z"
 }
