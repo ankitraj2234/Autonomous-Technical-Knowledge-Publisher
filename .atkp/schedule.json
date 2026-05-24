@@ -1,13 +1,67 @@
 {
-  "date": "2026-05-23",
-  "totalPlanned": 1,
+  "date": "2026-05-24",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1779564104916-a9pp5ck",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "id": "1779647582950-k6h2zwz",
+      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-qe6r9tt",
+      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-fi7i4wm",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-rmrp05k",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-bzf9z6c",
+      "topicTitle": "Policy as Code with Sentinel and Rego",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-wugn3eq",
+      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-tj3djp5",
+      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
       "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-imivzc1",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-zjf20a1",
+      "topicTitle": "Leader Election Algorithms in Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1779647582950-blua991",
+      "topicTitle": "Multi-Account Infrastructure Architecture",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-23T19:21:44.916Z"
+  "createdAt": "2026-05-24T18:33:02.951Z"
 }
