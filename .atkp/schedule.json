@@ -1,67 +1,61 @@
 {
-  "date": "2026-05-24",
-  "totalPlanned": 10,
+  "date": "2026-05-25",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1779647582950-k6h2zwz",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779647582950-qe6r9tt",
-      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1779647582950-fi7i4wm",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1779647582950-rmrp05k",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779647582950-bzf9z6c",
-      "topicTitle": "Policy as Code with Sentinel and Rego",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1779647582950-wugn3eq",
-      "topicTitle": "Kubernetes Multi-Cluster Federation",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1779647582950-tj3djp5",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
+      "id": "1779736114108-pjhsg2g",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1779647582950-imivzc1",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "id": "1779736114108-p69yvp6",
+      "topicTitle": "Anomaly Detection in Time-Series Metrics",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1779736114108-bju523h",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779647582950-zjf20a1",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
-      "category": "System Design",
+      "id": "1779736114108-8ksy9ag",
+      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779647582950-blua991",
-      "topicTitle": "Multi-Account Infrastructure Architecture",
-      "category": "Infrastructure as Code",
+      "id": "1779736114108-7aebx88",
+      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1779736114108-0bsy3ry",
+      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1779736114108-1te2ybo",
+      "topicTitle": "Container Image Layer Optimization Strategies",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1779736114108-34e4qjl",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1779736114108-ajruflq",
+      "topicTitle": "OpenTelemetry Collector Architecture and Pipeline",
+      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-24T18:33:02.951Z"
+  "createdAt": "2026-05-25T19:08:34.108Z"
 }
