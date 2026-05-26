@@ -1,61 +1,61 @@
 {
-  "date": "2026-05-25",
+  "date": "2026-05-26",
   "totalPlanned": 9,
   "entries": [
     {
-      "id": "1779736114108-pjhsg2g",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
-      "category": "System Design",
+      "id": "1779823319522-ya5wozp",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779736114108-p69yvp6",
-      "topicTitle": "Anomaly Detection in Time-Series Metrics",
-      "category": "Observability",
+      "id": "1779823319522-373wnhz",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1779736114108-bju523h",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "id": "1779823319522-fx0d9sr",
+      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779736114108-8ksy9ag",
-      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
+      "id": "1779823319522-rlogm8b",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779736114108-7aebx88",
-      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
+      "id": "1779823319522-30m45vi",
+      "topicTitle": "Kubernetes Network Policy Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1779823319522-p4osmrs",
+      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1779823319522-wkx6qmo",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1779823319522-em0aq5t",
+      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1779736114108-0bsy3ry",
-      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1779736114108-1te2ybo",
-      "topicTitle": "Container Image Layer Optimization Strategies",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1779736114108-34e4qjl",
-      "topicTitle": "Container Vulnerability Scanning Pipeline",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1779736114108-ajruflq",
-      "topicTitle": "OpenTelemetry Collector Architecture and Pipeline",
-      "category": "Observability",
+      "id": "1779823319522-1x9nb9z",
+      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-25T19:08:34.108Z"
+  "createdAt": "2026-05-26T19:21:59.522Z"
 }
