@@ -1,61 +1,37 @@
 {
-  "date": "2026-05-26",
-  "totalPlanned": 9,
+  "date": "2026-05-27",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1779823319522-ya5wozp",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779823319522-373wnhz",
-      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1779823319522-fx0d9sr",
-      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
+      "id": "1779909924125-o3yn0d4",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779823319522-rlogm8b",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "id": "1779909924125-w9uyefd",
+      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1779823319522-30m45vi",
-      "topicTitle": "Kubernetes Network Policy Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1779823319522-p4osmrs",
-      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
+      "id": "1779909924125-x5mkbz9",
+      "topicTitle": "Decentralized Identity and Verifiable Credentials",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1779823319522-wkx6qmo",
-      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
-      "category": "Cloud Architecture",
+      "id": "1779909924125-vxrqeni",
+      "topicTitle": "Notification System Architecture at Scale",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1779823319522-em0aq5t",
-      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
+      "id": "1779909924125-kyp1964",
+      "topicTitle": "DNS-over-HTTPS Security Implications",
       "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1779823319522-1x9nb9z",
-      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
-      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-26T19:21:59.522Z"
+  "createdAt": "2026-05-27T19:25:24.125Z"
 }
