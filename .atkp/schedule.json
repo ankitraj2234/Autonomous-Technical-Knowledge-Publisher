@@ -1,37 +1,13 @@
 {
-  "date": "2026-05-27",
-  "totalPlanned": 5,
+  "date": "2026-05-28",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1779909924125-o3yn0d4",
-      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1779909924125-w9uyefd",
-      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1779909924125-x5mkbz9",
-      "topicTitle": "Decentralized Identity and Verifiable Credentials",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1779909924125-vxrqeni",
-      "topicTitle": "Notification System Architecture at Scale",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1779909924125-kyp1964",
-      "topicTitle": "DNS-over-HTTPS Security Implications",
-      "category": "Cybersecurity",
+      "id": "1779993517224-35txt1v",
+      "topicTitle": "Kubernetes Secrets Management Architecture",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-27T19:25:24.125Z"
+  "createdAt": "2026-05-28T18:38:37.224Z"
 }
