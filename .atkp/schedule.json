@@ -1,13 +1,49 @@
 {
-  "date": "2026-05-28",
-  "totalPlanned": 1,
+  "date": "2026-05-29",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1779993517224-35txt1v",
-      "topicTitle": "Kubernetes Secrets Management Architecture",
-      "category": "Containerization",
+      "id": "1780081726087-3lrye34",
+      "topicTitle": "Software-Defined Networking (SDN) Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1780081726087-6ejmpm3",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780081726087-4z9rw5l",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1780081726087-4h6uz92",
+      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780081726087-ttuiknd",
+      "topicTitle": "Distributed Rate Limiter Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1780081726087-s2j7aq8",
+      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1780081726087-fwnmrhy",
+      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-28T18:38:37.224Z"
+  "createdAt": "2026-05-29T19:08:46.087Z"
 }
