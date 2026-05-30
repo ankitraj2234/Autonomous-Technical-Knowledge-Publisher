@@ -1,49 +1,19 @@
 {
-  "date": "2026-05-29",
-  "totalPlanned": 7,
+  "date": "2026-05-30",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1780081726087-3lrye34",
-      "topicTitle": "Software-Defined Networking (SDN) Architecture",
-      "category": "Networking",
+      "id": "1780166141022-vn8f9px",
+      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1780081726087-6ejmpm3",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1780081726087-4z9rw5l",
-      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1780081726087-4h6uz92",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1780081726087-ttuiknd",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1780081726087-s2j7aq8",
-      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1780081726087-fwnmrhy",
-      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
-      "category": "Cybersecurity",
+      "id": "1780166141022-54izchg",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-29T19:08:46.087Z"
+  "createdAt": "2026-05-30T18:35:41.022Z"
 }
