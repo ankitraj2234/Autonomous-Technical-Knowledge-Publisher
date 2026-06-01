@@ -1,43 +1,31 @@
 {
-  "date": "2026-05-31",
-  "totalPlanned": 6,
+  "date": "2026-06-01",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1780254504170-9y571bt",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
+      "id": "1780339976056-lzmkvmm",
+      "topicTitle": "Kubernetes Ingress Architecture Comparison",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1780254504170-scnq1eb",
-      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
-      "category": "DevOps",
+      "id": "1780339976056-b534x10",
+      "topicTitle": "Terraform Provider Architecture and Plugin System",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1780254504170-nwkpq3c",
-      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
-      "category": "Cybersecurity",
+      "id": "1780339976056-4ra5m2s",
+      "topicTitle": "Anomaly Detection in Time-Series Metrics",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1780254504170-rw892hv",
-      "topicTitle": "Chaos Engineering: Failure Injection Strategies",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1780254504170-safqjl5",
-      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1780254504170-he4z8lf",
-      "topicTitle": "GitOps Multi-Tenancy Architecture",
+      "id": "1780339976056-i2br0p5",
+      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
       "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-05-31T19:08:24.170Z"
+  "createdAt": "2026-06-01T18:52:56.058Z"
 }
