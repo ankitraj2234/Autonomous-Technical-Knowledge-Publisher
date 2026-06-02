@@ -1,31 +1,61 @@
 {
-  "date": "2026-06-01",
-  "totalPlanned": 4,
+  "date": "2026-06-02",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1780339976056-lzmkvmm",
-      "topicTitle": "Kubernetes Ingress Architecture Comparison",
+      "id": "1780425022187-ggi8s40",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-au83q56",
+      "topicTitle": "Hardware Security Modules (HSM) Integration Patterns",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-2gposbf",
+      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-04z2mda",
+      "topicTitle": "DNS-over-HTTPS Security Implications",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-2ex7vj3",
+      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-llbkxp2",
+      "topicTitle": "URL Shortener Architecture: Complete System Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-d9hx0gm",
+      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780425022187-k7dll3a",
+      "topicTitle": "Container Networking: Bridge vs Overlay vs Host",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1780339976056-b534x10",
-      "topicTitle": "Terraform Provider Architecture and Plugin System",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1780339976056-4ra5m2s",
-      "topicTitle": "Anomaly Detection in Time-Series Metrics",
+      "id": "1780425022187-fwpk0at",
+      "topicTitle": "Dashboard Design Principles for Operational Excellence",
       "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1780339976056-i2br0p5",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
-      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-01T18:52:56.058Z"
+  "createdAt": "2026-06-02T18:30:22.187Z"
 }
