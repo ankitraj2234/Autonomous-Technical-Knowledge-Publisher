@@ -1,25 +1,25 @@
 {
-  "date": "2026-06-04",
+  "date": "2026-06-05",
   "totalPlanned": 3,
   "entries": [
     {
-      "id": "1780600498400-oc6njmb",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
-      "category": "DevOps",
+      "id": "1780687508239-yecy9ra",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1780600498400-4hoxmxt",
+      "id": "1780687508239-5xzazll",
+      "topicTitle": "Dashboard Design Principles for Operational Excellence",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1780687508239-i83251d",
       "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1780600498400-z06n7kb",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-04T19:14:58.401Z"
+  "createdAt": "2026-06-05T19:25:08.239Z"
 }
