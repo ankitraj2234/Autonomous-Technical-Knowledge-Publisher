@@ -1,25 +1,55 @@
 {
-  "date": "2026-06-05",
-  "totalPlanned": 3,
+  "date": "2026-06-06",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1780687508239-yecy9ra",
+      "id": "1780773859153-xr1ip7n",
+      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1780773859153-cnpe48j",
       "topicTitle": "Real-Time Analytics Pipeline Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1780687508239-5xzazll",
-      "topicTitle": "Dashboard Design Principles for Operational Excellence",
-      "category": "Observability",
+      "id": "1780773859153-v026zlm",
+      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1780687508239-i83251d",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "id": "1780773859153-lxsepu4",
+      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1780773859153-1gl17gp",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780773859153-d9nqsdj",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780773859153-mbtb129",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780773859153-pxfh6pu",
+      "topicTitle": "ARP Spoofing Detection and Prevention",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-05T19:25:08.239Z"
+  "createdAt": "2026-06-06T19:24:19.153Z"
 }
