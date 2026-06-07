@@ -1,55 +1,61 @@
 {
-  "date": "2026-06-06",
-  "totalPlanned": 8,
+  "date": "2026-06-07",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1780773859153-xr1ip7n",
-      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
-      "category": "Authentication & Authorization",
+      "id": "1780860517992-yb0abv5",
+      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1780773859153-cnpe48j",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "id": "1780860517992-9834irs",
+      "topicTitle": "CloudFormation Stack Architecture and Nested Stacks",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1780860517992-rl2o4h7",
+      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1780860517992-oobsjaj",
+      "topicTitle": "Distributed Lock Manager Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1780773859153-v026zlm",
-      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1780773859153-lxsepu4",
-      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1780773859153-1gl17gp",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1780773859153-d9nqsdj",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1780773859153-mbtb129",
+      "id": "1780860517992-hu6z24k",
       "topicTitle": "Cloud Resource Tagging Strategy and Governance",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1780773859153-pxfh6pu",
-      "topicTitle": "ARP Spoofing Detection and Prevention",
-      "category": "Networking",
+      "id": "1780860517992-euau486",
+      "topicTitle": "Leader Election Algorithms in Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1780860517992-ul566o8",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780860517992-7n8k358",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1780860517992-8ywatms",
+      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-06T19:24:19.153Z"
+  "createdAt": "2026-06-07T19:28:37.992Z"
 }
