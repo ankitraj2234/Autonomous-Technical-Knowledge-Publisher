@@ -1,61 +1,49 @@
 {
-  "date": "2026-06-07",
-  "totalPlanned": 9,
+  "date": "2026-06-08",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1780860517992-yb0abv5",
-      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1780860517992-9834irs",
-      "topicTitle": "CloudFormation Stack Architecture and Nested Stacks",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1780860517992-rl2o4h7",
+      "id": "1780944397272-0dh7zyo",
       "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1780860517992-oobsjaj",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
+      "id": "1780944397272-trv4jzp",
+      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1780860517992-hu6z24k",
-      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
-      "category": "Cloud Architecture",
+      "id": "1780944397272-26gm9bt",
+      "topicTitle": "Network Traffic Analysis and DPI Architecture",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1780860517992-euau486",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
-      "category": "System Design",
+      "id": "1780944397272-rigdi41",
+      "topicTitle": "Container Escape Techniques and Kernel Exploits",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1780860517992-ul566o8",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
+      "id": "1780944397272-1e65myp",
+      "topicTitle": "Container Storage Interface (CSI) Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1780860517992-7n8k358",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
+      "id": "1780944397272-ib1mdsl",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1780860517992-8ywatms",
-      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
-      "category": "Infrastructure as Code",
+      "id": "1780944397272-v47vfpl",
+      "topicTitle": "Chaos Engineering: Failure Injection Strategies",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-07T19:28:37.992Z"
+  "createdAt": "2026-06-08T18:46:37.272Z"
 }
