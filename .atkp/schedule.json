@@ -1,49 +1,67 @@
 {
-  "date": "2026-06-08",
-  "totalPlanned": 7,
+  "date": "2026-06-09",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1780944397272-0dh7zyo",
-      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1780944397272-trv4jzp",
-      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1780944397272-26gm9bt",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1780944397272-rigdi41",
-      "topicTitle": "Container Escape Techniques and Kernel Exploits",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1780944397272-1e65myp",
-      "topicTitle": "Container Storage Interface (CSI) Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1780944397272-ib1mdsl",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "id": "1781031957369-0k5imgm",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1780944397272-v47vfpl",
-      "topicTitle": "Chaos Engineering: Failure Injection Strategies",
+      "id": "1781031957369-rqhea3j",
+      "topicTitle": "Multi-Environment Promotion Strategy",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1781031957369-h7q1qs5",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781031957369-8czkkw4",
+      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781031957369-zcupsks",
+      "topicTitle": "Container Image Layer Optimization Strategies",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1781031957369-s3m7r5f",
+      "topicTitle": "Environment Provisioning Automation Patterns",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1781031957370-g0k3lme",
+      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781031957370-ng53waq",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781031957370-4bzw9jn",
+      "topicTitle": "TLS 1.3 Handshake Internals and Downgrade Protection",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781031957370-swqwzex",
+      "topicTitle": "Service Mesh Data Plane Architecture",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-08T18:46:37.272Z"
+  "createdAt": "2026-06-09T19:05:57.370Z"
 }
