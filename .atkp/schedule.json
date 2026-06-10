@@ -1,67 +1,37 @@
 {
-  "date": "2026-06-09",
-  "totalPlanned": 10,
+  "date": "2026-06-10",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1781031957369-0k5imgm",
-      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1781031957369-rqhea3j",
-      "topicTitle": "Multi-Environment Promotion Strategy",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1781031957369-h7q1qs5",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1781031957369-8czkkw4",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1781031957369-zcupsks",
-      "topicTitle": "Container Image Layer Optimization Strategies",
+      "id": "1781117248221-m348a6g",
+      "topicTitle": "Container Storage Interface (CSI) Architecture",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1781031957369-s3m7r5f",
-      "topicTitle": "Environment Provisioning Automation Patterns",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1781031957370-g0k3lme",
-      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
+      "id": "1781117248221-58tsm0w",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1781031957370-ng53waq",
-      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781031957370-4bzw9jn",
-      "topicTitle": "TLS 1.3 Handshake Internals and Downgrade Protection",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781031957370-swqwzex",
-      "topicTitle": "Service Mesh Data Plane Architecture",
+      "id": "1781117248221-vd57der",
+      "topicTitle": "Kubernetes Multi-Cluster Federation",
       "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1781117248221-nbn858k",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1781117248222-3soapam",
+      "topicTitle": "Subdomain Takeover Detection and Prevention",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-09T19:05:57.370Z"
+  "createdAt": "2026-06-10T18:47:28.222Z"
 }
