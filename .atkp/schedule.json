@@ -1,25 +1,13 @@
 {
-  "date": "2026-06-11",
-  "totalPlanned": 3,
+  "date": "2026-06-12",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1781206053070-199sncl",
-      "topicTitle": "Raft Consensus Algorithm Deep Dive",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1781206053070-yi1zkms",
-      "topicTitle": "Hardware Security Modules (HSM) Integration Patterns",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781206053070-wabjj6l",
-      "topicTitle": "Init Container and Startup Probe Patterns",
-      "category": "Containerization",
+      "id": "1781289737606-vb4f070",
+      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-11T19:27:33.070Z"
+  "createdAt": "2026-06-12T18:42:17.606Z"
 }
