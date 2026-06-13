@@ -1,13 +1,67 @@
 {
-  "date": "2026-06-12",
-  "totalPlanned": 1,
+  "date": "2026-06-13",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1781289737606-vb4f070",
+      "id": "1781377072192-4m33twa",
+      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-qu4w424",
       "topicTitle": "Cloud-Native Batch Processing Architecture",
       "category": "Cloud Architecture",
       "completed": false
+    },
+    {
+      "id": "1781377072192-oivbtl1",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-wuuumhf",
+      "topicTitle": "Container Image Layer Optimization Strategies",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-r8csznc",
+      "topicTitle": "Saga Pattern for Distributed Transactions",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-suuj93d",
+      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-io5lv7d",
+      "topicTitle": "MPLS Architecture and Traffic Engineering",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-50iq3fj",
+      "topicTitle": "Multi-Environment Promotion Strategy",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-rhn38ha",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1781377072192-n1px9ty",
+      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
+      "category": "System Design",
+      "completed": false
     }
   ],
-  "createdAt": "2026-06-12T18:42:17.606Z"
+  "createdAt": "2026-06-13T18:57:52.192Z"
 }
