@@ -1,19 +1,61 @@
 {
-  "date": "2026-06-14",
-  "totalPlanned": 2,
+  "date": "2026-06-15",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1781461837179-xahljk3",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "id": "1781548316268-lrmh7w6",
+      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-ywas4f9",
+      "topicTitle": "Dashboard Design Principles for Operational Excellence",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-huop94v",
+      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-rubmw5r",
+      "topicTitle": "WireGuard VPN Architecture and Performance",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-41pssqs",
+      "topicTitle": "Notification System Architecture at Scale",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1781461837179-q3b4zp9",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
-      "category": "Networking",
+      "id": "1781548316268-k51861b",
+      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-cgwvzfe",
+      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-u20riqk",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1781548316268-7vi3rfa",
+      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-14T18:30:37.179Z"
+  "createdAt": "2026-06-15T18:31:56.268Z"
 }
