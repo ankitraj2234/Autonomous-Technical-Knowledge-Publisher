@@ -1,61 +1,67 @@
 {
-  "date": "2026-06-15",
-  "totalPlanned": 9,
+  "date": "2026-06-16",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1781548316268-lrmh7w6",
-      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
+      "id": "1781637937082-2dd39cm",
+      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1781548316268-ywas4f9",
-      "topicTitle": "Dashboard Design Principles for Operational Excellence",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1781548316268-huop94v",
-      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1781548316268-rubmw5r",
-      "topicTitle": "WireGuard VPN Architecture and Performance",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1781548316268-41pssqs",
-      "topicTitle": "Notification System Architecture at Scale",
+      "id": "1781637937082-9vooz9k",
+      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1781548316268-k51861b",
-      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
+      "id": "1781637937082-dxrjk82",
+      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1781637937082-qv5jqrf",
+      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1781548316268-cgwvzfe",
-      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
-      "category": "Authentication & Authorization",
+      "id": "1781637937082-657l2z7",
+      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1781548316268-u20riqk",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
-      "category": "DevOps",
+      "id": "1781637937082-17w9y7i",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1781548316268-7vi3rfa",
-      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "id": "1781637937082-y7dddic",
+      "topicTitle": "Kubernetes Operator Pattern Implementation",
       "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1781637937082-wcqnbbb",
+      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781637937082-0qfuz40",
+      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781637937082-zbvc6lp",
+      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-15T18:31:56.268Z"
+  "createdAt": "2026-06-16T19:25:37.082Z"
 }
