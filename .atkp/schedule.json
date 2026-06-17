@@ -1,67 +1,25 @@
 {
-  "date": "2026-06-16",
-  "totalPlanned": 10,
+  "date": "2026-06-17",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1781637937082-2dd39cm",
-      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
+      "id": "1781721180244-ymgbjxw",
+      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781721180244-fblkic7",
+      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781721180244-8j6rxxx",
+      "topicTitle": "Passwordless Authentication Flow Design",
       "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-9vooz9k",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-dxrjk82",
-      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-qv5jqrf",
-      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-657l2z7",
-      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-17w9y7i",
-      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-y7dddic",
-      "topicTitle": "Kubernetes Operator Pattern Implementation",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-wcqnbbb",
-      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-0qfuz40",
-      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781637937082-zbvc6lp",
-      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
-      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-16T19:25:37.082Z"
+  "createdAt": "2026-06-17T18:33:00.244Z"
 }
