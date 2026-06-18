@@ -1,25 +1,13 @@
 {
-  "date": "2026-06-17",
-  "totalPlanned": 3,
+  "date": "2026-06-18",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1781721180244-ymgbjxw",
-      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781721180244-fblkic7",
-      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781721180244-8j6rxxx",
-      "topicTitle": "Passwordless Authentication Flow Design",
-      "category": "Authentication & Authorization",
+      "id": "1781810102384-bo4emuq",
+      "topicTitle": "Terraform State Management and Locking Architecture",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-17T18:33:00.244Z"
+  "createdAt": "2026-06-18T19:15:02.384Z"
 }
