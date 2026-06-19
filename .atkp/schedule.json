@@ -1,13 +1,61 @@
 {
-  "date": "2026-06-18",
-  "totalPlanned": 1,
+  "date": "2026-06-19",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1781810102384-bo4emuq",
-      "topicTitle": "Terraform State Management and Locking Architecture",
-      "category": "Infrastructure as Code",
+      "id": "1781895120063-4mmuvc0",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-pz0ed3u",
+      "topicTitle": "Database Sharding Strategies and Rebalancing",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-ef85ss7",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-ffxa46e",
+      "topicTitle": "Kubernetes Operator Pattern Implementation",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-df5bw13",
+      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-reshf94",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-z3hr56a",
+      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-4kux15d",
+      "topicTitle": "Raft Consensus Algorithm Deep Dive",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1781895120063-o4deaqj",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-18T19:15:02.384Z"
+  "createdAt": "2026-06-19T18:52:00.063Z"
 }
