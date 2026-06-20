@@ -1,61 +1,37 @@
 {
-  "date": "2026-06-19",
-  "totalPlanned": 9,
+  "date": "2026-06-20",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1781895120063-4mmuvc0",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
-      "category": "System Design",
+      "id": "1781982702097-1y6pz70",
+      "topicTitle": "Terraform Module Design Patterns and Composition",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1781895120063-pz0ed3u",
-      "topicTitle": "Database Sharding Strategies and Rebalancing",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1781895120063-ef85ss7",
-      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1781895120063-ffxa46e",
-      "topicTitle": "Kubernetes Operator Pattern Implementation",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1781895120063-df5bw13",
-      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1781895120063-reshf94",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1781895120063-z3hr56a",
-      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "id": "1781982702097-w6zziid",
+      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1781895120063-4kux15d",
-      "topicTitle": "Raft Consensus Algorithm Deep Dive",
-      "category": "System Design",
+      "id": "1781982702097-4o5rzur",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1781895120063-o4deaqj",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "id": "1781982702097-cx52xwl",
+      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1781982702097-s3988sq",
+      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-19T18:52:00.063Z"
+  "createdAt": "2026-06-20T19:11:42.097Z"
 }
