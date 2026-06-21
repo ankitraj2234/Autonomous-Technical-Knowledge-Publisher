@@ -1,37 +1,25 @@
 {
-  "date": "2026-06-20",
-  "totalPlanned": 5,
+  "date": "2026-06-21",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1781982702097-1y6pz70",
-      "topicTitle": "Terraform Module Design Patterns and Composition",
-      "category": "Infrastructure as Code",
+      "id": "1782067141043-6km8jl8",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1781982702097-w6zziid",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1782067141043-cboh9j2",
+      "topicTitle": "Environment Provisioning Automation Patterns",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1781982702097-4o5rzur",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1781982702097-cx52xwl",
-      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1781982702097-s3988sq",
-      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
-      "category": "Cloud Architecture",
+      "id": "1782067141043-o2i23f0",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-20T19:11:42.097Z"
+  "createdAt": "2026-06-21T18:39:01.043Z"
 }
