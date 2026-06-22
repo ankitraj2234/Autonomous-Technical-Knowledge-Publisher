@@ -1,25 +1,31 @@
 {
-  "date": "2026-06-21",
-  "totalPlanned": 3,
+  "date": "2026-06-22",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1782067141043-6km8jl8",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
-      "category": "Containerization",
+      "id": "1782155625100-fxkpl8f",
+      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1782067141043-cboh9j2",
-      "topicTitle": "Environment Provisioning Automation Patterns",
-      "category": "DevOps",
+      "id": "1782155625100-i29sje9",
+      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1782067141043-o2i23f0",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1782155625100-3mijsfu",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1782155625100-detntbr",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-21T18:39:01.043Z"
+  "createdAt": "2026-06-22T19:13:45.100Z"
 }
