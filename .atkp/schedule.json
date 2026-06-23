@@ -1,31 +1,55 @@
 {
-  "date": "2026-06-22",
-  "totalPlanned": 4,
+  "date": "2026-06-23",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1782155625100-fxkpl8f",
-      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
+      "id": "1782242202222-4gfuna0",
+      "topicTitle": "GitOps Multi-Tenancy Architecture",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1782242202222-lc0ihl1",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1782242202222-azqupn5",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1782242202222-9wd9ojv",
+      "topicTitle": "Policy as Code with Sentinel and Rego",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1782155625100-i29sje9",
-      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "id": "1782242202222-q670fv6",
+      "topicTitle": "Network Segmentation Strategies for Zero Trust",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1782242202222-wejyyln",
+      "topicTitle": "Dashboard Design Principles for Operational Excellence",
       "category": "Observability",
       "completed": false
     },
     {
-      "id": "1782155625100-3mijsfu",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
-      "category": "Cloud Architecture",
+      "id": "1782242202222-lylv5gw",
+      "topicTitle": "Kubernetes Network Policy Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1782155625100-detntbr",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "id": "1782242202222-8jof473",
+      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-22T19:13:45.100Z"
+  "createdAt": "2026-06-23T19:16:42.222Z"
 }
