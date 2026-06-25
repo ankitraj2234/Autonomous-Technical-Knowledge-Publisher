@@ -1,67 +1,61 @@
 {
-  "date": "2026-06-24",
-  "totalPlanned": 10,
+  "date": "2026-06-25",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1782328246544-hsq5487",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "id": "1782415134060-gax9wdb",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1782415134060-1imfo78",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1782415134060-f5iaaie",
+      "topicTitle": "Cloud IAM Misconfiguration Patterns Across AWS, Azure, GCP",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1782415134060-55s28vm",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1782328246544-32bwdfa",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
+      "id": "1782415134060-d1wlq79",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1782328246544-yg3wcx1",
-      "topicTitle": "Subdomain Takeover Detection and Prevention",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782328246544-vmgt7xz",
-      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1782328246544-nomy4iq",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1782328246544-asng274",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782328246544-8lmq882",
-      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782328246544-lbqiro4",
-      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
+      "id": "1782415134060-us17xdn",
+      "topicTitle": "OAuth 2.0 Token Validation Workflow",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1782328246544-93n6wnm",
+      "id": "1782415134060-uzjsqrd",
       "topicTitle": "Network Function Virtualization (NFV) Design",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1782328246544-6agjtyx",
-      "topicTitle": "Identity Federation Architecture Across Organizations",
-      "category": "Authentication & Authorization",
+      "id": "1782415134061-szr0slt",
+      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1782415134061-5r1pufq",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-24T19:10:46.544Z"
+  "createdAt": "2026-06-25T19:18:54.061Z"
 }
