@@ -1,61 +1,13 @@
 {
-  "date": "2026-06-25",
-  "totalPlanned": 9,
+  "date": "2026-06-26",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1782415134060-gax9wdb",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1782415134060-1imfo78",
-      "topicTitle": "Container Vulnerability Scanning Pipeline",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1782415134060-f5iaaie",
-      "topicTitle": "Cloud IAM Misconfiguration Patterns Across AWS, Azure, GCP",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782415134060-55s28vm",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1782415134060-d1wlq79",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1782415134060-us17xdn",
-      "topicTitle": "OAuth 2.0 Token Validation Workflow",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1782415134060-uzjsqrd",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1782415134061-szr0slt",
-      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1782415134061-5r1pufq",
-      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
-      "category": "Cloud Architecture",
+      "id": "1782501268121-vqa9u39",
+      "topicTitle": "Synthetic Monitoring Architecture and Implementation",
+      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-25T19:18:54.061Z"
+  "createdAt": "2026-06-26T19:14:28.121Z"
 }
