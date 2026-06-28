@@ -1,67 +1,13 @@
 {
-  "date": "2026-06-27",
-  "totalPlanned": 10,
+  "date": "2026-06-28",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1782585978044-th8kwpa",
-      "topicTitle": "Container Storage Interface (CSI) Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-dhkx34r",
-      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-6885hx0",
-      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-zlv2h65",
-      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-zeqk5ez",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-f9typn3",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-bppx9ft",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-sdjshpb",
-      "topicTitle": "Subdomain Takeover Detection and Prevention",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-1dnp7g1",
-      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1782585978044-hulq6ns",
-      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
+      "id": "1782674901013-nsjsl0x",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-27T18:46:18.044Z"
+  "createdAt": "2026-06-28T19:28:21.013Z"
 }
