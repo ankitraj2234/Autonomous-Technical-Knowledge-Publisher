@@ -1,13 +1,37 @@
 {
-  "date": "2026-06-28",
-  "totalPlanned": 1,
+  "date": "2026-06-29",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1782674901013-nsjsl0x",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "id": "1782758215482-b45yyw9",
+      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1782758215482-pr5ujge",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1782758215482-wet73rs",
+      "topicTitle": "Secrets Management Architecture and Vault Patterns",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1782758215482-mtxj6zj",
+      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1782758215482-q4fjttr",
+      "topicTitle": "Traffic Shaping and QoS Policy Design",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-28T19:28:21.013Z"
+  "createdAt": "2026-06-29T18:36:55.482Z"
 }
