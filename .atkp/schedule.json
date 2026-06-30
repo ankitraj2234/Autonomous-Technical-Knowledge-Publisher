@@ -1,37 +1,55 @@
 {
-  "date": "2026-06-29",
-  "totalPlanned": 5,
+  "date": "2026-06-30",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1782758215482-b45yyw9",
-      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
+      "id": "1782844966160-jdf2b9l",
+      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1782844966160-ro7jzpi",
+      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1782758215482-pr5ujge",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
-      "category": "System Design",
+      "id": "1782844966160-d38wi6g",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1782758215482-wet73rs",
-      "topicTitle": "Secrets Management Architecture and Vault Patterns",
+      "id": "1782844966160-t58lj9p",
+      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1782844966160-0rkq4e6",
+      "topicTitle": "Kubernetes Secrets Management Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1782844966160-0dv4ye0",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1782844966160-ulzxhqu",
+      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1782758215482-mtxj6zj",
-      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1782758215482-q4fjttr",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
-      "category": "Networking",
+      "id": "1782844966160-zi6s2wd",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-06-29T18:36:55.482Z"
+  "createdAt": "2026-06-30T18:42:46.160Z"
 }
