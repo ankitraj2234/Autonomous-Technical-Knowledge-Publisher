@@ -1,37 +1,19 @@
 {
-  "date": "2026-07-01",
-  "totalPlanned": 5,
+  "date": "2026-07-02",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1782933251221-fvoj3pt",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
-      "category": "System Design",
+      "id": "1783019067300-ifoz4yy",
+      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1782933251221-58it9t1",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "id": "1783019067300-93y1iy8",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
       "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1782933251221-ohkge8x",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1782933251221-f4o64mi",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1782933251221-hirty8b",
-      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
-      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-01T19:14:11.221Z"
+  "createdAt": "2026-07-02T19:04:27.300Z"
 }
