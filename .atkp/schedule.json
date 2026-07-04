@@ -1,49 +1,55 @@
 {
-  "date": "2026-07-03",
-  "totalPlanned": 7,
+  "date": "2026-07-04",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1783105219030-z8l2jt9",
-      "topicTitle": "Reverse Proxy Security Hardening Checklist",
+      "id": "1783190514926-4jlxgam",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-9untgek",
+      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-62m3zxw",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-502iju5",
+      "topicTitle": "Distributed Rate Limiter Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-69zzj27",
+      "topicTitle": "OpenTelemetry Collector Architecture and Pipeline",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-x718jaq",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-r23a744",
+      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1783190514926-s6tvmf9",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
       "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1783105219030-1w9ki4x",
-      "topicTitle": "Cloud-Native Batch Processing Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783105219030-fxddomi",
-      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783105219030-5136jo8",
-      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1783105219030-bm2wgvf",
-      "topicTitle": "API Key Management and Rotation Strategies",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1783105219030-0s11ipc",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783105219030-ld9ddrr",
-      "topicTitle": "Decentralized Identity and Verifiable Credentials",
-      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-03T19:00:19.030Z"
+  "createdAt": "2026-07-04T18:41:54.926Z"
 }
