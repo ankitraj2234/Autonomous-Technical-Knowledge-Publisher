@@ -1,55 +1,31 @@
 {
-  "date": "2026-07-04",
-  "totalPlanned": 8,
+  "date": "2026-07-05",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1783190514926-4jlxgam",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "id": "1783276759988-uh8xysg",
+      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1783276759988-p4bi7cp",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1783190514926-9untgek",
-      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
+      "id": "1783276759988-jzkoin3",
+      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1783190514926-62m3zxw",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783190514926-502iju5",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1783190514926-69zzj27",
-      "topicTitle": "OpenTelemetry Collector Architecture and Pipeline",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1783190514926-x718jaq",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1783190514926-r23a744",
-      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1783190514926-s6tvmf9",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "id": "1783276759988-ga4uuvf",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
       "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-04T18:41:54.926Z"
+  "createdAt": "2026-07-05T18:39:19.988Z"
 }
