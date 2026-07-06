@@ -1,31 +1,25 @@
 {
-  "date": "2026-07-05",
-  "totalPlanned": 4,
+  "date": "2026-07-06",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1783276759988-uh8xysg",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "id": "1783363371122-yqdeq3j",
+      "topicTitle": "Cloud IAM Misconfiguration Patterns Across AWS, Azure, GCP",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1783276759988-p4bi7cp",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
+      "id": "1783363371122-wr2pxxl",
+      "topicTitle": "Service Mesh Data Plane Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1783276759988-jzkoin3",
-      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1783276759988-ga4uuvf",
-      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "id": "1783363371122-s3b4swa",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
       "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-05T18:39:19.988Z"
+  "createdAt": "2026-07-06T18:42:51.122Z"
 }
