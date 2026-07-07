@@ -1,25 +1,49 @@
 {
-  "date": "2026-07-06",
-  "totalPlanned": 3,
+  "date": "2026-07-07",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1783363371122-yqdeq3j",
-      "topicTitle": "Cloud IAM Misconfiguration Patterns Across AWS, Azure, GCP",
+      "id": "1783452222179-97zeif5",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1783452222179-l997zei",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1783452222179-vceikwv",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1783452222179-8ktziih",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1783363371122-wr2pxxl",
-      "topicTitle": "Service Mesh Data Plane Architecture",
-      "category": "Containerization",
+      "id": "1783452222179-8dljw56",
+      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1783363371122-s3b4swa",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
+      "id": "1783452222179-rkcrr98",
+      "topicTitle": "Bloom Filter Architecture and Applications",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1783452222179-qd7n7fc",
+      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-06T18:42:51.122Z"
+  "createdAt": "2026-07-07T19:23:42.179Z"
 }
