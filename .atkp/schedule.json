@@ -1,49 +1,37 @@
 {
-  "date": "2026-07-07",
-  "totalPlanned": 7,
+  "date": "2026-07-08",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1783452222179-97zeif5",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "id": "1783536080017-3xe396t",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1783536080017-omib15p",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1783452222179-l997zei",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1783452222179-vceikwv",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783452222179-8ktziih",
-      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1783452222179-8dljw56",
-      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "id": "1783536080017-b7t230e",
+      "topicTitle": "Blue-Green vs Canary vs Rolling Deployment Strategies",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1783452222179-rkcrr98",
-      "topicTitle": "Bloom Filter Architecture and Applications",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1783452222179-qd7n7fc",
-      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "id": "1783536080017-2ewxa3h",
+      "topicTitle": "Service Discovery in Distributed Systems",
       "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1783536080017-7p1qzbu",
+      "topicTitle": "TLS 1.3 Handshake Internals and Downgrade Protection",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-07T19:23:42.179Z"
+  "createdAt": "2026-07-08T18:41:20.017Z"
 }
