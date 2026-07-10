@@ -1,61 +1,13 @@
 {
-  "date": "2026-07-09",
-  "totalPlanned": 9,
+  "date": "2026-07-10",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1783623707197-fry4ved",
-      "topicTitle": "Anomaly Detection in Time-Series Metrics",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-0mkug56",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "id": "1783708285239-2hafz0s",
+      "topicTitle": "Raft Consensus Algorithm Deep Dive",
       "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-h11qpdq",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-db3a4rw",
-      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-ggdclhz",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-y62uowr",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-9w1kt9b",
-      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-f2doh4t",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1783623707197-qafbygw",
-      "topicTitle": "Real User Monitoring (RUM) Architecture",
-      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-09T19:01:47.197Z"
+  "createdAt": "2026-07-10T18:31:25.239Z"
 }
