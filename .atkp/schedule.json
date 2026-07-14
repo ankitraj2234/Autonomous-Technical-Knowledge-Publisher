@@ -1,43 +1,67 @@
 {
-  "date": "2026-07-13",
-  "totalPlanned": 6,
+  "date": "2026-07-14",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1783970159002-kuafxwz",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
-      "category": "Cybersecurity",
+      "id": "1784056782073-w2x28n7",
+      "topicTitle": "Container Storage Interface (CSI) Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1783970159002-pj9ubrx",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1783970159002-d9fz53q",
-      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
+      "id": "1784056782073-fw1kdv6",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1783970159002-41i56i7",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1783970159002-8cbsagz",
-      "topicTitle": "Container Escape Techniques and Kernel Exploits",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1783970159002-0tuutej",
-      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
+      "id": "1784056782073-kg42y03",
+      "topicTitle": "Multi-Environment Promotion Strategy",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-nm251xw",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-1l4ufj1",
+      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-1o8fqqb",
+      "topicTitle": "Raft Consensus Algorithm Deep Dive",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-z62g0u6",
+      "topicTitle": "Notification System Architecture at Scale",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-i9efhbc",
+      "topicTitle": "Infrastructure Pipeline: Plan, Apply, Validate",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-agioaug",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1784056782073-x11j7yh",
+      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-13T19:15:59.002Z"
+  "createdAt": "2026-07-14T19:19:42.073Z"
 }
