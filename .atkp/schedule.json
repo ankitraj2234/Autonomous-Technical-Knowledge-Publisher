@@ -1,67 +1,37 @@
 {
-  "date": "2026-07-14",
-  "totalPlanned": 10,
+  "date": "2026-07-15",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1784056782073-w2x28n7",
-      "topicTitle": "Container Storage Interface (CSI) Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-fw1kdv6",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-kg42y03",
-      "topicTitle": "Multi-Environment Promotion Strategy",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-nm251xw",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-1l4ufj1",
-      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-1o8fqqb",
-      "topicTitle": "Raft Consensus Algorithm Deep Dive",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-z62g0u6",
-      "topicTitle": "Notification System Architecture at Scale",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-i9efhbc",
-      "topicTitle": "Infrastructure Pipeline: Plan, Apply, Validate",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-agioaug",
-      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1784056782073-x11j7yh",
-      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
+      "id": "1784140600185-fx9kfyv",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
       "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1784140600185-55kh9al",
+      "topicTitle": "Spine-Leaf Data Center Network Topology",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1784140600185-djoco80",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784140600185-apik3yx",
+      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1784140600185-8v7b6d6",
+      "topicTitle": "Bloom Filter Architecture and Applications",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-14T19:19:42.073Z"
+  "createdAt": "2026-07-15T18:36:40.185Z"
 }
