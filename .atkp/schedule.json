@@ -1,37 +1,19 @@
 {
-  "date": "2026-07-15",
-  "totalPlanned": 5,
+  "date": "2026-07-16",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1784140600185-fx9kfyv",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
+      "id": "1784228475165-zt7w9uc",
+      "topicTitle": "Immutable Infrastructure Pattern Implementation",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1784140600185-55kh9al",
-      "topicTitle": "Spine-Leaf Data Center Network Topology",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1784140600185-djoco80",
+      "id": "1784228475165-x84wqrx",
       "topicTitle": "LSM-Tree Storage Engine Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784140600185-apik3yx",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1784140600185-8v7b6d6",
-      "topicTitle": "Bloom Filter Architecture and Applications",
       "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-15T18:36:40.185Z"
+  "createdAt": "2026-07-16T19:01:15.165Z"
 }
