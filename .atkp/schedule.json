@@ -1,19 +1,37 @@
 {
-  "date": "2026-07-16",
-  "totalPlanned": 2,
+  "date": "2026-07-17",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1784228475165-zt7w9uc",
-      "topicTitle": "Immutable Infrastructure Pattern Implementation",
+      "id": "1784315492044-32owfw5",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784315492044-hmyg3zg",
+      "topicTitle": "Policy as Code with Sentinel and Rego",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1784315492044-7oknfv0",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1784228475165-x84wqrx",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "id": "1784315492044-u21oa3r",
+      "topicTitle": "Container Image Layer Optimization Strategies",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1784315492044-im1gem8",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
       "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-16T19:01:15.165Z"
+  "createdAt": "2026-07-17T19:11:32.044Z"
 }
