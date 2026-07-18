@@ -1,37 +1,43 @@
 {
-  "date": "2026-07-17",
-  "totalPlanned": 5,
+  "date": "2026-07-18",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1784315492044-32owfw5",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784315492044-hmyg3zg",
-      "topicTitle": "Policy as Code with Sentinel and Rego",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1784315492044-7oknfv0",
-      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1784315492044-u21oa3r",
-      "topicTitle": "Container Image Layer Optimization Strategies",
+      "id": "1784399489857-ehah8dk",
+      "topicTitle": "Init Container and Startup Probe Patterns",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1784315492044-im1gem8",
-      "topicTitle": "Gossip Protocol in Distributed Systems",
-      "category": "System Design",
+      "id": "1784399489857-qm3z0iu",
+      "topicTitle": "Multi-Environment Promotion Strategy",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1784399489857-1s535xd",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1784399489857-l68l72t",
+      "topicTitle": "Kubernetes Admission Webhook Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1784399489857-2yeqz7b",
+      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1784399489857-ljkkdgw",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-17T19:11:32.044Z"
+  "createdAt": "2026-07-18T18:31:29.857Z"
 }
