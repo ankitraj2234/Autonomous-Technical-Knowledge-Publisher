@@ -1,43 +1,61 @@
 {
-  "date": "2026-07-18",
-  "totalPlanned": 6,
+  "date": "2026-07-19",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1784399489857-ehah8dk",
-      "topicTitle": "Init Container and Startup Probe Patterns",
-      "category": "Containerization",
+      "id": "1784487876822-7mktuci",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1784399489857-qm3z0iu",
-      "topicTitle": "Multi-Environment Promotion Strategy",
-      "category": "DevOps",
+      "id": "1784487876822-oadmkbs",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1784399489857-1s535xd",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "id": "1784487876822-c2r9jty",
+      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1784399489857-l68l72t",
-      "topicTitle": "Kubernetes Admission Webhook Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1784399489857-2yeqz7b",
-      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1784399489857-ljkkdgw",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "id": "1784487876822-0h9flhh",
+      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1784487876822-2vp8mbo",
+      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1784487876822-x3hh62q",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784487876822-awb6mwa",
+      "topicTitle": "Passwordless Authentication Flow Design",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1784487876822-20jdm57",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784487876822-76f4663",
+      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-18T18:31:29.857Z"
+  "createdAt": "2026-07-19T19:04:36.822Z"
 }
