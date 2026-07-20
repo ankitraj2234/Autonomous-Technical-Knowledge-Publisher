@@ -1,61 +1,31 @@
 {
-  "date": "2026-07-19",
-  "totalPlanned": 9,
+  "date": "2026-07-20",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1784487876822-7mktuci",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1784487876822-oadmkbs",
-      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1784487876822-c2r9jty",
-      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
+      "id": "1784574277046-472qtcl",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1784487876822-0h9flhh",
-      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1784487876822-2vp8mbo",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "id": "1784574277046-lh9cikb",
+      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1784487876822-x3hh62q",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "id": "1784574277046-gajjk0w",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1784574277046-1om95eo",
+      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
       "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784487876822-awb6mwa",
-      "topicTitle": "Passwordless Authentication Flow Design",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1784487876822-20jdm57",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1784487876822-76f4663",
-      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
-      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-19T19:04:36.822Z"
+  "createdAt": "2026-07-20T19:04:37.046Z"
 }
