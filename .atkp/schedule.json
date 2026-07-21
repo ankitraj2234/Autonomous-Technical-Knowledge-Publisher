@@ -1,31 +1,13 @@
 {
-  "date": "2026-07-20",
-  "totalPlanned": 4,
+  "date": "2026-07-21",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1784574277046-472qtcl",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1784574277046-lh9cikb",
-      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1784574277046-gajjk0w",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1784574277046-1om95eo",
-      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
+      "id": "1784661196198-w8ricrj",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
       "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-20T19:04:37.046Z"
+  "createdAt": "2026-07-21T19:13:16.198Z"
 }
