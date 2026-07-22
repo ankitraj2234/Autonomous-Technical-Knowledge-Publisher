@@ -1,13 +1,67 @@
 {
-  "date": "2026-07-21",
-  "totalPlanned": 1,
+  "date": "2026-07-22",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1784661196198-w8ricrj",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "id": "1784745136085-ezyy12u",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-h8mg71z",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-7sivoa8",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-6v0xho4",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-aqk4hyr",
+      "topicTitle": "Content Delivery Network Design from Scratch",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-aosw4wh",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-kxus1hy",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-xmza5el",
+      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1784745136085-n4kyrwb",
+      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1784745136086-67t6aoa",
+      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
       "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-21T19:13:16.198Z"
+  "createdAt": "2026-07-22T18:32:16.086Z"
 }
