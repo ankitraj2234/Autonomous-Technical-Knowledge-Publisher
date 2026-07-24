@@ -1,43 +1,25 @@
 {
-  "date": "2026-07-23",
-  "totalPlanned": 6,
+  "date": "2026-07-24",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1784831966888-ex8n7p1",
-      "topicTitle": "Terraform State Management and Locking Architecture",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1784831966888-izyfvdy",
-      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1784831966888-5zdci0u",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1784831966888-rhg2wyl",
-      "topicTitle": "Pulumi vs Terraform: Architecture Comparison",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1784831966888-451imy2",
+      "id": "1784919389906-zliwix7",
       "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1784831966888-ub1tg91",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "id": "1784919389906-d7emm3e",
+      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1784919389906-7k9vyu6",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
       "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-23T18:39:26.888Z"
+  "createdAt": "2026-07-24T18:56:29.906Z"
 }
