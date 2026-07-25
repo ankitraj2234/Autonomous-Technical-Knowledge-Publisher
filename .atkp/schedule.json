@@ -1,25 +1,43 @@
 {
-  "date": "2026-07-24",
-  "totalPlanned": 3,
+  "date": "2026-07-25",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1784919389906-zliwix7",
-      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
+      "id": "1785006714938-8m3m5om",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1785006714938-wdl28l1",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1784919389906-d7emm3e",
-      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
-      "category": "Cybersecurity",
+      "id": "1785006714938-5kwavvd",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1784919389906-7k9vyu6",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "id": "1785006714938-8x0252m",
+      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
       "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1785006714938-hjzntv2",
+      "topicTitle": "Init Container and Startup Probe Patterns",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1785006714938-n7v2mx0",
+      "topicTitle": "Network Segmentation Strategies for Zero Trust",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-24T18:56:29.906Z"
+  "createdAt": "2026-07-25T19:11:54.938Z"
 }
