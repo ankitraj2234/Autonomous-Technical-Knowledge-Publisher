@@ -1,43 +1,37 @@
 {
-  "date": "2026-07-25",
-  "totalPlanned": 6,
+  "date": "2026-07-26",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1785006714938-8m3m5om",
-      "topicTitle": "Gossip Protocol in Distributed Systems",
-      "category": "System Design",
+      "id": "1785091537967-x9g6828",
+      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1785006714938-wdl28l1",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1785006714938-5kwavvd",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1785006714938-8x0252m",
-      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1785006714938-hjzntv2",
-      "topicTitle": "Init Container and Startup Probe Patterns",
+      "id": "1785091537967-cfxhva0",
+      "topicTitle": "Kubernetes Operator Pattern Implementation",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1785006714938-n7v2mx0",
-      "topicTitle": "Network Segmentation Strategies for Zero Trust",
+      "id": "1785091537967-xfux17y",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
       "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1785091537967-a0gc9dn",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1785091537967-qgxdwg9",
+      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-25T19:11:54.938Z"
+  "createdAt": "2026-07-26T18:45:37.967Z"
 }
