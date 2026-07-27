@@ -1,37 +1,61 @@
 {
-  "date": "2026-07-26",
-  "totalPlanned": 5,
+  "date": "2026-07-27",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1785091537967-x9g6828",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1785091537967-cfxhva0",
-      "topicTitle": "Kubernetes Operator Pattern Implementation",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1785091537967-xfux17y",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1785091537967-a0gc9dn",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
+      "id": "1785178027013-xsubfsh",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1785091537967-qgxdwg9",
-      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
+      "id": "1785178027013-j77q3c5",
+      "topicTitle": "Spine-Leaf Data Center Network Topology",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-ln3pvdz",
+      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-1nsbmwd",
+      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-2y5q0po",
+      "topicTitle": "TLS 1.3 Handshake Internals and Downgrade Protection",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-0fe1276",
+      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-2isv5fr",
+      "topicTitle": "Content Delivery Network Design from Scratch",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-eb8fzgs",
+      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1785178027013-zqwmt77",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-26T18:45:37.967Z"
+  "createdAt": "2026-07-27T18:47:07.013Z"
 }
