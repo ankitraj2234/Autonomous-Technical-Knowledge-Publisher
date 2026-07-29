@@ -1,25 +1,61 @@
 {
-  "date": "2026-07-28",
-  "totalPlanned": 3,
+  "date": "2026-07-29",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1785265082002-t0fxrsh",
-      "topicTitle": "Infrastructure Testing with Terratest",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1785265082002-b69i3bj",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "id": "1785352107932-0zghj9m",
+      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1785265082002-8xas4va",
+      "id": "1785352107932-73zmt8k",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1785352107932-kc0s9s6",
+      "topicTitle": "Observability vs Monitoring: Architecture Differences",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1785352107932-lwxbvhh",
+      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1785352107932-phuk0oa",
       "topicTitle": "Feature Flag Architecture and Progressive Delivery",
       "category": "DevOps",
       "completed": false
+    },
+    {
+      "id": "1785352107932-0vbbf9x",
+      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1785352107932-jj22awp",
+      "topicTitle": "API Key Management and Rotation Strategies",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1785352107932-xm6qugq",
+      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1785352107932-6vux1pp",
+      "topicTitle": "Infrastructure Dependency Graph Resolution",
+      "category": "Infrastructure as Code",
+      "completed": false
     }
   ],
-  "createdAt": "2026-07-28T18:58:02.002Z"
+  "createdAt": "2026-07-29T19:08:27.932Z"
 }
