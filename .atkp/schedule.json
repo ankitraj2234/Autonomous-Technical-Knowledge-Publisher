@@ -1,61 +1,31 @@
 {
-  "date": "2026-07-29",
-  "totalPlanned": 9,
+  "date": "2026-07-30",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1785352107932-0zghj9m",
-      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
-      "category": "Cloud Architecture",
+      "id": "1785436632960-59nyugm",
+      "topicTitle": "Notification System Architecture at Scale",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785352107932-73zmt8k",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
+      "id": "1785436632960-ou8u22q",
+      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785352107932-kc0s9s6",
-      "topicTitle": "Observability vs Monitoring: Architecture Differences",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1785352107932-lwxbvhh",
-      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1785352107932-phuk0oa",
-      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1785352107932-0vbbf9x",
-      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1785352107932-jj22awp",
-      "topicTitle": "API Key Management and Rotation Strategies",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1785352107932-xm6qugq",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
+      "id": "1785436632960-mgd2lu0",
+      "topicTitle": "SSRF Exploitation Techniques in Cloud Environments",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1785352107932-6vux1pp",
-      "topicTitle": "Infrastructure Dependency Graph Resolution",
-      "category": "Infrastructure as Code",
+      "id": "1785436632960-fkcj1qx",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-29T19:08:27.932Z"
+  "createdAt": "2026-07-30T18:37:12.960Z"
 }
