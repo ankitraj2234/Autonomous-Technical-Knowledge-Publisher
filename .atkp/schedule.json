@@ -1,31 +1,37 @@
 {
-  "date": "2026-07-30",
-  "totalPlanned": 4,
+  "date": "2026-07-31",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1785436632960-59nyugm",
-      "topicTitle": "Notification System Architecture at Scale",
+      "id": "1785525484107-krkmiax",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785436632960-ou8u22q",
-      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
+      "id": "1785525484107-b2f9x1s",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1785525484107-cuxp28l",
+      "topicTitle": "Distributed Lock Manager Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785436632960-mgd2lu0",
-      "topicTitle": "SSRF Exploitation Techniques in Cloud Environments",
+      "id": "1785525484107-9qhzyb0",
+      "topicTitle": "Container Escape Techniques and Kernel Exploits",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1785436632960-fkcj1qx",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
+      "id": "1785525484107-ub828l8",
+      "topicTitle": "WireGuard VPN Architecture and Performance",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-30T18:37:12.960Z"
+  "createdAt": "2026-07-31T19:18:04.107Z"
 }
