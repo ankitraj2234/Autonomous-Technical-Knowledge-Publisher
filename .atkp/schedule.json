@@ -1,37 +1,55 @@
 {
-  "date": "2026-07-31",
-  "totalPlanned": 5,
+  "date": "2026-08-01",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1785525484107-krkmiax",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1785525484107-b2f9x1s",
-      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "id": "1785612029860-3n13i28",
+      "topicTitle": "Observability vs Monitoring: Architecture Differences",
       "category": "Observability",
       "completed": false
     },
     {
-      "id": "1785525484107-cuxp28l",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1785525484107-9qhzyb0",
-      "topicTitle": "Container Escape Techniques and Kernel Exploits",
+      "id": "1785612029860-4p2bjjq",
+      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1785525484107-ub828l8",
-      "topicTitle": "WireGuard VPN Architecture and Performance",
+      "id": "1785612029860-wf3h5w9",
+      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1785612029860-foyw2dc",
+      "topicTitle": "Continuous Profiling Architecture",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1785612029860-mbtxws7",
+      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1785612029860-17kcy3x",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1785612029860-7xdwt1w",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1785612029860-l13pd3d",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
       "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-07-31T19:18:04.107Z"
+  "createdAt": "2026-08-01T19:20:29.860Z"
 }
