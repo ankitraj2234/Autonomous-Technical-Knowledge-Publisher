@@ -1,55 +1,67 @@
 {
-  "date": "2026-08-01",
-  "totalPlanned": 8,
+  "date": "2026-08-02",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1785612029860-3n13i28",
-      "topicTitle": "Observability vs Monitoring: Architecture Differences",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1785612029860-4p2bjjq",
-      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
+      "id": "1785696219870-tvjjw6t",
+      "topicTitle": "API Security: Broken Object Level Authorization (BOLA)",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1785612029860-wf3h5w9",
-      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "id": "1785696219870-aum9eov",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1785696219870-hakzdfw",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1785696219871-ip4n5dv",
+      "topicTitle": "Subdomain Takeover Detection and Prevention",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1785696219871-pysjv6g",
+      "topicTitle": "Kubernetes Network Policy Architecture",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1785612029860-foyw2dc",
-      "topicTitle": "Continuous Profiling Architecture",
-      "category": "Observability",
+      "id": "1785696219871-9vrwer7",
+      "topicTitle": "Distributed Lock Manager Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785612029860-mbtxws7",
-      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
-      "category": "Cloud Architecture",
+      "id": "1785696219871-egco7z6",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1785612029860-17kcy3x",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "id": "1785696219871-0vft62v",
+      "topicTitle": "WireGuard VPN Architecture and Performance",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1785612029860-7xdwt1w",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
+      "id": "1785696219871-0s6ur0b",
+      "topicTitle": "Consistent Hashing for Distributed Systems",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785612029860-l13pd3d",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
-      "category": "Networking",
+      "id": "1785696219871-f8rr83j",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-01T19:20:29.860Z"
+  "createdAt": "2026-08-02T18:43:39.871Z"
 }
