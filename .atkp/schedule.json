@@ -1,67 +1,43 @@
 {
-  "date": "2026-08-03",
-  "totalPlanned": 10,
+  "date": "2026-08-04",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1785784634001-vhygbwj",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1785868635013-il5hxxe",
+      "topicTitle": "Distributed Rate Limiter Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785784634001-i7lskgo",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "id": "1785868635013-ou1b2oj",
+      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1785868635013-kmbf2gt",
+      "topicTitle": "Incident Response Automation with SOAR Platforms",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1785784634001-ysvra94",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
+      "id": "1785868635013-r72bkd5",
+      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785784634001-f33r6mc",
-      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
-      "category": "Cybersecurity",
+      "id": "1785868635013-9wzmfq9",
+      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1785784634001-wifwzv1",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1785784634001-xb4jqte",
-      "topicTitle": "APM Architecture: End-to-End Request Tracing",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1785784634001-m3xvr2k",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1785784634001-vnm85xd",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1785784634001-901gf3d",
-      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1785784634001-ekz64mg",
-      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
-      "category": "Authentication & Authorization",
+      "id": "1785868635013-el69oli",
+      "topicTitle": "Infrastructure Dependency Graph Resolution",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-03T19:17:14.001Z"
+  "createdAt": "2026-08-04T18:37:15.013Z"
 }
