@@ -1,43 +1,31 @@
 {
-  "date": "2026-08-04",
-  "totalPlanned": 6,
+  "date": "2026-08-05",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1785868635013-il5hxxe",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1785868635013-ou1b2oj",
-      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1785868635013-kmbf2gt",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1785868635013-r72bkd5",
+      "id": "1785956306045-zeyp2oc",
       "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785868635013-9wzmfq9",
-      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
-      "category": "DevOps",
+      "id": "1785956306045-fs2acaq",
+      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785868635013-el69oli",
-      "topicTitle": "Infrastructure Dependency Graph Resolution",
-      "category": "Infrastructure as Code",
+      "id": "1785956306045-r3bku55",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1785956306045-lbcmax8",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-04T18:37:15.013Z"
+  "createdAt": "2026-08-05T18:58:26.045Z"
 }
