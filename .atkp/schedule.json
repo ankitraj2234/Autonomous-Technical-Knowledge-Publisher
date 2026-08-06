@@ -1,31 +1,43 @@
 {
-  "date": "2026-08-05",
-  "totalPlanned": 4,
+  "date": "2026-08-06",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1785956306045-zeyp2oc",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
+      "id": "1786043308099-zom3vpx",
+      "topicTitle": "Log Correlation Across Microservices",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1786043308099-wfk7jy1",
+      "topicTitle": "Container Storage Interface (CSI) Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1786043308099-f637ywh",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785956306045-fs2acaq",
-      "topicTitle": "Event Sourcing and CQRS Pattern Implementation",
+      "id": "1786043308099-kd9h86m",
+      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1786043308099-m1cdvsh",
+      "topicTitle": "Distributed Lock Manager Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1785956306045-r3bku55",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1785956306045-lbcmax8",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
+      "id": "1786043308099-zjzu09s",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-05T18:58:26.045Z"
+  "createdAt": "2026-08-06T19:08:28.099Z"
 }
