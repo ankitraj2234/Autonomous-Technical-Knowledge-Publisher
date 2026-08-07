@@ -1,43 +1,61 @@
 {
-  "date": "2026-08-06",
-  "totalPlanned": 6,
+  "date": "2026-08-07",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1786043308099-zom3vpx",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
+      "id": "1786127558992-4u5rlrz",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786043308099-wfk7jy1",
-      "topicTitle": "Container Storage Interface (CSI) Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1786043308099-f637ywh",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1786043308099-kd9h86m",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
+      "id": "1786127558992-yc958s6",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1786043308099-m1cdvsh",
-      "topicTitle": "Distributed Lock Manager Architecture",
+      "id": "1786127558992-s5ashiy",
+      "topicTitle": "Web Application Firewall Bypass Techniques",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786127558992-s932wm9",
+      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786127558992-8h8jsnt",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786127558992-n0isl9m",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1786127558992-n6qpspt",
+      "topicTitle": "Kubernetes Multi-Cluster Federation",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1786127558992-fp54t76",
+      "topicTitle": "Leader Election Algorithms in Distributed Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1786043308099-zjzu09s",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
-      "category": "Networking",
+      "id": "1786127558992-o4lpdzq",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-06T19:08:28.099Z"
+  "createdAt": "2026-08-07T18:32:38.992Z"
 }
