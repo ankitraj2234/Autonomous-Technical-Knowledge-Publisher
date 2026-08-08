@@ -1,61 +1,37 @@
 {
-  "date": "2026-08-07",
-  "totalPlanned": 9,
+  "date": "2026-08-08",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1786127558992-4u5rlrz",
-      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "id": "1786216835019-1yi9rm0",
+      "topicTitle": "Subdomain Takeover Detection and Prevention",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786127558992-yc958s6",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
-      "category": "Cloud Architecture",
+      "id": "1786216835019-iyjcn81",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786127558992-s5ashiy",
+      "id": "1786216835019-vg1qv4j",
       "topicTitle": "Web Application Firewall Bypass Techniques",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786127558992-s932wm9",
-      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "id": "1786216835019-vav7yuq",
+      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786127558992-8h8jsnt",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786127558992-n0isl9m",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "id": "1786216835019-9vrzsyd",
+      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
       "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1786127558992-n6qpspt",
-      "topicTitle": "Kubernetes Multi-Cluster Federation",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1786127558992-fp54t76",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1786127558992-o4lpdzq",
-      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
-      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-07T18:32:38.992Z"
+  "createdAt": "2026-08-08T19:20:35.019Z"
 }
