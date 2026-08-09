@@ -1,37 +1,67 @@
 {
-  "date": "2026-08-08",
-  "totalPlanned": 5,
+  "date": "2026-08-09",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1786216835019-1yi9rm0",
-      "topicTitle": "Subdomain Takeover Detection and Prevention",
+      "id": "1786302410005-jfhr6ti",
+      "topicTitle": "Kubernetes Ingress Architecture Comparison",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-sr927od",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-0v03lg4",
+      "topicTitle": "Container Escape Techniques and Kernel Exploits",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786216835019-iyjcn81",
-      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
+      "id": "1786302410005-4tvj48d",
+      "topicTitle": "Terraform State Management and Locking Architecture",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-u5z6uo6",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-1a3ooga",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-hmskjva",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-wfrem8u",
+      "topicTitle": "Incident Response Automation with SOAR Platforms",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786216835019-vg1qv4j",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786216835019-vav7yuq",
-      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786216835019-9vrzsyd",
-      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
+      "id": "1786302410005-tyz1771",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1786302410005-j3mzcha",
+      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-08T19:20:35.019Z"
+  "createdAt": "2026-08-09T19:06:50.005Z"
 }
