@@ -1,67 +1,55 @@
 {
-  "date": "2026-08-09",
-  "totalPlanned": 10,
+  "date": "2026-08-10",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1786302410005-jfhr6ti",
-      "topicTitle": "Kubernetes Ingress Architecture Comparison",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1786302410005-sr927od",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "id": "1786389417093-t2u6zmw",
+      "topicTitle": "Service Discovery in Distributed Systems",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1786302410005-0v03lg4",
-      "topicTitle": "Container Escape Techniques and Kernel Exploits",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786302410005-4tvj48d",
-      "topicTitle": "Terraform State Management and Locking Architecture",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1786302410005-u5z6uo6",
-      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786302410005-1a3ooga",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "id": "1786389417093-xp0hfmy",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1786302410005-hmskjva",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786302410005-wfrem8u",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
+      "id": "1786389417093-t4w06py",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786302410005-tyz1771",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
+      "id": "1786389417093-1h8v1vl",
+      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1786302410005-j3mzcha",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
+      "id": "1786389417094-lze5f49",
+      "topicTitle": "API Key Management and Rotation Strategies",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1786389417094-pfog7eo",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
       "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786389417094-fja8tet",
+      "topicTitle": "Zero Trust Architecture: Policy Enforcement Points",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786389417094-j7wj4lb",
+      "topicTitle": "Vector Clock and Causal Ordering",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-09T19:06:50.005Z"
+  "createdAt": "2026-08-10T19:16:57.094Z"
 }
