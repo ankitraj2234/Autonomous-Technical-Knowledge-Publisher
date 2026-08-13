@@ -1,19 +1,49 @@
 {
-  "date": "2026-08-12",
-  "totalPlanned": 2,
+  "date": "2026-08-13",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1786562464034-cg5f40z",
-      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
+      "id": "1786646951210-ixafj9u",
+      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1786646951210-u4esquo",
+      "topicTitle": "Bloom Filter Architecture and Applications",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1786646951210-7b9ubtn",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1786646951210-cmp0mr3",
+      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786646951210-gilj9xe",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786646951210-s84rrc3",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1786562464034-rcqfcxx",
-      "topicTitle": "Infrastructure Dependency Graph Resolution",
-      "category": "Infrastructure as Code",
+      "id": "1786646951210-sa22ccz",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-12T19:21:04.034Z"
+  "createdAt": "2026-08-13T18:49:11.210Z"
 }
