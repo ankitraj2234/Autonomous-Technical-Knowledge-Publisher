@@ -1,49 +1,25 @@
 {
-  "date": "2026-08-13",
-  "totalPlanned": 7,
+  "date": "2026-08-14",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1786646951210-ixafj9u",
-      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "id": "1786734269057-clmwell",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786734269057-fkgby2h",
+      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1786646951210-u4esquo",
-      "topicTitle": "Bloom Filter Architecture and Applications",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1786646951210-7b9ubtn",
-      "topicTitle": "LSM-Tree Storage Engine Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1786646951210-cmp0mr3",
-      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786646951210-gilj9xe",
-      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786646951210-s84rrc3",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1786646951210-sa22ccz",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
+      "id": "1786734269057-gfxa4bn",
+      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-13T18:49:11.210Z"
+  "createdAt": "2026-08-14T19:04:29.057Z"
 }
