@@ -1,25 +1,61 @@
 {
-  "date": "2026-08-14",
-  "totalPlanned": 3,
+  "date": "2026-08-15",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1786734269057-clmwell",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "id": "1786821057896-h574w4j",
+      "topicTitle": "Reverse Proxy Security Hardening Checklist",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786734269057-fkgby2h",
-      "topicTitle": "RBAC vs ABAC vs ReBAC Authorization Models",
+      "id": "1786821057896-pua8m7r",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786821057896-swcv0j2",
+      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786821057896-7ir5rni",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1786821057896-miewm7q",
+      "topicTitle": "Distributed Rate Limiter Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1786821057896-ceb7j4p",
+      "topicTitle": "Multi-Factor Authentication Architecture",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1786734269057-gfxa4bn",
-      "topicTitle": "Delegated Authorization with OAuth 2.0 Scopes",
-      "category": "Authentication & Authorization",
+      "id": "1786821057897-pszx9er",
+      "topicTitle": "SSRF Exploitation Techniques in Cloud Environments",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1786821057897-wwprpp3",
+      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1786821057897-p094eid",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-14T19:04:29.057Z"
+  "createdAt": "2026-08-15T19:10:57.897Z"
 }
