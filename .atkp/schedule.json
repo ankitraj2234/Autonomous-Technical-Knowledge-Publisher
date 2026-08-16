@@ -1,61 +1,55 @@
 {
-  "date": "2026-08-15",
-  "totalPlanned": 9,
+  "date": "2026-08-16",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1786821057896-h574w4j",
-      "topicTitle": "Reverse Proxy Security Hardening Checklist",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786821057896-pua8m7r",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786821057896-swcv0j2",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786821057896-7ir5rni",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "id": "1786908046977-26gxiom",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1786821057896-miewm7q",
-      "topicTitle": "Distributed Rate Limiter Architecture",
+      "id": "1786908046978-jsuiel2",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786908046978-e66rodw",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1786908046978-mwko7k1",
+      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1786821057896-ceb7j4p",
-      "topicTitle": "Multi-Factor Authentication Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1786908046978-8z764fz",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1786821057897-pszx9er",
-      "topicTitle": "SSRF Exploitation Techniques in Cloud Environments",
+      "id": "1786908046978-ompfv4m",
+      "topicTitle": "Network Observability with eBPF",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1786908046978-6pysca5",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1786908046978-maf0zvh",
+      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
       "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1786821057897-wwprpp3",
-      "topicTitle": "Pod Disruption Budget and Graceful Shutdown",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1786821057897-p094eid",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
-      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-15T19:10:57.897Z"
+  "createdAt": "2026-08-16T19:20:46.978Z"
 }
