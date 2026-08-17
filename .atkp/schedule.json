@@ -1,55 +1,67 @@
 {
-  "date": "2026-08-16",
-  "totalPlanned": 8,
+  "date": "2026-08-17",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1786908046977-26gxiom",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
-      "category": "Cloud Architecture",
+      "id": "1786993925006-lzmf9el",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1786908046978-jsuiel2",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786908046978-e66rodw",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "id": "1786993925006-dsevxqi",
+      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1786908046978-mwko7k1",
-      "topicTitle": "Distributed Cache Architecture: Redis Cluster Design",
+      "id": "1786993925006-6a24btg",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786993925006-17wa11e",
+      "topicTitle": "Step-Up Authentication Pattern Implementation",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1786993925006-5r7ur46",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1786908046978-8z764fz",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1786908046978-ompfv4m",
-      "topicTitle": "Network Observability with eBPF",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1786908046978-6pysca5",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "id": "1786993925006-y0d1k2q",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1786908046978-maf0zvh",
-      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
-      "category": "Cybersecurity",
+      "id": "1786993925006-quzt45y",
+      "topicTitle": "Custom Metrics Pipeline Design with Prometheus",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1786993925006-4hj3zel",
+      "topicTitle": "mTLS Architecture and Certificate Rotation",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1786993925006-16b9pw8",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1786993925006-yh01rhs",
+      "topicTitle": "Service Discovery in Distributed Systems",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-16T19:20:46.978Z"
+  "createdAt": "2026-08-17T19:12:05.006Z"
 }
