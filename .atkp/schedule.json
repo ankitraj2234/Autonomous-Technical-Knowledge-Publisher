@@ -1,43 +1,13 @@
 {
-  "date": "2026-08-18",
-  "totalPlanned": 6,
+  "date": "2026-08-19",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1787078689206-hue5ii5",
-      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1787078689206-16yo3fx",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1787078689206-a0l9cwj",
-      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1787078689206-4dp8af8",
-      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1787078689206-r2jv7la",
-      "topicTitle": "Network Segmentation Strategies for Zero Trust",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1787078689206-icrpk3y",
-      "topicTitle": "Pipeline as Code: Declarative vs Scripted Pipelines",
-      "category": "DevOps",
+      "id": "1787167035128-zo82xs8",
+      "topicTitle": "Kubernetes Ingress Architecture Comparison",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-18T18:44:49.206Z"
+  "createdAt": "2026-08-19T19:17:15.128Z"
 }
