@@ -1,13 +1,43 @@
 {
-  "date": "2026-08-19",
-  "totalPlanned": 1,
+  "date": "2026-08-20",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1787167035128-zo82xs8",
-      "topicTitle": "Kubernetes Ingress Architecture Comparison",
-      "category": "Containerization",
+      "id": "1787252114862-spvy0ht",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1787252114862-ua3trtp",
+      "topicTitle": "Log Correlation Across Microservices",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1787252114862-bjxks8k",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1787252114862-f0kmhy9",
+      "topicTitle": "Pulumi vs Terraform: Architecture Comparison",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1787252114862-l9ejyn2",
+      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1787252114862-zmuuyik",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-19T19:17:15.128Z"
+  "createdAt": "2026-08-20T18:55:14.862Z"
 }
