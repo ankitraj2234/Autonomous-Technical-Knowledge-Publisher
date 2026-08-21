@@ -1,43 +1,49 @@
 {
-  "date": "2026-08-20",
-  "totalPlanned": 6,
+  "date": "2026-08-21",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1787252114862-spvy0ht",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "id": "1787338515117-eks7qdx",
+      "topicTitle": "Back-Pressure Handling in Reactive Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1787252114862-ua3trtp",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
+      "id": "1787338515117-vzaw1k0",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1787252114862-bjxks8k",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
-      "category": "Infrastructure as Code",
+      "id": "1787338515117-uvzb8i2",
+      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1787252114862-f0kmhy9",
-      "topicTitle": "Pulumi vs Terraform: Architecture Comparison",
-      "category": "Infrastructure as Code",
+      "id": "1787338515117-fa8i8bq",
+      "topicTitle": "Service Discovery in Distributed Systems",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1787252114862-l9ejyn2",
-      "topicTitle": "Cloud-Native Service Mesh Architecture with Istio",
-      "category": "Cloud Architecture",
+      "id": "1787338515117-5fm1bql",
+      "topicTitle": "Spine-Leaf Data Center Network Topology",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1787252114862-zmuuyik",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
+      "id": "1787338515117-6tdlhff",
+      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1787338515117-eoniqhs",
+      "topicTitle": "Session Management: Stateful vs Stateless Patterns",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-20T18:55:14.862Z"
+  "createdAt": "2026-08-21T18:55:15.117Z"
 }
