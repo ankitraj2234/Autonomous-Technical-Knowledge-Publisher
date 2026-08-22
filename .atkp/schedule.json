@@ -1,49 +1,19 @@
 {
-  "date": "2026-08-21",
-  "totalPlanned": 7,
+  "date": "2026-08-22",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1787338515117-eks7qdx",
-      "topicTitle": "Back-Pressure Handling in Reactive Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1787338515117-vzaw1k0",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "id": "1787424198925-wjosaru",
+      "topicTitle": "Container Image Layer Optimization Strategies",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1787338515117-uvzb8i2",
-      "topicTitle": "OAuth 2.0 Token Validation Workflow",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1787338515117-fa8i8bq",
-      "topicTitle": "Service Discovery in Distributed Systems",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1787338515117-5fm1bql",
-      "topicTitle": "Spine-Leaf Data Center Network Topology",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1787338515117-6tdlhff",
-      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1787338515117-eoniqhs",
-      "topicTitle": "Session Management: Stateful vs Stateless Patterns",
-      "category": "Authentication & Authorization",
+      "id": "1787424198925-ldxc2w4",
+      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-21T18:55:15.117Z"
+  "createdAt": "2026-08-22T18:43:18.925Z"
 }
