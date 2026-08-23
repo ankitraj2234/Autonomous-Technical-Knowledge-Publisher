@@ -1,19 +1,43 @@
 {
-  "date": "2026-08-22",
-  "totalPlanned": 2,
+  "date": "2026-08-23",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1787424198925-wjosaru",
-      "topicTitle": "Container Image Layer Optimization Strategies",
+      "id": "1787510976948-q5097n7",
+      "topicTitle": "Kubernetes Secrets Management Architecture",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1787424198925-ldxc2w4",
-      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "id": "1787510976948-noukwv0",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1787510976948-3oueg2m",
+      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1787510976948-n4pmv8r",
+      "topicTitle": "Leader Election Algorithms in Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1787510976948-kc4z240",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1787510976948-dot2rz6",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-22T18:43:18.925Z"
+  "createdAt": "2026-08-23T18:49:36.948Z"
 }
