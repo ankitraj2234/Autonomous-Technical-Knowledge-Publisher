@@ -1,43 +1,31 @@
 {
-  "date": "2026-08-23",
-  "totalPlanned": 6,
+  "date": "2026-08-24",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1787510976948-q5097n7",
-      "topicTitle": "Kubernetes Secrets Management Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1787510976948-noukwv0",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1787510976948-3oueg2m",
-      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1787510976948-n4pmv8r",
-      "topicTitle": "Leader Election Algorithms in Distributed Systems",
+      "id": "1787597523923-az4z9ol",
+      "topicTitle": "Saga Pattern for Distributed Transactions",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1787510976948-kc4z240",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "id": "1787597523923-4vor7hp",
+      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1787510976948-dot2rz6",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
+      "id": "1787597523923-ba3h7cz",
+      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1787597523923-0my3u39",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-23T18:49:36.948Z"
+  "createdAt": "2026-08-24T18:52:03.923Z"
 }
