@@ -1,31 +1,31 @@
 {
-  "date": "2026-08-24",
+  "date": "2026-08-25",
   "totalPlanned": 4,
   "entries": [
     {
-      "id": "1787597523923-az4z9ol",
-      "topicTitle": "Saga Pattern for Distributed Transactions",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1787597523923-4vor7hp",
-      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1787597523923-ba3h7cz",
-      "topicTitle": "API Authentication Patterns: Bearer vs MAC vs HMAC",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1787597523923-0my3u39",
-      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
+      "id": "1787683337961-402i7lz",
+      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1787683337961-u6kdx6k",
+      "topicTitle": "Custom Metrics Pipeline Design with Prometheus",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1787683337961-7to1f8a",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1787683337961-h5domxr",
+      "topicTitle": "Single Sign-On Architecture with SAML 2.0",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-24T18:52:03.923Z"
+  "createdAt": "2026-08-25T18:42:17.961Z"
 }
