@@ -1,31 +1,19 @@
 {
-  "date": "2026-08-25",
-  "totalPlanned": 4,
+  "date": "2026-08-26",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1787683337961-402i7lz",
-      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
-      "category": "DevOps",
+      "id": "1787772351165-lw5q42w",
+      "topicTitle": "Database Sharding Strategies and Rebalancing",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1787683337961-u6kdx6k",
-      "topicTitle": "Custom Metrics Pipeline Design with Prometheus",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1787683337961-7to1f8a",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "id": "1787772351166-ho6fa3c",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
       "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1787683337961-h5domxr",
-      "topicTitle": "Single Sign-On Architecture with SAML 2.0",
-      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-25T18:42:17.961Z"
+  "createdAt": "2026-08-26T19:25:51.166Z"
 }
