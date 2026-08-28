@@ -1,13 +1,19 @@
 {
-  "date": "2026-08-27",
-  "totalPlanned": 1,
+  "date": "2026-08-28",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1787858060026-c6vkexv",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
-      "category": "Cloud Architecture",
+      "id": "1787942306879-2v949sk",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1787942306879-nomjgs5",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-27T19:14:20.026Z"
+  "createdAt": "2026-08-28T18:38:26.879Z"
 }
