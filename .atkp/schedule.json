@@ -1,19 +1,67 @@
 {
-  "date": "2026-08-28",
-  "totalPlanned": 2,
+  "date": "2026-08-29",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1787942306879-2v949sk",
-      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "id": "1788028892911-zpcna2d",
+      "topicTitle": "Distributed Tracing Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1787942306879-nomjgs5",
+      "id": "1788028892911-hv8mcy0",
+      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-8semud7",
+      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-9si7lfz",
+      "topicTitle": "Cloud-Native Batch Processing Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-qocfpfu",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-1hw5cd1",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-izmvo4e",
       "topicTitle": "Gossip Protocol in Distributed Systems",
       "category": "System Design",
       "completed": false
+    },
+    {
+      "id": "1788028892911-ecykc0f",
+      "topicTitle": "Kubernetes RBAC Privilege Escalation Vectors",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-hhsqoey",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1788028892911-oo7a462",
+      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
+      "category": "Containerization",
+      "completed": false
     }
   ],
-  "createdAt": "2026-08-28T18:38:26.879Z"
+  "createdAt": "2026-08-29T18:41:32.911Z"
 }
