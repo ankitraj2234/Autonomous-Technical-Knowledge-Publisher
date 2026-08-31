@@ -1,25 +1,49 @@
 {
-  "date": "2026-08-30",
-  "totalPlanned": 3,
+  "date": "2026-08-31",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1788117640976-colbdia",
-      "topicTitle": "Database Sharding Strategies and Rebalancing",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788117640977-t57j1ha",
-      "topicTitle": "Container Image Scanning and Supply Chain Security",
+      "id": "1788202992998-08cl3xk",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1788117640977-amltq8z",
-      "topicTitle": "Step-Up Authentication Pattern Implementation",
-      "category": "Authentication & Authorization",
+      "id": "1788202992998-cam31z7",
+      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1788202992998-2po1crd",
+      "topicTitle": "Log Aggregation Architecture: ELK vs Loki vs CloudWatch",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1788202992998-b6mj6i2",
+      "topicTitle": "Real User Monitoring (RUM) Architecture",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1788202992998-qtbt2qd",
+      "topicTitle": "Circuit Breaker Pattern Implementation",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1788202992998-2du94jw",
+      "topicTitle": "Vector Clock and Causal Ordering",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1788202992998-j6e1mh5",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-08-30T19:20:40.977Z"
+  "createdAt": "2026-08-31T19:03:12.998Z"
 }
