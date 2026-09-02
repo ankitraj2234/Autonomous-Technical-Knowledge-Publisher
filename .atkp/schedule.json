@@ -1,67 +1,13 @@
 {
-  "date": "2026-09-01",
-  "totalPlanned": 10,
+  "date": "2026-09-02",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1788289307231-d1d3ko8",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-8snkth0",
-      "topicTitle": "Bloom Filter Architecture and Applications",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-qhrmdbx",
+      "id": "1788376012120-s4osjdg",
       "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
       "category": "DevOps",
       "completed": false
-    },
-    {
-      "id": "1788289307231-vbbkfxa",
-      "topicTitle": "Container Image Layer Optimization Strategies",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-jz8nqor",
-      "topicTitle": "GitOps Multi-Tenancy Architecture",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-kxvu8ri",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-itj0zpg",
-      "topicTitle": "Multi-Factor Authentication Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-wicvo47",
-      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-v1zhb11",
-      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1788289307231-e0ls29r",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
     }
   ],
-  "createdAt": "2026-09-01T19:01:47.231Z"
+  "createdAt": "2026-09-02T19:06:52.120Z"
 }
