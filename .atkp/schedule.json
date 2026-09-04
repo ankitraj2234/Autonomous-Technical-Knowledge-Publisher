@@ -1,61 +1,49 @@
 {
-  "date": "2026-09-03",
-  "totalPlanned": 9,
+  "date": "2026-09-04",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1788461204855-dc52oy7",
-      "topicTitle": "Container Image Scanning and Supply Chain Security",
+      "id": "1788547604917-h3hwmww",
+      "topicTitle": "DNS Architecture: Recursive vs Authoritative Resolution",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1788547604917-d0r08gz",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1788547604917-loz04al",
+      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1788461204855-5zhyxd2",
-      "topicTitle": "Custom Metrics Pipeline Design with Prometheus",
-      "category": "Observability",
+      "id": "1788547604917-f258hoz",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1788461204855-3qfpkbn",
-      "topicTitle": "Raft Consensus Algorithm Deep Dive",
-      "category": "System Design",
+      "id": "1788547604917-i13ewit",
+      "topicTitle": "Chaos Engineering: Failure Injection Strategies",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1788461204855-rt1as4v",
-      "topicTitle": "Back-Pressure Handling in Reactive Systems",
-      "category": "System Design",
+      "id": "1788547604917-m5cjrkv",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1788461204855-cmk4hf4",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1788461204855-kvali0d",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788461204855-ep5zw30",
-      "topicTitle": "Cloud-Native Batch Processing Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1788461204855-kq0k6l8",
-      "topicTitle": "Anomaly Detection in Time-Series Metrics",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1788461204855-9knwysg",
-      "topicTitle": "Distributed Lock Manager Architecture",
-      "category": "System Design",
+      "id": "1788547604917-4fxj2gf",
+      "topicTitle": "ARP Spoofing Detection and Prevention",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-03T18:46:44.855Z"
+  "createdAt": "2026-09-04T18:46:44.917Z"
 }
