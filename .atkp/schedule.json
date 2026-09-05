@@ -1,49 +1,19 @@
 {
-  "date": "2026-09-04",
-  "totalPlanned": 7,
+  "date": "2026-09-05",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1788547604917-h3hwmww",
-      "topicTitle": "DNS Architecture: Recursive vs Authoritative Resolution",
-      "category": "Networking",
+      "id": "1788634005040-j5ufj4z",
+      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1788547604917-d0r08gz",
-      "topicTitle": "Gossip Protocol in Distributed Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788547604917-loz04al",
-      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1788547604917-f258hoz",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1788547604917-i13ewit",
-      "topicTitle": "Chaos Engineering: Failure Injection Strategies",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1788547604917-m5cjrkv",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1788547604917-4fxj2gf",
-      "topicTitle": "ARP Spoofing Detection and Prevention",
-      "category": "Networking",
+      "id": "1788634005040-mywlsif",
+      "topicTitle": "Hardware Security Modules (HSM) Integration Patterns",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-04T18:46:44.917Z"
+  "createdAt": "2026-09-05T18:46:45.040Z"
 }
