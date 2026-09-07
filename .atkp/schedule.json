@@ -1,37 +1,13 @@
 {
-  "date": "2026-09-06",
-  "totalPlanned": 5,
+  "date": "2026-09-07",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1788720405012-glegkyy",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1788720405012-3ti4iog",
-      "topicTitle": "Consistent Hashing for Distributed Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788720405012-jue7bbu",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1788720405012-r9l127y",
-      "topicTitle": "Deployment Rollback Strategies and Automated Recovery",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1788720405012-wquh1dt",
-      "topicTitle": "Object Storage Consistency Models and CAP Trade-offs",
-      "category": "Cloud Architecture",
+      "id": "1788806804989-bwia4p1",
+      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-06T18:46:45.012Z"
+  "createdAt": "2026-09-07T18:46:44.989Z"
 }
