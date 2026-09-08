@@ -1,13 +1,61 @@
 {
-  "date": "2026-09-07",
-  "totalPlanned": 1,
+  "date": "2026-09-08",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1788806804989-bwia4p1",
-      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "id": "1788893205381-wlsorkf",
+      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1788893205381-0m8dysu",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
       "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-7f27by2",
+      "topicTitle": "DNS-over-HTTPS Security Implications",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-s5153t8",
+      "topicTitle": "Software-Defined Networking (SDN) Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-6hekdow",
+      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-nobdiit",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-bidorft",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-jfe6nnr",
+      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1788893205382-re9f0nb",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-07T18:46:44.989Z"
+  "createdAt": "2026-09-08T18:46:45.382Z"
 }
