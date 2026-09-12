@@ -1,49 +1,55 @@
 {
-  "date": "2026-09-11",
-  "totalPlanned": 7,
+  "date": "2026-09-12",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1789152404988-omov077",
-      "topicTitle": "Multi-Region Active-Active Database Architecture",
+      "id": "1789238804994-hqkxzr1",
+      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1789152404988-0iiamqt",
-      "topicTitle": "Reverse Proxy Security Hardening Checklist",
-      "category": "Cybersecurity",
+      "id": "1789238804994-z3tbwha",
+      "topicTitle": "Vector Clock and Causal Ordering",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1789152404988-pgifxmy",
-      "topicTitle": "GitOps Multi-Tenancy Architecture",
+      "id": "1789238804994-8kf056l",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1789238804994-kwfvk7x",
+      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1789238804994-i5q0hm6",
+      "topicTitle": "Kubernetes Secrets Management Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1789238804994-lw1m65o",
+      "topicTitle": "Environment Provisioning Automation Patterns",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1789152404988-9pb7q40",
+      "id": "1789238804994-2f6iflt",
       "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
       "category": "Observability",
       "completed": false
     },
     {
-      "id": "1789152404988-1aek95o",
-      "topicTitle": "Serverless Cold Start Optimization Strategies",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1789152404988-otpsnll",
-      "topicTitle": "Pulumi vs Terraform: Architecture Comparison",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1789152404988-h56v46k",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
-      "category": "DevOps",
+      "id": "1789238804994-mluplsx",
+      "topicTitle": "Raft Consensus Algorithm Deep Dive",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-11T18:46:44.988Z"
+  "createdAt": "2026-09-12T18:46:44.994Z"
 }
