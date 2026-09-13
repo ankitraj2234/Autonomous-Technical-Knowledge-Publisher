@@ -1,55 +1,37 @@
 {
-  "date": "2026-09-12",
-  "totalPlanned": 8,
+  "date": "2026-09-13",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1789238804994-hqkxzr1",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "id": "1789325204865-gjlm0y7",
+      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1789238804994-z3tbwha",
-      "topicTitle": "Vector Clock and Causal Ordering",
-      "category": "System Design",
+      "id": "1789325204865-kch0suc",
+      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1789238804994-8kf056l",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
-      "category": "Networking",
+      "id": "1789325204865-504gin8",
+      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1789238804994-kwfvk7x",
-      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
-      "category": "Cloud Architecture",
+      "id": "1789325204865-rfndwqs",
+      "topicTitle": "DNS-over-HTTPS Security Implications",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1789238804994-i5q0hm6",
-      "topicTitle": "Kubernetes Secrets Management Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1789238804994-lw1m65o",
-      "topicTitle": "Environment Provisioning Automation Patterns",
+      "id": "1789325204865-vnjkghe",
+      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
       "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1789238804994-2f6iflt",
-      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1789238804994-mluplsx",
-      "topicTitle": "Raft Consensus Algorithm Deep Dive",
-      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-12T18:46:44.994Z"
+  "createdAt": "2026-09-13T18:46:44.865Z"
 }
