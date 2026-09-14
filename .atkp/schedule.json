@@ -1,37 +1,49 @@
 {
-  "date": "2026-09-13",
-  "totalPlanned": 5,
+  "date": "2026-09-14",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1789325204865-gjlm0y7",
-      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
+      "id": "1789411605107-wg05g7z",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1789411605107-thmc8oi",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1789411605107-su3fe0n",
+      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1789325204865-kch0suc",
-      "topicTitle": "SAML vs OAuth2 vs OIDC: Protocol Comparison and Attack Surfaces",
+      "id": "1789411605107-i4fyq11",
+      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1789325204865-504gin8",
-      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
+      "id": "1789411605107-ycfcn42",
+      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1789411605107-5tmk36n",
+      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1789325204865-rfndwqs",
-      "topicTitle": "DNS-over-HTTPS Security Implications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1789325204865-vnjkghe",
-      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
-      "category": "DevOps",
+      "id": "1789411605107-0mh27he",
+      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-13T18:46:44.865Z"
+  "createdAt": "2026-09-14T18:46:45.107Z"
 }
