@@ -1,49 +1,19 @@
 {
-  "date": "2026-09-14",
-  "totalPlanned": 7,
+  "date": "2026-09-15",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1789411605107-wg05g7z",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
-      "category": "System Design",
+      "id": "1789498005028-a29gns5",
+      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1789411605107-thmc8oi",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1789411605107-su3fe0n",
-      "topicTitle": "Cloud-Native Secrets Management with KMS Integration",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1789411605107-i4fyq11",
-      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1789411605107-ycfcn42",
-      "topicTitle": "Memory Corruption Vulnerabilities: Stack vs Heap Exploitation",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1789411605107-5tmk36n",
-      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1789411605107-0mh27he",
-      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
-      "category": "Authentication & Authorization",
+      "id": "1789498005028-unld1q1",
+      "topicTitle": "Traffic Shaping and QoS Policy Design",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-14T18:46:45.107Z"
+  "createdAt": "2026-09-15T18:46:45.028Z"
 }
