@@ -1,19 +1,25 @@
 {
-  "date": "2026-09-15",
-  "totalPlanned": 2,
+  "date": "2026-09-16",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1789498005028-a29gns5",
-      "topicTitle": "Distributed Tracing with Jaeger and Zipkin",
-      "category": "Observability",
+      "id": "1789584405210-j19vt7l",
+      "topicTitle": "Multi-Environment Promotion Strategy",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1789498005028-unld1q1",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
-      "category": "Networking",
+      "id": "1789584405210-i9dkc7x",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1789584405210-7frpoj6",
+      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-15T18:46:45.028Z"
+  "createdAt": "2026-09-16T18:46:45.210Z"
 }
