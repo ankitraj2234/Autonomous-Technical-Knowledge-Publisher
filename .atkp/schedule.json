@@ -1,25 +1,31 @@
 {
-  "date": "2026-09-16",
-  "totalPlanned": 3,
+  "date": "2026-09-17",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1789584405210-j19vt7l",
-      "topicTitle": "Multi-Environment Promotion Strategy",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1789584405210-i9dkc7x",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1789584405210-7frpoj6",
-      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
+      "id": "1789670804968-8xb06ea",
+      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
       "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1789670804968-3xiyrdc",
+      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1789670804968-fx53cn2",
+      "topicTitle": "GitOps Multi-Tenancy Architecture",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1789670804968-1d55x8j",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-16T18:46:45.210Z"
+  "createdAt": "2026-09-17T18:46:44.968Z"
 }
