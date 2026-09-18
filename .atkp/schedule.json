@@ -1,31 +1,49 @@
 {
-  "date": "2026-09-17",
-  "totalPlanned": 4,
+  "date": "2026-09-18",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1789670804968-8xb06ea",
-      "topicTitle": "Kubernetes Horizontal Pod Autoscaler Internals",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1789670804968-3xiyrdc",
-      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1789670804968-fx53cn2",
-      "topicTitle": "GitOps Multi-Tenancy Architecture",
+      "id": "1789757204944-t15zvum",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1789670804968-1d55x8j",
-      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "id": "1789757204944-8x7gxoq",
+      "topicTitle": "Notification System Architecture at Scale",
       "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1789757204944-t7g0g4l",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1789757204944-39s91bm",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1789757204944-mtrrcj6",
+      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1789757204944-mhscxkn",
+      "topicTitle": "Network Segmentation Strategies for Zero Trust",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1789757204944-f7cqt52",
+      "topicTitle": "Kubernetes Network Policy Architecture",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-17T18:46:44.968Z"
+  "createdAt": "2026-09-18T18:46:44.944Z"
 }
