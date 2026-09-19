@@ -1,49 +1,19 @@
 {
-  "date": "2026-09-18",
-  "totalPlanned": 7,
+  "date": "2026-09-19",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1789757204944-t15zvum",
+      "id": "1789843605027-4a7ou7r",
+      "topicTitle": "Real User Monitoring (RUM) Architecture",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1789843605027-qlw96a3",
       "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
       "category": "DevOps",
       "completed": false
-    },
-    {
-      "id": "1789757204944-8x7gxoq",
-      "topicTitle": "Notification System Architecture at Scale",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1789757204944-t7g0g4l",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1789757204944-39s91bm",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1789757204944-mtrrcj6",
-      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1789757204944-mhscxkn",
-      "topicTitle": "Network Segmentation Strategies for Zero Trust",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1789757204944-f7cqt52",
-      "topicTitle": "Kubernetes Network Policy Architecture",
-      "category": "Containerization",
-      "completed": false
     }
   ],
-  "createdAt": "2026-09-18T18:46:44.944Z"
+  "createdAt": "2026-09-19T18:46:45.027Z"
 }
