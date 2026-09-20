@@ -1,19 +1,67 @@
 {
-  "date": "2026-09-19",
-  "totalPlanned": 2,
+  "date": "2026-09-20",
+  "totalPlanned": 10,
   "entries": [
     {
-      "id": "1789843605027-4a7ou7r",
-      "topicTitle": "Real User Monitoring (RUM) Architecture",
-      "category": "Observability",
+      "id": "1789930004823-iu0li35",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1789843605027-qlw96a3",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "id": "1789930004823-unf9nw0",
+      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1789930004823-94mbzed",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1789930004823-niebxug",
+      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1789930004824-0kwfylu",
+      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1789930004824-4xjqpxl",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1789930004824-hry3wae",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1789930004824-29zk3vh",
+      "topicTitle": "Decentralized Identity and Verifiable Credentials",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1789930004824-g3hxwl8",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1789930004824-bfy9b70",
+      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
       "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-19T18:46:45.027Z"
+  "createdAt": "2026-09-20T18:46:44.824Z"
 }
