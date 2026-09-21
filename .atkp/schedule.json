@@ -1,67 +1,49 @@
 {
-  "date": "2026-09-20",
-  "totalPlanned": 10,
+  "date": "2026-09-21",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1789930004823-iu0li35",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
-      "category": "DevOps",
+      "id": "1790016404941-zvsasof",
+      "topicTitle": "Observability Data Pipeline Cost Optimization",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1789930004823-unf9nw0",
-      "topicTitle": "Terraform Workspace vs Directory-Based Isolation",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1789930004823-94mbzed",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1789930004823-niebxug",
-      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1789930004824-0kwfylu",
-      "topicTitle": "QUIC Protocol Architecture and HTTP/3",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1789930004824-4xjqpxl",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1789930004824-hry3wae",
+      "id": "1790016404941-yy9g78q",
       "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1789930004824-29zk3vh",
-      "topicTitle": "Decentralized Identity and Verifiable Credentials",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1789930004824-g3hxwl8",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "id": "1790016404941-j6zz17d",
+      "topicTitle": "Terraform Provider Architecture and Plugin System",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1789930004824-bfy9b70",
-      "topicTitle": "DevOps Metrics: DORA Framework Implementation",
-      "category": "DevOps",
+      "id": "1790016404941-j712fr7",
+      "topicTitle": "DNS Architecture: Recursive vs Authoritative Resolution",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1790016404941-1nyzngr",
+      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1790016404941-umavg1v",
+      "topicTitle": "Multi-Account Infrastructure Architecture",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1790016404941-t39vrem",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-20T18:46:44.824Z"
+  "createdAt": "2026-09-21T18:46:44.941Z"
 }
