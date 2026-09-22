@@ -1,49 +1,61 @@
 {
-  "date": "2026-09-21",
-  "totalPlanned": 7,
+  "date": "2026-09-22",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1790016404941-zvsasof",
-      "topicTitle": "Observability Data Pipeline Cost Optimization",
-      "category": "Observability",
+      "id": "1790102805146-8lb7xgs",
+      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1790016404941-yy9g78q",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1790102805146-bbi5luv",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1790016404941-j6zz17d",
-      "topicTitle": "Terraform Provider Architecture and Plugin System",
-      "category": "Infrastructure as Code",
+      "id": "1790102805146-1kfts6h",
+      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1790016404941-j712fr7",
-      "topicTitle": "DNS Architecture: Recursive vs Authoritative Resolution",
+      "id": "1790102805146-lqg4wt2",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1790102805146-i9q4qlh",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1790102805146-0cn66g1",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1790016404941-1nyzngr",
-      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
+      "id": "1790102805146-0bmury7",
+      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790102805146-v83htwc",
+      "topicTitle": "Secrets Management Architecture and Vault Patterns",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790016404941-umavg1v",
-      "topicTitle": "Multi-Account Infrastructure Architecture",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1790016404941-t39vrem",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
-      "category": "Containerization",
+      "id": "1790102805146-e8ilmz7",
+      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-21T18:46:44.941Z"
+  "createdAt": "2026-09-22T18:46:45.146Z"
 }
