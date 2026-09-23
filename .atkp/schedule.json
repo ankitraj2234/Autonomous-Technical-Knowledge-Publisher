@@ -1,61 +1,61 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "totalPlanned": 9,
   "entries": [
     {
-      "id": "1790102805146-8lb7xgs",
-      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-bbi5luv",
-      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-1kfts6h",
-      "topicTitle": "Event-Driven Architecture with EventBridge and SNS",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-lqg4wt2",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-i9q4qlh",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-0cn66g1",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-0bmury7",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790102805146-v83htwc",
-      "topicTitle": "Secrets Management Architecture and Vault Patterns",
+      "id": "1790189205121-o5atbh6",
+      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790102805146-e8ilmz7",
+      "id": "1790189205121-6v2creo",
+      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790189205121-1jiaqxr",
       "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
       "category": "Authentication & Authorization",
       "completed": false
+    },
+    {
+      "id": "1790189205121-lkt7m1e",
+      "topicTitle": "Container Vulnerability Scanning Pipeline",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1790189205121-c3gc2t6",
+      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1790189205121-16flos9",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790189205121-o89qhrb",
+      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790189205121-aduutu5",
+      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1790189205121-lqg3v0m",
+      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "category": "Networking",
+      "completed": false
     }
   ],
-  "createdAt": "2026-09-22T18:46:45.146Z"
+  "createdAt": "2026-09-23T18:46:45.121Z"
 }
