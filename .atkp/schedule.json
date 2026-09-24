@@ -1,61 +1,61 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "totalPlanned": 9,
   "entries": [
     {
-      "id": "1790189205121-o5atbh6",
-      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
-      "category": "Cybersecurity",
+      "id": "1790275604914-onehobt",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1790189205121-6v2creo",
+      "id": "1790275604914-wfhyi8l",
       "topicTitle": "Global Load Balancing and GeoDNS Architecture",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1790189205121-1jiaqxr",
-      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1790189205121-lkt7m1e",
-      "topicTitle": "Container Vulnerability Scanning Pipeline",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1790189205121-c3gc2t6",
-      "topicTitle": "Message Queue Architecture: Kafka vs RabbitMQ vs Pulsar",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1790189205121-16flos9",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790189205121-o89qhrb",
-      "topicTitle": "CDN Architecture: Edge Computing and Cache Invalidation",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790189205121-aduutu5",
-      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "id": "1790275604914-ypw9quh",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790189205121-lqg3v0m",
-      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "id": "1790275604914-p6wywc5",
+      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1790275604914-dib659k",
+      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
       "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1790275604914-hco9gon",
+      "topicTitle": "Distributed Lock Manager Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1790275604914-01yquie",
+      "topicTitle": "Terraform Module Design Patterns and Composition",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1790275604914-sobg80s",
+      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1790275604914-8exo59h",
+      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-23T18:46:45.121Z"
+  "createdAt": "2026-09-24T18:46:44.914Z"
 }
