@@ -1,61 +1,61 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "totalPlanned": 9,
   "entries": [
     {
-      "id": "1790275604914-onehobt",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1790275604914-wfhyi8l",
-      "topicTitle": "Global Load Balancing and GeoDNS Architecture",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790275604914-ypw9quh",
-      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
+      "id": "1790362005056-a8ppg11",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790275604914-p6wywc5",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "id": "1790362005056-448lxcw",
+      "topicTitle": "Container Image Scanning and Supply Chain Security",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1790275604914-dib659k",
-      "topicTitle": "Network Address Translation (NAT) Traversal Techniques",
-      "category": "Networking",
+      "id": "1790362005056-zo3k548",
+      "topicTitle": "APM Architecture: End-to-End Request Tracing",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1790275604914-hco9gon",
-      "topicTitle": "Distributed Lock Manager Architecture",
+      "id": "1790362005056-fmuyln7",
+      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1790362005056-nnyp84g",
+      "topicTitle": "Bloom Filter Architecture and Applications",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1790275604914-01yquie",
-      "topicTitle": "Terraform Module Design Patterns and Composition",
-      "category": "Infrastructure as Code",
+      "id": "1790362005056-o6o13fs",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1790275604914-sobg80s",
-      "topicTitle": "GitOps for Infrastructure: Terraform + ArgoCD",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1790275604914-8exo59h",
-      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
+      "id": "1790362005056-ht1yime",
+      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
       "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1790362005056-cuyzuhw",
+      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1790362005056-srirk9d",
+      "topicTitle": "Gossip Protocol in Distributed Systems",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-24T18:46:44.914Z"
+  "createdAt": "2026-09-25T18:46:45.056Z"
 }
