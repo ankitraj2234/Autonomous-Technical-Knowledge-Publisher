@@ -1,61 +1,61 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "totalPlanned": 9,
   "entries": [
     {
-      "id": "1790362005056-a8ppg11",
-      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "id": "1790448405138-xvoi77m",
+      "topicTitle": "Immutable Infrastructure Pattern Implementation",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1790448405138-893s0s6",
+      "topicTitle": "Multi-Factor Authentication Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1790448405138-qmjkvnm",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1790448405138-x41e8rw",
+      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790362005056-448lxcw",
-      "topicTitle": "Container Image Scanning and Supply Chain Security",
-      "category": "DevOps",
+      "id": "1790448405138-vvupwq0",
+      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1790362005056-zo3k548",
-      "topicTitle": "APM Architecture: End-to-End Request Tracing",
-      "category": "Observability",
+      "id": "1790448405138-bbbqisd",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1790362005056-fmuyln7",
-      "topicTitle": "DevSecOps: Shifting Security Left in CI/CD",
-      "category": "DevOps",
+      "id": "1790448405138-0senk1w",
+      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1790362005056-nnyp84g",
-      "topicTitle": "Bloom Filter Architecture and Applications",
+      "id": "1790448405138-5z2ztbr",
+      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1790362005056-o6o13fs",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1790362005056-ht1yime",
-      "topicTitle": "Certificate Transparency Logs and CT Monitoring",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1790362005056-cuyzuhw",
-      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1790362005056-srirk9d",
-      "topicTitle": "Gossip Protocol in Distributed Systems",
-      "category": "System Design",
+      "id": "1790448405138-3poberv",
+      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-25T18:46:45.056Z"
+  "createdAt": "2026-09-26T18:46:45.138Z"
 }
