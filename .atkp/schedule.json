@@ -1,61 +1,43 @@
 {
-  "date": "2026-09-26",
-  "totalPlanned": 9,
+  "date": "2026-09-27",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1790448405138-xvoi77m",
-      "topicTitle": "Immutable Infrastructure Pattern Implementation",
+      "id": "1790534805034-18a4g01",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1790448405138-893s0s6",
-      "topicTitle": "Multi-Factor Authentication Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1790534805034-mnlq9h8",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1790448405138-qmjkvnm",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
-      "category": "Networking",
+      "id": "1790534805034-5x51n0l",
+      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1790448405138-x41e8rw",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
+      "id": "1790534805034-cqxv9ug",
+      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790534805034-kxl2nls",
+      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790534805034-c5kb3gs",
+      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
       "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1790448405138-vvupwq0",
-      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790448405138-bbbqisd",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790448405138-0senk1w",
-      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1790448405138-5z2ztbr",
-      "topicTitle": "Conflict-Free Replicated Data Types (CRDTs)",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1790448405138-3poberv",
-      "topicTitle": "Certificate-Based Authentication (mTLS) Architecture",
-      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-26T18:46:45.138Z"
+  "createdAt": "2026-09-27T18:46:45.034Z"
 }
