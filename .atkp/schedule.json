@@ -1,43 +1,37 @@
 {
-  "date": "2026-09-27",
-  "totalPlanned": 6,
+  "date": "2026-09-28",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1790534805034-18a4g01",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "id": "1790621205008-axq7sar",
+      "topicTitle": "Immutable Infrastructure Pattern Implementation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1790534805034-mnlq9h8",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
+      "id": "1790621205008-tu4octz",
+      "topicTitle": "Software-Defined Networking (SDN) Architecture",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1790534805034-5x51n0l",
-      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "id": "1790621205008-4l9anp0",
+      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1790534805034-cqxv9ug",
-      "topicTitle": "Multi-Cloud Networking Architecture Patterns",
-      "category": "Cloud Architecture",
+      "id": "1790621205008-hihr89c",
+      "topicTitle": "Traffic Shaping and QoS Policy Design",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1790534805034-kxl2nls",
-      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790534805034-c5kb3gs",
-      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
-      "category": "Cybersecurity",
+      "id": "1790621205008-j6g4s9b",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-27T18:46:45.034Z"
+  "createdAt": "2026-09-28T18:46:45.008Z"
 }
