@@ -1,37 +1,61 @@
 {
-  "date": "2026-09-28",
-  "totalPlanned": 5,
+  "date": "2026-09-29",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1790621205008-axq7sar",
-      "topicTitle": "Immutable Infrastructure Pattern Implementation",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1790621205008-tu4octz",
-      "topicTitle": "Software-Defined Networking (SDN) Architecture",
+      "id": "1790707605046-bgloxng",
+      "topicTitle": "mTLS Architecture and Certificate Rotation",
       "category": "Networking",
       "completed": false
     },
     {
-      "id": "1790621205008-4l9anp0",
-      "topicTitle": "CDK Architecture: Constructs, Stacks, and Apps",
+      "id": "1790707605046-5ckslkd",
+      "topicTitle": "Incident Response Automation with SOAR Platforms",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1790707605046-rz389o2",
+      "topicTitle": "Step-Up Authentication Pattern Implementation",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1790707605046-9qs3fhu",
+      "topicTitle": "Infrastructure Pipeline: Plan, Apply, Validate",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1790621205008-hihr89c",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
-      "category": "Networking",
+      "id": "1790707605046-9swd2au",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1790621205008-j6g4s9b",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1790707605046-m948hd2",
+      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1790707605046-fb3heab",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1790707605046-l08rgu2",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1790707605046-8k9n9r4",
+      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
+      "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-28T18:46:45.008Z"
+  "createdAt": "2026-09-29T18:46:45.046Z"
 }
