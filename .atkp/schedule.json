@@ -1,61 +1,37 @@
 {
-  "date": "2026-09-29",
-  "totalPlanned": 9,
+  "date": "2026-09-30",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1790707605046-bgloxng",
-      "topicTitle": "mTLS Architecture and Certificate Rotation",
-      "category": "Networking",
+      "id": "1790794005081-ckswk82",
+      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1790707605046-5ckslkd",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1790707605046-rz389o2",
-      "topicTitle": "Step-Up Authentication Pattern Implementation",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1790707605046-9qs3fhu",
-      "topicTitle": "Infrastructure Pipeline: Plan, Apply, Validate",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1790707605046-9swd2au",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1790707605046-m948hd2",
-      "topicTitle": "Hybrid Cloud Connectivity: VPN vs Direct Connect",
+      "id": "1790794005081-rndj6qc",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1790707605046-fb3heab",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
-      "category": "DevOps",
+      "id": "1790794005081-jq6gffp",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1790707605046-l08rgu2",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
-      "category": "DevOps",
+      "id": "1790794005081-smgcn8u",
+      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790707605046-8k9n9r4",
-      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
-      "category": "DevOps",
+      "id": "1790794005081-5lxbfmb",
+      "topicTitle": "ARP Spoofing Detection and Prevention",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-29T18:46:45.046Z"
+  "createdAt": "2026-09-30T18:46:45.081Z"
 }
