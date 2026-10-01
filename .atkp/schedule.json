@@ -1,37 +1,25 @@
 {
-  "date": "2026-09-30",
-  "totalPlanned": 5,
+  "date": "2026-10-01",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1790794005081-ckswk82",
-      "topicTitle": "Platform Engineering: Internal Developer Platform Design",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1790794005081-rndj6qc",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1790794005081-jq6gffp",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1790794005081-smgcn8u",
-      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "id": "1790880404880-vpy345o",
+      "topicTitle": "Incident Response Automation with SOAR Platforms",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1790794005081-5lxbfmb",
-      "topicTitle": "ARP Spoofing Detection and Prevention",
-      "category": "Networking",
+      "id": "1790880404880-bzidl34",
+      "topicTitle": "LSM-Tree Storage Engine Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1790880404880-7gadg3z",
+      "topicTitle": "Continuous Profiling Architecture",
+      "category": "Observability",
       "completed": false
     }
   ],
-  "createdAt": "2026-09-30T18:46:45.081Z"
+  "createdAt": "2026-10-01T18:46:44.880Z"
 }
