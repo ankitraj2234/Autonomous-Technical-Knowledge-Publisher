@@ -1,67 +1,13 @@
 {
-  "date": "2026-10-02",
-  "totalPlanned": 10,
+  "date": "2026-10-03",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1790966804943-9nrpnmn",
-      "topicTitle": "Pod Security Standards and Admission Controllers",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-r0f5oul",
-      "topicTitle": "Threat Modeling with STRIDE and PASTA Frameworks",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-it2e9v8",
-      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-her14tn",
-      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-xr0r6n4",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-1v1rgup",
-      "topicTitle": "Web Application Firewall Bypass Techniques",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-wo8skqp",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-w7c153e",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-izrf9z6",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "id": "1791053204976-tkwc375",
+      "topicTitle": "Build Caching Strategies for Faster CI/CD",
       "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1790966804943-mc4c5s9",
-      "topicTitle": "Init Container and Startup Probe Patterns",
-      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-02T18:46:44.943Z"
+  "createdAt": "2026-10-03T18:46:44.976Z"
 }
