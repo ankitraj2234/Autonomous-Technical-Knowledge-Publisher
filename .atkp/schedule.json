@@ -1,13 +1,49 @@
 {
-  "date": "2026-10-03",
-  "totalPlanned": 1,
+  "date": "2026-10-04",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1791053204976-tkwc375",
-      "topicTitle": "Build Caching Strategies for Faster CI/CD",
+      "id": "1791139604907-5c1ssn5",
+      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1791139604907-a25a5qm",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1791139604907-5xu8wh8",
+      "topicTitle": "Infrastructure Dependency Graph Resolution",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1791139604907-yr36vdu",
+      "topicTitle": "JWT Token Security: Signing, Validation, and Common Pitfalls",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1791139604907-qz5n3nj",
+      "topicTitle": "Container Image Scanning and Supply Chain Security",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1791139604907-13io038",
+      "topicTitle": "Dashboard Design Principles for Operational Excellence",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1791139604907-kc6lsje",
+      "topicTitle": "Kubernetes Secrets Management Architecture",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-03T18:46:44.976Z"
+  "createdAt": "2026-10-04T18:46:44.907Z"
 }
