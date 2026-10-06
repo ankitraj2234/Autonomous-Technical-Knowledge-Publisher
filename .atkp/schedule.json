@@ -1,43 +1,13 @@
 {
-  "date": "2026-10-05",
-  "totalPlanned": 6,
+  "date": "2026-10-06",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1791226004910-th1xdg6",
-      "topicTitle": "Load Balancer Architecture: L4 vs L7 Deep Dive",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1791226004910-0meh3qt",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1791226004910-bl8s5do",
-      "topicTitle": "Kubernetes Secrets Management Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1791226004910-bpscj3m",
-      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1791226004910-6c4ay1c",
-      "topicTitle": "Supply Chain Attack Vectors in CI/CD Pipelines",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1791226004910-pgavfu6",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "id": "1791312404898-nw4d1zc",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
       "category": "DevOps",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-05T18:46:44.910Z"
+  "createdAt": "2026-10-06T18:46:44.898Z"
 }
