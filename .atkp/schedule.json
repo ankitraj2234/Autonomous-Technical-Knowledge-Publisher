@@ -1,13 +1,61 @@
 {
-  "date": "2026-10-06",
-  "totalPlanned": 1,
+  "date": "2026-10-07",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1791312404898-nw4d1zc",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "id": "1791398805131-y8p969m",
+      "topicTitle": "SLI/SLO/SLA Definition and Error Budget Policies",
+      "category": "Observability",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-eb9d5js",
+      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-95kizjn",
+      "topicTitle": "Terraform Provider Architecture and Plugin System",
+      "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-kuaslwu",
+      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
       "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-zse7zuk",
+      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-iysn06q",
+      "topicTitle": "Network Traffic Analysis and DPI Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-wt8tdkt",
+      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-5fxk2ds",
+      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1791398805131-mtsv50c",
+      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-06T18:46:44.898Z"
+  "createdAt": "2026-10-07T18:46:45.131Z"
 }
