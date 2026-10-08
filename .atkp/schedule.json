@@ -1,61 +1,61 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "totalPlanned": 9,
   "entries": [
     {
-      "id": "1791398805131-y8p969m",
-      "topicTitle": "SLI/SLO/SLA Definition and Error Budget Policies",
-      "category": "Observability",
+      "id": "1791485205131-1xyrimi",
+      "topicTitle": "DNS Architecture: Recursive vs Authoritative Resolution",
+      "category": "Networking",
       "completed": false
     },
     {
-      "id": "1791398805131-eb9d5js",
-      "topicTitle": "Autoscaling Policy Design: Predictive vs Reactive",
-      "category": "Cloud Architecture",
+      "id": "1791485205131-7yynjn1",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1791398805131-95kizjn",
-      "topicTitle": "Terraform Provider Architecture and Plugin System",
+      "id": "1791485205131-vcbyylc",
+      "topicTitle": "Terraform Module Design Patterns and Composition",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1791398805131-kuaslwu",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "id": "1791485205131-lcmy4kd",
+      "topicTitle": "Step-Up Authentication Pattern Implementation",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1791485205131-51hiciu",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1791398805131-zse7zuk",
-      "topicTitle": "Observability Pipeline Architecture: Logs, Metrics, Traces",
-      "category": "DevOps",
+      "id": "1791485205131-onl3u1m",
+      "topicTitle": "Service Mesh Data Plane Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1791398805131-iysn06q",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1791398805131-wt8tdkt",
-      "topicTitle": "Cloud Storage Tiering and Lifecycle Policies",
+      "id": "1791485205131-nqrgkt8",
+      "topicTitle": "Cloud Cost Optimization: Reserved vs Spot vs On-Demand",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1791398805131-5fxk2ds",
-      "topicTitle": "BGP Route Hijacking: Detection and Prevention",
-      "category": "Networking",
+      "id": "1791485205131-8zd2gkg",
+      "topicTitle": "Distributed Tracing Architecture",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1791398805131-mtsv50c",
-      "topicTitle": "Browser Security Model: Same-Origin Policy Internals",
-      "category": "Cybersecurity",
+      "id": "1791485205131-8et6hd5",
+      "topicTitle": "Authorization Code Flow with PKCE Deep Dive",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-07T18:46:45.131Z"
+  "createdAt": "2026-10-08T18:46:45.131Z"
 }
