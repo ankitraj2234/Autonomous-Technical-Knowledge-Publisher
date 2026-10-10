@@ -1,19 +1,61 @@
 {
-  "date": "2026-10-09",
-  "totalPlanned": 2,
+  "date": "2026-10-10",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1791571604928-2hpnmev",
-      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "id": "1791658004840-k1lnxfd",
+      "topicTitle": "Notification System Architecture at Scale",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-kbo903c",
+      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-jg5rohk",
+      "topicTitle": "Passwordless Authentication Flow Design",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-82hp0wz",
+      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-rlpkdac",
+      "topicTitle": "Kubernetes Network Policy Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-75ujqxl",
+      "topicTitle": "TCP Congestion Control Algorithms Comparison",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-pxqer24",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1791571604928-lxsjyby",
-      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
-      "category": "Cybersecurity",
+      "id": "1791658004840-svuwlb2",
+      "topicTitle": "Bloom Filter Architecture and Applications",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1791658004840-pgerapp",
+      "topicTitle": "Vector Clock and Causal Ordering",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-09T18:46:44.928Z"
+  "createdAt": "2026-10-10T18:46:44.840Z"
 }
