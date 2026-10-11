@@ -1,61 +1,31 @@
 {
-  "date": "2026-10-10",
-  "totalPlanned": 9,
+  "date": "2026-10-11",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1791658004840-k1lnxfd",
-      "topicTitle": "Notification System Architecture at Scale",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1791658004840-kbo903c",
-      "topicTitle": "Artifact Repository Management with Nexus/Artifactory",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1791658004840-jg5rohk",
-      "topicTitle": "Passwordless Authentication Flow Design",
+      "id": "1791744404951-tajw33n",
+      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1791658004840-82hp0wz",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1791744404951-0q4oniv",
+      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1791658004840-rlpkdac",
-      "topicTitle": "Kubernetes Network Policy Architecture",
+      "id": "1791744404951-2qodwuw",
+      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1791658004840-75ujqxl",
-      "topicTitle": "TCP Congestion Control Algorithms Comparison",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1791658004840-pxqer24",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1791658004840-svuwlb2",
-      "topicTitle": "Bloom Filter Architecture and Applications",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1791658004840-pgerapp",
-      "topicTitle": "Vector Clock and Causal Ordering",
-      "category": "System Design",
+      "id": "1791744404951-tz1zfxj",
+      "topicTitle": "Identity Federation Architecture Across Organizations",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-10T18:46:44.840Z"
+  "createdAt": "2026-10-11T18:46:44.951Z"
 }
