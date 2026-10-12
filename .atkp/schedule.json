@@ -1,31 +1,55 @@
 {
-  "date": "2026-10-11",
-  "totalPlanned": 4,
+  "date": "2026-10-12",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1791744404951-tajw33n",
-      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
+      "id": "1791830804858-9udjx5j",
+      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1791744404951-0q4oniv",
-      "topicTitle": "Infrastructure State Drift Detection Strategies",
+      "id": "1791830804858-kn5mbtt",
+      "topicTitle": "Infrastructure Testing with Terratest",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1791744404951-2qodwuw",
-      "topicTitle": "Kubernetes Custom Resource Definition (CRD) Design",
+      "id": "1791830804858-ja7nj1d",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1791744404951-tz1zfxj",
-      "topicTitle": "Identity Federation Architecture Across Organizations",
-      "category": "Authentication & Authorization",
+      "id": "1791830804858-xu2vdet",
+      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1791830804858-3q4p3xr",
+      "topicTitle": "Immutable Infrastructure Pattern Implementation",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1791830804858-tp6ky0e",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1791830804858-kou6fv5",
+      "topicTitle": "WireGuard VPN Architecture and Performance",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1791830804858-eveajgv",
+      "topicTitle": "Kubernetes Operator Pattern Implementation",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-11T18:46:44.951Z"
+  "createdAt": "2026-10-12T18:46:44.858Z"
 }
