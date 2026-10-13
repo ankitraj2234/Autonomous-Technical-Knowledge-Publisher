@@ -1,55 +1,43 @@
 {
-  "date": "2026-10-12",
-  "totalPlanned": 8,
+  "date": "2026-10-13",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1791830804858-9udjx5j",
-      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "id": "1791917205002-ifjmypm",
+      "topicTitle": "Distributed Rate Limiter Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1791917205002-ic5yigh",
+      "topicTitle": "Identity Federation Architecture Across Organizations",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1791830804858-kn5mbtt",
+      "id": "1791917205002-0vug38l",
       "topicTitle": "Infrastructure Testing with Terratest",
       "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1791830804858-ja7nj1d",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
+      "id": "1791917205002-87ztech",
+      "topicTitle": "Consistent Hashing for Distributed Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1791917205002-kyx2sen",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
       "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1791830804858-xu2vdet",
-      "topicTitle": "AWS Well-Architected Framework: Reliability Pillar Deep Dive",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1791830804858-3q4p3xr",
-      "topicTitle": "Immutable Infrastructure Pattern Implementation",
+      "id": "1791917205002-4z505ll",
+      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
       "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1791830804858-tp6ky0e",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1791830804858-kou6fv5",
-      "topicTitle": "WireGuard VPN Architecture and Performance",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1791830804858-eveajgv",
-      "topicTitle": "Kubernetes Operator Pattern Implementation",
-      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-12T18:46:44.858Z"
+  "createdAt": "2026-10-13T18:46:45.002Z"
 }
