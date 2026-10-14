@@ -1,43 +1,37 @@
 {
-  "date": "2026-10-13",
-  "totalPlanned": 6,
+  "date": "2026-10-14",
+  "totalPlanned": 5,
   "entries": [
     {
-      "id": "1791917205002-ifjmypm",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1791917205002-ic5yigh",
-      "topicTitle": "Identity Federation Architecture Across Organizations",
+      "id": "1792003604976-cfzjmmx",
+      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1791917205002-0vug38l",
-      "topicTitle": "Infrastructure Testing with Terratest",
-      "category": "Infrastructure as Code",
+      "id": "1792003604976-jyf7rpx",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1791917205002-87ztech",
+      "id": "1792003604976-dyra2p8",
       "topicTitle": "Consistent Hashing for Distributed Systems",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1791917205002-kyx2sen",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1792003604976-rthmwpw",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
       "completed": false
     },
     {
-      "id": "1791917205002-4z505ll",
-      "topicTitle": "Trunk-Based Development vs GitFlow Analysis",
-      "category": "DevOps",
+      "id": "1792003604976-5oqlmf6",
+      "topicTitle": "Terraform Module Design Patterns and Composition",
+      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-13T18:46:45.002Z"
+  "createdAt": "2026-10-14T18:46:44.976Z"
 }
