@@ -1,37 +1,49 @@
 {
-  "date": "2026-10-14",
-  "totalPlanned": 5,
+  "date": "2026-10-15",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1792003604976-cfzjmmx",
-      "topicTitle": "Token Refresh Architecture and Sliding Expiration",
+      "id": "1792090004950-mlrz9sm",
+      "topicTitle": "Identity Federation Architecture Across Organizations",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1792003604976-jyf7rpx",
-      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
-      "category": "Cloud Architecture",
+      "id": "1792090004950-61vyhfy",
+      "topicTitle": "Multi-Factor Authentication Architecture",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1792003604976-dyra2p8",
-      "topicTitle": "Consistent Hashing for Distributed Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1792003604976-rthmwpw",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1792003604976-5oqlmf6",
-      "topicTitle": "Terraform Module Design Patterns and Composition",
+      "id": "1792090004950-v2h39yl",
+      "topicTitle": "Self-Service Infrastructure with Backstage Templates",
       "category": "Infrastructure as Code",
+      "completed": false
+    },
+    {
+      "id": "1792090004950-oycsh3q",
+      "topicTitle": "SSRF Exploitation Techniques in Cloud Environments",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1792090004950-ns9bnpe",
+      "topicTitle": "Network Function Virtualization (NFV) Design",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1792090004950-kqmf025",
+      "topicTitle": "Kubernetes Admission Webhook Architecture",
+      "category": "Containerization",
+      "completed": false
+    },
+    {
+      "id": "1792090004950-fjg3q6l",
+      "topicTitle": "OAuth 2.0 Token Validation Workflow",
+      "category": "Authentication & Authorization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-14T18:46:44.976Z"
+  "createdAt": "2026-10-15T18:46:44.950Z"
 }
