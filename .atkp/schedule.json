@@ -1,49 +1,61 @@
 {
-  "date": "2026-10-15",
-  "totalPlanned": 7,
+  "date": "2026-10-16",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1792090004950-mlrz9sm",
-      "topicTitle": "Identity Federation Architecture Across Organizations",
+      "id": "1792176404851-qmywqft",
+      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1792176404851-i6i0obj",
+      "topicTitle": "Container Image Scanning and Supply Chain Security",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1792176404851-m5qcp71",
+      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1792090004950-61vyhfy",
-      "topicTitle": "Multi-Factor Authentication Architecture",
-      "category": "Authentication & Authorization",
+      "id": "1792176404851-2b9dfwv",
+      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1792090004950-v2h39yl",
-      "topicTitle": "Self-Service Infrastructure with Backstage Templates",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1792090004950-oycsh3q",
-      "topicTitle": "SSRF Exploitation Techniques in Cloud Environments",
+      "id": "1792176404851-g8patzo",
+      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1792090004950-ns9bnpe",
-      "topicTitle": "Network Function Virtualization (NFV) Design",
-      "category": "Networking",
+      "id": "1792176404851-077988d",
+      "topicTitle": "SLI/SLO/SLA Definition and Error Budget Policies",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1792090004950-kqmf025",
-      "topicTitle": "Kubernetes Admission Webhook Architecture",
-      "category": "Containerization",
+      "id": "1792176404851-9abr83k",
+      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1792090004950-fjg3q6l",
-      "topicTitle": "OAuth 2.0 Token Validation Workflow",
-      "category": "Authentication & Authorization",
+      "id": "1792176404851-133m6iy",
+      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1792176404851-8ag08lp",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-15T18:46:44.950Z"
+  "createdAt": "2026-10-16T18:46:44.851Z"
 }
