@@ -1,61 +1,43 @@
 {
-  "date": "2026-10-16",
-  "totalPlanned": 9,
+  "date": "2026-10-17",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1792176404851-qmywqft",
-      "topicTitle": "Cloud Migration Strategies: The 7 Rs Framework",
-      "category": "Cloud Architecture",
+      "id": "1792262804952-dwqmyoo",
+      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1792176404851-i6i0obj",
-      "topicTitle": "Container Image Scanning and Supply Chain Security",
-      "category": "DevOps",
+      "id": "1792262804952-ylrqzrp",
+      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1792176404851-m5qcp71",
-      "topicTitle": "Fine-Grained Authorization with Open Policy Agent",
+      "id": "1792262804952-h3osqc2",
+      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1792176404851-2b9dfwv",
-      "topicTitle": "Infrastructure Testing: Unit, Integration, and Compliance",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1792176404851-g8patzo",
-      "topicTitle": "Cryptographic Agility and Post-Quantum Migration",
+      "id": "1792262804952-i463jxt",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1792176404851-077988d",
-      "topicTitle": "SLI/SLO/SLA Definition and Error Budget Policies",
+      "id": "1792262804952-svlp8ef",
+      "topicTitle": "OpenTelemetry Collector Architecture and Pipeline",
       "category": "Observability",
       "completed": false
     },
     {
-      "id": "1792176404851-9abr83k",
-      "topicTitle": "Database Migration Strategies in CI/CD Pipelines",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1792176404851-133m6iy",
-      "topicTitle": "IAM Policy Evaluation Flow and Permission Boundaries",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1792176404851-8ag08lp",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
+      "id": "1792262804953-rvbj5og",
+      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-16T18:46:44.851Z"
+  "createdAt": "2026-10-17T18:46:44.953Z"
 }
