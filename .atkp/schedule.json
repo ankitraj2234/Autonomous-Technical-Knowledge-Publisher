@@ -1,43 +1,31 @@
 {
-  "date": "2026-10-17",
-  "totalPlanned": 6,
+  "date": "2026-10-18",
+  "totalPlanned": 4,
   "entries": [
     {
-      "id": "1792262804952-dwqmyoo",
-      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
-      "category": "Containerization",
+      "id": "1792349204782-lgqig3y",
+      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
+      "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1792262804952-ylrqzrp",
-      "topicTitle": "Container Runtime Architecture: containerd vs CRI-O",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1792262804952-h3osqc2",
-      "topicTitle": "OpenID Connect Discovery and Dynamic Registration",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1792262804952-i463jxt",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "id": "1792349204782-klgx1se",
+      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1792262804952-svlp8ef",
-      "topicTitle": "OpenTelemetry Collector Architecture and Pipeline",
-      "category": "Observability",
+      "id": "1792349204782-0qpzyey",
+      "topicTitle": "Infrastructure Dependency Graph Resolution",
+      "category": "Infrastructure as Code",
       "completed": false
     },
     {
-      "id": "1792262804953-rvbj5og",
-      "topicTitle": "Kubernetes Scheduling: Affinity and Anti-Affinity",
-      "category": "Containerization",
+      "id": "1792349204782-5jf32x9",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-17T18:46:44.953Z"
+  "createdAt": "2026-10-18T18:46:44.782Z"
 }
