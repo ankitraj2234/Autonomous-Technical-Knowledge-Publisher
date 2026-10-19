@@ -1,31 +1,19 @@
 {
-  "date": "2026-10-18",
-  "totalPlanned": 4,
+  "date": "2026-10-19",
+  "totalPlanned": 2,
   "entries": [
     {
-      "id": "1792349204782-lgqig3y",
-      "topicTitle": "Data Lake Architecture: Medallion Pattern Implementation",
-      "category": "Cloud Architecture",
+      "id": "1792435604966-0ajogay",
+      "topicTitle": "Observability Data Pipeline Cost Optimization",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1792349204782-klgx1se",
-      "topicTitle": "Cross-Site Request Forgery in Modern SPAs",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1792349204782-0qpzyey",
-      "topicTitle": "Infrastructure Dependency Graph Resolution",
-      "category": "Infrastructure as Code",
-      "completed": false
-    },
-    {
-      "id": "1792349204782-5jf32x9",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
+      "id": "1792435604966-frxnrx3",
+      "topicTitle": "Network Telemetry with gNMI and OpenConfig",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-18T18:46:44.782Z"
+  "createdAt": "2026-10-19T18:46:44.966Z"
 }
