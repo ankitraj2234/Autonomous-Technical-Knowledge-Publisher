@@ -1,19 +1,13 @@
 {
-  "date": "2026-10-21",
-  "totalPlanned": 2,
+  "date": "2026-10-22",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1792608404921-bcygc6v",
-      "topicTitle": "Cloud Network Security Groups vs NACLs vs Firewalls",
+      "id": "1792694804884-uokm9u3",
+      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
       "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1792608404921-ia9xd8l",
-      "topicTitle": "Multi-Account Infrastructure Architecture",
-      "category": "Infrastructure as Code",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-21T18:46:44.921Z"
+  "createdAt": "2026-10-22T18:46:44.884Z"
 }
