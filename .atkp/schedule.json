@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "totalPlanned": 1,
   "entries": [
     {
-      "id": "1792694804884-uokm9u3",
-      "topicTitle": "Disaster Recovery Architecture: RPO and RTO Planning",
+      "id": "1792781204899-l9ctjno",
+      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
       "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-22T18:46:44.884Z"
+  "createdAt": "2026-10-23T18:46:44.899Z"
 }
