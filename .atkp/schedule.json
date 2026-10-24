@@ -1,13 +1,61 @@
 {
-  "date": "2026-10-23",
-  "totalPlanned": 1,
+  "date": "2026-10-24",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1792781204899-l9ctjno",
-      "topicTitle": "Cloud Compliance Architecture: SOC 2 and HIPAA",
+      "id": "1792867604821-hn61di9",
+      "topicTitle": "Cloud-Native Database Selection Matrix",
       "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-j21yfw2",
+      "topicTitle": "Distributed Rate Limiter Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-c8k4z20",
+      "topicTitle": "Passwordless Authentication Flow Design",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-6hsu9wz",
+      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-2bk94lr",
+      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-yiwuk04",
+      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-i5feshj",
+      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-eq7kkqf",
+      "topicTitle": "Incident Response Automation with SOAR Platforms",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1792867604821-2jkkfns",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "category": "Cybersecurity",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-23T18:46:44.899Z"
+  "createdAt": "2026-10-24T18:46:44.821Z"
 }
