@@ -1,61 +1,25 @@
 {
-  "date": "2026-10-24",
-  "totalPlanned": 9,
+  "date": "2026-10-25",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1792867604821-hn61di9",
-      "topicTitle": "Cloud-Native Database Selection Matrix",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1792867604821-j21yfw2",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1792867604821-c8k4z20",
-      "topicTitle": "Passwordless Authentication Flow Design",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1792867604821-6hsu9wz",
-      "topicTitle": "IPv6 Transition Mechanisms and Dual-Stack Architecture",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1792867604821-2bk94lr",
-      "topicTitle": "Write-Ahead Logging (WAL) in Database Systems",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1792867604821-yiwuk04",
-      "topicTitle": "VPC Peering vs Transit Gateway: Architecture Trade-offs",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1792867604821-i5feshj",
-      "topicTitle": "Configuration Management: Ansible vs Puppet vs Chef",
+      "id": "1792954004865-e3iknic",
+      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1792867604821-eq7kkqf",
-      "topicTitle": "Incident Response Automation with SOAR Platforms",
-      "category": "Cybersecurity",
+      "id": "1792954004865-mkk1fuh",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1792867604821-2jkkfns",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
-      "category": "Cybersecurity",
+      "id": "1792954004865-fc8efrd",
+      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-24T18:46:44.821Z"
+  "createdAt": "2026-10-25T18:46:44.865Z"
 }
