@@ -1,25 +1,61 @@
 {
-  "date": "2026-10-25",
-  "totalPlanned": 3,
+  "date": "2026-10-26",
+  "totalPlanned": 9,
   "entries": [
     {
-      "id": "1792954004865-e3iknic",
-      "topicTitle": "Feature Flag Architecture and Progressive Delivery",
+      "id": "1793040405268-s35sfjv",
+      "topicTitle": "Content Delivery Network Design from Scratch",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1793040405268-rhyeqrr",
+      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "category": "Cloud Architecture",
+      "completed": false
+    },
+    {
+      "id": "1793040405268-55tsvkg",
+      "topicTitle": "WireGuard VPN Architecture and Performance",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1793040405268-7cogaln",
+      "topicTitle": "URL Shortener Architecture: Complete System Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1793040405268-umrz3yj",
+      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1792954004865-mkk1fuh",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
+      "id": "1793040405268-i7x018i",
+      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1792954004865-fc8efrd",
-      "topicTitle": "Kubernetes Resource Quota and Limit Range Design",
-      "category": "Containerization",
+      "id": "1793040405268-8hdz8hd",
+      "topicTitle": "Search Engine Architecture: Inverted Index Design",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1793040405268-4fvgl6c",
+      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1793040405268-deredvf",
+      "topicTitle": "Network Traffic Analysis and DPI Architecture",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-25T18:46:44.865Z"
+  "createdAt": "2026-10-26T18:46:45.268Z"
 }
