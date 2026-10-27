@@ -1,61 +1,43 @@
 {
-  "date": "2026-10-26",
-  "totalPlanned": 9,
+  "date": "2026-10-27",
+  "totalPlanned": 6,
   "entries": [
     {
-      "id": "1793040405268-s35sfjv",
-      "topicTitle": "Content Delivery Network Design from Scratch",
-      "category": "System Design",
+      "id": "1793126804883-43opss5",
+      "topicTitle": "Single Sign-On Architecture with SAML 2.0",
+      "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1793040405268-rhyeqrr",
-      "topicTitle": "Cloud-Native Pub/Sub Architecture Patterns",
+      "id": "1793126804883-cbymqo4",
+      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
       "category": "Cloud Architecture",
       "completed": false
     },
     {
-      "id": "1793040405268-55tsvkg",
-      "topicTitle": "WireGuard VPN Architecture and Performance",
-      "category": "Networking",
+      "id": "1793126804883-5m39nu5",
+      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
+      "category": "Containerization",
       "completed": false
     },
     {
-      "id": "1793040405268-7cogaln",
-      "topicTitle": "URL Shortener Architecture: Complete System Design",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1793040405268-umrz3yj",
-      "topicTitle": "GitOps Workflow Architecture with ArgoCD",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1793040405268-i7x018i",
-      "topicTitle": "OAuth 2.0 Device Authorization Grant Flow Security",
+      "id": "1793126804883-4hdzf0g",
+      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1793040405268-8hdz8hd",
-      "topicTitle": "Search Engine Architecture: Inverted Index Design",
-      "category": "System Design",
+      "id": "1793126804883-9ayq9w5",
+      "topicTitle": "Log Correlation Across Microservices",
+      "category": "Observability",
       "completed": false
     },
     {
-      "id": "1793040405268-4fvgl6c",
+      "id": "1793126804883-ky2tnlo",
       "topicTitle": "Real-Time Analytics Pipeline Architecture",
       "category": "System Design",
       "completed": false
-    },
-    {
-      "id": "1793040405268-deredvf",
-      "topicTitle": "Network Traffic Analysis and DPI Architecture",
-      "category": "Networking",
-      "completed": false
     }
   ],
-  "createdAt": "2026-10-26T18:46:45.268Z"
+  "createdAt": "2026-10-27T18:46:44.883Z"
 }
