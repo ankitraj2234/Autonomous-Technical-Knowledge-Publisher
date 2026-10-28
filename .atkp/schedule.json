@@ -1,43 +1,49 @@
 {
-  "date": "2026-10-27",
-  "totalPlanned": 6,
+  "date": "2026-10-28",
+  "totalPlanned": 7,
   "entries": [
     {
-      "id": "1793126804883-43opss5",
-      "topicTitle": "Single Sign-On Architecture with SAML 2.0",
+      "id": "1793213204899-61zwjts",
+      "topicTitle": "MPLS Architecture and Traffic Engineering",
+      "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1793213204899-bu09zqa",
+      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1793126804883-cbymqo4",
-      "topicTitle": "API Gateway Architecture Patterns and Rate Limiting",
-      "category": "Cloud Architecture",
-      "completed": false
-    },
-    {
-      "id": "1793126804883-5m39nu5",
-      "topicTitle": "Sidecar Pattern vs Ambient Mesh Architecture",
-      "category": "Containerization",
-      "completed": false
-    },
-    {
-      "id": "1793126804883-4hdzf0g",
-      "topicTitle": "Race Condition Vulnerabilities in Web Applications",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1793126804883-9ayq9w5",
-      "topicTitle": "Log Correlation Across Microservices",
-      "category": "Observability",
-      "completed": false
-    },
-    {
-      "id": "1793126804883-ky2tnlo",
-      "topicTitle": "Real-Time Analytics Pipeline Architecture",
+      "id": "1793213204899-u60ascu",
+      "topicTitle": "URL Shortener Architecture: Complete System Design",
       "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1793213204900-ardd7kc",
+      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1793213204900-nikdsje",
+      "topicTitle": "Consent Management Architecture for Privacy Compliance",
+      "category": "Authentication & Authorization",
+      "completed": false
+    },
+    {
+      "id": "1793213204900-338h5ha",
+      "topicTitle": "Time-Series Database Architecture",
+      "category": "System Design",
+      "completed": false
+    },
+    {
+      "id": "1793213204900-575dkz4",
+      "topicTitle": "Service Discovery in Distributed Systems",
+      "category": "Networking",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-27T18:46:44.883Z"
+  "createdAt": "2026-10-28T18:46:44.900Z"
 }
