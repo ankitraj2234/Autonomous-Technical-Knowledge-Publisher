@@ -1,49 +1,55 @@
 {
-  "date": "2026-10-28",
-  "totalPlanned": 7,
+  "date": "2026-10-29",
+  "totalPlanned": 8,
   "entries": [
     {
-      "id": "1793213204899-61zwjts",
-      "topicTitle": "MPLS Architecture and Traffic Engineering",
-      "category": "Networking",
+      "id": "1793299604971-v0rdu6l",
+      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
+      "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1793213204899-bu09zqa",
-      "topicTitle": "WebAuthn and FIDO2 Implementation Architecture",
+      "id": "1793299604971-cgptpjs",
+      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
       "category": "Authentication & Authorization",
       "completed": false
     },
     {
-      "id": "1793213204899-u60ascu",
-      "topicTitle": "URL Shortener Architecture: Complete System Design",
+      "id": "1793299604971-nvl456w",
+      "topicTitle": "Bloom Filter Architecture and Applications",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1793213204900-ardd7kc",
-      "topicTitle": "Service Catalog Architecture for Self-Service DevOps",
+      "id": "1793299604971-hg0o6uq",
+      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
+      "category": "Cybersecurity",
+      "completed": false
+    },
+    {
+      "id": "1793299604971-zks02m7",
+      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
       "category": "DevOps",
       "completed": false
     },
     {
-      "id": "1793213204900-nikdsje",
-      "topicTitle": "Consent Management Architecture for Privacy Compliance",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1793213204900-338h5ha",
-      "topicTitle": "Time-Series Database Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1793213204900-575dkz4",
-      "topicTitle": "Service Discovery in Distributed Systems",
+      "id": "1793299604971-k5orslg",
+      "topicTitle": "Traffic Shaping and QoS Policy Design",
       "category": "Networking",
+      "completed": false
+    },
+    {
+      "id": "1793299604971-j6uy6ut",
+      "topicTitle": "Release Management Automation with Semantic Versioning",
+      "category": "DevOps",
+      "completed": false
+    },
+    {
+      "id": "1793299604971-e892ihf",
+      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
+      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-28T18:46:44.900Z"
+  "createdAt": "2026-10-29T18:46:44.971Z"
 }
