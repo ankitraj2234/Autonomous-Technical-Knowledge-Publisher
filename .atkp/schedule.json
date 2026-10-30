@@ -1,55 +1,25 @@
 {
-  "date": "2026-10-29",
-  "totalPlanned": 8,
+  "date": "2026-10-30",
+  "totalPlanned": 3,
   "entries": [
     {
-      "id": "1793299604971-v0rdu6l",
-      "topicTitle": "Malware Sandboxing and Dynamic Analysis Architecture",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1793299604971-cgptpjs",
-      "topicTitle": "Token Binding and Proof-of-Possession Tokens",
-      "category": "Authentication & Authorization",
-      "completed": false
-    },
-    {
-      "id": "1793299604971-nvl456w",
-      "topicTitle": "Bloom Filter Architecture and Applications",
+      "id": "1793386004970-bsi0hzx",
+      "topicTitle": "Distributed Rate Limiter Architecture",
       "category": "System Design",
       "completed": false
     },
     {
-      "id": "1793299604971-hg0o6uq",
-      "topicTitle": "Kerberos Authentication Flow and Golden Ticket Attacks",
+      "id": "1793386004970-e2xj26j",
+      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
       "category": "Cybersecurity",
       "completed": false
     },
     {
-      "id": "1793299604971-zks02m7",
-      "topicTitle": "CI/CD Pipeline Security: SAST, DAST, and SCA Integration",
+      "id": "1793386004970-g0c62g5",
+      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
       "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1793299604971-k5orslg",
-      "topicTitle": "Traffic Shaping and QoS Policy Design",
-      "category": "Networking",
-      "completed": false
-    },
-    {
-      "id": "1793299604971-j6uy6ut",
-      "topicTitle": "Release Management Automation with Semantic Versioning",
-      "category": "DevOps",
-      "completed": false
-    },
-    {
-      "id": "1793299604971-e892ihf",
-      "topicTitle": "Cloud Resource Tagging Strategy and Governance",
-      "category": "Cloud Architecture",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-29T18:46:44.971Z"
+  "createdAt": "2026-10-30T18:46:44.970Z"
 }
