@@ -1,25 +1,13 @@
 {
-  "date": "2026-10-30",
-  "totalPlanned": 3,
+  "date": "2026-11-07",
+  "totalPlanned": 1,
   "entries": [
     {
-      "id": "1793386004970-bsi0hzx",
-      "topicTitle": "Distributed Rate Limiter Architecture",
-      "category": "System Design",
-      "completed": false
-    },
-    {
-      "id": "1793386004970-e2xj26j",
-      "topicTitle": "DNS Rebinding Attacks and Browser-Side Mitigations",
-      "category": "Cybersecurity",
-      "completed": false
-    },
-    {
-      "id": "1793386004970-g0c62g5",
-      "topicTitle": "Infrastructure as Code Drift Detection and Remediation",
-      "category": "DevOps",
+      "id": "1794077205076-d5bawan",
+      "topicTitle": "Init Container and Startup Probe Patterns",
+      "category": "Containerization",
       "completed": false
     }
   ],
-  "createdAt": "2026-10-30T18:46:44.970Z"
+  "createdAt": "2026-11-07T18:46:45.076Z"
 }
